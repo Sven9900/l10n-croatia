@@ -117,16 +117,18 @@ class FiskalProstor(models.Model):
              'The code of the business premise must be unique per company !')
         ]
 
+    def _check_sequence(self, sequence):
+        if not sequence:
+            raise Warning(_('Sequence is required for activating'))
+        if sequence.prefix or sequence.suffix:
+            raise Warning(_('Fiscal sequence should not contian prefix nor suffix'))
+
     def button_activate_prostor(self):
-        if '-' in self.oznaka_prostor or '/' in self.oznaka_prostor:
-            raise Warning(
-                _('Fiscal code contains invalid characters (- or /)')
-            )
-        self.state = 'active'
         if self.sljed_racuna == 'P':
             if not self.journal_ids:
                 raise Warning(
                     _('Activate not possible : no journals assigned!'))
+            self._check_sequence(self.sequence)
 
         else:  # sljed_racuna == 'N'
             if self.sequence_id:
@@ -134,6 +136,7 @@ class FiskalProstor(models.Model):
             for uredjaj in self.uredjaj_ids:
                 # TODO: provjera po uređaju!
                 pass
+        self.state = 'active'
 
     def button_deactivate_prostor(self):
         self.state = 'closed'
@@ -146,17 +149,6 @@ class FiskalProstor(models.Model):
             if ured.lock:
                 raise ValidationError('Nije moguće brisati uređaj u kojem je izdan račun!')
         return super(FiskalProstor, self).unlink()
-
-    """
-    TODO:
-    create i write - provjera:
-
-    1. sljed_racuna == P
-       -
-
-    """
-
-
 
 
 class FiskalUredjaj(models.Model):
