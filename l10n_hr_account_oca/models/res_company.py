@@ -167,9 +167,9 @@ class FiskalUredjaj(models.Model):
         help='Prostor naplatnog uredjaja',
         ondelete="restrict")
     sljed_racuna = fields.Selection(
-        selection=[
-            ('N', 'Na nivou naplatnog uredjaja'),
-            ('P', 'Na nivou poslovnog prostora')],
+        # selection=[
+        #     ('N', 'Na nivou naplatnog uredjaja'),
+        #     ('P', 'Na nivou poslovnog prostora')],
         string='Sequence by',
         related='prostor_id.sljed_racuna')
     oznaka_uredjaj = fields.Char(     # -> kad se šalje xml onda strict integer!
