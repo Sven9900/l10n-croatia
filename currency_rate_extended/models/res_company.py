@@ -10,17 +10,13 @@ class Company(models.Model):
     currency_rate_provider_id = fields.Many2one(
         comodel_name='res.currency.rate.provider',
         string="Default currency rate provider",
-        old_name="update_service_id",
         help="Default currency rate provider in case you use more than one",
-        # sp_8="base_base.update_service_id",
-        # old_sp_name="update_service_id"
     )
     inverse_currency_rate = fields.Boolean(
         string="Inverse currency rate",
         help="Normal rate is expressed as Amount of domestic for one foreign,"
              "Inverse rate is expressed as Amount domestic"
              "for one(or more) foreign.  Example: 0,13333  <-> 7,5"
-        # sp_8 = "base_base,inverse_currency_rate",
     )
     # country_id = fields.Many2one(store=False)
 
