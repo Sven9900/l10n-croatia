@@ -46,12 +46,12 @@
             <field name="name">view_fiskal_prostor_form</field>
             <field name="model">fiskal.prostor</field>
             <field name="arch" type="xml">
-                <form><!-- string="Poslovni prostor" -->
+                <form>
                     <header>
-                        <button name="button_activate_prostor" string="Aktiviraj prostor" type="object"
+                        <button name="button_activate_prostor" string="Activate premisse" type="object"
                                 attrs="{'invisible':[('state','=','active')]}"
                                 groups="account.group_account_manager"/>
-                        <button name="button_deactivate_prostor" string="Deaktiviraj prostor" type="object"
+                        <button name="button_deactivate_prostor" string="Deactivate premisse" type="object"
                                 attrs="{'invisible':[('state','!=','active')]}"
                                 help="Koristiti samo u slucaju kad se zatvara poslovni prostor.
                                       Nakon zatvaranja poslovnog prostora ne smiju se vise prijavljivati racuni
@@ -77,7 +77,7 @@
                             <field name="lock" invisible="1"/>
                         </group>
                         <notebook name="hr_accounting" colspan="4">
-                            <page string="Naplatni uređaji u prostoru" >
+                            <page string="Payment devices in this premisse" >
                                 <field name="uredjaj_ids" nolabel="1" colspan="4" />
                             </page>
                             <page string="Journals for this premise">

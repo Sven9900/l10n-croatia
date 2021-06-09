@@ -26,30 +26,31 @@ class AccountMove(models.Model):
     # radi potencijalno drugih lokalizacija
     vrijeme_izdavanja = fields.Char(
         # DB: namjerno kao char da izbjegnem timezone problem!
-        string="Vrijeme izdavanja",
-        help="Fiskal datetime value", copy=False,
+        string="Time of confirming",
+        help="Croatia Fiskal datetime value", copy=False,
         readonly=True, states={'draft': [('readonly', False)]})
     fiskalni_broj = fields.Char(
-        string="Fiskalni broj", copy=False,
+        string="Fiskal number", copy=False,
         help="Fiskalni broj računa, ukoliko je različit od broja računa",
         readonly=True, states={'draft': [('readonly', False)]})
     # i za ulazne račune se ovdje moze upisati
     nacin_placanja = fields.Selection(
-        selection=[('T', 'TRANSAKCIJSKI RAČUN')],
-        string="Način plaćanja", default="T",
+        selection=[('T', 'TRANSACTION BANK ACCOUNT')],
+        string="Croatia payment means", default="T",
         readonly=True, states={'draft': [('readonly', False)]})
 
     fiskal_uredjaj_id = fields.Many2one(
         comodel_name='fiskal.uredjaj',
-        string="Naplatni uređaj",
+        string="Fiskal device",
+        help="Device on which is fiscal payment registred",
         readonly=True, states={'draft': [('readonly', False)]},
         )
 
     fiskal_responsible_id = fields.Many2one(
         comodel_name='res.partner',
-        string="Odgovorna osoba",
+        string="Responsible person",
         domain="[('fiskal_responsible','=',True)]",
-        help="Odgovorna osoba za ovaj račun",
+        help="Fiscal responsible person for this invoice",
         readonly=True, states={'draft': [('readonly', False)]})
 
     @api.model

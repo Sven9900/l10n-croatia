@@ -1,0 +1,604 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* l10n_hr_account_oca
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-06-09 14:43+0000\n"
+"PO-Revision-Date: 2021-06-09 14:43+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: l10n_hr_account_oca
+#: code:addons/l10n_hr_account_oca/models/res_company.py:0
+#, python-format
+msgid "Activate not possible : no journals assigned!"
+msgstr "Aktiviranje nije moguće : nema dodijeljenih Dnevnika!"
+
+#. module: l10n_hr_account_oca
+#: model:ir.model.fields,field_description:l10n_hr_account_oca.field_fiskal_uredjaj__aktivan
+#: model:ir.model.fields.selection,name:l10n_hr_account_oca.selection__fiskal_prostor__state__active
+msgid "Aktivan"
+msgstr ""
+
+#. module: l10n_hr_account_oca
+#: model_terms:ir.ui.view,arch_db:l10n_hr_account_oca.view_fiskal_prostor_form
+msgid "Aktiviraj prostor"
+msgstr ""
+
+#. module: l10n_hr_account_oca
+#: model:ir.model.fields,help:l10n_hr_account_oca.field_fiskal_prostor__journal_ids
+msgid "Allowed invoicing journals for this business premisse"
+msgstr "Dozvoljeni dnevnici izlaznih računa za ovaj prostor"
+
+#. module: l10n_hr_account_oca
+#: model:ir.model.fields,field_description:l10n_hr_account_oca.field_fiskal_prostor__user_ids
+#: model_terms:ir.ui.view,arch_db:l10n_hr_account_oca.view_fiskal_prostor_form
+msgid "Allowed users"
+msgstr "Dozvoljeni korisnici"
+
+#. module: l10n_hr_account_oca
+#: model:ir.model.fields,help:l10n_hr_account_oca.field_account_journal__prostor_id
+msgid "Business premise"
+msgstr "Poslovni prostor"
+
+#. module: l10n_hr_account_oca
+#: model:ir.model.fields,field_description:l10n_hr_account_oca.field_res_company__fiskal_prostor_ids
+msgid "Business premises"
+msgstr "Poslovni prostori"
+
+#. module: l10n_hr_account_oca
+#: model:ir.actions.act_window,name:l10n_hr_account_oca.action_fiskal_prostor
+#: model:ir.ui.menu,name:l10n_hr_account_oca.menu_action_fiskal_prostor
+#: model_terms:ir.ui.view,arch_db:l10n_hr_account_oca.view_company_form_l10n_hr_account
+msgid "Business premisses"
+msgstr "Poslovni prostori"
+
+#. module: l10n_hr_account_oca
+#: model:ir.model,name:l10n_hr_account_oca.model_res_company
+msgid "Companies"
+msgstr "Tvrtke"
+
+#. module: l10n_hr_account_oca
+#: model:ir.model.fields,field_description:l10n_hr_account_oca.field_fiskal_prostor__company_id
+msgid "Company"
+msgstr "Tvrtka"
+
+#. module: l10n_hr_account_oca
+#: model:ir.model.fields,field_description:l10n_hr_account_oca.field_fiskal_prostor__create_uid
+#: model:ir.model.fields,field_description:l10n_hr_account_oca.field_fiskal_uredjaj__create_uid
+msgid "Created by"
+msgstr "Kreirao"
+
+#. module: l10n_hr_account_oca
+#: model:ir.model.fields,field_description:l10n_hr_account_oca.field_fiskal_prostor__create_date
+#: model:ir.model.fields,field_description:l10n_hr_account_oca.field_fiskal_uredjaj__create_date
+msgid "Created on"
+msgstr "Kreirano"
+
+#. module: l10n_hr_account_oca
+#: model:ir.model.fields,field_description:l10n_hr_account_oca.field_account_journal__croatia
+#: model:ir.ui.menu,name:l10n_hr_account_oca.menu_l10n_hr_reports
+msgid "Croatia"
+msgstr "Hrvatska"
+
+#. module: l10n_hr_account_oca
+#: model_terms:ir.ui.view,arch_db:l10n_hr_account_oca.view_move_l10n_hr_form
+msgid "Croatia Fiskal data"
+msgstr "Fiskalni podaci - Hrvatska lokalizacija"
+
+#. module: l10n_hr_account_oca
+#: model:ir.model.fields,help:l10n_hr_account_oca.field_account_bank_statement_line__vrijeme_izdavanja
+#: model:ir.model.fields,help:l10n_hr_account_oca.field_account_move__vrijeme_izdavanja
+#: model:ir.model.fields,help:l10n_hr_account_oca.field_account_payment__vrijeme_izdavanja
+msgid "Croatia Fiskal datetime value"
+msgstr "Datum i vrijeme u formatu hrvatske lokalizacije"
+
+#. module: l10n_hr_account_oca
+#: model:ir.model.fields,field_description:l10n_hr_account_oca.field_account_bank_statement_line__nacin_placanja
+#: model:ir.model.fields,field_description:l10n_hr_account_oca.field_account_move__nacin_placanja
+#: model:ir.model.fields,field_description:l10n_hr_account_oca.field_account_payment__nacin_placanja
+msgid "Croatia payment means"
+msgstr "Način plaćanja"
+
+#. module: l10n_hr_account_oca
+#: model_terms:ir.ui.view,arch_db:l10n_hr_account_oca.view_account_journal_l10n_hr_form
+msgid "Croatia specific"
+msgstr "Hrvatska - lokalizacija"
+
+#. module: l10n_hr_account_oca
+#: model:ir.ui.menu,name:l10n_hr_account_oca.menu_finance_config_croatia
+msgid "Croatia specific settings"
+msgstr "Postavke hrvatske lokalizacije"
+
+#. module: l10n_hr_account_oca
+#: model_terms:ir.ui.view,arch_db:l10n_hr_account_oca.view_users_defaults_form_l10n_hr
+msgid "Croatia user defaults"
+msgstr "Zadane vrijednosti korisnika"
+
+#. module: l10n_hr_account_oca
+#: code:addons/l10n_hr_account_oca/models/account_move.py:0
+#, python-format
+msgid "Date %s is not valid!"
+msgstr "Datum %s nije ispravan!"
+
+#. module: l10n_hr_account_oca
+#: model:ir.model.fields,help:l10n_hr_account_oca.field_account_bank_statement_line__date_delivery
+#: model:ir.model.fields,help:l10n_hr_account_oca.field_account_move__date_delivery
+#: model:ir.model.fields,help:l10n_hr_account_oca.field_account_payment__date_delivery
+msgid "Date of delivery of goods or service. Leave blank for current date"
+msgstr "Datum isporuke robe ili dobara. Ostavite prazno za trenutni datum"
+
+#. module: l10n_hr_account_oca
+#: model:ir.model.fields,help:l10n_hr_account_oca.field_account_bank_statement_line__date_document
+#: model:ir.model.fields,help:l10n_hr_account_oca.field_account_move__date_document
+#: model:ir.model.fields,help:l10n_hr_account_oca.field_account_payment__date_document
+msgid ""
+"Date when the document was actually created. Leave blank for current date"
+msgstr "Datum kad je dokument kreiran. Ostavite prazno za trenutni datum"
+
+#. module: l10n_hr_account_oca
+#: model_terms:ir.ui.view,arch_db:l10n_hr_account_oca.view_fiskal_prostor_form
+msgid "Deaktiviraj prostor"
+msgstr ""
+
+#. module: l10n_hr_account_oca
+#: model:ir.model.fields,field_description:l10n_hr_account_oca.field_res_company__fiskal_responsible_id
+msgid "Default Fiskal responsible person"
+msgstr ""
+
+#. module: l10n_hr_account_oca
+#: model:ir.model.fields,help:l10n_hr_account_oca.field_res_company__fiskal_responsible_id
+msgid "Default company fiskal responsible person"
+msgstr ""
+
+#. module: l10n_hr_account_oca
+#: model:ir.model.fields,field_description:l10n_hr_account_oca.field_account_journal__default_nacin_placanja
+msgid "Default fiskal payment method"
+msgstr ""
+
+#. module: l10n_hr_account_oca
+#: model:ir.model.fields,help:l10n_hr_account_oca.field_account_journal__fiskal_responsible_id
+msgid "Default fiskal responsible person for this journal"
+msgstr ""
+
+#. module: l10n_hr_account_oca
+#: model:ir.model.fields,field_description:l10n_hr_account_oca.field_account_bank_statement_line__date_delivery
+#: model:ir.model.fields,field_description:l10n_hr_account_oca.field_account_move__date_delivery
+#: model:ir.model.fields,field_description:l10n_hr_account_oca.field_account_payment__date_delivery
+msgid "Delivery Date"
+msgstr ""
+
+#. module: l10n_hr_account_oca
+#: model:ir.model.fields,help:l10n_hr_account_oca.field_account_bank_statement_line__fiskal_uredjaj_id
+#: model:ir.model.fields,help:l10n_hr_account_oca.field_account_move__fiskal_uredjaj_id
+#: model:ir.model.fields,help:l10n_hr_account_oca.field_account_payment__fiskal_uredjaj_id
+msgid "Device on which is fiscal payment registred"
+msgstr ""
+
+#. module: l10n_hr_account_oca
+#: model:ir.model.fields,field_description:l10n_hr_account_oca.field_account_journal__display_name
+#: model:ir.model.fields,field_description:l10n_hr_account_oca.field_account_move__display_name
+#: model:ir.model.fields,field_description:l10n_hr_account_oca.field_fiskal_prostor__display_name
+#: model:ir.model.fields,field_description:l10n_hr_account_oca.field_fiskal_uredjaj__display_name
+#: model:ir.model.fields,field_description:l10n_hr_account_oca.field_res_company__display_name
+#: model:ir.model.fields,field_description:l10n_hr_account_oca.field_res_users__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: l10n_hr_account_oca
+#: model:ir.model.fields,field_description:l10n_hr_account_oca.field_fiskal_uredjaj__journal_ids
+msgid "Dnevnici"
+msgstr ""
+
+#. module: l10n_hr_account_oca
+#: model:ir.model.fields,field_description:l10n_hr_account_oca.field_account_bank_statement_line__date_document
+#: model:ir.model.fields,field_description:l10n_hr_account_oca.field_account_move__date_document
+#: model:ir.model.fields,field_description:l10n_hr_account_oca.field_account_payment__date_document
+msgid "Document Date"
+msgstr ""
+
+#. module: l10n_hr_account_oca
+#: code:addons/l10n_hr_account_oca/models/account_invoice.py:0
+#, python-format
+msgid "Document from partner %s with number %s already existing"
+msgstr ""
+
+#. module: l10n_hr_account_oca
+#: model_terms:ir.ui.view,arch_db:l10n_hr_account_oca.view_users_defaults_form_l10n_hr
+msgid "Dohvati sve uređaje"
+msgstr ""
+
+#. module: l10n_hr_account_oca
+#: model:ir.model.fields,field_description:l10n_hr_account_oca.field_account_journal__fiskal_uredjaj_ids
+msgid "Dopusteni naplatni uredjaji"
+msgstr ""
+
+#. module: l10n_hr_account_oca
+#: model:ir.model.fields,field_description:l10n_hr_account_oca.field_res_users__uredjaj_ids
+msgid "Dozvoljeni naplatni uređaji"
+msgstr ""
+
+#. module: l10n_hr_account_oca
+#: model:ir.model.fields,field_description:l10n_hr_account_oca.field_res_users__prostor_ids
+msgid "Dozvoljeni prostori"
+msgstr ""
+
+#. module: l10n_hr_account_oca
+#: model:ir.model.fields,help:l10n_hr_account_oca.field_res_users__prostor_ids
+msgid "Dozvoljeni prostori za izdavanje računa"
+msgstr ""
+
+#. module: l10n_hr_account_oca
+#: model:ir.model.fields,field_description:l10n_hr_account_oca.field_fiskal_prostor__oznaka_prostor
+msgid "Fiscal Code"
+msgstr ""
+
+#. module: l10n_hr_account_oca
+#: model_terms:ir.ui.view,arch_db:l10n_hr_account_oca.view_company_form_l10n_hr_account
+msgid "Fiscal data"
+msgstr ""
+
+#. module: l10n_hr_account_oca
+#: model:ir.model.fields,help:l10n_hr_account_oca.field_account_bank_statement_line__fiskal_responsible_id
+#: model:ir.model.fields,help:l10n_hr_account_oca.field_account_move__fiskal_responsible_id
+#: model:ir.model.fields,help:l10n_hr_account_oca.field_account_payment__fiskal_responsible_id
+msgid "Fiscal responsible person for this invoice"
+msgstr ""
+
+#. module: l10n_hr_account_oca
+#: code:addons/l10n_hr_account_oca/models/res_company.py:0
+#, python-format
+msgid "Fiscal sequence should not contian prefix nor suffix"
+msgstr ""
+
+#. module: l10n_hr_account_oca
+#: model:ir.model.fields,field_description:l10n_hr_account_oca.field_account_bank_statement_line__fiskal_uredjaj_id
+#: model:ir.model.fields,field_description:l10n_hr_account_oca.field_account_move__fiskal_uredjaj_id
+#: model:ir.model.fields,field_description:l10n_hr_account_oca.field_account_payment__fiskal_uredjaj_id
+msgid "Fiskal device"
+msgstr ""
+
+#. module: l10n_hr_account_oca
+#: model:ir.model.fields,field_description:l10n_hr_account_oca.field_account_bank_statement_line__fiskalni_broj
+#: model:ir.model.fields,field_description:l10n_hr_account_oca.field_account_move__fiskalni_broj
+#: model:ir.model.fields,field_description:l10n_hr_account_oca.field_account_payment__fiskalni_broj
+msgid "Fiskal number"
+msgstr ""
+
+#. module: l10n_hr_account_oca
+#: model:ir.model.fields,help:l10n_hr_account_oca.field_account_bank_statement_line__fiskalni_broj
+#: model:ir.model.fields,help:l10n_hr_account_oca.field_account_move__fiskalni_broj
+#: model:ir.model.fields,help:l10n_hr_account_oca.field_account_payment__fiskalni_broj
+msgid "Fiskalni broj računa, ukoliko je različit od broja računa"
+msgstr ""
+
+#. module: l10n_hr_account_oca
+#: model:ir.model.fields,field_description:l10n_hr_account_oca.field_account_journal__id
+#: model:ir.model.fields,field_description:l10n_hr_account_oca.field_account_move__id
+#: model:ir.model.fields,field_description:l10n_hr_account_oca.field_fiskal_prostor__id
+#: model:ir.model.fields,field_description:l10n_hr_account_oca.field_fiskal_uredjaj__id
+#: model:ir.model.fields,field_description:l10n_hr_account_oca.field_res_company__id
+#: model:ir.model.fields,field_description:l10n_hr_account_oca.field_res_users__id
+msgid "ID"
+msgstr ""
+
+#. module: l10n_hr_account_oca
+#: model:ir.model.fields,field_description:l10n_hr_account_oca.field_res_company__fiskal_separator
+msgid "Invoice number separator"
+msgstr ""
+
+#. module: l10n_hr_account_oca
+#: code:addons/l10n_hr_account_oca/models/account_move.py:0
+#, python-format
+msgid "Invoice posting not possible, business premisse %s is not active!"
+msgstr ""
+
+#. module: l10n_hr_account_oca
+#: model:ir.model.fields,help:l10n_hr_account_oca.field_fiskal_prostor__sequence_id
+msgid ""
+"Is invoicing sequence is premisse based, (P)this is number sequence is used "
+"as first part of invoice fiscal number"
+msgstr ""
+
+#. module: l10n_hr_account_oca
+#: model:ir.model.fields,help:l10n_hr_account_oca.field_fiskal_prostor__mjesto_izdavanja
+msgid ""
+"It will be used as place of invoicing for this premise,  as a legaly "
+"required element"
+msgstr ""
+
+#. module: l10n_hr_account_oca
+#: model:ir.model.fields,help:l10n_hr_account_oca.field_fiskal_prostor__lock
+msgid ""
+"Jednom kad se napravi prvi račun oznaka prostora i sljed računa se više "
+"nesmiju mijenjati"
+msgstr ""
+
+#. module: l10n_hr_account_oca
+#: model:ir.model.fields,help:l10n_hr_account_oca.field_fiskal_uredjaj__lock
+msgid ""
+"Jednom kad se napravi prvi račun oznaka uređaja se više nesmije mijenjati"
+msgstr ""
+
+#. module: l10n_hr_account_oca
+#: model:ir.model,name:l10n_hr_account_oca.model_account_journal
+msgid "Journal"
+msgstr ""
+
+#. module: l10n_hr_account_oca
+#: model:ir.model,name:l10n_hr_account_oca.model_account_move
+msgid "Journal Entry"
+msgstr ""
+
+#. module: l10n_hr_account_oca
+#: model:ir.model.fields,field_description:l10n_hr_account_oca.field_fiskal_prostor__journal_ids
+msgid "Journals"
+msgstr ""
+
+#. module: l10n_hr_account_oca
+#: model_terms:ir.ui.view,arch_db:l10n_hr_account_oca.view_fiskal_prostor_form
+msgid "Journals for this premise"
+msgstr ""
+
+#. module: l10n_hr_account_oca
+#: model:ir.model.fields,field_description:l10n_hr_account_oca.field_fiskal_uredjaj__user_ids
+msgid "Korisnici s pravom knjiženja"
+msgstr ""
+
+#. module: l10n_hr_account_oca
+#: model_terms:ir.ui.view,arch_db:l10n_hr_account_oca.view_fiskal_prostor_form
+msgid ""
+"Koristiti samo u slucaju kad se zatvara poslovni prostor."
+"                                       Nakon zatvaranja poslovnog prostora "
+"ne smiju se vise prijavljivati racuni                                       "
+"sa oznakom ovog poslovnog prostora"
+msgstr ""
+
+#. module: l10n_hr_account_oca
+#: model:ir.model.fields,field_description:l10n_hr_account_oca.field_account_journal____last_update
+#: model:ir.model.fields,field_description:l10n_hr_account_oca.field_account_move____last_update
+#: model:ir.model.fields,field_description:l10n_hr_account_oca.field_fiskal_prostor____last_update
+#: model:ir.model.fields,field_description:l10n_hr_account_oca.field_fiskal_uredjaj____last_update
+#: model:ir.model.fields,field_description:l10n_hr_account_oca.field_res_company____last_update
+#: model:ir.model.fields,field_description:l10n_hr_account_oca.field_res_users____last_update
+msgid "Last Modified on"
+msgstr ""
+
+#. module: l10n_hr_account_oca
+#: model:ir.model.fields,field_description:l10n_hr_account_oca.field_fiskal_prostor__write_uid
+#: model:ir.model.fields,field_description:l10n_hr_account_oca.field_fiskal_uredjaj__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: l10n_hr_account_oca
+#: model:ir.model.fields,field_description:l10n_hr_account_oca.field_fiskal_prostor__write_date
+#: model:ir.model.fields,field_description:l10n_hr_account_oca.field_fiskal_uredjaj__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: l10n_hr_account_oca
+#: model:ir.model.fields,field_description:l10n_hr_account_oca.field_fiskal_prostor__lock
+#: model:ir.model.fields,field_description:l10n_hr_account_oca.field_fiskal_uredjaj__lock
+msgid "Lock"
+msgstr ""
+
+#. module: l10n_hr_account_oca
+#: code:addons/l10n_hr_account_oca/models/account_invoice.py:0
+#, python-format
+msgid "Mising fiskal responsible person!\n"
+msgstr ""
+
+#. module: l10n_hr_account_oca
+#: model:ir.model.fields.selection,name:l10n_hr_account_oca.selection__fiskal_prostor__sljed_racuna__n
+msgid "Na nivou naplatnog uredjaja"
+msgstr ""
+
+#. module: l10n_hr_account_oca
+#: model:ir.model.fields.selection,name:l10n_hr_account_oca.selection__fiskal_prostor__sljed_racuna__p
+msgid "Na nivou poslovnog prostora"
+msgstr ""
+
+#. module: l10n_hr_account_oca
+#: model:ir.model.fields.selection,name:l10n_hr_account_oca.selection__fiskal_prostor__state__draft
+msgid "Nacrt"
+msgstr ""
+
+#. module: l10n_hr_account_oca
+#: model:ir.model.fields,field_description:l10n_hr_account_oca.field_fiskal_prostor__name
+msgid "Name"
+msgstr ""
+
+#. module: l10n_hr_account_oca
+#: model_terms:ir.ui.view,arch_db:l10n_hr_account_oca.view_users_defaults_form_l10n_hr
+msgid "Naplatni uređaji"
+msgstr ""
+
+#. module: l10n_hr_account_oca
+#: model_terms:ir.ui.view,arch_db:l10n_hr_account_oca.view_fiskal_prostor_form
+msgid "Naplatni uređaji u prostoru"
+msgstr ""
+
+#. module: l10n_hr_account_oca
+#: model:ir.model.fields,field_description:l10n_hr_account_oca.field_fiskal_uredjaj__name
+msgid "Naziv naplatnog uredjaja"
+msgstr ""
+
+#. module: l10n_hr_account_oca
+#: model:ir.model.fields,help:l10n_hr_account_oca.field_res_company__fiskal_separator
+msgid "Only '/' or '-' are legaly defined as allowed"
+msgstr ""
+
+#. module: l10n_hr_account_oca
+#: model:ir.model.fields,field_description:l10n_hr_account_oca.field_fiskal_uredjaj__oznaka_uredjaj
+msgid "Oznaka naplatnog uredjaja"
+msgstr ""
+
+#. module: l10n_hr_account_oca
+#: model:ir.actions.act_window,name:l10n_hr_account_oca.action_fiskal_uredjaj
+#: model:ir.ui.menu,name:l10n_hr_account_oca.menu_action_fiskal_uredjaj
+msgid "Payment registers"
+msgstr ""
+
+#. module: l10n_hr_account_oca
+#: model:ir.model.fields,field_description:l10n_hr_account_oca.field_fiskal_prostor__mjesto_izdavanja
+msgid "Place of invoicing"
+msgstr ""
+
+#. module: l10n_hr_account_oca
+#: code:addons/l10n_hr_account_oca/models/account_invoice.py:0
+#, python-format
+msgid "Please select fiskal responsible partner and set it"
+msgstr ""
+
+#. module: l10n_hr_account_oca
+#: model:ir.model,name:l10n_hr_account_oca.model_fiskal_uredjaj
+msgid "Podaci o naplatnim uredjajima"
+msgstr ""
+
+#. module: l10n_hr_account_oca
+#: model:ir.model,name:l10n_hr_account_oca.model_fiskal_prostor
+msgid "Poslovni prostori - fiskalizacija"
+msgstr ""
+
+#. module: l10n_hr_account_oca
+#: model:ir.model.fields,field_description:l10n_hr_account_oca.field_account_journal__prostor_id
+#: model:ir.model.fields,field_description:l10n_hr_account_oca.field_fiskal_uredjaj__prostor_id
+msgid "Prostor"
+msgstr ""
+
+#. module: l10n_hr_account_oca
+#: model:ir.model.fields,help:l10n_hr_account_oca.field_fiskal_uredjaj__prostor_id
+msgid "Prostor naplatnog uredjaja"
+msgstr ""
+
+#. module: l10n_hr_account_oca
+#: model:ir.model.fields,field_description:l10n_hr_account_oca.field_account_bank_statement_line__fiskal_responsible_id
+#: model:ir.model.fields,field_description:l10n_hr_account_oca.field_account_journal__fiskal_responsible_id
+#: model:ir.model.fields,field_description:l10n_hr_account_oca.field_account_move__fiskal_responsible_id
+#: model:ir.model.fields,field_description:l10n_hr_account_oca.field_account_payment__fiskal_responsible_id
+msgid "Responsible person"
+msgstr ""
+
+#. module: l10n_hr_account_oca
+#: code:addons/l10n_hr_account_oca/models/res_users.py:0
+#, python-format
+msgid "Selected device '%s' is not in allowed list!"
+msgstr ""
+
+#. module: l10n_hr_account_oca
+#: code:addons/l10n_hr_account_oca/models/account_invoice.py:0
+#, python-format
+msgid "Selected uredjaj is not in your allowed list!"
+msgstr ""
+
+#. module: l10n_hr_account_oca
+#: model:ir.model.fields,field_description:l10n_hr_account_oca.field_fiskal_prostor__sequence_id
+#: model:ir.model.fields,field_description:l10n_hr_account_oca.field_fiskal_uredjaj__sequence_id
+msgid "Sequence"
+msgstr ""
+
+#. module: l10n_hr_account_oca
+#: model:ir.model.fields,field_description:l10n_hr_account_oca.field_fiskal_prostor__sljed_racuna
+#: model:ir.model.fields,field_description:l10n_hr_account_oca.field_fiskal_uredjaj__sljed_racuna
+msgid "Sequence by"
+msgstr ""
+
+#. module: l10n_hr_account_oca
+#: code:addons/l10n_hr_account_oca/models/res_company.py:0
+#, python-format
+msgid "Sequence is required for activating"
+msgstr ""
+
+#. module: l10n_hr_account_oca
+#: code:addons/l10n_hr_account_oca/models/account_move.py:0
+#, python-format
+msgid "Sequence should not have prefix or suffix!"
+msgstr ""
+
+#. module: l10n_hr_account_oca
+#: model:ir.model.fields,field_description:l10n_hr_account_oca.field_account_journal__code
+msgid "Short Code"
+msgstr ""
+
+#. module: l10n_hr_account_oca
+#: model:ir.model.fields,help:l10n_hr_account_oca.field_account_journal__code
+msgid ""
+"Shorter name used for display. The journal entries of this journal will also"
+" be named using this prefix by default."
+msgstr ""
+
+#. module: l10n_hr_account_oca
+#: model:ir.model.fields,field_description:l10n_hr_account_oca.field_fiskal_prostor__state
+msgid "State"
+msgstr ""
+
+#. module: l10n_hr_account_oca
+#: model:ir.model.fields.selection,name:l10n_hr_account_oca.selection__account_move__nacin_placanja__t
+msgid "TRANSACTION BANK ACCOUNT"
+msgstr ""
+
+#. module: l10n_hr_account_oca
+#: model:ir.model.fields.selection,name:l10n_hr_account_oca.selection__account_journal__default_nacin_placanja__t
+msgid "TRANSAKCIJSKI RAČUN"
+msgstr ""
+
+#. module: l10n_hr_account_oca
+#: model:ir.model.constraint,message:l10n_hr_account_oca.constraint_fiskal_prostor_fiskal_prostor_uniq
+msgid "The code of the business premise must be unique per company !"
+msgstr ""
+
+#. module: l10n_hr_account_oca
+#: model:ir.model.constraint,message:l10n_hr_account_oca.constraint_fiskal_uredjaj_fiskal_uredjaj_uniq
+msgid "The code of the payment register must be unique per business premise !"
+msgstr ""
+
+#. module: l10n_hr_account_oca
+#: model:ir.model.fields,field_description:l10n_hr_account_oca.field_account_bank_statement_line__vrijeme_izdavanja
+#: model:ir.model.fields,field_description:l10n_hr_account_oca.field_account_move__vrijeme_izdavanja
+#: model:ir.model.fields,field_description:l10n_hr_account_oca.field_account_payment__vrijeme_izdavanja
+msgid "Time of confirming"
+msgstr ""
+
+#. module: l10n_hr_account_oca
+#: model:ir.model.fields,field_description:l10n_hr_account_oca.field_fiskal_prostor__uredjaj_ids
+msgid "Uredjaji"
+msgstr ""
+
+#. module: l10n_hr_account_oca
+#: model:ir.model,name:l10n_hr_account_oca.model_res_users
+msgid "Users"
+msgstr ""
+
+#. module: l10n_hr_account_oca
+#: model:ir.model.fields,help:l10n_hr_account_oca.field_fiskal_prostor__oznaka_prostor
+msgid "Will be used as second part of fiscal invoice number"
+msgstr ""
+
+#. module: l10n_hr_account_oca
+#: code:addons/l10n_hr_account_oca/models/res_users.py:0
+#, python-format
+msgid "You have no allowed devices, setting defualt is not possible!"
+msgstr ""
+
+#. module: l10n_hr_account_oca
+#: model:ir.model.fields,field_description:l10n_hr_account_oca.field_res_users__default_uredjaj
+msgid "Zadani nap. uređaj"
+msgstr ""
+
+#. module: l10n_hr_account_oca
+#: model:ir.model.fields.selection,name:l10n_hr_account_oca.selection__fiskal_prostor__state__closed
+msgid "Zatvoren"
+msgstr ""
+
+#. module: l10n_hr_account_oca
+#: code:addons/l10n_hr_account_oca/models/account_invoice.py:0
+#, python-format
+msgid "on company and/or on journal settings"
+msgstr ""
