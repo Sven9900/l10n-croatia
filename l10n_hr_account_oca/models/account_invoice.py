@@ -229,9 +229,5 @@ class AccountInvoice(models.Model):
         if invoice.type in ('out_invoice', 'out_refund'):
             values['fiskal_uredjaj_id'] = invoice.fiskal_uredjaj_id.id
             values['nacin_placanja'] = invoice.nacin_placanja
-            # DB: mozda prvo provjjeriti postoji li jos koji storno,
-            # u biti ovjde će se upisati broj kad se potvrđuje ulazno odobrenje
-            # ili storno ulzaog računa!
-            values['fiskalni_broj'] = 'Storno - ' + invoice.fiskalni_broj
         return values
 

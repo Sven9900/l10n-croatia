@@ -90,6 +90,41 @@ class AccountMove(models.Model):
         fiskalni_broj = separator.join((str(int(broj)), prostor.oznaka_prostor, uredjaj.oznaka_uredjaj))
         return fiskalni_broj
 
+    def _set_fiskal_dates(self):
+        self.ensure_one()
+        if not self.date_document:
+            self.date_document = fields.Date.today()
+        if not self.vrijeme_izdavanja:
+            datum = self.company_id.get_l10n_hr_time_formatted()
+            self.vrijeme_izdavanja = datum['datum_racun']
+
+    def _set_fiskal_number(self):
+        self.ensure_one()
+        if not self.date:
+            self.date = fields.Date.today()
+        self.env.cr.execute("""
+            select name, fiskalni_broj, date from account_move
+            where journal_id = %(journal)s
+              and state = 'posted'
+              and date > %(date)s
+            order by date desc
+            """, {
+            'journal': self.journal_id.id,
+            'date': self.date,
+            })
+        res = self.env.cr.fetchall()
+        if res:
+            msg = _("Date %s is not valid!" % self.date)
+            for name, broj, dt in res:
+                msg += "\n %s - %s from %s" % (name, broj, dt)
+            raise Warning(msg)
+        self.fiskalni_broj = self._gen_fiskal_number()
+        # now and set lock on journals,
+        # after first posting journal is locked for changes
+        if not self.fiskal_uredjaj_id.lock:
+            self.fiskal_uredjaj_id.lock = True
+        if not self.fiskal_uredjaj_id.prostor_id.lock:
+            self.fiskal_uredjaj_id.prostor_id.lock = True
 
     def _post(self, soft=True):
         posted = super()._post(soft=soft)
@@ -104,37 +139,7 @@ class AccountMove(models.Model):
                         "business premisse %s is not active!" %
                         move.fiskal_uredjaj_id.prostor_id.name
                     ))
-            if not move.date_document:
-                move.date_document = fields.Date.today()
-            if not move.vrijeme_izdavanja:
-                datum = move.company_id.get_l10n_hr_time_formatted()
-                move.vrijeme_izdavanja = datum['datum_racun']
-
-            self.env.cr.execute("""
-            select name, fiskalni_broj, date from account_move
-            where journal_id = %(journal)s
-              and state = 'posted'
-              and date > %(date)s
-              --and vrijeme_izdavanja::timestamp > %(fiskal)s
-            order by date desc
-            """, {
-                'journal': self.journal_id.id,
-                'date': self.date,
-                'fiskal': datum['datum_racun']
-            })
-            res = self.env.cr.fetchall()
-            if res:
-                msg = _("Date %s is not valid!" % self.date)
-                for name, broj, dt in res:
-                    msg += "\n %s - %s from %s" %(name, broj, dt)
-                raise Warning(msg)
-
-            move.fiskalni_broj = move._gen_fiskal_number()
-
-            # now and set lock on journals,
-            # after first posting journal is locked for changes
-            if not move.fiskal_uredjaj_id.lock:
-                move.fiskal_uredjaj_id.lock = True
-            if not move.fiskal_uredjaj_id.prostor_id.lock:
-                move.fiskal_uredjaj_id.prostor_id.lock = True
+            move._set_fiskal_dates()
+            if not move.fiskalni_broj:
+                move._set_fiskal_number()
         return posted
