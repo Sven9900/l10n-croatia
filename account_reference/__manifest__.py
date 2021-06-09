@@ -10,7 +10,7 @@
     "licence": "LGPL-3",
 
     "depends": [
-        'account'
+        'l10n_hr_account_oca'
     ],
     "external_dependencies": {
         "python": [],

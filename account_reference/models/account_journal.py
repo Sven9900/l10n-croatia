@@ -13,8 +13,11 @@ class AccountJournal(models.Model):
             ('partner_code', 'Partner code'),
             ('partner_id', 'Partner ID'),
             ('invoice_no', 'Invoice Number'),
+            ('fiskal_no', 'Fiskal invoice number'),
             ('delivery_ym', 'Delivery year and month'),
-            ('invoice_ym', 'Invoice year and month')])
+            ('invoice_ym', 'Invoice year and month'),
+            ('invoice_y', 'Invoice year only')
+        ])
 
     _P1_P4_selection = lambda self: self._get_P1_P4_selection()
 

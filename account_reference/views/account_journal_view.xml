@@ -6,7 +6,7 @@
             <field name="model">account.journal</field>
             <field name="inherit_id" ref="account.view_account_journal_form" />
             <field name="arch" type="xml">
-                <field name="invoice_reference_type" position="after">
+                <field name="invoice_reference_model" position="after">
                     <field name="P1_pnbr" attrs="{'invisible': [('invoice_reference_model', 'not in', ['00', '01', '99'])]}"/>
                     <field name="P2_pnbr" attrs="{'invisible': [('invoice_reference_model', 'not in', ['00', '01', '99'])]}"/>
                     <field name="P3_pnbr" attrs="{'invisible': [('invoice_reference_model', 'not in', ['00', '01', '99'])]}"/>
