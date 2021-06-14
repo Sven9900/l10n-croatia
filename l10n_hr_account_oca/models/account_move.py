@@ -86,7 +86,7 @@ class AccountMove(models.Model):
         pref, suff = sequence.prefix, sequence.suffix
         if pref or suff:
             raise Warning(_('Sequence should not have prefix or suffix!'))
-        broj = sequence._next_do()
+        broj = sequence._next(sequence_date=self.date)
 
         fiskalni_broj = separator.join((str(int(broj)), prostor.oznaka_prostor, uredjaj.oznaka_uredjaj))
         return fiskalni_broj
