@@ -48,10 +48,10 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:account_reference.report_invoice_payment_reference_layout
 msgid ""
 "<br/>\n"
-"            <span>Bank : </span>"
+"            <span>Swift/Bank : </span>"
 msgstr ""
 "<br/>\n"
-"            <span>Banka : </span>"
+"            <span>Swift/Banka : </span>"
 
 #. module: account_reference
 #: model_terms:ir.ui.view,arch_db:account_reference.report_invoice_payment_reference_layout

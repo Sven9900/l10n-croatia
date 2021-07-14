@@ -4,7 +4,7 @@
     <template id="report_invoice_payment_reference_layout" inherit_id="account.report_invoice_document" >
         <xpath expr="//p[@name='payment_communication']/b" position="replace">
             <br/>
-            <span>Bank : </span>
+            <span>Swift/Bank : </span>
             <b><span t-field="o.partner_bank_id.bank_id.bic" /></b>-
             <span t-field="o.partner_bank_id.bank_id.name"/>
             <br/>
