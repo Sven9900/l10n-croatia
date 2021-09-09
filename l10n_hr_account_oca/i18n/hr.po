@@ -151,7 +151,7 @@ msgstr ""
 #. module: l10n_hr_account_oca
 #: model:ir.model.fields,field_description:l10n_hr_account_oca.field_res_company__fiskal_responsible_id
 msgid "Default Fiskal responsible person"
-msgstr ""
+msgstr "Zadana odgovorna osoba"
 
 #. module: l10n_hr_account_oca
 #: model:ir.model.fields,help:l10n_hr_account_oca.field_res_company__fiskal_responsible_id
@@ -161,7 +161,7 @@ msgstr ""
 #. module: l10n_hr_account_oca
 #: model:ir.model.fields,field_description:l10n_hr_account_oca.field_account_journal__default_nacin_placanja
 msgid "Default fiskal payment method"
-msgstr ""
+msgstr "Zadani način plaćanja"
 
 #. module: l10n_hr_account_oca
 #: model:ir.model.fields,help:l10n_hr_account_oca.field_account_journal__fiskal_responsible_id
@@ -173,7 +173,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:l10n_hr_account_oca.field_account_move__date_delivery
 #: model:ir.model.fields,field_description:l10n_hr_account_oca.field_account_payment__date_delivery
 msgid "Delivery Date"
-msgstr ""
+msgstr "Datum isporuke"
 
 #. module: l10n_hr_account_oca
 #: model:ir.model.fields,help:l10n_hr_account_oca.field_account_bank_statement_line__fiskal_uredjaj_id
@@ -202,7 +202,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:l10n_hr_account_oca.field_account_move__date_document
 #: model:ir.model.fields,field_description:l10n_hr_account_oca.field_account_payment__date_document
 msgid "Document Date"
-msgstr ""
+msgstr "Datum dokumenta"
 
 #. module: l10n_hr_account_oca
 #: code:addons/l10n_hr_account_oca/models/account_invoice.py:0
@@ -250,7 +250,7 @@ msgstr ""
 #: model:ir.model.fields,help:l10n_hr_account_oca.field_account_move__fiskal_responsible_id
 #: model:ir.model.fields,help:l10n_hr_account_oca.field_account_payment__fiskal_responsible_id
 msgid "Fiscal responsible person for this invoice"
-msgstr ""
+msgstr "Odgovorna osoba"
 
 #. module: l10n_hr_account_oca
 #: code:addons/l10n_hr_account_oca/models/res_company.py:0
@@ -263,14 +263,14 @@ msgstr ""
 #: model:ir.model.fields,field_description:l10n_hr_account_oca.field_account_move__fiskal_uredjaj_id
 #: model:ir.model.fields,field_description:l10n_hr_account_oca.field_account_payment__fiskal_uredjaj_id
 msgid "Fiskal device"
-msgstr ""
+msgstr "Fiskalni uređaj"
 
 #. module: l10n_hr_account_oca
 #: model:ir.model.fields,field_description:l10n_hr_account_oca.field_account_bank_statement_line__fiskalni_broj
 #: model:ir.model.fields,field_description:l10n_hr_account_oca.field_account_move__fiskalni_broj
 #: model:ir.model.fields,field_description:l10n_hr_account_oca.field_account_payment__fiskalni_broj
 msgid "Fiskal number"
-msgstr ""
+msgstr "Fiskalni broj"
 
 #. module: l10n_hr_account_oca
 #: model:ir.model.fields,help:l10n_hr_account_oca.field_account_bank_statement_line__fiskalni_broj
@@ -292,13 +292,13 @@ msgstr ""
 #. module: l10n_hr_account_oca
 #: model:ir.model.fields,field_description:l10n_hr_account_oca.field_res_company__fiskal_separator
 msgid "Invoice number separator"
-msgstr ""
+msgstr "Razdjelnik fiskalnog broja"
 
 #. module: l10n_hr_account_oca
 #: code:addons/l10n_hr_account_oca/models/account_move.py:0
 #, python-format
 msgid "Invoice posting not possible, business premisse %s is not active!"
-msgstr ""
+msgstr "Nije moguće potvrditi račun - poslovni prostor #s nije aktivan!"
 
 #. module: l10n_hr_account_oca
 #: model:ir.model.fields,help:l10n_hr_account_oca.field_fiskal_prostor__sequence_id
@@ -330,22 +330,22 @@ msgstr ""
 #. module: l10n_hr_account_oca
 #: model:ir.model,name:l10n_hr_account_oca.model_account_journal
 msgid "Journal"
-msgstr ""
+msgstr "Dnevnik"
 
 #. module: l10n_hr_account_oca
 #: model:ir.model,name:l10n_hr_account_oca.model_account_move
 msgid "Journal Entry"
-msgstr ""
+msgstr "Stavka dnevnika"
 
 #. module: l10n_hr_account_oca
 #: model:ir.model.fields,field_description:l10n_hr_account_oca.field_fiskal_prostor__journal_ids
 msgid "Journals"
-msgstr ""
+msgstr "Dnevnici"
 
 #. module: l10n_hr_account_oca
 #: model_terms:ir.ui.view,arch_db:l10n_hr_account_oca.view_fiskal_prostor_form
 msgid "Journals for this premise"
-msgstr ""
+msgstr "Dnevnici za ovaj prostor"
 
 #. module: l10n_hr_account_oca
 #: model:ir.model.fields,field_description:l10n_hr_account_oca.field_fiskal_uredjaj__user_ids
@@ -387,13 +387,13 @@ msgstr ""
 #: model:ir.model.fields,field_description:l10n_hr_account_oca.field_fiskal_prostor__lock
 #: model:ir.model.fields,field_description:l10n_hr_account_oca.field_fiskal_uredjaj__lock
 msgid "Lock"
-msgstr ""
+msgstr "Zaključano"
 
 #. module: l10n_hr_account_oca
 #: code:addons/l10n_hr_account_oca/models/account_invoice.py:0
 #, python-format
 msgid "Mising fiskal responsible person!\n"
-msgstr ""
+msgstr "Nedostaje odgovorna osoba za račun!\n"
 
 #. module: l10n_hr_account_oca
 #: model:ir.model.fields.selection,name:l10n_hr_account_oca.selection__fiskal_prostor__sljed_racuna__n
@@ -413,7 +413,7 @@ msgstr ""
 #. module: l10n_hr_account_oca
 #: model:ir.model.fields,field_description:l10n_hr_account_oca.field_fiskal_prostor__name
 msgid "Name"
-msgstr ""
+msgstr "Naziv"
 
 #. module: l10n_hr_account_oca
 #: model_terms:ir.ui.view,arch_db:l10n_hr_account_oca.view_users_defaults_form_l10n_hr
@@ -433,7 +433,7 @@ msgstr ""
 #. module: l10n_hr_account_oca
 #: model:ir.model.fields,help:l10n_hr_account_oca.field_res_company__fiskal_separator
 msgid "Only '/' or '-' are legaly defined as allowed"
-msgstr ""
+msgstr "Samo '/' ili '-' su zakonski dozvoljeni"
 
 #. module: l10n_hr_account_oca
 #: model:ir.model.fields,field_description:l10n_hr_account_oca.field_fiskal_uredjaj__oznaka_uredjaj
@@ -444,18 +444,18 @@ msgstr ""
 #: model:ir.actions.act_window,name:l10n_hr_account_oca.action_fiskal_uredjaj
 #: model:ir.ui.menu,name:l10n_hr_account_oca.menu_action_fiskal_uredjaj
 msgid "Payment registers"
-msgstr ""
+msgstr "Naplatni uređaji"
 
 #. module: l10n_hr_account_oca
 #: model:ir.model.fields,field_description:l10n_hr_account_oca.field_fiskal_prostor__mjesto_izdavanja
 msgid "Place of invoicing"
-msgstr ""
+msgstr "Mjesto izdavanja"
 
 #. module: l10n_hr_account_oca
 #: code:addons/l10n_hr_account_oca/models/account_invoice.py:0
 #, python-format
 msgid "Please select fiskal responsible partner and set it"
-msgstr ""
+msgstr "Molimo odaberite odgovornu osobu"
 
 #. module: l10n_hr_account_oca
 #: model:ir.model,name:l10n_hr_account_oca.model_fiskal_uredjaj
@@ -484,7 +484,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:l10n_hr_account_oca.field_account_move__fiskal_responsible_id
 #: model:ir.model.fields,field_description:l10n_hr_account_oca.field_account_payment__fiskal_responsible_id
 msgid "Responsible person"
-msgstr ""
+msgstr "Odgovorna osoba"
 
 #. module: l10n_hr_account_oca
 #: code:addons/l10n_hr_account_oca/models/res_users.py:0
@@ -542,29 +542,24 @@ msgstr ""
 #. module: l10n_hr_account_oca
 #: model:ir.model.fields.selection,name:l10n_hr_account_oca.selection__account_move__nacin_placanja__t
 msgid "TRANSACTION BANK ACCOUNT"
-msgstr ""
-
-#. module: l10n_hr_account_oca
-#: model:ir.model.fields.selection,name:l10n_hr_account_oca.selection__account_journal__default_nacin_placanja__t
-msgid "TRANSAKCIJSKI RAČUN"
-msgstr ""
+msgstr "TRANSAKCIJSKI RAČUN"
 
 #. module: l10n_hr_account_oca
 #: model:ir.model.constraint,message:l10n_hr_account_oca.constraint_fiskal_prostor_fiskal_prostor_uniq
 msgid "The code of the business premise must be unique per company !"
-msgstr ""
+msgstr "Oznaka poslovnog prostora mora biti jedinstvena unutar tvrtke"
 
 #. module: l10n_hr_account_oca
 #: model:ir.model.constraint,message:l10n_hr_account_oca.constraint_fiskal_uredjaj_fiskal_uredjaj_uniq
 msgid "The code of the payment register must be unique per business premise !"
-msgstr ""
+msgstr "Oznaka naplatnog uređaja mora biti jedinstvena unutar poslovnog prostora!"
 
 #. module: l10n_hr_account_oca
 #: model:ir.model.fields,field_description:l10n_hr_account_oca.field_account_bank_statement_line__vrijeme_izdavanja
 #: model:ir.model.fields,field_description:l10n_hr_account_oca.field_account_move__vrijeme_izdavanja
 #: model:ir.model.fields,field_description:l10n_hr_account_oca.field_account_payment__vrijeme_izdavanja
 msgid "Time of confirming"
-msgstr ""
+msgstr "Vrije potvrđivanja"
 
 #. module: l10n_hr_account_oca
 #: model:ir.model.fields,field_description:l10n_hr_account_oca.field_fiskal_prostor__uredjaj_ids
@@ -574,12 +569,12 @@ msgstr ""
 #. module: l10n_hr_account_oca
 #: model:ir.model,name:l10n_hr_account_oca.model_res_users
 msgid "Users"
-msgstr ""
+msgstr "Korisnici"
 
 #. module: l10n_hr_account_oca
 #: model:ir.model.fields,help:l10n_hr_account_oca.field_fiskal_prostor__oznaka_prostor
 msgid "Will be used as second part of fiscal invoice number"
-msgstr ""
+msgstr "Biti će korišten kao drugi dio fiskalnog broja"
 
 #. module: l10n_hr_account_oca
 #: code:addons/l10n_hr_account_oca/models/res_users.py:0
@@ -595,7 +590,7 @@ msgstr ""
 #. module: l10n_hr_account_oca
 #: model:ir.model.fields.selection,name:l10n_hr_account_oca.selection__fiskal_prostor__state__closed
 msgid "Zatvoren"
-msgstr ""
+msgstr "Closed"
 
 #. module: l10n_hr_account_oca
 #: code:addons/l10n_hr_account_oca/models/account_invoice.py:0
