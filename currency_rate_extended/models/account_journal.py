@@ -11,6 +11,6 @@ class AccountJournal(models.Model):
         comodel_name='res.currency.rate.provider',
         string="Currency rate provider",
         help="Specific currency rate provider for this journal",
-        old_name="currency_update_service_id"
+        #oldname="currency_update_service_id"
     )
 
