@@ -6,6 +6,5 @@ class Partner(models.Model):
     def get_oib(self):
         self.ensure_one()
         vat = self.vat.upper()  # in case someone entered in owercase?
-        res = 'HR' in vat and vat.replace('HR', '') or False
-        # if it does not start with HR it is not OIB!
+        res = 'HR' in vat and vat.replace('HR', '') or vat
         return res
