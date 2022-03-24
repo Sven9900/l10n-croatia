@@ -128,7 +128,7 @@ class FiskalProstor(models.Model):
             if not self.journal_ids:
                 raise Warning(
                     _('Activate not possible : no journals assigned!'))
-            self._check_sequence(self.sequence)
+            self._check_sequence(self.sequence_id)
 
         else:  # sljed_racuna == 'N'
             if self.sequence_id:
