@@ -213,7 +213,7 @@
             <field name="country" ref="base.hr"/>
             <!--<field name="prefix">2503007</field>-->
             <field name="bic">VBCR HR 22</field>
-            <field name="name">SBERBANK d.d. Zagreb</field>
+            <field name="name">Nova hrvatska banka d.d. Zagreb</field>
             <field name="zip">10000</field>
             <field name="city">Zagreb</field>
             <field name="street">Varšavska 9</field>
