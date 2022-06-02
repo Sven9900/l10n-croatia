@@ -134,6 +134,8 @@ class AccountMove(models.Model):
                 continue  # only for croatia
             if not move.is_invoice(include_receipts=False):
                 continue  # only invoices
+            if move.move_type not in ('out_invoice', 'out_refund'):
+                continue  # only required for out invoice/refind
             if move.fiskal_uredjaj_id.prostor_id.state != 'active':
                 raise Warning(_(
                         "Invoice posting not possible, "
