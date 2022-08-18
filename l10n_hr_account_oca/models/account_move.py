@@ -62,15 +62,19 @@ class AccountMove(models.Model):
             return res
         type = res.get('move_type')
         if type in ('out_invoice', 'out_refund'):
-            uredjaj = user.default_uredjaj
-            if uredjaj:
-                res['fiskal_uredjaj_id'] = uredjaj.id
+
             journal = res.get('journal_id')
             journal = self.env['account.journal'].browse(journal)
             responsible = journal.fiskal_responsible_id
             if not responsible:
                 responsible = user.company_id.fiskal_responsible_id
-
+            uredjaj = journal.fiskal_uredjaj_ids and journal.fiskal_uredjaj_ids[0] or None
+            # uzmi sve, i napravi presjek sa dozvoljneima za usera!!!
+            if uredjaj not in user.uredjaj_ids:
+                # provjeriti ima li koji drugi? koji su dozvoljeni korisniku?
+                pass
+            if uredjaj:
+                res['fiskal_uredjaj_id'] = uredjaj.id
             res['fiskal_responsible_id'] = responsible.id
         return res
 
