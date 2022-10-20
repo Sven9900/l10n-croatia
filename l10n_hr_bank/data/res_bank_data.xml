@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--
+Info 12.9.2022: https://tockanai.hr/banke
+-->
 <odoo>
     <data>
         <!-- Croatian banks -->
@@ -56,15 +59,15 @@
             <field name="city">Rijeka</field>
             <field name="street">Jadranski trg 3a</field>
         </record>
-        <record id="res_bank_hr_2493003" model="res.bank">
-            <field name="country" ref="base.hr"/>
-            <!--<field name="prefix">2493003</field>-->
-            <field name="bic">HKBO HR 2X</field>
-            <field name="name">HRVATSKA BANKA ZA OBNOVU I RAZVITAK Zagreb</field>
-            <field name="zip">10000</field>
-            <field name="city">Zagreb</field>
-            <field name="street">Trg Josipa Jurja Strossmayera 9</field>
-        </record>
+<!--        <record id="res_bank_hr_2493003" model="res.bank">-->
+<!--            <field name="country" ref="base.hr"/>-->
+<!--            &lt;!&ndash;<field name="prefix">2493003</field>&ndash;&gt;-->
+<!--            <field name="bic">HKBO HR 2X</field>-->
+<!--            <field name="name">HRVATSKA BANKA ZA OBNOVU I RAZVITAK Zagreb</field>-->
+<!--            <field name="zip">10000</field>-->
+<!--            <field name="city">Zagreb</field>-->
+<!--            <field name="street">Trg Josipa Jurja Strossmayera 9</field>-->
+<!--        </record>-->
         <record id="res_bank_hr_1001005" model="res.bank">
             <field name="country" ref="base.hr"/>
             <!--<field name="prefix">1001005</field>-->
@@ -141,7 +144,7 @@
             <field name="country" ref="base.hr"/>
             <!--<field name="prefix">2481000</field>-->
             <field name="bic">KREZ HR 2X</field>
-            <field name="name">KREDITNA BANKA ZAGREB d.d. Zagreb</field>
+            <field name="name">AGRAM BANKA d.d. Zagreb</field><!-- Kreditna banka Zagreb d.d. promijenila je 28. prosinca 2018. ime u Agram banka d.d.-->
             <field name="zip">10000</field>
             <field name="city">Zagreb</field>
             <field name="street">Ul. grada Vukovara 74</field>
@@ -177,10 +180,11 @@
             <field name="country" ref="base.hr"/>
             <!--<field name="prefix">4132003</field>-->
             <field name="bic">SPRM HR 22</field>
-            <field name="name">PRIMORSKA BANKA d.d. Rijeka</field>
+            <field name="name">PRIMORSKA BANKA d.d. Rijeka u likvidaciji</field>
             <field name="zip">51000</field>
             <field name="city">Rijeka</field>
             <field name="street">Scarpina 7</field>
+            <!-- Nad Primorskom bankom d.d. Rijeka postupak likvidacije otvoren je 21. lipnja 2018. godine.-->
         </record>
         <record id="res_bank_hr_2340009" model="res.bank">
             <field name="country" ref="base.hr"/>
@@ -231,28 +235,32 @@
             <field name="country" ref="base.hr"/>
             <!--<field name="prefix">2330003</field>-->
             <field name="bic">SOGE HR 22</field>
-            <field name="name">SOCIETE GENERALE-SPLITSKA BANKA d.d. Split</field>
+            <field name="name">SPLITSKA BANKA d.d. Split (OTP Grupa)</field>
             <field name="zip">21000</field>
             <field name="city">Split</field>
             <field name="street">Ruđera Boškovića 16</field>
+            <!-- Splitska banka d.d. pripojena je 3. prosinca 2018. OTP banci Hrvatska d.d. -->
         </record>
         <record id="res_bank_hr_2483005" model="res.bank">
             <field name="country" ref="base.hr"/>
             <!--<field name="prefix">2483005</field>-->
             <field name="bic">STED HR 22</field>
-            <field name="name">ŠTEDBANKA d.d. Zagreb</field>
+            <field name="name">ŠTEDBANKA d.d. Zagreb u likvidaciji</field>
             <field name="zip">10000</field>
             <field name="city">Zagreb</field>
             <field name="street">Slavonska avenija 3</field>
+            <!-- Glavna skupština Štedbanke d.d. je na sjednici održanoj 27. prosinca 2017. donijela
+            Odluku o otvaranju postupka redovne (dobrovoljne) likvidacije i prestanku poslovanja društva. -->
         </record>
         <record id="res_bank_hr_6717002" model="res.bank">
             <field name="country" ref="base.hr"/>
             <!--<field name="prefix">6717002</field>-->
             <field name="bic">ASBZ HR 22</field>
-            <field name="name">TESLA ŠTEDNA BANKA d.d. Zagreb</field>
+            <field name="name">TESLA ŠTEDNA BANKA d.d. Zagreb u stečaju</field>
             <field name="zip">10000</field>
             <field name="city">Zagreb</field>
             <field name="street">Trg J. F. Kennedyja 6 B</field>
+            <!-- Savjet Hrvatske narodne banke donio je 21. veljače 2019. odluku o pokretanju stečaja nad Tesla štednom bankom.-->
         </record>
         <record id="res_bank_hr_2381009" model="res.bank">
             <field name="country" ref="base.hr"/>
@@ -262,6 +270,7 @@
             <field name="zip">10000</field>
             <field name="city">Zagreb</field>
             <field name="street">Draškovićeva 58</field>
+            <!-- Veneto banka d.d. pripojena je 12. listopada 2018. Privrednoj banci Zagreb d.d. -->
         </record>
         <record id="res_bank_hr_2360000" model="res.bank">
             <field name="country" ref="base.hr"/>
