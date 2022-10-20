@@ -4,7 +4,7 @@
     "summary": "Croatia accounting localisation",
     "category": "Croatia",
     "images": [],
-    "version": "12.0.0.0.1",
+    "version": "16.0.0.0.1",
     "application": False,
 
     'author': "Decodio Application ltd.",
@@ -19,7 +19,7 @@
         "l10n_hr_base",
         # "account_invoice_tax_note",  # BOLE: testirati
         # "partner_firstname", # BOLE: odgovorna osoba
-        "partner_fiskal_responsible",
+        #"partner_fiskal_responsible", : DEPRECIATE!
     ],
     "excludes": [
         "l10n_hr_account"  # possible other localization module
@@ -36,7 +36,7 @@
         "views/account_move_view.xml",
         "views/account_journal_view.xml",
         "views/menuitems.xml",
-        "data/partner_fiskal_tag.xml"
+        #"data/partner_fiskal_tag.xml"
     ],
     "qweb": [],
     "demo": [],

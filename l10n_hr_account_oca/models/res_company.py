@@ -18,13 +18,13 @@ class Company(models.Model):
         default='/',  # required=True,    -> multicompany, move required to view
         help="Only '/' or '-' are legaly defined as allowed"
     )
-    fiskal_responsible_id = fields.Many2one(
-        comodel_name='res.partner',
-        string="Default Fiskal responsible person",
-        domain="[('fiskal_responsible','=',True)]",
-        help="Default company fiskal responsible person"
-             # BOLE: one more override per journal?
-    )
+    # fiskal_responsible_id = fields.Many2one(
+    #     comodel_name='res.partner',
+    #     string="Default Fiskal responsible person",
+    #     # domain="[('fiskal_responsible','=',True)]",
+    #     help="Default company fiskal responsible person"
+    #          # BOLE: one more override per journal?
+    # )
     # obracun_poreza = fields.Selection(
     #     selection=[
     #         ('none', 'Nije u sustavu PDV'),
@@ -57,7 +57,7 @@ class FiskalProstor(models.Model):
              " se više nesmiju mijenjati"
     )
     name = fields.Char(
-        string='Name', size=128)
+        string='Name', required=True, size=128)
     company_id = fields.Many2one(
         comodel_name='res.company',
         string='Company',
@@ -93,9 +93,9 @@ class FiskalProstor(models.Model):
         string='Uredjaji')
     state = fields.Selection(
         selection=[
-            ('draft', 'Nacrt'),
-            ('active', 'Aktivan'),
-            ('closed', 'Zatvoren')],
+            ('draft', 'Draft'),
+            ('active', 'Active'),
+            ('closed', 'Closed')],
         string='State',
         default='draft')
     journal_ids = fields.One2many(

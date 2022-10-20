@@ -46,12 +46,12 @@ class AccountMove(models.Model):
         readonly=True, states={'draft': [('readonly', False)]},
         )
 
-    fiskal_responsible_id = fields.Many2one(
-        comodel_name='res.partner',
-        string="Responsible person",
-        domain="[('fiskal_responsible','=',True)]",
-        help="Fiscal responsible person for this invoice",
-        readonly=True, states={'draft': [('readonly', False)]})
+    # fiskal_responsible_id = fields.Many2one(
+    #     comodel_name='res.partner',
+    #     string="Responsible person",
+    #     domain="[('fiskal_responsible','=',True)]",
+    #     help="Fiscal responsible person for this invoice",
+    #     readonly=True, states={'draft': [('readonly', False)]})
 
     @api.model
     def default_get(self, fields):
