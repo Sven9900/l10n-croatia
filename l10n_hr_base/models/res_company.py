@@ -36,31 +36,31 @@ class Company(models.Model):
         help='Broj obveze uplaćivanja zdravstvenog osiguranja')
     maticni_broj = fields.Char(string='Matični broj')
     # BOLE: ovo se nalazi u OCA/business_requirements modulu !!
-    podrucje_djelatnosti = fields.Selection(
-        selection=[
-            ('A', 'A-POLJOPRIVREDA, ŠUMARSTVO I RIBARSTVO'),
-            ('B', 'B-RUDARSTVO I VAĐENJE'),
-            ('C', 'C-PRERAĐIVAČKA INDUSTRIJA'),
-            ('D', 'D-OPSKRBA ELEKTRIČNOM ENERGIJOM, PLINOM, PAROM I KLIMATIZACIJA'),
-            ('E', 'E-OPSKRBA VODOM, UKLANJANJE OTPADNIH VODA, GOSPODARENJE OTPADOM TE DJELATNOSTI SANACIJE OKOLIŠA'),
-            ('F', 'F-GRAĐEVINARSTVO'),
-            ('G', 'G-TRGOVINA NA VELIKO I NA MALO; POPRAVAK MOTORNIH VOZILA I MOTOCIKALA'),
-            ('H', 'H-PRIJEVOZ I SKLADIŠTENJE'),
-            ('I', 'I-DJELATNOSTI PRUŽANJA SMJEŠTAJA TE PRIPREME I USLUŽIVANJA HRANE'),
-            ('J', 'J-INFORMACIJE I KOMUNIKACIJE'),
-            ('K', 'K-FINANCIJSKE DJELATNOSTI I DJELATNOSTI OSIGURANJA'),
-            ('L', 'L-POSLOVANJE NEKRETNINAMA'),
-            ('M', 'M-STRUČNE, ZNANSTVENE I TEHNIČKE DJELATNOSTI'),
-            ('N', 'N-ADMINISTRATIVNE I POMOĆNE USLUŽNE DJELATNOSTI'),
-            ('O', 'O-JAVNA UPRAVA I OBRANA; OBVEZNO SOCIJALNO OSIGURANJE'),
-            ('P', 'P-OBRAZOVANJE'),
-            ('Q', 'Q-DJELATNOSTI ZDRAVSTVENE ZAŠTITE I SOCIJALNE SKRBI'),
-            ('R', 'R-UMJETNOST, ZABAVA I REKREACIJA'),
-            ('S', 'S-OSTALE USLUŽNE DJELATNOSTI'),
-            ('T', 'T-DJELATNOSTI KUĆANSTAVA KAO POSLODAVACA'),
-            ('U', 'U-DJELATNOSTI IZVANTERITORIJALNIH ORGANIZACIJA I TIJELA'),
-        ], string='Područje djelatnosti',
-    )
+    # podrucje_djelatnosti = fields.Selection(
+    #     selection=[
+    #         ('A', 'A-POLJOPRIVREDA, ŠUMARSTVO I RIBARSTVO'),
+    #         ('B', 'B-RUDARSTVO I VAĐENJE'),
+    #         ('C', 'C-PRERAĐIVAČKA INDUSTRIJA'),
+    #         ('D', 'D-OPSKRBA ELEKTRIČNOM ENERGIJOM, PLINOM, PAROM I KLIMATIZACIJA'),
+    #         ('E', 'E-OPSKRBA VODOM, UKLANJANJE OTPADNIH VODA, GOSPODARENJE OTPADOM TE DJELATNOSTI SANACIJE OKOLIŠA'),
+    #         ('F', 'F-GRAĐEVINARSTVO'),
+    #         ('G', 'G-TRGOVINA NA VELIKO I NA MALO; POPRAVAK MOTORNIH VOZILA I MOTOCIKALA'),
+    #         ('H', 'H-PRIJEVOZ I SKLADIŠTENJE'),
+    #         ('I', 'I-DJELATNOSTI PRUŽANJA SMJEŠTAJA TE PRIPREME I USLUŽIVANJA HRANE'),
+    #         ('J', 'J-INFORMACIJE I KOMUNIKACIJE'),
+    #         ('K', 'K-FINANCIJSKE DJELATNOSTI I DJELATNOSTI OSIGURANJA'),
+    #         ('L', 'L-POSLOVANJE NEKRETNINAMA'),
+    #         ('M', 'M-STRUČNE, ZNANSTVENE I TEHNIČKE DJELATNOSTI'),
+    #         ('N', 'N-ADMINISTRATIVNE I POMOĆNE USLUŽNE DJELATNOSTI'),
+    #         ('O', 'O-JAVNA UPRAVA I OBRANA; OBVEZNO SOCIJALNO OSIGURANJE'),
+    #         ('P', 'P-OBRAZOVANJE'),
+    #         ('Q', 'Q-DJELATNOSTI ZDRAVSTVENE ZAŠTITE I SOCIJALNE SKRBI'),
+    #         ('R', 'R-UMJETNOST, ZABAVA I REKREACIJA'),
+    #         ('S', 'S-OSTALE USLUŽNE DJELATNOSTI'),
+    #         ('T', 'T-DJELATNOSTI KUĆANSTAVA KAO POSLODAVACA'),
+    #         ('U', 'U-DJELATNOSTI IZVANTERITORIJALNIH ORGANIZACIJA I TIJELA'),
+    #     ], string='Područje djelatnosti',
+    # )
 
     # pravni_oblik = fields.Selection([#TODO: Dopuniti sa ostalim opcijama?
     #     ('obrt', 'Obrt'),

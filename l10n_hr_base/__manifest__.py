@@ -20,7 +20,7 @@
     ],
     "external_dependencies": {
         "python": [
-            'tzlocal==2.0.0'
+            'tzlocal'
         ],
         "bin": []
     },

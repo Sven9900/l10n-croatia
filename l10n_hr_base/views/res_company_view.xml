@@ -16,7 +16,7 @@
                             <field name="zdravstveno"/>
                             <field name="maticni_broj"/>
                             <field name="nkd"/>
-                            <field name="podrucje_djelatnosti"/>
+<!--                            <field name="podrucje_djelatnosti"/>-->
                         </group>
                     </page>
                 </notebook>
