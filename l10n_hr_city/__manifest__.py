@@ -4,18 +4,20 @@
     "summary": """Adds location data for Croatia - Cities, post offices etc.""",
     "category": "Croatia",
     "images": [],
-    "version": "12.0.1.0.0",
+    "version": "16.0.1.0.0",
     "application": False,
 
-    'author': "Decodio Application ltd.",
-    'website': "http://www.decod.io",
-    "support": "support@decod.io",
+    'author': "Odoo Community Association (OCA)"
+              ", Decodio Applications d.o.o."
+              ", Davor Bojkić (DAJ MI 5)",
+    'website': "",
+    "support": "",
     "licence": "LGPL-3",
     #"price" : 20.00,   #-> only if module if sold!
     #"currency": "EUR",
 
     "depends": [
-        "base_address_city",
+        "base_address_extended",
     ],
     "external_dependencies": {
         "python": [],
