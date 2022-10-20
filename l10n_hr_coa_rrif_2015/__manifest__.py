@@ -47,7 +47,7 @@
     "demo": [],
 
     "auto_install": False,
-    "installable": True,
+    "installable": False,
     #"post_init_hook": '_install_l10n_hr_modules',
 }
 
