@@ -13,13 +13,13 @@
     "license": "LGPL-3",
     "depends": [
         "account",
-        #"account_storno",
+
         "base_vat",
         "base_iban",
         "l10n_hr_base",
         # "account_invoice_tax_note",  # BOLE: testirati
-        # "partner_firstname", # BOLE: odgovorna osoba
-        #"partner_fiskal_responsible", : DEPRECIATE!
+
+
     ],
     "excludes": [
         "l10n_hr_account"  # possible other localization module

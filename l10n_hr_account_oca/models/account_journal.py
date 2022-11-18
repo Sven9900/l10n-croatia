@@ -10,29 +10,20 @@ class AccountJournal(models.Model):
     code = fields.Char(size=16)   # DB: default size 5 mi se cini premalecki...
 
     # new fields needed for localization
-    prostor_id = fields.Many2one(
-        comodel_name='fiskal.prostor',
+    l10n_hr_prostor_id = fields.Many2one(
+        comodel_name='l10n.hr.fiskal.prostor',
         string='Prostor',
         help='Business premise')
-    fiskal_uredjaj_ids = fields.Many2many(
-        comodel_name='fiskal.uredjaj',
-        relation='fiskal_uredjaj_account_journal_rel',
+    l10n_hr_fiskal_uredjaj_ids = fields.Many2many(
+        comodel_name='l10n.hr.fiskal.uredjaj',
+        relation='l10n_hr_fiskal_uredjaj_account_journal_rel',
         column1='journal_id', column2='uredjaj_id',
         string='Dopusteni naplatni uredjaji')
-    # fiskal_responsible_id = fields.Many2one(
-    #     comodel_name='res.partner',
-    #     string="Responsible person",
-    #     domain="[('fiskal_responsible','=',True)]",
-    #     help="Default fiskal responsible person for this journal",
-    #     # default=lambda self: self.env.company.fiskal_resbonsible_id or False
-    # )
-    default_nacin_placanja = fields.Selection(
+
+    l10n_hr_default_nacin_placanja = fields.Selection(
         selection=[('T', 'TRANSAKCIJSKI RAČUN')],
         string="Default fiskal payment method",
         default="T")
-    croatia = fields.Boolean(related="company_id.croatia")
-
-
 
     # BOLE: ovo mozda kao config opciju?
     # @api.multi
@@ -72,15 +63,15 @@ class AccountJournal(models.Model):
             -> preferirati : Koristi sekvence po razdobljima ali netreba kontrola!
         """
 
-        if vals.get('prostor_id') or vals.get('fiskal_uredjaj_ids'):
+        if vals.get('l10n_hr_prostor_id') or vals.get('l10n_hr_fiskal_uredjaj_ids'):
             self._check_write_vals(vals)
         return super(AccountJournal, self).write(vals)
 
     def _check_write_vals(self, vals):
-        prostor_id = vals.get('prostor_id', False)
+        prostor_id = vals.get('l10n_hr_prostor_id', False)
         if prostor_id:
             prostor = prostor_id and \
-                      self.env['fiskal.prostor'].browse(prostor_id)
+                      self.env['l10n.hr.fiskal.prostor'].browse(prostor_id)
             msg = "Prostor: %s " % prostor.name
             if prostor.sljed_racuna == 'P':
                 if not prostor.sequence_id:

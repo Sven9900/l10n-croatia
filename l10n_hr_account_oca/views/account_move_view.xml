@@ -8,12 +8,12 @@
         <field name="arch" type="xml">
 
             <field name="partner_id" position="after">
-                <field name="fiskal_uredjaj_id" widget="selection"
+                <field name="l10n_hr_fiskal_uredjaj_id" widget="selection"
                        attrs="{'required':[('move_type','in',['out_invoice','out_refund'])],
                                'invisible':['|', ('country_code','!=', 'HR'),
                                 ('move_type','not in',['out_invoice','out_refund'])
                                ]}"/>
-                <field name="nacin_placanja"
+                <field name="l10n_hr_nacin_placanja"
                        attrs="{'required':[('move_type','in',['out_invoice','out_refund'])],
                                'invisible':['|', ('country_code','!=', 'HR'),
                                 ('move_type','not in',['out_invoice','out_refund'])
@@ -29,16 +29,11 @@
                                ]}">
                     <group colspan="4" col="4">
                         <field name="date_document" /> <!-- do i need it? -->
-                        <field name="vrijeme_izdavanja" readonly="1"/>
-<!--                        <field name="fiskal_responsible_id" create="0" delete="0"/>-->
-<!--                        <field name="fiskal_user_id" create="0" delete="0"/>-->
-                        <field name="fiskalni_broj" readonly="1"/>
+                        <field name="l10n_hr_vrijeme_izdavanja" readonly="1"/>
+                        <field name="l10n_hr_fiskalni_broj" readonly="1"/>
                     </group>
                 </page>
             </notebook>
-<!--            <xpath expr="//field[@name='tax_line_ids']/tree/field[@name='amount_total']" position="before">-->
-<!--                <field name="base"/>-->
-<!--            </xpath>-->
         </field>
     </record>
 
@@ -51,7 +46,7 @@
 <!--&lt;!&ndash;-->
 <!--            <field name="invoice_number" position="before">-->
 <!--                maybe this is not needed, but anyway...some invoices may not have fiskal number?-->
-<!--                <field name="fiskalni_broj"/>-->
+<!--                <field name="l10n_hr_fiskalni_broj"/>-->
 <!--            </field>&ndash;&gt;-->
 
 <!--            <field name="payment_term_id" position="replace">&ndash;&gt;-->

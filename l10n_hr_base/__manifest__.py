@@ -5,33 +5,26 @@
     "summary": """Croatia base localization data""",
     "category": "Croatia",
     "images": [],
-    "version": "12.0.1.0.0",
+    "version": "16.0.1.0.0",
     "application": False,
 
-    'author': "Decodio Application ltd., DAJ MI 5",
-    'website': "http://www.decod.io",
-    "support": "support@decod.io",
+    'author': "DAJ MI 5",
+    'website': "",
+    "support": "",
     "licence": "LGPL-3",
-    #"price" : 20.00,   #-> only if module if sold!
-    #"currency": "EUR",
 
     "depends": [
 
     ],
     "external_dependencies": {
         "python": [
-            'tzlocal'
+            'tzlocal==2.0.0'
         ],
         "bin": []
     },
     "data": [
-
         "views/res_company_view.xml",
         "data/module_category_croatia.xml",
-        # moved to NKD
-        #"views/l10n_hr_nkd_view.xml",
-        #"data/localization_settings.xml",
-        #"security/ir.model.access.csv",
     ],
     "qweb": [],
     "demo": [],

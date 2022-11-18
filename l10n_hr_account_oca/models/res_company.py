@@ -1,16 +1,16 @@
 
 from odoo import api, fields, models, _
-from odoo.exceptions import Warning, ValidationError
+from odoo.exceptions import UserError, ValidationError
 
 
 class Company(models.Model):
     _inherit = 'res.company'
 
-    fiskal_prostor_ids = fields.One2many(
-        comodel_name='fiskal.prostor',
+    l10n_hr_fiskal_prostor_ids = fields.One2many(
+        comodel_name='l10n.hr.fiskal.prostor',
         inverse_name='company_id',
         string='Business premises')
-    fiskal_separator = fields.Selection(
+    l10n_hr_fiskal_separator = fields.Selection(
         selection=[
             ('/', '/'),
             ('-', '-')],
@@ -18,13 +18,6 @@ class Company(models.Model):
         default='/',  # required=True,    -> multicompany, move required to view
         help="Only '/' or '-' are legaly defined as allowed"
     )
-    # fiskal_responsible_id = fields.Many2one(
-    #     comodel_name='res.partner',
-    #     string="Default Fiskal responsible person",
-    #     # domain="[('fiskal_responsible','=',True)]",
-    #     help="Default company fiskal responsible person"
-    #          # BOLE: one more override per journal?
-    # )
     # obracun_poreza = fields.Selection(
     #     selection=[
     #         ('none', 'Nije u sustavu PDV'),
@@ -48,7 +41,7 @@ class Company(models.Model):
         return True
 
 class FiskalProstor(models.Model):
-    _name = 'fiskal.prostor'
+    _name = 'l10n.hr.fiskal.prostor'
     _description = 'Poslovni prostori - fiskalizacija'
 
     lock = fields.Boolean(
@@ -66,7 +59,7 @@ class FiskalProstor(models.Model):
             'fiskal.prostor'))
     user_ids = fields.Many2many(
         comodel_name='res.users',
-        relation='fiskal_prostor_res_users_rel',
+        relation='l10n_hr_fiskal_prostor_res_users_rel',
         column1='prostor_id', column2='user_id',
         string='Allowed users')
 
@@ -88,7 +81,7 @@ class FiskalProstor(models.Model):
              " as a legaly required element"
     )
     uredjaj_ids = fields.One2many(
-        comodel_name='fiskal.uredjaj',
+        comodel_name='l10n.hr.fiskal.uredjaj',
         inverse_name='prostor_id',
         string='Uredjaji')
     state = fields.Selection(
@@ -100,7 +93,7 @@ class FiskalProstor(models.Model):
         default='draft')
     journal_ids = fields.One2many(
         comodel_name='account.journal',
-        inverse_name='prostor_id',
+        inverse_name='l10n_hr_prostor_id',
         string="Journals",
         help="Allowed invoicing journals for this business premisse")
     sequence_id = fields.Many2one(
@@ -119,14 +112,14 @@ class FiskalProstor(models.Model):
 
     def _check_sequence(self, sequence):
         if not sequence:
-            raise Warning(_('Sequence is required for activating'))
+            raise UserError(_('Sequence is required for activating'))
         if sequence.prefix or sequence.suffix:
-            raise Warning(_('Fiscal sequence should not contian prefix nor suffix'))
+            raise UserError(_('Fiscal sequence should not contian prefix nor suffix'))
 
     def button_activate_prostor(self):
         if self.sljed_racuna == 'P':
             if not self.journal_ids:
-                raise Warning(
+                raise UserError(
                     _('Activate not possible : no journals assigned!'))
             self._check_sequence(self.sequence_id)
 
@@ -152,7 +145,7 @@ class FiskalProstor(models.Model):
 
 
 class FiskalUredjaj(models.Model):
-    _name = 'fiskal.uredjaj'
+    _name = 'l10n.hr.fiskal.uredjaj'
     _description = 'Podaci o naplatnim uredjajima'
 
     lock = fields.Boolean(
@@ -162,7 +155,7 @@ class FiskalUredjaj(models.Model):
     name = fields.Char(
         string='Naziv naplatnog uredjaja')
     prostor_id = fields.Many2one(
-        comodel_name='fiskal.prostor',
+        comodel_name='l10n.hr.fiskal.prostor',
         string='Prostor',
         help='Prostor naplatnog uredjaja',
         ondelete="restrict")
@@ -177,12 +170,12 @@ class FiskalUredjaj(models.Model):
         size=6, required="True")
     user_ids = fields.Many2many(
         comodel_name='res.users',
-        relation='fiskal_uredjaj_res_users_rel',
+        relation='l10n_hr_fiskal_uredjaj_res_users_rel',
         column1='uredjaj_id', column2='user_id',
         string='Korisnici s pravom knjiženja')
     journal_ids = fields.Many2many(
         comodel_name='account.journal',
-        relation='fiskal_uredjaj_account_journal_rel',
+        relation='l10n_hr_fiskal_uredjaj_account_journal_rel',
         column1='uredjaj_id', column2='journal_id',
         string='Dnevnici',
         domain="[('type', 'in', ['sale','sale_refund'])]")

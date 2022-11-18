@@ -18,12 +18,11 @@
 <!--				</field>-->
                 <group name="l10n_hr_legal" position="after">
                     <group string="Fiscal data" name="l10n_hr_fiskal" col="4">
-                        <field name="fiskal_separator"
-                               attrs="{'required':[('croatia','=',True)]}"/>
+                        <field name="l10n_hr_fiskal_separator"/><!-- attrs="{'required':[('croatia','=',True)]}"-->
 <!--                        <field name="fiskal_responsible_id"/>-->
                     </group>
-                    <label string="Business premisses" for="fiskal_prostor_ids"/>
-                    <field name="fiskal_prostor_ids" colspan="4" nolabel="1"/>
+                    <label string="Business premisses" for="l10n_hr_fiskal_prostor_ids"/>
+                    <field name="l10n_hr_fiskal_prostor_ids" colspan="4" nolabel="1"/>
                 </group>
             </field>
         </record>
@@ -31,7 +30,7 @@
         <!-- Fiskal Prostor -->
         <record id="view_fiskal_prostor_tree" model="ir.ui.view">
             <field name="name">view_fiskal_prostor_tree</field>
-            <field name="model">fiskal.prostor</field>
+            <field name="model">l10n.hr.fiskal.prostor</field>
             <field name="arch" type="xml">
                 <tree ><!--string="Poslovni prostor"-->
                     <field name="company_id" invisible="1"/>
@@ -44,7 +43,7 @@
         </record>
         <record id="view_fiskal_prostor_form" model="ir.ui.view">
             <field name="name">view_fiskal_prostor_form</field>
-            <field name="model">fiskal.prostor</field>
+            <field name="model">l10n.hr.fiskal.prostor</field>
             <field name="arch" type="xml">
                 <form>
                     <header>
@@ -68,7 +67,7 @@
                             <field name="sljed_racuna"
                                    attrs="{'readonly':[('lock','=',True)]}"/>
                             <field name="sequence_id"
-                                   context="{}"
+                                   context="{'default_implementation':'no_gap'}"
                                    attrs="{'invisible':['|',('sljed_racuna','=','N'),
                                                             ('oznaka_prostor','=','')
                                            ]}"/><!--'required':[('sljed_racuna','=','P')],-->
@@ -98,7 +97,7 @@
         <record id="action_fiskal_prostor" model="ir.actions.act_window">
             <field name="name">Business premisses</field>
             <field name="type">ir.actions.act_window</field>
-            <field name="res_model">fiskal.prostor</field>
+            <field name="res_model">l10n.hr.fiskal.prostor</field>
             <field name="view_mode">tree,form</field>
             <!--field name="domain">[('id','=',active_id)]</field>-->
         </record>
@@ -111,7 +110,7 @@
         <!--Fiskal Uredjaj-->
         <record  id="view_fiskal_uredjaj_tree" model="ir.ui.view">
             <field name="name">view_fiskal_uredjaj_tree</field>
-            <field name="model">fiskal.uredjaj</field>
+            <field name="model">l10n.hr.fiskal.uredjaj</field>
             <field name="arch" type="xml">
                 <tree><!--string="Naplatni uređaji" -->
                     <field name="name"/>
@@ -124,7 +123,7 @@
         </record>
         <record id="view_fiskal_uredjaj_form" model="ir.ui.view" >
             <field name="name">view_fiskal_uredjaj_form</field>
-            <field name="model">fiskal.uredjaj</field>
+            <field name="model">l10n.hr.fiskal.uredjaj</field>
             <field name="arch" type="xml">
                 <form><!--string="Fiskalizacija - uređaji"-->
                     <group >
@@ -150,7 +149,7 @@
         <record id="action_fiskal_uredjaj" model="ir.actions.act_window">
             <field name="name">Payment registers</field>
             <field name="type">ir.actions.act_window</field>
-            <field name="res_model">fiskal.uredjaj</field>
+            <field name="res_model">l10n.hr.fiskal.uredjaj</field>
             <field name="view_mode">tree,form</field>
         </record>
         <menuitem id="menu_action_fiskal_uredjaj"

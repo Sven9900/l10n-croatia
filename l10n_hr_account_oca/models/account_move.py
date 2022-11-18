@@ -24,65 +24,56 @@ class AccountMove(models.Model):
 
     # DB: namjerno su nazivi polja na hrvatskom!
     # radi potencijalno drugih lokalizacija
-    vrijeme_izdavanja = fields.Char(
+    l10n_hr_vrijeme_izdavanja = fields.Char(
         # DB: namjerno kao char da izbjegnem timezone problem!
         string="Time of confirming",
         help="Croatia Fiskal datetime value", copy=False,
         readonly=True, states={'draft': [('readonly', False)]})
-    fiskalni_broj = fields.Char(
+    l10n_hr_fiskalni_broj = fields.Char(
         string="Fiskal number", copy=False,
         help="Fiskalni broj računa, ukoliko je različit od broja računa",
         readonly=True, states={'draft': [('readonly', False)]})
     # i za ulazne račune se ovdje moze upisati
-    nacin_placanja = fields.Selection(
+    l10n_hr_nacin_placanja = fields.Selection(
         selection=[('T', 'TRANSACTION BANK ACCOUNT')],
         string="Croatia payment means", default="T",
         readonly=True, states={'draft': [('readonly', False)]})
 
-    fiskal_uredjaj_id = fields.Many2one(
-        comodel_name='fiskal.uredjaj',
+    l10n_hr_fiskal_uredjaj_id = fields.Many2one(
+        comodel_name='l10n.hr.fiskal.uredjaj',
         string="Fiskal device",
         help="Device on which is fiscal payment registred",
         readonly=True, states={'draft': [('readonly', False)]},
         )
 
-    # fiskal_responsible_id = fields.Many2one(
-    #     comodel_name='res.partner',
-    #     string="Responsible person",
-    #     domain="[('fiskal_responsible','=',True)]",
-    #     help="Fiscal responsible person for this invoice",
-    #     readonly=True, states={'draft': [('readonly', False)]})
 
     @api.model
     def default_get(self, fields):
         res = super(AccountMove, self).default_get(fields)
         user = self.env.user
 
-        if not user.company_id.croatia:
+        if user.company_id.account_fiscal_country_id.code != 'HR':
             return res
         type = res.get('move_type')
         if type in ('out_invoice', 'out_refund'):
-
             journal = res.get('journal_id')
             journal = self.env['account.journal'].browse(journal)
-            responsible = journal.fiskal_responsible_id
-            if not responsible:
-                responsible = user.company_id.fiskal_responsible_id
+
             uredjaj = journal.fiskal_uredjaj_ids and journal.fiskal_uredjaj_ids[0] or None
             # uzmi sve, i napravi presjek sa dozvoljneima za usera!!!
             if uredjaj not in user.uredjaj_ids:
                 # provjeriti ima li koji drugi? koji su dozvoljeni korisniku?
                 pass
             if uredjaj:
-                res['fiskal_uredjaj_id'] = uredjaj.id
-            res['fiskal_responsible_id'] = responsible.id
+                res['l10n_hr_fiskal_uredjaj_id'] = uredjaj.id
+
         return res
 
     def _gen_fiskal_number(self):
         self.ensure_one()  # one at a time only!
-        prostor = self.fiskal_uredjaj_id.prostor_id
-        uredjaj = self.fiskal_uredjaj_id
-        separator = self.company_id.fiskal_separator
+        prostor = self.l10n_hr_fiskal_uredjaj_id.prostor_id
+        uredjaj = self.l10n_hr_fiskal_uredjaj_id
+        separator = self.company_id.l10n_hr_fiskal_separator
 
         sequence = prostor.sljed_racuna == 'P' and prostor.sequence_id \
                     or uredjaj.sequence_id
@@ -99,16 +90,18 @@ class AccountMove(models.Model):
         self.ensure_one()
         if not self.date_document:
             self.date_document = fields.Date.today()
-        if not self.vrijeme_izdavanja:
+        if not self.date_delivery:
+            self.date_delivery = fields.Date.today()
+        if not self.l10n_hr_vrijeme_izdavanja:
             datum = self.company_id.get_l10n_hr_time_formatted()
-            self.vrijeme_izdavanja = datum['datum_racun']
+            self.l10n_hr_vrijeme_izdavanja = datum['datum_racun']
 
     def _set_fiskal_number(self):
         self.ensure_one()
         if not self.date:
             self.date = fields.Date.today()
         self.env.cr.execute("""
-            select name, fiskalni_broj, date from account_move
+            select name, l10n_hr_fiskalni_broj, date from account_move
             where journal_id = %(journal)s
               and state = 'posted'
               and date > %(date)s
@@ -123,30 +116,30 @@ class AccountMove(models.Model):
             for name, broj, dt in res:
                 msg += "\n %s - %s from %s" % (name, broj, dt)
             raise Warning(msg)
-        self.fiskalni_broj = self._gen_fiskal_number()
+        self.l10n_hr_fiskalni_broj = self._gen_fiskal_number()
         # now and set lock on journals,
         # after first posting journal is locked for changes
-        if not self.fiskal_uredjaj_id.lock:
-            self.fiskal_uredjaj_id.lock = True
-        if not self.fiskal_uredjaj_id.prostor_id.lock:
-            self.fiskal_uredjaj_id.prostor_id.lock = True
+        if not self.l10n_hr_fiskal_uredjaj_id.lock:
+            self.l10n_hr_fiskal_uredjaj_id.lock = True
+        if not self.l10n_hr_fiskal_uredjaj_id.prostor_id.lock:
+            self.l10n_hr_fiskal_uredjaj_id.prostor_id.lock = True
 
     def _post(self, soft=True):
         posted = super()._post(soft=soft)
         for move in posted:
-            if not move.company_id.croatia:
+            if move.company_id.account_fiscal_country_id.code != 'HR':
                 continue  # only for croatia
             if not move.is_invoice(include_receipts=False):
                 continue  # only invoices
             if move.move_type not in ('out_invoice', 'out_refund'):
                 continue  # only required for out invoice/refind
-            if move.fiskal_uredjaj_id.prostor_id.state != 'active':
+            if move.l10n_hr_fiskal_uredjaj_id.prostor_id.state != 'active':
                 raise Warning(_(
                         "Invoice posting not possible, "
                         "business premisse %s is not active!" %
-                        move.fiskal_uredjaj_id.prostor_id.name
+                        move.l10n_hr_fiskal_uredjaj_id.prostor_id.name
                     ))
             move._set_fiskal_dates()
-            if not move.fiskalni_broj:
+            if not move.l10n_hr_fiskalni_broj:
                 move._set_fiskal_number()
         return posted

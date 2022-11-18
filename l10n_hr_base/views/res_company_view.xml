@@ -7,16 +7,16 @@
             <field name="inherit_id" ref="base.view_company_form"/>
             <field name="arch" type="xml">
                 <field name="country_id" position="after">
-                    <field name="croatia" invisible="1"/>
+
                 </field>
                 <notebook position="inside">
-                    <page string="Croatia Company data" attrs="{'invisible':[('croatia','=',False)]}">
+                    <page string="Croatia Company data" ><!-- attrs="{'invisible':[('croatia','=',False)]}" -->
                         <group string="Legal data" col="4" name="l10n_hr_legal">
-                            <field name="mirovinsko"/>
-                            <field name="zdravstveno"/>
-                            <field name="maticni_broj"/>
-                            <field name="nkd"/>
-<!--                            <field name="podrucje_djelatnosti"/>-->
+                            <field name="l10n_hr_mirovinsko"/>
+                            <field name="l10n_hr_zdravstveno"/>
+                            <field name="l10n_hr_maticni_broj"/>
+                            <field name="l10n_hr_nkd"/>
+
                         </group>
                     </page>
                 </notebook>

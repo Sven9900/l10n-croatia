@@ -11,7 +11,7 @@
         'Davor Bojkić (DAJ MI 5),'
         'Odoo Community Association (OCA)',
     'license': 'AGPL-3',
-    'installable': True,
+    'installable': False,
     'application': False,
     'depends': [
         'currency_rate_extended',
