@@ -14,7 +14,7 @@
     "licence": "LGPL-3",
 
     "depends": [
-
+        "l10n_hr",  # for company viwq
     ],
     "external_dependencies": {
         "python": [
@@ -24,7 +24,7 @@
     },
     "data": [
         "views/res_company_view.xml",
-        "data/module_category_croatia.xml",
+
     ],
     "qweb": [],
     "demo": [],

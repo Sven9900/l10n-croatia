@@ -1,22 +1,19 @@
 <?xml version="1.0"?>
 <odoo>
     <data>
-        <record id="view_company_l10n_hr_base" model="ir.ui.view">
-            <field name="name">view.company.l10n.hr.base</field>
+        <record id="view_l10n_hr_base_company_data" model="ir.ui.view">
+            <field name="name">view.l10n.hr.base.company</field>
             <field name="model">res.company</field>
-            <field name="inherit_id" ref="base.view_company_form"/>
+            <field name="inherit_id" ref="l10n_hr.view_l10n_hr_company_form"/>
             <field name="arch" type="xml">
-                <notebook position="inside">
-                    <page string="Croatia Company data" ><!-- attrs="{'invisible':[('croatia','=',False)]}" -->
-                        <group string="Legal data" col="4" name="l10n_hr_legal">
-                            <field name="l10n_hr_mirovinsko"/>
-                            <field name="l10n_hr_zdravstveno"/>
-                            <field name="l10n_hr_maticni_broj"/>
-                            <field name="l10n_hr_nkd"/>
-
-                        </group>
-                    </page>
-                </notebook>
+                <page name="croatia_data" position="inside">
+                    <group string="Legal data" col="4" name="l10n_hr_legal">
+                        <field name="l10n_hr_mirovinsko"/>
+                        <field name="l10n_hr_zdravstveno"/>
+                        <field name="l10n_hr_maticni_broj"/>
+                        <field name="l10n_hr_nkd"/>
+                    </group>
+                </page>
             </field>
         </record>
     </data>
