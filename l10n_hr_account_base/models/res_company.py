@@ -201,7 +201,7 @@ class FiskalUredjaj(models.Model):
         help='Business premisee where this device is operating',
         ondelete="restrict")
     sljed_racuna = fields.Selection(
-        string='Sequence by', stored="True",
+        string='Sequence by', store=True,
         related='prostor_id.sljed_racuna')
     oznaka_uredjaj = fields.Integer(     # -> kad se šalje xml onda strict integer!
         string='Device code', required="True",

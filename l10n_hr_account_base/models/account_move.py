@@ -109,7 +109,6 @@ class AccountMove(models.Model):
         if l10n_hr_errors:
             msg = _("Invoice posting not possible:\n") + "\n".join(l10n_hr_errors)
             raise ValidationError(msg)
-
         # set date fields
         if not self.l10n_hr_date_document:
             self.l10n_hr_date_document = fields.Date.today()
@@ -139,7 +138,6 @@ class AccountMove(models.Model):
                 continue  # only for croatia
             if not move.is_invoice(include_receipts=False):
                 continue  # only invoices
-            if move.move_type not in ('out_invoice', 'out_refund'):
-                continue  # only required for out invoice/refund
-            move._l10n_hr_post_out_invoice()
+            if move.move_type in ('out_invoice', 'out_refund'):
+                move._l10n_hr_post_out_invoice()
         return posted

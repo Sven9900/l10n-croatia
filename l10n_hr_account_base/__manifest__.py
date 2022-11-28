@@ -2,7 +2,7 @@
 {
     "name": "Croatia - Accounting base",
     "summary": "Croatia accounting localisation",
-    "category": "Croatia",
+    "category": "Accounting/Localizations/Croatia",
     "images": [],
     "version": "16.0.0.0.1",
     "application": False,
