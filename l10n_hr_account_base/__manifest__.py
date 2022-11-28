@@ -16,13 +16,13 @@
 
         "base_vat",
         "base_iban",
-        "l10n_hr_base",
+        "l10n_hr",
         # "account_invoice_tax_note",  # BOLE: testirati
 
 
     ],
     "excludes": [
-        "l10n_hr_account"  # possible other localization module
+        #"l10n_hr_account"  # possible other localization module
     ],
     "external_dependencies": {
         "python": [],
@@ -32,7 +32,7 @@
         "security/ir.model.access.csv",
         #"views/res_config_view.xml",
         "views/res_company_view.xml",
-        "views/res_users_view.xml",
+        #"views/res_users_view.xml",
         "views/account_move_view.xml",
         "views/account_journal_view.xml",
         "views/menuitems.xml",

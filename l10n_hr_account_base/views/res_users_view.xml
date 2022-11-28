@@ -11,16 +11,13 @@
                     <group>
                         <field name="l10n_hr_prostor_ids" widget="many2many_tags" />
                     </group>
-                    <!-- DB: TODO: remove notebook, group fiedls -->
-                    <notebook>
-                    <page string="Naplatni uređaji" attrs="{'invisible':[('l10n_hr_prostor_ids','=',[])]}">
+                    <group attrs="{'invisible':[('l10n_hr_prostor_ids','=',[])]}">
                         <button string="Dohvati sve uređaje" type="object" name="get_all_uredjaj"/>
                         <group>
                             <field name="l10n_hr_uredjaj_ids" widget="many2many_tags"/>
                             <field name="l10n_hr_default_uredjaj" widget="selection" /><!-- domain="[('id', 'in', uredjaj_ids[0][2])]" vidi dolje...-->
                         </group>
-                    </page>
-                    </notebook>
+                    </group>
 
                 </page>
             </notebook>
