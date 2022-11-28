@@ -6,9 +6,6 @@
             <field name="model">res.company</field>
             <field name="inherit_id" ref="base.view_company_form"/>
             <field name="arch" type="xml">
-                <field name="country_id" position="after">
-
-                </field>
                 <notebook position="inside">
                     <page string="Croatia Company data" ><!-- attrs="{'invisible':[('croatia','=',False)]}" -->
                         <group string="Legal data" col="4" name="l10n_hr_legal">
