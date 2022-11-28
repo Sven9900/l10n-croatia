@@ -2,11 +2,9 @@
 <odoo>
     <data>
         <menuitem id="menu_finance_config_croatia"
-                  name="Croatia specific settings"
+                  name="Croatia settings"
                   sequence="2"
                   parent="account.menu_finance_configuration"/>
-
-
         <!-- -->
         <record id="view_l10n_hr_account_company_form" model="ir.ui.view">
             <field name="name">view.l10n_hr.company.form</field>
@@ -16,10 +14,9 @@
                 <xpath expr="//page[@name='croatia_data']" position="inside">
                     <group name="l10n_hr_legal" position="after">
                         <group string="Fiscal data" name="l10n_hr_fiskal" col="4">
-                            <field name="l10n_hr_fiskal_separator"/><!-- attrs="{'required':[('croatia','=',True)]}"-->
-
+                            <field name="l10n_hr_fiskal_separator"/>
                         </group>
-                        <notebook>
+                        <notebook name="croatia_notebook">
                             <page string="Business premisses">
                                 <field name="l10n_hr_fiskal_prostor_ids" colspan="4" nolabel="1"/>
                             </page>
@@ -53,7 +50,7 @@
                 <tree string="Business premises"
                       decoration-success="state == 'active'"
                       decoration-warning="state == 'close'"
-                      decoration-info="state == 'pause'"><!--string="Poslovni prostor"-->
+                      decoration-info="state == 'pause'">
                     <field name="company_id" invisible="1"/>
                     <field name="name"/>
                     <field name="oznaka_prostor"/>
@@ -112,7 +109,6 @@
                                         <field name="mjesto_izdavanja" optional="hide"/>
                                         <field name="journal_ids" widget="many2many_tags"
                                                domain="['&amp;',('type','=','sale'),'|',('l10n_hr_prostor_id','=',False),('l10n_hr_prostor_id','=', prostor_id)]"/>
-<!--                                        <field name="user_ids" widget="many2many_tags" />-->
                                         <field name="sequence_id" optional="hide"
                                                attrs="{'invisible':[('sljed_racuna','=','P')]}"/>
                                         <field name="sljed_racuna" invisible="1"/>
@@ -156,7 +152,6 @@
             <field name="type">ir.actions.act_window</field>
             <field name="res_model">l10n.hr.fiskal.prostor</field>
             <field name="view_mode">tree,form</field>
-            <!--field name="domain">[('id','=',active_id)]</field>-->
         </record>
         <menuitem id="menu_action_fiskal_prostor"
                   action="action_fiskal_prostor"

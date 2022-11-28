@@ -33,7 +33,7 @@ class AccountMove(models.Model):
         readonly=True, states={'draft': [('readonly', False)]})
     # i za ulazne račune se ovdje moze upisati
     l10n_hr_nacin_placanja = fields.Selection(
-        selection=[('T', 'TRANSACTION BANK ACCOUNT')],
+        selection=[('T', 'Bank transfer')],
         string="Croatia payment means", default="T",
         readonly=True, states={'draft': [('readonly', False)]},
         help="According to Fiscalization Law and regulative "

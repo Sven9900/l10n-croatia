@@ -20,28 +20,10 @@ class AccountJournal(models.Model):
         string='Allowed PoS Devices')
 
     l10n_hr_default_nacin_placanja = fields.Selection(
-        selection=[('T', 'BANK TRANSACTION')],
+        selection=[('T', 'Bank transfer')],
         string="Default fiskal payment method for this journal",
         default="T")
 
-    def write(self, vals):
-        """
-        TODO: provjere validnosti
-            1 - prostor: izdavanje računa na nivou uređaja:
-                - samo jedan dozvoljeni uređaj
-            2 - prostor: izdavanje računa na nivou prostora:
-                - svi uređaji moraju biti iz istog prostora, i aktivni!
-                - provjeri da li ima sequence id, ako nema dodaj!
-            3. Sekvenca: Smije imati prefix,
-                trenutno jedino podržano od dinamickih: %(year)s i %(y)s
-                drugi prefiksi trebaju dopunu
-
-            -> preferirati : Koristi sekvence po razdobljima ali netreba kontrola!
-        """
-
-        # if vals.get('l10n_hr_prostor_id') or vals.get('l10n_hr_fiskal_uredjaj_ids'):
-        #     self._check_write_vals(vals)
-        return super(AccountJournal, self).write(vals)
 
 
 

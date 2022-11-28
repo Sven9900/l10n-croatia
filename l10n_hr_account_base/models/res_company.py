@@ -50,13 +50,8 @@ class FiskalProstor(models.Model):
         comodel_name='res.company',
         string='Company', required="True",
         default=lambda self: self.env['res.company']._company_default_get(
-            'fiskal.prostor'))
-    # user_ids = fields.Many2many(
-    #     comodel_name='res.users',
-    #     relation='l10n_hr_fiskal_prostor_res_users_rel',
-    #     column1='prostor_id', column2='user_id',
-    #     string='Allowed users')
-
+            'fiskal.prostor')
+    )
     oznaka_prostor = fields.Char(
         string='Fiscal Code',
         required="True", size=20,
@@ -67,28 +62,33 @@ class FiskalProstor(models.Model):
             ('N', 'On PoS device level'),
             ('P', 'On business premise level')],
         string='Sequence by', required="True",
-        default='P')
+        default='P'
+    )
     mjesto_izdavanja = fields.Char(
         string="Place of invoicing",  # required="True",
         help="It will be used as place of invoicing for this premise, "
-             " as a legaly required element")
+             " as a legaly required element"
+    )
     uredjaj_ids = fields.One2many(
         comodel_name='l10n.hr.fiskal.uredjaj',
         inverse_name='prostor_id',
-        string='PoS devices')
+        string='PoS devices'
+    )
     state = fields.Selection(
         selection=[
             ('draft', 'Draft'),
             ('active', 'Active'),
             ('pause', 'Paused'),
             ('closed', 'Closed')],
-        string='State', default='draft')
+        string='State', default='draft'
+    )
     journal_ids = fields.One2many(
         comodel_name='account.journal',
         inverse_name='l10n_hr_prostor_id',
         string="Journals in this premisse",
         context={'active_test': False},  # want to see inactive in tree view
-        help="Used invoicing journals in this business premisse")
+        help="Used invoicing journals in this business premisse"
+    )
     sequence_id = fields.Many2one(
         comodel_name='ir.sequence',
         name="Sequence",
@@ -180,15 +180,10 @@ class FiskalProstor(models.Model):
     def unlink(self):
         for ured in self:
             if ured.lock:
-                raise ValidationError('Nije moguće brisati uređaj u kojem je izdan račun!')
+                raise ValidationError(_('Deleting PoS device with confirmed invoices is not possible! '
+                                        'Try deactivating instead.'))
         return super(FiskalProstor, self).unlink()
 
-    # def create(self, vals):
-    #
-    #     return super().create(vals)
-    def write(self, vals):
-
-        return super().write(vals)
 
 class FiskalUredjaj(models.Model):
     _name = 'l10n.hr.fiskal.uredjaj'
@@ -274,11 +269,9 @@ class FiskalUredjaj(models.Model):
                     _('Not allowed to delete PoS device with invoices related, please deactivate it instead!'))
         return super(FiskalUredjaj, self).unlink()
 
-
-
     def _create_new_journal(self):
         self.ensure_one()
-        jvals = {
+        journal_vals = {
             'sequence': 1,
             'type': 'sale',
             'name': "%s-%s" % (self.prostor_id.name, self.name or str(self.oznaka_uredjaj)),
@@ -292,7 +285,7 @@ class FiskalUredjaj(models.Model):
             #'default_account_id': self.prostor_id.company_id.property_account_income_categ_id.id,
             'invoice_reference_model': 'hr',
         }
-        self.env['account.journal'].create(jvals)
+        self.env['account.journal'].create(journal_vals)
     def button_activate_device(self):
         for pos in self:
             if not pos.journal_ids:

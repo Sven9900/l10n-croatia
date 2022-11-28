@@ -7,36 +7,27 @@
     "version": "16.0.0.0.1",
     "application": False,
 
-    'author': "Decodio Application ltd.",
-    'website': "http://www.decod.io",
-    "support": "support@decod.io",
+    'author': "Daj Mi 5",
+    'website': "",
+    "support": "",
     "license": "LGPL-3",
     "depends": [
         "account",
-
         "base_vat",
         "base_iban",
         "l10n_hr",
-        # "account_invoice_tax_note",  # BOLE: testirati
-
-
     ],
-    "excludes": [
-        #"l10n_hr_account"  # possible other localization module
-    ],
+    "excludes": [],
     "external_dependencies": {
         "python": [],
         "bin": []
     },
     "data": [
         "security/ir.model.access.csv",
-        #"views/res_config_view.xml",
         "views/res_company_view.xml",
-        #"views/res_users_view.xml",
         "views/account_move_view.xml",
         "views/account_journal_view.xml",
         "views/menuitems.xml",
-        #"data/partner_fiskal_tag.xml"
     ],
     "qweb": [],
     "demo": [],
