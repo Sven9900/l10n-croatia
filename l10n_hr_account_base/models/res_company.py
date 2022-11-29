@@ -1,7 +1,7 @@
 
 from odoo import api, fields, models, _
 from odoo.exceptions import UserError, ValidationError
-
+from odoo.addons.account.models.company import ONBOARDING_STEP_STATES
 
 class Company(models.Model):
     _inherit = 'res.company'
@@ -33,6 +33,25 @@ class Company(models.Model):
             ])
             company.l10n_hr_fiskal_invoice_sequences = [(4, s.id) for s in sequences]
 
+    def l10n_hr_sequence_add_year(self):
+        for sequence in self.l10n_hr_fiskal_invoice_sequences:
+            if sequence.date_range_ids:
+                last_date = sequence.date_range_ids.sorted(lambda l: l.date_to)[0]
+                year = last_date.year + 1
+            else:
+                year = fields.Date.today().year
+            vals = {
+
+            }
+
+
+class IrSequenceDateRange(models.Model):
+    _inherit = 'ir.sequence.date_range'
+
+    def name_get(self):
+        res = [(d.id, "%s-%s" % (d.date_from.year, d.number_next_actual)) for d in self]
+        return res
+
 
 class FiskalProstor(models.Model):
     _name = 'l10n.hr.fiskal.prostor'
@@ -49,8 +68,7 @@ class FiskalProstor(models.Model):
     company_id = fields.Many2one(
         comodel_name='res.company',
         string='Company', required="True",
-        default=lambda self: self.env['res.company']._company_default_get(
-            'fiskal.prostor')
+        default=lambda self: self.env.company
     )
     oznaka_prostor = fields.Char(
         string='Fiscal Code',
@@ -105,6 +123,7 @@ class FiskalProstor(models.Model):
              'The code of the business premise must be unique per company !')
         ]
 
+
     def _get_sequence_fiskal_code(self, pos=None):
         self.ensure_one()
         if pos is None:
@@ -119,23 +138,23 @@ class FiskalProstor(models.Model):
         self.ensure_one()
         sequence_code = self._get_sequence_fiskal_code(pos_code)
         current_date = fields.Date.today()
-        # n_years, n = 3, 0
-        # date_range = []
-        # while n < n_years:
-        #     year = current_date.year + n
-        #     date_range.append((0, 0, {
-        #         'date_from': fields.Date(current_date, day=1, month=1),
-        #         'date_to': fields.Date(current_date, day=31, month=12),
-        #         'number_next': 1
-        #     }))
-        #     n += 1
+        n_years, n = 3, 0
+        date_range = []
+        year = current_date.year
+        while n < n_years:
+             date_range.append((0, 0, {
+                 'date_from': "%s-%s-%s" % (year + n, "01", "01"),
+                 'date_to': "%s-%s-%s" % (year + n, "12", "31"),
+                 'number_next': 1
+             }))
+             n += 1
         sequence_vals = {
             'implementation': 'no_gap',
             'code': 'l10n_hr.fiscal',
             'name': "IRA %s - %s - (%s)" % (self.name, self.sljed_racuna, sequence_code),
             'prefix': False, 'suffix': sequence_code,
             'use_date_range': True,
-            # 'date_range_ids': date_range
+            'date_range_ids': date_range
         }
         seq = self.env['ir.sequence'].create(sequence_vals)
         return seq

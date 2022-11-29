@@ -32,6 +32,7 @@
                                         <field name="number_increment" optional="hide"/>
                                         <field name="implementation"/>
                                         <field name="use_date_range" optional="hide"/>
+                                        <field name="date_range_ids" widget="many2many_tags"/>
                                         <field name="active" optional="hide" widget="boolean_toggle"/>
                                     </tree>
                                 </field>
@@ -69,7 +70,7 @@
                         <button name="button_activate_premisse" string="Activate premisse" type="object"
                                 attrs="{'invisible':[('state','in',['active', 'close'])]}"
                                 groups="account.group_account_manager"/>
-                        <button name="button_pause_premisse" string="Pausee premisse" type="object"
+                        <button name="button_pause_premisse" string="Pause premisse" type="object"
                                 attrs="{'invisible':[('state','!=','active')]}"
                                 help="Use for temporary closing of premisse, all related items will be modified according"
                                 groups="account.group_account_manager"/>
@@ -114,7 +115,7 @@
                                         <field name="sljed_racuna" invisible="1"/>
                                         <field name="state" widget="badge"/>
                                         <button type="object" name="button_activate_device"
-                                                class="btn-success" icon="fa-play"
+                                                class="btn-success" icon="fa-play" string="Activate"
                                                 attrs="{'invisible': [('state', 'not in', ('draft', 'pause'))]}"/>
                                         <button type="object" name="button_pause_device"
                                                 class="btn-danger" icon="fa-pause"
