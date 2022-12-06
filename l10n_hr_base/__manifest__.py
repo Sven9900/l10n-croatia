@@ -16,12 +16,12 @@
     "depends": [
         "l10n_hr",  # for company viwq
     ],
-    "external_dependencies": {
-        "python": [
-            'tzlocal==2.0.0'
-        ],
-        "bin": []
-    },
+    # "external_dependencies": {
+    #     "python": [
+    #         'tzlocal==2.0.0'
+    #     ],
+    #     "bin": []
+    # },
     "data": [
         "views/res_company_view.xml",
 
