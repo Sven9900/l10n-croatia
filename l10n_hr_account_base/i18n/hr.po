@@ -1,0 +1,641 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* l10n_hr_account_base
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 16.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-11-29 21:45+0000\n"
+"PO-Revision-Date: 2022-11-29 21:45+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: l10n_hr_account_base
+#: model:ir.model.fields,help:l10n_hr_account_base.field_account_bank_statement_line__l10n_hr_nacin_placanja
+#: model:ir.model.fields,help:l10n_hr_account_base.field_account_move__l10n_hr_nacin_placanja
+#: model:ir.model.fields,help:l10n_hr_account_base.field_account_payment__l10n_hr_nacin_placanja
+msgid ""
+"According to Fiscalization Law and regulative there is 5 possible options:\n"
+"T - Transaction bank account, \n"
+" and for other options need is fiscalisation extension module:\n"
+"G - Cash (coins or bills), \n"
+"K - Bank cards, \n"
+"C - Cheque payment, \n"
+"O - Other payment,\n"
+msgstr ""
+
+#. module: l10n_hr_account_base
+#: model_terms:ir.ui.view,arch_db:l10n_hr_account_base.view_fiskal_prostor_form
+msgid "Activate"
+msgstr ""
+
+#. module: l10n_hr_account_base
+#: model_terms:ir.ui.view,arch_db:l10n_hr_account_base.view_fiskal_uredjaj_form
+msgid "Activate device"
+msgstr "Aktiviraj uređaj"
+
+#. module: l10n_hr_account_base
+#: model_terms:ir.ui.view,arch_db:l10n_hr_account_base.view_fiskal_prostor_form
+msgid "Activate premisse"
+msgstr "Aktiviraj prostor"
+
+#. module: l10n_hr_account_base
+#: model:ir.model.fields.selection,name:l10n_hr_account_base.selection__l10n_hr_fiskal_prostor__state__active
+#: model:ir.model.fields.selection,name:l10n_hr_account_base.selection__l10n_hr_fiskal_uredjaj__state__active
+msgid "Active"
+msgstr "Aktivan"
+
+#. module: l10n_hr_account_base
+#: model_terms:ir.ui.view,arch_db:l10n_hr_account_base.onboarding_business_premisse_step
+msgid "Add Business premisse"
+msgstr "Dodaj poslovni prostor"
+
+#. module: l10n_hr_account_base
+#: model:ir.model.fields,help:l10n_hr_account_base.field_l10n_hr_fiskal_uredjaj__lock
+msgid "After first invoice is confirmed, no more changes!"
+msgstr "Nema više izmjena nakon potvrđivanja prvog računa!"
+
+#. module: l10n_hr_account_base
+#: model:ir.model.fields,field_description:l10n_hr_account_base.field_account_journal__l10n_hr_fiskal_uredjaj_ids
+msgid "Allowed PoS Devices"
+msgstr "Dozvoljeni naplatni uređaji"
+
+#. module: l10n_hr_account_base
+#: model:ir.model.fields,field_description:l10n_hr_account_base.field_l10n_hr_fiskal_uredjaj__journal_ids
+msgid "Allowed journals"
+msgstr "Dozvoljeni dnevnici"
+
+#. module: l10n_hr_account_base
+#: model:ir.model.fields,field_description:l10n_hr_account_base.field_account_bank_statement_line__l10n_hr_allowed_fiskal_uredjaj_ids
+#: model:ir.model.fields,field_description:l10n_hr_account_base.field_account_move__l10n_hr_allowed_fiskal_uredjaj_ids
+#: model:ir.model.fields,field_description:l10n_hr_account_base.field_account_payment__l10n_hr_allowed_fiskal_uredjaj_ids
+msgid "Alowed Fiskal device"
+msgstr "Dozvoljeni naplatni urešaj"
+
+#. module: l10n_hr_account_base
+#: model:ir.model.fields.selection,name:l10n_hr_account_base.selection__account_journal__l10n_hr_default_nacin_placanja__t
+#: model:ir.model.fields.selection,name:l10n_hr_account_base.selection__account_move__l10n_hr_nacin_placanja__t
+msgid "Bank transfer"
+msgstr "Transakcijski račun"
+
+#. module: l10n_hr_account_base
+#: model:ir.model.fields,field_description:l10n_hr_account_base.field_l10n_hr_fiskal_uredjaj__prostor_id
+msgid "Business Premisse"
+msgstr "Poslovni prostor"
+
+#. module: l10n_hr_account_base
+#: model:ir.model.fields,field_description:l10n_hr_account_base.field_account_journal__l10n_hr_prostor_id
+msgid "Business premise"
+msgstr "Poslovni prostor"
+
+#. module: l10n_hr_account_base
+#: model:ir.model.fields,help:l10n_hr_account_base.field_l10n_hr_fiskal_uredjaj__prostor_id
+msgid "Business premisee where this device is operating"
+msgstr "Poslovni prostor u kojem se koristi uređaj"
+
+#. module: l10n_hr_account_base
+#: model:ir.model.fields,field_description:l10n_hr_account_base.field_res_company__l10n_hr_fiskal_prostor_ids
+#: model_terms:ir.ui.view,arch_db:l10n_hr_account_base.view_fiskal_prostor_tree
+msgid "Business premises"
+msgstr "Poslovni prostor"
+
+#. module: l10n_hr_account_base
+#: model_terms:ir.ui.view,arch_db:l10n_hr_account_base.onboarding_business_premisse_step
+msgid "Business premisse"
+msgstr "Poslovni prostor"
+
+#. module: l10n_hr_account_base
+#. odoo-python
+#: code:addons/l10n_hr_account_base/models/res_company.py:0
+#, python-format
+msgid "Business premisse cannot be activated without existing PoS devices!"
+msgstr "Poslovni prostor nije moguće aktivirati bez naplatnih uređaja!"
+
+#. module: l10n_hr_account_base
+#: model:ir.actions.act_window,name:l10n_hr_account_base.action_fiskal_prostor
+#: model:ir.ui.menu,name:l10n_hr_account_base.menu_action_fiskal_prostor
+#: model_terms:ir.ui.view,arch_db:l10n_hr_account_base.view_l10n_hr_account_company_form
+msgid "Business premisses"
+msgstr "Poslovni prostori"
+
+#. module: l10n_hr_account_base
+#: model_terms:ir.ui.view,arch_db:l10n_hr_account_base.view_fiskal_uredjaj_form
+msgid "Close device"
+msgstr "Zatvori uređaj"
+
+#. module: l10n_hr_account_base
+#: model_terms:ir.ui.view,arch_db:l10n_hr_account_base.view_fiskal_prostor_form
+msgid "Close premisse"
+msgstr "Zatvori prostor"
+
+#. module: l10n_hr_account_base
+#: model:ir.model.fields.selection,name:l10n_hr_account_base.selection__l10n_hr_fiskal_prostor__state__closed
+#: model:ir.model.fields.selection,name:l10n_hr_account_base.selection__l10n_hr_fiskal_uredjaj__state__close
+msgid "Closed"
+msgstr "Zatvoren"
+
+#. module: l10n_hr_account_base
+#: model:ir.model,name:l10n_hr_account_base.model_res_company
+msgid "Companies"
+msgstr "Tvrtke"
+
+#. module: l10n_hr_account_base
+#: model:ir.model.fields,field_description:l10n_hr_account_base.field_l10n_hr_fiskal_prostor__company_id
+msgid "Company"
+msgstr "Tvrtka"
+
+#. module: l10n_hr_account_base
+#: model:ir.model.fields,field_description:l10n_hr_account_base.field_l10n_hr_fiskal_prostor__create_uid
+#: model:ir.model.fields,field_description:l10n_hr_account_base.field_l10n_hr_fiskal_uredjaj__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: l10n_hr_account_base
+#: model:ir.model.fields,field_description:l10n_hr_account_base.field_l10n_hr_fiskal_prostor__create_date
+#: model:ir.model.fields,field_description:l10n_hr_account_base.field_l10n_hr_fiskal_uredjaj__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: l10n_hr_account_base
+#: model:ir.ui.menu,name:l10n_hr_account_base.menu_l10n_hr_reports
+msgid "Croatia"
+msgstr "Hrvatska"
+
+#. module: l10n_hr_account_base
+#: model_terms:ir.ui.view,arch_db:l10n_hr_account_base.view_l10n_hr_move_form
+msgid "Croatia Fiskal data"
+msgstr ""
+
+#. module: l10n_hr_account_base
+#: model:ir.model.fields,help:l10n_hr_account_base.field_account_bank_statement_line__l10n_hr_vrijeme_izdavanja
+#: model:ir.model.fields,help:l10n_hr_account_base.field_account_move__l10n_hr_vrijeme_izdavanja
+#: model:ir.model.fields,help:l10n_hr_account_base.field_account_payment__l10n_hr_vrijeme_izdavanja
+msgid "Croatia Fiskal datetime value"
+msgstr ""
+
+#. module: l10n_hr_account_base
+#: model:ir.model,name:l10n_hr_account_base.model_l10n_hr_fiskal_prostor
+msgid "Croatia business premisses"
+msgstr ""
+
+#. module: l10n_hr_account_base
+#: model:ir.model.fields,field_description:l10n_hr_account_base.field_account_bank_statement_line__l10n_hr_nacin_placanja
+#: model:ir.model.fields,field_description:l10n_hr_account_base.field_account_move__l10n_hr_nacin_placanja
+#: model:ir.model.fields,field_description:l10n_hr_account_base.field_account_payment__l10n_hr_nacin_placanja
+msgid "Croatia payment means"
+msgstr "Način plaćanja"
+
+#. module: l10n_hr_account_base
+#: model:ir.ui.menu,name:l10n_hr_account_base.menu_finance_config_croatia
+msgid "Croatia settings"
+msgstr "Postavke za Hrvatsku"
+
+#. module: l10n_hr_account_base
+#: model_terms:ir.ui.view,arch_db:l10n_hr_account_base.view_account_journal_l10n_hr_form
+msgid "Croatia specific"
+msgstr ""
+
+#. module: l10n_hr_account_base
+#: model:ir.model.fields,help:l10n_hr_account_base.field_account_bank_statement_line__l10n_hr_date_delivery
+#: model:ir.model.fields,help:l10n_hr_account_base.field_account_move__l10n_hr_date_delivery
+#: model:ir.model.fields,help:l10n_hr_account_base.field_account_payment__l10n_hr_date_delivery
+msgid "Date of delivery of goods or service. Leave blank for current date"
+msgstr ""
+
+#. module: l10n_hr_account_base
+#: model:ir.model.fields,help:l10n_hr_account_base.field_account_bank_statement_line__l10n_hr_date_document
+#: model:ir.model.fields,help:l10n_hr_account_base.field_account_move__l10n_hr_date_document
+#: model:ir.model.fields,help:l10n_hr_account_base.field_account_payment__l10n_hr_date_document
+msgid ""
+"Date when the document was actually created. Leave blank for current date"
+msgstr ""
+
+#. module: l10n_hr_account_base
+#: model:ir.model.fields,field_description:l10n_hr_account_base.field_account_journal__l10n_hr_default_nacin_placanja
+msgid "Default fiskal payment method for this journal"
+msgstr "Zadani način plaćanja za ovaj dnevnik"
+
+#. module: l10n_hr_account_base
+#. odoo-python
+#: code:addons/l10n_hr_account_base/models/res_company.py:0
+#, python-format
+msgid ""
+"Deleting PoS device with confirmed invoices is not possible! Try "
+"deactivating instead."
+msgstr ""
+
+#. module: l10n_hr_account_base
+#: model:ir.model.fields,field_description:l10n_hr_account_base.field_account_bank_statement_line__l10n_hr_date_delivery
+#: model:ir.model.fields,field_description:l10n_hr_account_base.field_account_move__l10n_hr_date_delivery
+#: model:ir.model.fields,field_description:l10n_hr_account_base.field_account_payment__l10n_hr_date_delivery
+msgid "Delivery Date"
+msgstr ""
+
+#. module: l10n_hr_account_base
+#: model:ir.model.fields,field_description:l10n_hr_account_base.field_l10n_hr_fiskal_uredjaj__oznaka_uredjaj
+msgid "Device code"
+msgstr "Oznaka uređaja"
+
+#. module: l10n_hr_account_base
+#: model:ir.model.fields,help:l10n_hr_account_base.field_account_bank_statement_line__l10n_hr_fiskal_uredjaj_id
+#: model:ir.model.fields,help:l10n_hr_account_base.field_account_move__l10n_hr_fiskal_uredjaj_id
+#: model:ir.model.fields,help:l10n_hr_account_base.field_account_payment__l10n_hr_fiskal_uredjaj_id
+msgid "Device on which is fiscal payment registred"
+msgstr ""
+
+#. module: l10n_hr_account_base
+#: model:ir.model.fields,field_description:l10n_hr_account_base.field_l10n_hr_fiskal_prostor__display_name
+#: model:ir.model.fields,field_description:l10n_hr_account_base.field_l10n_hr_fiskal_uredjaj__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: l10n_hr_account_base
+#: model:ir.model.fields,field_description:l10n_hr_account_base.field_account_bank_statement_line__l10n_hr_date_document
+#: model:ir.model.fields,field_description:l10n_hr_account_base.field_account_move__l10n_hr_date_document
+#: model:ir.model.fields,field_description:l10n_hr_account_base.field_account_payment__l10n_hr_date_document
+msgid "Document Date"
+msgstr "Datum dokumenta"
+
+#. module: l10n_hr_account_base
+#: model:ir.model.fields.selection,name:l10n_hr_account_base.selection__l10n_hr_fiskal_prostor__state__draft
+#: model:ir.model.fields.selection,name:l10n_hr_account_base.selection__l10n_hr_fiskal_uredjaj__state__draft
+msgid "Draft"
+msgstr "Nacrt"
+
+#. module: l10n_hr_account_base
+#: model:ir.model.fields,field_description:l10n_hr_account_base.field_l10n_hr_fiskal_prostor__oznaka_prostor
+msgid "Fiscal Code"
+msgstr ""
+
+#. module: l10n_hr_account_base
+#: model_terms:ir.ui.view,arch_db:l10n_hr_account_base.view_l10n_hr_account_company_form
+msgid "Fiscal data"
+msgstr "Fiskalni podaci"
+
+#. module: l10n_hr_account_base
+#: model_terms:ir.ui.view,arch_db:l10n_hr_account_base.view_l10n_hr_account_company_form
+msgid "Fiscal invoice sequences"
+msgstr "Brojevni krugovi za izlazne račune"
+
+#. module: l10n_hr_account_base
+#. odoo-python
+#: code:addons/l10n_hr_account_base/models/res_company.py:0
+#, python-format
+msgid "Fiscal sequence should not contain prefix nor suffix"
+msgstr ""
+
+#. module: l10n_hr_account_base
+#: model:ir.model.fields,field_description:l10n_hr_account_base.field_account_bank_statement_line__l10n_hr_fiskal_uredjaj_id
+#: model:ir.model.fields,field_description:l10n_hr_account_base.field_account_move__l10n_hr_fiskal_uredjaj_id
+#: model:ir.model.fields,field_description:l10n_hr_account_base.field_account_payment__l10n_hr_fiskal_uredjaj_id
+msgid "Fiskal device"
+msgstr "Naplatni uređaj"
+
+#. module: l10n_hr_account_base
+#: model:ir.model.fields,field_description:l10n_hr_account_base.field_account_bank_statement_line__l10n_hr_fiskalni_broj
+#: model:ir.model.fields,field_description:l10n_hr_account_base.field_account_move__l10n_hr_fiskalni_broj
+#: model:ir.model.fields,field_description:l10n_hr_account_base.field_account_payment__l10n_hr_fiskalni_broj
+msgid "Fiskal number"
+msgstr ""
+
+#. module: l10n_hr_account_base
+#: model_terms:ir.ui.view,arch_db:l10n_hr_account_base.view_l10n_hr_move_form
+msgid "HR - Fiskal number"
+msgstr ""
+
+#. module: l10n_hr_account_base
+#: model:ir.model.fields,field_description:l10n_hr_account_base.field_l10n_hr_fiskal_prostor__id
+#: model:ir.model.fields,field_description:l10n_hr_account_base.field_l10n_hr_fiskal_uredjaj__id
+msgid "ID"
+msgstr ""
+
+#. module: l10n_hr_account_base
+#: model:ir.model.fields,help:l10n_hr_account_base.field_l10n_hr_fiskal_uredjaj__mjesto_izdavanja
+msgid ""
+"If not entered, Premisse invicing place will be used,  as a legaly required "
+"element"
+msgstr ""
+
+#. module: l10n_hr_account_base
+#: model:ir.model.fields,field_description:l10n_hr_account_base.field_res_company__l10n_hr_fiskal_invoice_sequences
+msgid "Invoice fiskal sequences for company"
+msgstr ""
+
+#. module: l10n_hr_account_base
+#: model:ir.model.fields,field_description:l10n_hr_account_base.field_res_company__l10n_hr_fiskal_separator
+msgid "Invoice number separator"
+msgstr ""
+
+#. module: l10n_hr_account_base
+#. odoo-python
+#: code:addons/l10n_hr_account_base/models/account_move.py:0
+#, python-format
+msgid "Invoice posting not possible:\n"
+msgstr ""
+
+#. module: l10n_hr_account_base
+#: model:ir.model.fields,help:l10n_hr_account_base.field_l10n_hr_fiskal_prostor__sequence_id
+msgid ""
+"Is invoicing sequence is premisse based, (P)this is number sequence is used "
+"as first part of invoice fiscal number"
+msgstr ""
+
+#. module: l10n_hr_account_base
+#: model:ir.model.fields,help:l10n_hr_account_base.field_l10n_hr_fiskal_prostor__mjesto_izdavanja
+msgid ""
+"It will be used as place of invoicing for this premise,  as a legaly "
+"required element"
+msgstr ""
+
+#. module: l10n_hr_account_base
+#: model:ir.model,name:l10n_hr_account_base.model_account_journal
+msgid "Journal"
+msgstr "Dnevnik"
+
+#. module: l10n_hr_account_base
+#: model:ir.model,name:l10n_hr_account_base.model_account_move
+msgid "Journal Entry"
+msgstr "Temeljnica"
+
+#. module: l10n_hr_account_base
+#: model_terms:ir.ui.view,arch_db:l10n_hr_account_base.view_fiskal_prostor_form
+msgid "Journals for this premise"
+msgstr ""
+
+#. module: l10n_hr_account_base
+#: model:ir.model.fields,field_description:l10n_hr_account_base.field_l10n_hr_fiskal_prostor__journal_ids
+msgid "Journals in this premisse"
+msgstr ""
+
+#. module: l10n_hr_account_base
+#: model:ir.model.fields,field_description:l10n_hr_account_base.field_account_bank_statement_line__l10n_hr_fiskal_uredjaj_visible
+#: model:ir.model.fields,field_description:l10n_hr_account_base.field_account_move__l10n_hr_fiskal_uredjaj_visible
+#: model:ir.model.fields,field_description:l10n_hr_account_base.field_account_payment__l10n_hr_fiskal_uredjaj_visible
+msgid "L10N Hr Fiskal Uredjaj Visible"
+msgstr ""
+
+#. module: l10n_hr_account_base
+#: model:ir.model.fields,field_description:l10n_hr_account_base.field_l10n_hr_fiskal_prostor____last_update
+#: model:ir.model.fields,field_description:l10n_hr_account_base.field_l10n_hr_fiskal_uredjaj____last_update
+msgid "Last Modified on"
+msgstr ""
+
+#. module: l10n_hr_account_base
+#: model:ir.model.fields,field_description:l10n_hr_account_base.field_l10n_hr_fiskal_prostor__write_uid
+#: model:ir.model.fields,field_description:l10n_hr_account_base.field_l10n_hr_fiskal_uredjaj__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: l10n_hr_account_base
+#: model:ir.model.fields,field_description:l10n_hr_account_base.field_l10n_hr_fiskal_prostor__write_date
+#: model:ir.model.fields,field_description:l10n_hr_account_base.field_l10n_hr_fiskal_uredjaj__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: l10n_hr_account_base
+#: model:ir.model.fields,field_description:l10n_hr_account_base.field_l10n_hr_fiskal_prostor__lock
+#: model:ir.model.fields,field_description:l10n_hr_account_base.field_l10n_hr_fiskal_uredjaj__lock
+msgid "Lock"
+msgstr "Zaključano"
+
+#. module: l10n_hr_account_base
+#: model:ir.model.fields,field_description:l10n_hr_account_base.field_l10n_hr_fiskal_prostor__name
+msgid "Name"
+msgstr "Naziv"
+
+#. module: l10n_hr_account_base
+#: model_terms:ir.ui.view,arch_db:l10n_hr_account_base.view_l10n_hr_account_company_form
+msgid "Next Number"
+msgstr ""
+
+#. module: l10n_hr_account_base
+#. odoo-python
+#: code:addons/l10n_hr_account_base/models/account_move.py:0
+#, python-format
+msgid "No active PoS devices found for this jurnal"
+msgstr ""
+
+#. module: l10n_hr_account_base
+#. odoo-python
+#: code:addons/l10n_hr_account_base/models/res_company.py:0
+#, python-format
+msgid ""
+"Not allowed to delete PoS device with invoices related, please deactivate it"
+" instead!"
+msgstr ""
+
+#. module: l10n_hr_account_base
+#: model:ir.model.fields.selection,name:l10n_hr_account_base.selection__l10n_hr_fiskal_prostor__sljed_racuna__n
+msgid "On PoS device level"
+msgstr "Na nivou naplatnog uređaja"
+
+#. module: l10n_hr_account_base
+#: model:ir.model.fields.selection,name:l10n_hr_account_base.selection__l10n_hr_fiskal_prostor__sljed_racuna__p
+msgid "On business premise level"
+msgstr "Nanivou poslovnog prostora"
+
+#. module: l10n_hr_account_base
+#: model:ir.model.fields,help:l10n_hr_account_base.field_l10n_hr_fiskal_prostor__lock
+msgid ""
+"Once the first invoice is confirmed, business premise code and invocie "
+"sequence should not be changed"
+msgstr ""
+
+#. module: l10n_hr_account_base
+#: model:ir.model.fields,help:l10n_hr_account_base.field_res_company__l10n_hr_fiskal_separator
+msgid "Only '/' or '-' are legaly defined as allowed"
+msgstr ""
+
+#. module: l10n_hr_account_base
+#: model:ir.model.fields,help:l10n_hr_account_base.field_l10n_hr_fiskal_uredjaj__oznaka_uredjaj
+msgid "Only integer number values allowed, without leading zeroes."
+msgstr ""
+
+#. module: l10n_hr_account_base
+#: model_terms:ir.ui.view,arch_db:l10n_hr_account_base.view_fiskal_uredjaj_form
+msgid "Pause device"
+msgstr "Pauziraj uređaj"
+
+#. module: l10n_hr_account_base
+#: model_terms:ir.ui.view,arch_db:l10n_hr_account_base.view_fiskal_prostor_form
+msgid "Pause premisse"
+msgstr "Pauziraj prostor"
+
+#. module: l10n_hr_account_base
+#: model:ir.model.fields.selection,name:l10n_hr_account_base.selection__l10n_hr_fiskal_prostor__state__pause
+#: model:ir.model.fields.selection,name:l10n_hr_account_base.selection__l10n_hr_fiskal_uredjaj__state__pause
+msgid "Paused"
+msgstr "Pauziran"
+
+#. module: l10n_hr_account_base
+#: model_terms:ir.ui.view,arch_db:l10n_hr_account_base.view_fiskal_prostor_form
+msgid "Payment devices in this premisse"
+msgstr ""
+
+#. module: l10n_hr_account_base
+#: model:ir.actions.act_window,name:l10n_hr_account_base.action_fiskal_uredjaj
+#: model:ir.ui.menu,name:l10n_hr_account_base.menu_action_fiskal_uredjaj
+msgid "Payment registers"
+msgstr ""
+
+#. module: l10n_hr_account_base
+#: model:ir.model.fields,field_description:l10n_hr_account_base.field_l10n_hr_fiskal_prostor__mjesto_izdavanja
+#: model:ir.model.fields,field_description:l10n_hr_account_base.field_l10n_hr_fiskal_uredjaj__mjesto_izdavanja
+msgid "Place of invoicing"
+msgstr ""
+
+#. module: l10n_hr_account_base
+#: model:ir.model,name:l10n_hr_account_base.model_l10n_hr_fiskal_uredjaj
+msgid "PoS device details"
+msgstr ""
+
+#. module: l10n_hr_account_base
+#. odoo-python
+#: code:addons/l10n_hr_account_base/models/account_move.py:0
+#, python-format
+msgid "PoS device selected is not active"
+msgstr ""
+
+#. module: l10n_hr_account_base
+#: model:ir.model.fields,field_description:l10n_hr_account_base.field_l10n_hr_fiskal_prostor__uredjaj_ids
+#: model_terms:ir.ui.view,arch_db:l10n_hr_account_base.view_fiskal_prostor_form
+msgid "PoS devices"
+msgstr ""
+
+#. module: l10n_hr_account_base
+#: model:ir.model.fields,field_description:l10n_hr_account_base.field_l10n_hr_fiskal_uredjaj__name
+msgid "PoS name"
+msgstr ""
+
+#. module: l10n_hr_account_base
+#: model_terms:ir.ui.view,arch_db:l10n_hr_account_base.view_l10n_hr_move_form
+msgid "PoS not ready!"
+msgstr ""
+
+#. module: l10n_hr_account_base
+#: model:ir.model.fields,field_description:l10n_hr_account_base.field_l10n_hr_fiskal_uredjaj__possible_journal_ids
+msgid "Possible Journal"
+msgstr ""
+
+#. module: l10n_hr_account_base
+#: model_terms:ir.ui.view,arch_db:l10n_hr_account_base.onboarding_business_premisse_step
+msgid "Premisse added!"
+msgstr ""
+
+#. module: l10n_hr_account_base
+#: model:ir.model.fields,help:l10n_hr_account_base.field_account_bank_statement_line__l10n_hr_fiskalni_broj
+#: model:ir.model.fields,help:l10n_hr_account_base.field_account_move__l10n_hr_fiskalni_broj
+#: model:ir.model.fields,help:l10n_hr_account_base.field_account_payment__l10n_hr_fiskalni_broj
+msgid ""
+"Required fiscal number, generated according to regulations regardless of "
+"journal number"
+msgstr ""
+
+#. module: l10n_hr_account_base
+#: model:ir.model.fields,field_description:l10n_hr_account_base.field_l10n_hr_fiskal_prostor__sequence_id
+#: model:ir.model.fields,field_description:l10n_hr_account_base.field_l10n_hr_fiskal_uredjaj__sequence_id
+msgid "Sequence"
+msgstr ""
+
+#. module: l10n_hr_account_base
+#: model:ir.model,name:l10n_hr_account_base.model_ir_sequence_date_range
+msgid "Sequence Date Range"
+msgstr ""
+
+#. module: l10n_hr_account_base
+#: model:ir.model.fields,field_description:l10n_hr_account_base.field_l10n_hr_fiskal_prostor__sljed_racuna
+#: model:ir.model.fields,field_description:l10n_hr_account_base.field_l10n_hr_fiskal_uredjaj__sljed_racuna
+msgid "Sequence by"
+msgstr ""
+
+#. module: l10n_hr_account_base
+#: model_terms:ir.ui.view,arch_db:l10n_hr_account_base.onboarding_business_premisse_step
+msgid "Setup your business premisses and PoS devices"
+msgstr ""
+
+#. module: l10n_hr_account_base
+#: model:ir.model.fields,field_description:l10n_hr_account_base.field_account_journal__code
+msgid "Short Code"
+msgstr ""
+
+#. module: l10n_hr_account_base
+#: model:ir.model.fields,help:l10n_hr_account_base.field_account_journal__code
+msgid ""
+"Shorter name used for display. The journal entries of this journal will also"
+" be named using this prefix by default."
+msgstr ""
+
+#. module: l10n_hr_account_base
+#: model:ir.model.fields,help:l10n_hr_account_base.field_l10n_hr_fiskal_uredjaj__sequence_id
+msgid "Shoud be defined with no prefix or suffix, used only for this PoS"
+msgstr ""
+
+#. module: l10n_hr_account_base
+#: model:ir.model.fields,field_description:l10n_hr_account_base.field_l10n_hr_fiskal_prostor__state
+#: model:ir.model.fields,field_description:l10n_hr_account_base.field_l10n_hr_fiskal_uredjaj__state
+msgid "State"
+msgstr ""
+
+#. module: l10n_hr_account_base
+#: model:ir.model.fields,help:l10n_hr_account_base.field_account_bank_statement_line__l10n_hr_fiskal_uredjaj_visible
+#: model:ir.model.fields,help:l10n_hr_account_base.field_account_move__l10n_hr_fiskal_uredjaj_visible
+#: model:ir.model.fields,help:l10n_hr_account_base.field_account_payment__l10n_hr_fiskal_uredjaj_visible
+msgid ""
+"Technical field to show device selection only if there is something to "
+"select like 2 or more devices for this journal"
+msgstr ""
+
+#. module: l10n_hr_account_base
+#: model:ir.model.constraint,message:l10n_hr_account_base.constraint_l10n_hr_fiskal_prostor_fiskal_prostor_uniq
+msgid "The code of the business premise must be unique per company !"
+msgstr ""
+
+#. module: l10n_hr_account_base
+#: model:ir.model.constraint,message:l10n_hr_account_base.constraint_l10n_hr_fiskal_uredjaj_fiskal_uredjaj_uniq
+msgid "The code of the payment register must be unique per business premise !"
+msgstr ""
+
+#. module: l10n_hr_account_base
+#: model:ir.model.fields,field_description:l10n_hr_account_base.field_account_bank_statement_line__l10n_hr_vrijeme_izdavanja
+#: model:ir.model.fields,field_description:l10n_hr_account_base.field_account_move__l10n_hr_vrijeme_izdavanja
+#: model:ir.model.fields,field_description:l10n_hr_account_base.field_account_payment__l10n_hr_vrijeme_izdavanja
+msgid "Time of confirming"
+msgstr ""
+
+#. module: l10n_hr_account_base
+#: model_terms:ir.ui.view,arch_db:l10n_hr_account_base.view_fiskal_prostor_form
+msgid ""
+"Use for temporary closing of premisse, all related items will be modified "
+"according"
+msgstr ""
+
+#. module: l10n_hr_account_base
+#: model_terms:ir.ui.view,arch_db:l10n_hr_account_base.view_fiskal_prostor_form
+msgid ""
+"Use only is business premisse is permanently closed,"
+"                                       - All related PoS devices will be "
+"closed                                       - All related PoS journals will"
+" be removed from dashboard, adn all related sequences will be archived"
+"                                       - Once closed no more ivoices should "
+"created for this premisse"
+msgstr ""
+
+#. module: l10n_hr_account_base
+#: model:ir.model.fields,help:l10n_hr_account_base.field_l10n_hr_fiskal_prostor__journal_ids
+msgid "Used invoicing journals in this business premisse"
+msgstr ""
+
+#. module: l10n_hr_account_base
+#: model:ir.model.fields.selection,name:l10n_hr_account_base.selection__l10n_hr_fiskal_uredjaj__state__wait
+msgid "Waiting Premisse"
+msgstr "Čeka aktivan prostor"
+
+#. module: l10n_hr_account_base
+#: model:ir.model.fields,help:l10n_hr_account_base.field_l10n_hr_fiskal_prostor__oznaka_prostor
+msgid "Will be used as second part of fiscal invoice number"
+msgstr ""
