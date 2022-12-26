@@ -13,5 +13,5 @@ class AccountChartTemplate(models.Model):
             acc_template_ref, company, journals_dict)
         for journal in journal_data:
             if journal['type'] in ('sale', 'purchase') and company.country_id.code == "HR":
-                journal.update({'refund_sequence': False})  # sujest storno u istom brojevnom krugu!
+                journal.update({'refund_sequence': False})  # sujek storno u istom brojevnom krugu!
         return journal_data

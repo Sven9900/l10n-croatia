@@ -12,7 +12,7 @@
         <field name="amount_type">percent</field>
         <field name="type_tax_use">sale</field>
         <field name="sequence" eval="10"/>
-        <field name="chart_template_id" ref="l10n_hr_chart_template"/>
+        <field name="chart_template_id" ref="l10n_hr_coa_rrif_2022"/>
         <field name="tax_group_id" ref="tax_group_0"/>
         <field name="invoice_repartition_line_ids"
                eval="[(5, 0, 0),
@@ -49,7 +49,7 @@
         <field name="amount_type">percent</field>
         <field name="type_tax_use">sale</field>
         <field name="sequence" eval="10"/>
-        <field name="chart_template_id" ref="l10n_hr_chart_template"/>
+        <field name="chart_template_id" ref="l10n_hr_coa_rrif_2022"/>
         <field name="tax_group_id" ref="tax_group_0"/>
         <field name="invoice_repartition_line_ids"
                eval="[(5, 0, 0),
@@ -87,7 +87,7 @@
         <field name="type_tax_use">sale</field>
         <field name="sequence" eval="10"/>
         <field name="tax_scope">consu</field>
-        <field name="chart_template_id" ref="l10n_hr_chart_template"/>
+        <field name="chart_template_id" ref="l10n_hr_coa_rrif_2022"/>
         <field name="tax_group_id" ref="tax_group_0"/>
         <field name="invoice_repartition_line_ids"
                eval="[(5, 0, 0),
@@ -125,7 +125,7 @@
         <field name="type_tax_use">sale</field>
         <field name="sequence" eval="10"/>
         <field name="tax_scope">service</field>
-        <field name="chart_template_id" ref="l10n_hr_chart_template"/>
+        <field name="chart_template_id" ref="l10n_hr_coa_rrif_2022"/>
         <field name="tax_group_id" ref="tax_group_0"/>
         <field name="invoice_repartition_line_ids"
                eval="[(5, 0, 0),
@@ -161,7 +161,7 @@
         <field name="amount">0</field>
         <field name="amount_type">percent</field>
         <field name="type_tax_use">sale</field>
-        <field name="chart_template_id" ref="l10n_hr_chart_template"/>
+        <field name="chart_template_id" ref="l10n_hr_coa_rrif_2022"/>
         <field name="tax_group_id" ref="tax_group_0"/>
         <field name="invoice_repartition_line_ids"
                eval="[(5, 0, 0),
@@ -197,7 +197,7 @@
         <field name="amount">0</field>
         <field name="amount_type">percent</field>
         <field name="type_tax_use">sale</field>
-        <field name="chart_template_id" ref="l10n_hr_chart_template"/>
+        <field name="chart_template_id" ref="l10n_hr_coa_rrif_2022"/>
         <field name="tax_group_id" ref="tax_group_0"/>
         <field name="invoice_repartition_line_ids"
                eval="[(5, 0, 0),
@@ -233,7 +233,7 @@
         <field name="amount">0</field>
         <field name="amount_type">percent</field>
         <field name="type_tax_use">sale</field>
-        <field name="chart_template_id" ref="l10n_hr_chart_template"/>
+        <field name="chart_template_id" ref="l10n_hr_coa_rrif_2022"/>
         <field name="tax_group_id" ref="tax_group_0"/>
         <field name="invoice_repartition_line_ids"
                eval="[(5, 0, 0),
@@ -269,7 +269,7 @@
         <field name="amount">0</field>
         <field name="amount_type">percent</field>
         <field name="type_tax_use">purchase</field>
-        <field name="chart_template_id" ref="l10n_hr_chart_template"/>
+        <field name="chart_template_id" ref="l10n_hr_coa_rrif_2022"/>
         <field name="tax_group_id" ref="tax_group_0"/>
         <field name="invoice_repartition_line_ids"
                eval="[(5, 0, 0),
@@ -305,7 +305,7 @@
         <field name="amount">0</field>
         <field name="amount_type">percent</field>
         <field name="type_tax_use">sale</field>
-        <field name="chart_template_id" ref="l10n_hr_chart_template"/>
+        <field name="chart_template_id" ref="l10n_hr_coa_rrif_2022"/>
         <field name="tax_group_id" ref="tax_group_0"/>
         <field name="invoice_repartition_line_ids"
                eval="[(5, 0, 0),
@@ -341,7 +341,7 @@
         <field name="amount">0</field>
         <field name="amount_type">percent</field>
         <field name="type_tax_use">sale</field>
-        <field name="chart_template_id" ref="l10n_hr_chart_template"/>
+        <field name="chart_template_id" ref="l10n_hr_coa_rrif_2022"/>
         <field name="tax_group_id" ref="tax_group_0"/>
         <field name="invoice_repartition_line_ids"
                eval="[(5, 0, 0),
@@ -373,7 +373,7 @@
     <!-- 5% in country II.1 is not enough !-->
     <record id="VAT_S_5_goods" model="account.tax.template">
         <field name="description">5% PDV</field>
-        <field name="chart_template_id" ref="l10n_hr_chart_template"/>
+        <field name="chart_template_id" ref="l10n_hr_coa_rrif_2022"/>
         <field name="name">5% Tax on goods</field>
         <field name="amount">5</field>
         <field name="amount_type">percent</field>
@@ -400,19 +400,19 @@
                     (0,0, {
                         'factor_percent': 100,
                         'repartition_type': 'base',
-                        'plus_report_expression_ids': [ref('l10n_hr.tax_report_line_II_1_base')],
+                        'plus_report_expression_ids': [ref('tax_report_line_II_1_base')],
                     }),
                     (0,0, {
                         'factor_percent': 100,
                         'repartition_type': 'tax',
                         'account_id': ref('hr_240010'),
-                        'minus_report_expression_ids': [ref('l10n_hr.tax_report_line_II_1_tax')],
+                        'minus_report_expression_ids': [ref('tax_report_line_II_1_tax')],
                     }),
                 ]"/>
     </record>
     <record id="VAT_S_5_service" model="account.tax.template">
         <field name="description">5% PDV</field>
-        <field name="chart_template_id" ref="l10n_hr_chart_template"/>
+        <field name="chart_template_id" ref="l10n_hr_coa_rrif_2022"/>
         <field name="name">5% Tax on services</field>
         <field name="amount">5</field>
         <field name="amount_type">percent</field>
@@ -439,19 +439,19 @@
             (0,0, {
                 'factor_percent': 100,
                 'repartition_type': 'base',
-                'plus_report_expression_ids': [ref('l10n_hr.tax_report_line_II_1_base')],
+                'plus_report_expression_ids': [ref('tax_report_line_II_1_base')],
             }),
             (0,0, {
                 'factor_percent': 100,
                 'repartition_type': 'tax',
                 'account_id': ref('hr_240010'),
-                'minus_report_expression_ids': [ref('l10n_hr.tax_report_line_II_1_tax')],
+                'minus_report_expression_ids': [ref('tax_report_line_II_1_tax')],
             }),
         ]"/>
     </record>
     <record id="VAT_S_5_advance" model="account.tax.template">
         <field name="description">5% ADV</field>
-        <field name="chart_template_id" ref="l10n_hr_chart_template"/>
+        <field name="chart_template_id" ref="l10n_hr_coa_rrif_2022"/>
         <field name="name">5% advance payment</field><!--5% PDV na Predujam-->
         <field name="amount">5</field>
         <field name="amount_type">percent</field>
@@ -487,7 +487,7 @@
     </record>
     <record id="VAT_S_5_on_payment" model="account.tax.template">
         <field name="description">5% PDV</field>
-        <field name="chart_template_id" ref="l10n_hr_chart_template"/>
+        <field name="chart_template_id" ref="l10n_hr_coa_rrif_2022"/>
         <field name="name">5% PDV on payment</field><!--5% PDV na Predujam-->
         <field name="amount">5</field>
         <field name="amount_type">percent</field>
@@ -525,7 +525,7 @@
     <!-- 13% in country II.2 is not enough! -->
     <record id="VAT_S_13_goods" model="account.tax.template">
         <field name="description">13% PDV</field>
-        <field name="chart_template_id" ref="l10n_hr_chart_template"/>
+        <field name="chart_template_id" ref="l10n_hr_coa_rrif_2022"/>
         <field name="name">13% Tax on goods</field><!-- 13% PDV Dobra -->
         <field name="amount">13</field>
         <field name="amount_type">percent</field>
@@ -564,7 +564,7 @@
     </record>
     <record id="VAT_S_13_service" model="account.tax.template">
         <field name="description">13% PDV</field>
-        <field name="chart_template_id" ref="l10n_hr_chart_template"/>
+        <field name="chart_template_id" ref="l10n_hr_coa_rrif_2022"/>
         <field name="name">13% tax on services</field><!--13% PDV Usluge -->
         <field name="amount">13</field>
         <field name="amount_type">percent</field>
@@ -603,7 +603,7 @@
     </record>
     <record id="VAT_S_13_advance" model="account.tax.template">
         <field name="description">13% ADV</field>
-        <field name="chart_template_id" ref="l10n_hr_chart_template"/>
+        <field name="chart_template_id" ref="l10n_hr_coa_rrif_2022"/>
         <field name="name">13% advance payment</field>
         <field name="amount">13</field>
         <field name="amount_type">percent</field>
@@ -643,7 +643,7 @@
     <!-- 25% in country II.3 is not enough-->
     <record id="VAT_S_25_goods" model="account.tax.template">
         <field name="description">25% PDV</field>
-        <field name="chart_template_id" ref="l10n_hr_chart_template"/>
+        <field name="chart_template_id" ref="l10n_hr_coa_rrif_2022"/>
         <field name="name">25% Tax on Goods</field><!-- 25% PDV na Dobra -->
         <field name="amount">25</field>
         <field name="amount_type">percent</field>
@@ -682,7 +682,7 @@
     </record>
     <record id="VAT_S_25_service" model="account.tax.template">
         <field name="description">25% PDV</field>
-        <field name="chart_template_id" ref="l10n_hr_chart_template"/>
+        <field name="chart_template_id" ref="l10n_hr_coa_rrif_2022"/>
         <field name="name">25% Tax on services</field><!-- 25% PDV na Usluge -->
         <field name="amount">25</field>
         <field name="amount_type">percent</field>
@@ -721,7 +721,7 @@
     </record>
     <record id="VAT_S_25_advance" model="account.tax.template">
         <field name="description">25% ADV</field>
-        <field name="chart_template_id" ref="l10n_hr_chart_template"/>
+        <field name="chart_template_id" ref="l10n_hr_coa_rrif_2022"/>
         <field name="name">25% advance payment</field><!-- 25% PDV na Predujam-->
         <field name="amount">25</field>
         <field name="amount_type">percent</field>
@@ -762,7 +762,7 @@
     <!-- purchase 5% TAX REPORT position III-1 --><!-- 5% in country III.1 not enough !-->
     <record id="VAT_P_5_goods" model="account.tax.template">
         <field name="description">5% PDV</field><!--PPDV 5% na Dobra-->
-        <field name="chart_template_id" ref="l10n_hr_chart_template"/>
+        <field name="chart_template_id" ref="l10n_hr_coa_rrif_2022"/>
         <field name="name">Purchase 5%</field>
         <field name="amount">5</field>
         <field name="amount_type">percent</field>
@@ -800,7 +800,7 @@
     </record>
     <record id="VAT_P_5_advance" model="account.tax.template">
         <field name="description">5% PDV</field>
-        <field name="chart_template_id" ref="l10n_hr_chart_template"/>
+        <field name="chart_template_id" ref="l10n_hr_coa_rrif_2022"/>
         <field name="name">Purchase 5% advance payment</field>
         <field name="amount">5</field>
         <field name="amount_type">percent</field>
@@ -836,7 +836,7 @@
     </record>
     <record id="VAT_P_5_on_payment" model="account.tax.template">
         <field name="description">5% PDV</field>
-        <field name="chart_template_id" ref="l10n_hr_chart_template"/>
+        <field name="chart_template_id" ref="l10n_hr_coa_rrif_2022"/>
         <field name="name">Purchase 5% on payment</field>
         <field name="amount">5</field>
         <field name="amount_type">percent</field>
@@ -875,7 +875,7 @@
     <!-- purchase 13% TAX REPORT position III-2 --><!-- 13% in country III.2 is not enough!-->
     <record id="VAT_P_13_goods" model="account.tax.template">
         <field name="description">13% PDV</field><!--PPDV 13% na Dobra-->
-        <field name="chart_template_id" ref="l10n_hr_chart_template"/>
+        <field name="chart_template_id" ref="l10n_hr_coa_rrif_2022"/>
         <field name="name">Purchase 13% goods</field>
         <field name="amount">13</field>
         <field name="amount_type">percent</field>
@@ -914,7 +914,7 @@
     </record>
     <record id="VAT_P_13_service" model="account.tax.template">
         <field name="description">13% PDV</field><!--PPDV 13% Usluge-->
-        <field name="chart_template_id" ref="l10n_hr_chart_template"/>
+        <field name="chart_template_id" ref="l10n_hr_coa_rrif_2022"/>
         <field name="name">Purchase 13% services</field>
         <field name="amount">13</field>
         <field name="amount_type">percent</field>
@@ -953,7 +953,7 @@
     </record>
     <record id="VAT_P_13_advance" model="account.tax.template">
         <field name="description">13% PDV</field>
-        <field name="chart_template_id" ref="l10n_hr_chart_template"/>
+        <field name="chart_template_id" ref="l10n_hr_coa_rrif_2022"/>
         <field name="name">Purchase 13% advance payment</field>
         <field name="amount">13</field>
         <field name="amount_type">percent</field>
@@ -991,7 +991,7 @@
     </record>
     <record id="VAT_P_13_on_payment" model="account.tax.template">
         <field name="description">13% PDV</field>
-        <field name="chart_template_id" ref="l10n_hr_chart_template"/>
+        <field name="chart_template_id" ref="l10n_hr_coa_rrif_2022"/>
         <field name="name">Purchase 13% on payment</field>
         <field name="amount">13</field>
         <field name="amount_type">percent</field>
@@ -1032,7 +1032,7 @@
     <!-- purchase 25% TAX REPORT covering position III-3 --><!-- 25% in country III.3  not enough!-->
     <record id="VAT_P_25_goods" model="account.tax.template">
         <field name="description">25% PDV</field><!--PPDV 25% na Dobra-->
-        <field name="chart_template_id" ref="l10n_hr_chart_template"/>
+        <field name="chart_template_id" ref="l10n_hr_coa_rrif_2022"/>
         <field name="name">Purchase 25% goods</field>
         <field name="amount">25</field>
         <field name="amount_type">percent</field>
@@ -1071,7 +1071,7 @@
     </record>
     <record id="VAT_P_25_service" model="account.tax.template">
         <field name="description">25% PDV</field><!--PPDV 25% Usluge-->
-        <field name="chart_template_id" ref="l10n_hr_chart_template"/>
+        <field name="chart_template_id" ref="l10n_hr_coa_rrif_2022"/>
         <field name="name">Purchase 25% services</field>
         <field name="amount">25</field>
         <field name="amount_type">percent</field>
@@ -1110,7 +1110,7 @@
     </record>
     <record id="VAT_P_25_advance" model="account.tax.template">
         <field name="description">25% PDV</field><!--PPDV 25% na Predujam-->
-        <field name="chart_template_id" ref="l10n_hr_chart_template"/>
+        <field name="chart_template_id" ref="l10n_hr_coa_rrif_2022"/>
         <field name="name">Purchase 25% advance payment</field>
         <field name="amount">50</field>
         <field name="amount_type">percent</field>
@@ -1148,7 +1148,7 @@
     </record>
     <record id="VAT_P_25_on_payment" model="account.tax.template">
         <field name="description">25% PDV</field>
-        <field name="chart_template_id" ref="l10n_hr_chart_template"/>
+        <field name="chart_template_id" ref="l10n_hr_coa_rrif_2022"/>
         <field name="name">Purchase 25% on payment</field>
         <field name="amount">50</field>
         <field name="amount_type">percent</field>
@@ -1195,7 +1195,7 @@
         <field name="amount">25</field>
         <field name="amount_type">percent</field>
         <field name="type_tax_use">purchase</field>
-        <field name="chart_template_id" ref="l10n_hr_chart_template"/>
+        <field name="chart_template_id" ref="l10n_hr_coa_rrif_2022"/>
         <field name="tax_group_id" ref="tax_group_25"/>
         <field name="invoice_repartition_line_ids"
                eval="[(5, 0, 0),
@@ -1248,7 +1248,7 @@
         <field name="amount_type">percent</field>
         <field name="tax_scope">consu</field>
         <field name="type_tax_use">purchase</field>
-        <field name="chart_template_id" ref="l10n_hr_chart_template"/>
+        <field name="chart_template_id" ref="l10n_hr_coa_rrif_2022"/>
         <field name="tax_group_id" ref="tax_group_5"/>
         <field name="invoice_repartition_line_ids"
                eval="[(5, 0, 0),
@@ -1301,7 +1301,7 @@
         <field name="amount_type">percent</field>
         <field name="type_tax_use">purchase</field>
         <field name="tax_scope">consu</field>
-        <field name="chart_template_id" ref="l10n_hr_chart_template"/>
+        <field name="chart_template_id" ref="l10n_hr_coa_rrif_2022"/>
         <field name="tax_group_id" ref="tax_group_13"/>
         <field name="invoice_repartition_line_ids"
                eval="[(5, 0, 0),
@@ -1354,7 +1354,7 @@
         <field name="amount_type">percent</field>
         <field name="type_tax_use">purchase</field>
         <field name="tax_scope">consu</field>
-        <field name="chart_template_id" ref="l10n_hr_chart_template"/>
+        <field name="chart_template_id" ref="l10n_hr_coa_rrif_2022"/>
         <field name="tax_group_id" ref="tax_group_25"/>
         <field name="invoice_repartition_line_ids"
                eval="[(5, 0, 0),
@@ -1375,7 +1375,7 @@
                 'account_id': ref('hr_240220'),
                 'minus_report_expression_ids': [ref('tax_report_line_II_7_tax')],
             }),
-            
+
         ]"/>
         <field name="refund_repartition_line_ids"
                eval="[(5, 0, 0),
@@ -1408,7 +1408,7 @@
         <field name="amount_type">percent</field>
         <field name="tax_scope">service</field>
         <field name="type_tax_use">purchase</field>
-        <field name="chart_template_id" ref="l10n_hr_chart_template"/>
+        <field name="chart_template_id" ref="l10n_hr_coa_rrif_2022"/>
         <field name="tax_group_id" ref="tax_group_5"/>
         <field name="invoice_repartition_line_ids"
                eval="[(5, 0, 0),
@@ -1461,7 +1461,7 @@
         <field name="amount_type">percent</field>
         <field name="type_tax_use">purchase</field>
         <field name="tax_scope">service</field>
-        <field name="chart_template_id" ref="l10n_hr_chart_template"/>
+        <field name="chart_template_id" ref="l10n_hr_coa_rrif_2022"/>
         <field name="tax_group_id" ref="tax_group_13"/>
         <field name="invoice_repartition_line_ids"
                eval="[(5, 0, 0),
@@ -1514,7 +1514,7 @@
         <field name="amount_type">percent</field>
         <field name="type_tax_use">purchase</field>
         <field name="tax_scope">service</field>
-        <field name="chart_template_id" ref="l10n_hr_chart_template"/>
+        <field name="chart_template_id" ref="l10n_hr_coa_rrif_2022"/>
         <field name="tax_group_id" ref="tax_group_25"/>
         <field name="invoice_repartition_line_ids"
                eval="[(5, 0, 0),
@@ -1567,7 +1567,7 @@
         <field name="amount">5</field>
         <field name="amount_type">percent</field>
         <field name="type_tax_use">purchase</field>
-        <field name="chart_template_id" ref="l10n_hr_chart_template"/>
+        <field name="chart_template_id" ref="l10n_hr_coa_rrif_2022"/>
         <field name="tax_group_id" ref="tax_group_5"/>
         <field name="invoice_repartition_line_ids"
                eval="[(5, 0, 0),
@@ -1620,7 +1620,7 @@
         <field name="amount">13</field>
         <field name="amount_type">percent</field>
         <field name="type_tax_use">sale</field>
-        <field name="chart_template_id" ref="l10n_hr_chart_template"/>
+        <field name="chart_template_id" ref="l10n_hr_coa_rrif_2022"/>
         <field name="tax_group_id" ref="tax_group_13"/>
         <field name="invoice_repartition_line_ids"
                eval="[(5, 0, 0),
@@ -1672,7 +1672,7 @@
         <field name="amount">25</field>
         <field name="amount_type">percent</field>
         <field name="type_tax_use">purchase</field>
-        <field name="chart_template_id" ref="l10n_hr_chart_template"/>
+        <field name="chart_template_id" ref="l10n_hr_coa_rrif_2022"/>
         <field name="tax_group_id" ref="tax_group_25"/>
         <field name="invoice_repartition_line_ids"
                eval="[(5, 0, 0),
@@ -1724,7 +1724,7 @@
         <field name="amount">25</field>
         <field name="amount_type">percent</field>
         <field name="type_tax_use">purchase</field>
-        <field name="chart_template_id" ref="l10n_hr_chart_template"/>
+        <field name="chart_template_id" ref="l10n_hr_coa_rrif_2022"/>
         <field name="tax_group_id" ref="tax_group_25"/>
         <field name="invoice_repartition_line_ids"
                eval="[(5, 0, 0),
@@ -1777,7 +1777,7 @@
         <field name="amount">13</field>
         <field name="amount_type">percent</field>
         <field name="type_tax_use">purchase</field>
-        <field name="chart_template_id" ref="l10n_hr_chart_template"/>
+        <field name="chart_template_id" ref="l10n_hr_coa_rrif_2022"/>
         <field name="tax_group_id" ref="tax_group_13"/>
         <field name="invoice_repartition_line_ids"
                eval="[(5, 0, 0),
@@ -1830,7 +1830,7 @@
         <field name="amount">5</field>
         <field name="amount_type">percent</field>
         <field name="type_tax_use">purchase</field>
-        <field name="chart_template_id" ref="l10n_hr_chart_template"/>
+        <field name="chart_template_id" ref="l10n_hr_coa_rrif_2022"/>
         <field name="tax_group_id" ref="tax_group_13"/>
         <field name="invoice_repartition_line_ids"
                eval="[(5, 0, 0),
@@ -1877,7 +1877,7 @@
 <!-- ZERO TAX or not in VAT -->
     <record id="VAT_P_zero_rate" model="account.tax.template">
         <field name="description">0% OSL</field>
-        <field name="chart_template_id" ref="l10n_hr_chart_template"/>
+        <field name="chart_template_id" ref="l10n_hr_coa_rrif_2022"/>
         <field name="name">0% Excepted</field>
         <field name="amount">0</field>
         <field name="amount_type">percent</field>
@@ -1909,7 +1909,7 @@
     </record>
     <record id="VAT_P_not_in_VAT" model="account.tax.template">
         <field name="description">NO</field>
-        <field name="chart_template_id" ref="l10n_hr_chart_template"/>
+        <field name="chart_template_id" ref="l10n_hr_coa_rrif_2022"/>
         <field name="name">Not in VAT</field>
         <field name="amount">0</field>
         <field name="amount_type">percent</field>

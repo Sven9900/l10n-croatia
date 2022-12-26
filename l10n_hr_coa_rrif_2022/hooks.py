@@ -12,8 +12,8 @@ def _install_l10n_hr_modules(cr, registry):
     env = api.Environment(cr, SUPERUSER_ID, {})
     modules = env['ir.module.module']
     to_install = [
-        'l10n_hr_account',      # osnovna lokalizacija računovodstva
-        'l10n_hr_base_location',# gradovi u RH,
+        'l10n_hr_account_base',      # osnovna lokalizacija računovodstva
+        'l10n_hr_city',# gradovi u RH,
         'l10n_hr_bank',
     ]
     for module in to_install:

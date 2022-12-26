@@ -8,8 +8,8 @@
     <data>
 
         <!-- Account Chart Template -->
-        <record id="l10n_hr_chart_template" model="account.chart.template">
-            <field name="name">RRIF 2021 account plan for entrepreneurs</field>
+        <record id="l10n_hr_coa_rrif_2022" model="account.chart.template">
+            <field name="name">RRIF 2022 account plan for entrepreneurs</field>
             <field name="bank_account_code_prefix">101</field>
             <field name="cash_account_code_prefix">102</field>
             <field name="transfer_account_code_prefix">109</field>
