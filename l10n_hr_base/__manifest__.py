@@ -14,14 +14,8 @@
     "licence": "LGPL-3",
 
     "depends": [
-        "l10n_hr",  # for company viwq
+        "base"
     ],
-    # "external_dependencies": {
-    #     "python": [
-    #         'tzlocal==2.0.0'
-    #     ],
-    #     "bin": []
-    # },
     "data": [
         "views/res_company_view.xml",
 

@@ -4,16 +4,18 @@
         <record id="view_l10n_hr_base_company_data" model="ir.ui.view">
             <field name="name">view.l10n.hr.base.company</field>
             <field name="model">res.company</field>
-            <field name="inherit_id" ref="l10n_hr.view_l10n_hr_company_form"/>
+            <field name="inherit_id" ref="base.view_company_form"/>
             <field name="arch" type="xml">
-                <page name="croatia_data" position="inside">
-                    <group string="Legal data" col="4" name="l10n_hr_legal">
-                        <field name="l10n_hr_mirovinsko"/>
-                        <field name="l10n_hr_zdravstveno"/>
-                        <field name="l10n_hr_maticni_broj"/>
-                        <field name="l10n_hr_nkd"/>
-                    </group>
-                </page>
+                <notebook position="inside">
+                    <page name="Croatia settings" >
+                        <group string="Legal data" col="4" name="l10n_hr_legal">
+                            <field name="l10n_hr_mirovinsko"/>
+                            <field name="l10n_hr_zdravstveno"/>
+                            <field name="l10n_hr_maticni_broj"/>
+                            <field name="l10n_hr_nkd"/>
+                        </group>
+                    </page>
+                </notebook>
             </field>
         </record>
     </data>

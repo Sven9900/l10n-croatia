@@ -27,7 +27,6 @@ class Company(models.Model):
 
     def get_l10n_hr_time_formatted(self):
         # odoo16 - date/time) fields are WITH TZ info! diff from previous versions!
-
         user_tz = self.env.user.tz or self.env.context.get('tz')
         user_pytz = pytz.timezone(user_tz) if user_tz else pytz.utc
         tstamp = datetime.now().astimezone(user_pytz)
