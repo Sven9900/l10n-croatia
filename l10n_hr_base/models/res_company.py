@@ -26,14 +26,7 @@ class Company(models.Model):
 
 
     def get_l10n_hr_time_formatted(self):
-        # OLD WAY: tstamp = datetime.now(pytz.timezone('Europe/Zagreb'))
-        # DB: Server bi morao biti na UTC time...
-        # ali ovo vraća točan local time za any given server timezone setup
-        # even if server is on Sidney local time, fiscal time is still in Zagreb :)
-        # zg = pytz.timezone('Europe/Zagreb')
-        # server_tz = get_localzone()
-        # time_now = pytz.utc.localize(datetime.utcnow()).astimezone(server_tz)
-        # tstamp = zg.normalize(time_now)  # check version! of tzlocal! new versions throw error! use 2.0.0
+        # odoo16 - date/time) fields are WITH TZ info! diff from previous versions!
 
         user_tz = self.env.user.tz or self.env.context.get('tz')
         user_pytz = pytz.timezone(user_tz) if user_tz else pytz.utc

@@ -14,7 +14,7 @@ class CroatiaXMLMixin(models.AbstractModel):
     _description = 'Abstract class for handling XML in Croatia'
     """
     Abstract model containing common xml methods for all sorts of XML reports
-    so, no need to import etree, objectify and such modules everywhere 
+    so, no need to import etree, objectify and such modules everywhere
     """
 
     def check_valid_phone(self, phone):
@@ -46,7 +46,7 @@ class CroatiaXMLMixin(models.AbstractModel):
             err += 'Nedostaje upisan grad\n'
         if not company.partner_id.street:
             err += 'Nedostaje adresni podatak : Ulica\n'
-        if not company.partner_id.vat:
+        if not company.partner_id.company_registry:  # vidi u l10n_hr !
             err += 'Nedostaje porezni broj  (OIB)\n'
         if err != '':
             raise ValidationError(err)
