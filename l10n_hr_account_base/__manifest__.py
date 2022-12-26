@@ -15,7 +15,6 @@
         "account",
         "base_vat",
         "base_iban",
-        "l10n_hr",
         "l10n_hr_base",
     ],
     "excludes": [],

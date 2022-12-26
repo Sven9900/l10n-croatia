@@ -9,9 +9,9 @@
         <record id="view_l10n_hr_account_company_form" model="ir.ui.view">
             <field name="name">view.l10n_hr.company.form</field>
             <field name="model">res.company</field>
-            <field name="inherit_id" ref="l10n_hr.view_l10n_hr_company_form"/>
+            <field name="inherit_id" ref="l10n_hr_base.view_l10n_hr_base_company_data"/>
             <field name="arch" type="xml">
-                <xpath expr="//page[@name='croatia_data']" position="inside">
+                <xpath expr="//page[@name='Croatia settings']" position="inside">
                     <group name="l10n_hr_legal" position="after">
                         <group string="Fiscal data" name="l10n_hr_fiskal" colspan="4" col="4">
                             <field name="l10n_hr_fiskal_separator"/>
