@@ -1,0 +1,8 @@
+id,name,vat,street,zip,city,country_id/id,is_company,timezone
+partner_Almos_doo,Almos d.o.o.,HR09209584511,Slavonska 4/b,44320,Kutina,base.hr,0,Europe/Zagreb
+partner_Dhl-International_Hitna_Dostava_Širom_Svijeta,Dhl-International Hitna Dostava Širom Svijeta,HR79069474349,Utinjska 4,10000,Zagreb,base.hr,1,Europe/Zagreb
+partner_Productos_Tecnologicos_Catalanes_SL,Productos Tecnologicos Catalanes S.L.,ESB63138259,"C/Comerc, 30.Pol.Ind. Can Sunyer",8740,antAndreu De la Barca,base.es,1,Europe/Zagreb
+partner_Visor_doo,Visor d.o.o.,HR87108765199,Slavonska avenija 22C,HR-10000,Zagreb,base.hr,1,Europe/Zagreb
+partner_Vukušić_doo,Vukušić d.o.o.,,,,,base.hr,0,Europe/Zagreb
+partner_ZAGREBAČKA_PIVOVARA_doo,ZAGREBAČKA PIVOVARA d.o.o.,,Ilica 224,10000,Zagreb,base.hr,1,Europe/Zagreb
+partner_mujo,MOJ MUJO,BA123456789,,,,base.ba,1,Europe/Zagreb
