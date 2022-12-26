@@ -13,7 +13,7 @@
             <field name="arch" type="xml">
                 <xpath expr="//page[@name='croatia_data']" position="inside">
                     <group name="l10n_hr_legal" position="after">
-                        <group string="Fiscal data" name="l10n_hr_fiskal" col="4">
+                        <group string="Fiscal data" name="l10n_hr_fiskal" colspan="4" col="4">
                             <field name="l10n_hr_fiskal_separator"/>
                         </group>
                         <notebook name="croatia_notebook">
@@ -26,6 +26,7 @@
                                         <field name="code" optional="hide"/>
                                         <field name="name"/>
                                         <field name="prefix" optional="hide"/>
+                                        <field name="suffix" optuonal="show"/>
                                         <field name="padding" optional="hide"/>
                                         <field name="company_id" groups="base.group_multi_company"/>
                                         <field name="number_next_actual" string="Next Number"/>

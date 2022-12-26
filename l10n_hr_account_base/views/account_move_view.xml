@@ -46,8 +46,7 @@
                                domain="[('id', 'in', l10n_hr_allowed_fiskal_uredjaj_ids)]"/>
                         <!-- until fiscalisation module for cash payments has only one selectable ooption -->
                         <field name="l10n_hr_nacin_placanja"
-                               attrs="{'invisible':['|', ('country_code','!=', 'HR'),
-                                        ('move_type','not in',['out_invoice','out_refund'])]}"/>
+                               attrs="{'invisible':[('move_type','not in',['out_invoice','out_refund'])]}"/>
                     </group>
                 </page>
             </notebook>

@@ -1,10 +1,10 @@
 
 from odoo import api, fields, models, _
 from odoo.exceptions import UserError, ValidationError
-from odoo.addons.account.models.company import ONBOARDING_STEP_STATES
 
 class Company(models.Model):
     _inherit = 'res.company'
+
 
     l10n_hr_fiskal_prostor_ids = fields.One2many(
         comodel_name='l10n.hr.fiskal.prostor',
@@ -15,7 +15,7 @@ class Company(models.Model):
         selection=[
             ('/', '/'),
             ('-', '-'),
-        ], string="Invoice number separator",
+        ], string="Invoice parts separator",
         default='/',
         help="Only '/' or '-' are legaly defined as allowed"
     )
@@ -79,8 +79,7 @@ class FiskalProstor(models.Model):
         selection=[
             ('N', 'On PoS device level'),
             ('P', 'On business premise level')],
-        string='Sequence by', required="True",
-        default='P'
+        string='Sequence by', required="True",default='P'
     )
     mjesto_izdavanja = fields.Char(
         string="Place of invoicing",  # required="True",

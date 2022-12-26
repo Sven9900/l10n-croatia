@@ -116,9 +116,10 @@ class AccountMove(models.Model):
             self.l10n_hr_date_delivery = fields.Date.today()
         if not self.date:
             self.date = fields.Date.today()
-        # if not self.l10n_hr_vrijeme_izdavanja:
-        #     datum = self.company_id.get_l10n_hr_time_formatted()
-        #     self.l10n_hr_vrijeme_izdavanja = datum['datum_racun']
+        if not self.l10n_hr_vrijeme_izdavanja:  # depend na l10n_hr_base?
+            # DEV NOTE: mozda i ostaviti datetime field? za sad.. char
+            datum = self.company_id.get_l10n_hr_time_formatted()
+            self.l10n_hr_vrijeme_izdavanja = datum['datum_racun']
         # set fiskal number
         if not self.invoice_user_id:
             self.invoice_user_id = self.env.user
