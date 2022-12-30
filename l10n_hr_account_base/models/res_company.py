@@ -301,7 +301,7 @@ class FiskalUredjaj(models.Model):
             'show_on_dashboard': False,
             # TODO: correct account if possible!
             #'default_account_id': self.prostor_id.company_id.property_account_income_categ_id.id,
-            'invoice_reference_model': 'hr',
+           # 'invoice_reference_model': 'hr',
         }
         self.env['account.journal'].create(journal_vals)
     def button_activate_device(self):
