@@ -21,7 +21,7 @@ https://www.rrif.hr/dok/preuzimanje/RRIF-RP2021-ENG.PDF
 
 """,
     "version": "16.0",
-    "author": "Odoo SA, DAJ MI 5",
+    "author": "Odoo SA, DAJ MI 5, Odoo Community Association (OCA)",
     'category': 'Accounting/Localizations/Account Charts',
 
     'depends': [

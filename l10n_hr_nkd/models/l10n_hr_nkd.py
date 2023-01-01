@@ -8,8 +8,8 @@ class Nkd(models.Model):
     _description = 'HR NKD - national occupational calssification'
 
 
-    code = fields.Char('Code', size=16, required=True)
-    name = fields.Char('Name', required=True)
+    code = fields.Char(size=16, required=True)
+    name = fields.Char(required=True)
 
     def name_get(self):
         res = [((c.id, "%s - %s" % (c.code, c.name))) for c in self]

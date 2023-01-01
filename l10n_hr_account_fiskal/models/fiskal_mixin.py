@@ -47,7 +47,7 @@ class FiscalFiscalMixin(models.AbstractModel):
         res = []
         if self.l10n_hr_nacin_placanja != 'T' and \
             not self.journal_id.l10n_hr_fiscalisation_active:
-            res.append(_('Fiscalization is not active for %s!!' % self.journal_id.display_name))
+            res.append(_('Fiscalization is not active for %s!!') % self.journal_id.display_name)
         if self.l10n_hr_nacin_placanja != 'T' and \
             not self.l10n_hr_fiskal_user_id.partner_id.vat:
             res.append(_('User OIB is not not entered! It is required for fiscalisation'))
@@ -75,7 +75,7 @@ class FiscalFiscalMixin(models.AbstractModel):
                 # TODO: taxex with 0 percent have no tax line !!!
                 # for now, let's assume we have tax lines with amount zero!
                 if not tax.l10n_hr_fiskal_type:
-                    raise ValidationError(_("Tax '%s' missing fiskal type!" % tax.name))
+                    raise ValidationError(_("Tax '%s' missing fiskal type!") % tax.name)
                 fiskal_type = tax.l10n_hr_fiskal_type
                 naziv = tax.name
                 stopa = tax.amount  # if amount type == percent??

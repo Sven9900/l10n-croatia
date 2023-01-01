@@ -11,7 +11,7 @@
     "author": "DAJ MI 5!",
     "support": "",
     "website": "",
-    "licence": "LGPL-3",
+    "license": "LGPL-3",
     #"price" : 20.00,   #-> only if module if sold!
     #"currency": "EUR",
 

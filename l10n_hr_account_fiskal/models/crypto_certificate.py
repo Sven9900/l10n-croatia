@@ -11,8 +11,8 @@ class CryptoCertificate(models.Model):
     _inherit = "crypto.certificate"
 
     @api.depends('csr', 'crt', 'type')
-    def _get_usage(self):
-        super(CryptoCertificate, self)._get_usage()
+    def _compute_usage(self):
+        res = super(CryptoCertificate, self)._get_usage()
         for crt in self:
             if crt.type != 'server_rec':
                 continue
@@ -59,6 +59,7 @@ class CryptoCertificate(models.Model):
                         usage = 'Fiskal_PROD_V2'
             crt.usage = usage
 
+        return res
     def _get_datastore_path(self):
         return odoo_config.filestore(self._cr.dbname)
 
@@ -126,11 +127,11 @@ class CryptoCertificate(models.Model):
     #     return res
 
     # only to trigger _get_usage call here
-    usage = fields.Char(compute="_get_usage")  #, store=True)
+    usage = fields.Char(compute="_compute_usage")  #, store=True)
 
 
     def action_cancel(self):
-        super(CryptoCertificate, self).action_cancel()
+        res = super(CryptoCertificate, self).action_cancel()
         for cert in self:
             if 'Fiskal' in self.usage:
                 path = cert._get_fiskal_cert_path()
@@ -139,7 +140,7 @@ class CryptoCertificate(models.Model):
                     file = os.path.join(path, f)
                     if os.path.exists(file):
                         os.remove(file)
-
+        return res
 
 
 

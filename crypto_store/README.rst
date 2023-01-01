@@ -12,7 +12,6 @@ Also can be used as certificate store for certificates issued by other authoriti
 
 check for dependecies
 
-# pip install M2Crypto==0.26.2
 
 
 Bug Tracker

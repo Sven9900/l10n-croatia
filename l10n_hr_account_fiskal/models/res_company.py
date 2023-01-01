@@ -129,14 +129,14 @@ class Company(models.Model):
             # i commit created log! then raise!
             self.env.cr.commit()
             raise ValidationError(
-                "ECHO failed with : " + fisk.log.received_log
+                _("ECHO failed with : ") + fisk.log.received_log
             )
 
 
     def get_fiskal_data(self):
         fina_cert = self.l10n_hr_fiskal_cert_id
         if not fina_cert:
-            raise MissingError('Cerificate not found! Check company setup!')
+            raise MissingError(_('Cerificate not found! Check company setup!'))
         key_file, cert_file, production = fina_cert.get_fiskal_ssl_data()
 
         fiskal_path = self._get_fiskal_path()

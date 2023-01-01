@@ -6,7 +6,6 @@ class FiskalLog(models.Model):
     _description = 'Fiskal messages log'
 
     name = fields.Char(
-        string='Name',
         size=64, readonly=True,
         help="Unique communication mark")
     type = fields.Selection(
@@ -43,4 +42,4 @@ class FiskalLog(models.Model):
         comodel_name='res.company',
         string='Company',
         required=True)
-#
+

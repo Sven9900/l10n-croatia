@@ -6,7 +6,6 @@
     "images": [],
     "version": "16.0.0.0.1",
     "application": False,
-    "description": """Core placeholder for future module - far away from usability test""",
     'author': "Daj mi 5",
     'website': "",
     "support": "",
