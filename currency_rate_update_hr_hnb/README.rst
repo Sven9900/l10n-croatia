@@ -23,7 +23,7 @@ Currency Rate Update: HNB.hr
     :target: https://runbot.odoo-community.org/runbot/259/12.0
     :alt: Try me on Runbot
 
-|badge1| |badge2| |badge3| |badge4| |badge5| 
+|badge1| |badge2| |badge3| |badge4| |badge5|
 
 This module provides adds `Croatia HNB <https://www.hnb.hr/temeljne-funkcije/monetarna-politika/tecajna-lista/tecajna-lista>`_. currency exchange rates
 provider.
@@ -40,7 +40,8 @@ To configure Croatia HNB currency rates provider :
 
 # Go to *Invoicing > Configuration > Currency update providers*
  create new provider : Croatia-HNB
- select type of rate to use : buy, mid, sell
+ HNB Provides 3 rates: buy, mid and sell. Only mid rate is covered,
+ as it is only legaly required
 
 Bug Tracker
 ===========
