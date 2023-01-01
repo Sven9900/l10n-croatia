@@ -33,9 +33,7 @@ class CroatiaXMLMixin(models.AbstractModel):
             phone = '+' + phone
 
         if 14 < len(phone) < 7 or not phone.startswith('+385'):
-            raise ValidationError('Unešeni broj telefona/faxa : %s nije ispravan\n'
-                                  'Očekivani format je +385xxxxxxxx, \n'
-                                  '(dozvoljno je korištenje znakova za razdvajanje i grupiranje (-/) i razmaka' % phone)
+            raise ValidationError(_("Phone %s not valid!") % phone)
 
         return phone
 

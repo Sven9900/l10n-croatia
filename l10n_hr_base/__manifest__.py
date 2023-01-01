@@ -8,10 +8,10 @@
     "version": "16.0.1.0.0",
     "application": False,
 
-    'author': "DAJ MI 5",
+    'author': "DAJ MI 5, Odoo Community Association (OCA)",
     'website': "",
     "support": "",
-    "licence": "LGPL-3",
+    "license": "AGPL-3",
 
     "depends": [
         "base"
