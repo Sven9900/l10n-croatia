@@ -7,7 +7,7 @@
     "version": "16.0.0.0.1",
     "application": False,
 
-    'author': "Daj Mi 5",
+    'author': "Daj Mi 5, Odoo Community Association (OCA)",
     'website': "",
     "support": "",
     "license": "LGPL-3",

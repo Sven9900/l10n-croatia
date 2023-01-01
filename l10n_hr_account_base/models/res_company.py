@@ -22,11 +22,11 @@ class Company(models.Model):
     l10n_hr_fiskal_invoice_sequences = fields.Many2many(
         comodel_name='ir.sequence',
         string="Invoice fiskal sequences for company",
-        compute="_get_l10n_hr_sequences",
+        compute="_compute_l10n_hr_sequences",
         context={'active_test': False}
     )
 
-    def _get_l10n_hr_sequences(self):
+    def _compute_l10n_hr_sequences(self):
         for company in self:
             sequences = self.env['ir.sequence'].with_context(active_test=False).search([
                 ('company_id', '=', company.id), ('code', '=', 'l10n_hr.fiscal')
@@ -58,16 +58,13 @@ class FiskalProstor(models.Model):
     _description = 'Croatia business premisses'
 
     lock = fields.Boolean(
-        string="Lock",
         help="Once the first invoice is confirmed, "
              "business premise code and invocie sequence should not be changed"
 
     )
-    name = fields.Char(
-        string='Name', required=True, size=128)
+    name = fields.Char(required=True, size=128)
     company_id = fields.Many2one(
-        comodel_name='res.company',
-        string='Company', required="True",
+        comodel_name='res.company', required="True",
         default=lambda self: self.env.company
     )
     oznaka_prostor = fields.Char(
@@ -97,7 +94,7 @@ class FiskalProstor(models.Model):
             ('active', 'Active'),
             ('pause', 'Paused'),
             ('closed', 'Closed')],
-        string='State', default='draft'
+        default='draft'
     )
     journal_ids = fields.One2many(
         comodel_name='account.journal',
@@ -208,8 +205,7 @@ class FiskalUredjaj(models.Model):
     _description = 'PoS device details'
 
 
-    lock = fields.Boolean(
-        string="Lock", default=False,
+    lock = fields.Boolean(default=False,
         help="After first invoice is confirmed, no more changes!"
     )
     name = fields.Char(string='PoS name')
@@ -231,7 +227,7 @@ class FiskalUredjaj(models.Model):
              " as a legaly required element")
     possible_journal_ids = fields.Many2many(
         comodel_name='account.journal',
-        compute="_get_possible_journal_ids"
+        compute="_compute_possible_journal_ids"
     )
     journal_ids = fields.Many2many(
         comodel_name='account.journal',
@@ -264,7 +260,7 @@ class FiskalUredjaj(models.Model):
 
     @api.depends('prostor_id', 'prostor_id.uredjaj_ids',
                  'prostor_id.uredjaj_ids.journal_ids')
-    def _get_possible_journal_ids(self):
+    def _compute_possible_journal_ids(self):
         for pos in self:
             domain = [('l10n_hr_prostor_id', '=', pos.prostor_id.id)]
             #if pos.sljed_racuna == 'N':

@@ -55,7 +55,7 @@ class AccountMove(models.Model):
         )
     l10n_hr_allowed_fiskal_uredjaj_ids = fields.Many2many(
         comodel_name='l10n.hr.fiskal.uredjaj',
-        compute="_get_allowed_fiskal_device",
+        compute="_compute_allowed_fiskal_device",
         string="Alowed Fiskal device",
     )
     l10n_hr_fiskal_uredjaj_visible = fields.Boolean(
@@ -64,7 +64,7 @@ class AccountMove(models.Model):
     )
 
     @api.depends('journal_id')
-    def _get_allowed_fiskal_device(self):
+    def _compute_allowed_fiskal_device(self):
         for move in self:
             vals = []
             if move.journal_id.l10n_hr_prostor_id.state == 'active':
