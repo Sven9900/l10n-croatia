@@ -8,29 +8,20 @@ Hrvatska : osnovni podaci
 
 Podaci o poduzeću u raznim tijelima drzavne uprave:
 
-- Br. obveze mirovinsko
-- Br. obveze zdravstveno
-- Maticni broj
+  - Br. obveze mirovinsko
+  - Br. obveze zdravstveno
+  - Maticni broj
 
-- dev note:
-res_company : dodana metoda 'get_l10n_hr_time_formatted '
+
+res_company : dodana metoda 'get_l10n_hr_time_formatted'
               za dohvaćanje lokalno formatiranog vremena
               u svim formatima koji se koriste u HR bez obzira
               koja je time zona postavljena na serveru
-res_partner: dodana metoda: 'get_oib' za dohvat oib-a partnera
 
-Šifrarnici i popisi:
-
-- NKD 2007 -> modul: l10n_hr_nkd
-- Banke u R.Hrvatskoj ->  modul: l10n_hr_bank
-
-Prijevod base modula sa hrvatskim specifičnostima,
-npr: state - status ili drzava, ovisno o polju
-   ( Ivica Dimjašević < ivica.dimjasevic@storm.hr > )
+res_partner: _compute_company_registry -> Pretvara Porezni broj u OIB (bez HR)
 
 l10n_hr_xml_common - mixin klasa sa metodama za sve HR time formate xml poruka
 (pdv, joppd, eracun...)
-
 
 Bug Tracker
 ===========
@@ -44,16 +35,6 @@ Credits
 Contributors
 ------------
 
-Goran Kliska (goran.kliska@slobodni-programi.hr)
-Davor Bojkić (davor.bojkic@dajmi5.hr)
-Ivica Dimjašević (ivica.dimjasevic@storm.hr)
-
-Icon
-----
-
-
-
-
-
-
+- Goran Kliska (goran.kliska@slobodni-programi.hr)
+- Davor Bojkić (davor.bojkic@dajmi5.hr)
 

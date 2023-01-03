@@ -8,8 +8,7 @@
     "images": [],
     "version": "16.0.1.0.0",
     "application": False,
-    "author": "Odoo Community Association (OCA)"
-              ", Davor Bojkić (DAJ MI 5)",
+    "author": "Odoo Community Association (OCA), Davor Bojkić (DAJ MI 5)",
     "website": "https://github.com/OCA/l10n-croatia",
     "license": "AGPL-3",
     "depends": [

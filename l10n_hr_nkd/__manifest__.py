@@ -1,5 +1,3 @@
-# -*- coding: utf-8 -*-
-
 {
     "name": """Croatia - NKD""",
     "summary": """Hrvatska - Nacionalna Klasifikacija Djelatnosti""",
@@ -7,19 +5,11 @@
     "images": [],
     "version": "16.0.1.0.0",
     "application": False,
-
-    "author": "DAJ MI 5!",
+    "author": "DAJ MI 5, Odoo Community Association (OCA)",
     "support": "",
-    "website": "",
-    "license": "LGPL-3",
-    #"price" : 20.00,   #-> only if module if sold!
-    #"currency": "EUR",
-
-    "depends": ['l10n_hr_base'],
-    "external_dependencies": {
-        "python": [],
-        "bin": []
-    },
+    "website": "https://github.com/OCA/l10n-croatia",
+    "license": "AGPL-3",
+    "depends": ["l10n_hr_base"],
     "data": [
         "views/res_company_view.xml",
         "views/res_partner_view.xml",
@@ -29,8 +19,6 @@
     ],
     "qweb": [],
     "demo": [],
-
     "auto_install": False,
     "installable": True,
 }
-
