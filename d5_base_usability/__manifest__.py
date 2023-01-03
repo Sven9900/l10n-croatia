@@ -15,7 +15,7 @@
     'author': "Davor Bojkić (DAJ MI 5)",
     'website': "",
     "support": "",
-    "licence": "LGPL-3",
+    "license": "LGPL-3",
     #"price" : 20.00,   #-> only if module if sold!
     #"currency": "EUR",
 
