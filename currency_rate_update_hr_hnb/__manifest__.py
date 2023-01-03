@@ -15,5 +15,7 @@
     'depends': [
         'currency_rate_update',
     ],
-    'data': [],
+    'data': [
+        'data/provider_parameter.xml'
+    ],
 }

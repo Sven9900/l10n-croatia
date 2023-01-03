@@ -28,13 +28,19 @@ class ResCurrencyRateProviderHrHNB(models.Model):
         # sve valute.. ali very low impact pa se ne mucim oko ovog
         return currencies
 
+
+    def _get_rate_type(self):
+        type = self.env["ir.config_parameter"].sudo().get_param(
+            "currency_rate_update_hr_hnb.rate_type")
+        if not type:
+            type = 'srednji'
+        return type + "_tecaj"
     def _obtain_rates(self, base_currency, currencies, date_from, date_to):
         self.ensure_one()
-        # self._create_company_currency_rate()
         if self.service != 'HR-HNB':
             return super()._obtain_rates(base_currency, currencies, date_from,
                                          date_to)  # pragma: no cover
-
+        rate_type = self._get_rate_type()
         result = {}
         currencies = [c.name for c in self.currency_ids]
         data = self._l10n_hr_hnb_urlopen(
@@ -45,7 +51,7 @@ class ResCurrencyRateProviderHrHNB(models.Model):
             if currency not in currencies:
                 continue
             rate_date = cd['datum_primjene']
-            rate = cd.get('srednji_tecaj').replace(',', '.')
+            rate = cd.get(rate_type).replace(',', '.')
             try:
                 rate = float(rate)
             except Exception as E:
@@ -56,7 +62,6 @@ class ResCurrencyRateProviderHrHNB(models.Model):
             else:
                 result[rate_date].update({currency: rate})
         return result
-
 
     def _l10n_hr_hnb_urlopen(self, currencies=None, date_from=None, date_to=None):
         url = "https://api.hnb.hr/tecajn-eur/v3"
@@ -73,4 +78,3 @@ class ResCurrencyRateProviderHrHNB(models.Model):
         res = request.urlopen(url, timeout=15)
         data = json.loads(res.read().decode("UTF-8"))
         return data
-
