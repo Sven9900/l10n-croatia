@@ -4,9 +4,10 @@
 import logging
 import json
 import urllib.request as request
-from odoo import models, fields, api, _
+from odoo import models, fields
 
 _logger = logging.getLogger(__name__)
+
 
 class ResCurrencyRateProviderHrHNB(models.Model):
     _inherit = 'res.currency.rate.provider'
@@ -16,23 +17,6 @@ class ResCurrencyRateProviderHrHNB(models.Model):
         ondelete={"HR-HNB": "set default"},
     )
 
-    # def _create_company_currency_rate(self):
-    #     rcr = self.env['res.currency.rate']
-    #     cc_provider_rate = rcr.search(
-    #         [('provider_id', '=', self.id),
-    #          ('company_id', '=', self.company_id.id),
-    #          ('currency_id', '=', self.company_id.currency_id.id)])
-    #     if not cc_provider_rate:
-    #         rcr.create({
-    #             'name': fields.Date.from_string('2000-01-01'),
-    #             'rate': 1,
-    #             'currency_id': self.company_id.currency_id.id,
-    #             'company_id': self.company_id.id,
-    #             'provider_id': self.id
-    #         })
-    #     return True
-
-    # @api.multi
     def _get_supported_currencies(self):
         self.ensure_one()
         if self.service != 'HR-HNB':
@@ -44,7 +28,6 @@ class ResCurrencyRateProviderHrHNB(models.Model):
         # sve valute.. ali very low impact pa se ne mucim oko ovog
         return currencies
 
-    # @api.multi
     def _obtain_rates(self, base_currency, currencies, date_from, date_to):
         self.ensure_one()
         # self._create_company_currency_rate()
@@ -62,15 +45,12 @@ class ResCurrencyRateProviderHrHNB(models.Model):
             if currency not in currencies:
                 continue
             rate_date = cd['datum_primjene']
-            # there is 3 rates: buy, mid, sell,
-            # legaly required is to post all moves using mid rate, so no config on this part
             rate = cd.get('srednji_tecaj').replace(',', '.')
             try:
                 rate = float(rate)
-            except:
-                _logger.debug("HNB problem rate not float: ", str(cd))
+            except Exception as E:
+                _logger.debug("HNB problem rate : ", str(cd), repr(E))
                 continue
-            # not directly dependant but have in mind
             if not result.get(rate_date):
                 result[rate_date] = {currency: rate}
             else:
@@ -78,7 +58,6 @@ class ResCurrencyRateProviderHrHNB(models.Model):
         return result
 
 
-    # @api.multi
     def _l10n_hr_hnb_urlopen(self, currencies=None, date_from=None, date_to=None):
         url = "https://api.hnb.hr/tecajn-eur/v3"
         if date_from is not None:
@@ -91,7 +70,7 @@ class ResCurrencyRateProviderHrHNB(models.Model):
             cur = '&'.join(['valuta=' + c for c in currencies])
             url += "?" + cur
 
-        res = request.urlopen(url)
+        res = request.urlopen(url, timeout=15)
         data = json.loads(res.read().decode("UTF-8"))
         return data
 
