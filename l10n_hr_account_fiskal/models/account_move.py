@@ -35,7 +35,7 @@ class AccountMove(models.Model):
         # TODO: nova shema ima metodu provjere da li je racun fiskaliziran!
         elif len(self.jir) >= 32:  # BOLE: JIR je 32+ znaka !
             #res = self.fiskaliziraj('provjera') # samo WSDL 1.4 ovog nema u 1.5 ?!
-            raise UserError(_('No need to repeat fiscalisation process!')
+            raise UserError(_('No need to repeat fiscalisation process!'))
 
     def _l10n_hr_post_out_invoice(self):
         # singleton record! checked in super()
