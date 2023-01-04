@@ -22,12 +22,12 @@ msgstr ""
 
 #. module: l10n_hr_base
 #: model:ir.model.fields,help:l10n_hr_base.field_res_company__l10n_hr_zdravstveno
-msgid "Broj obveze uplaćivanja zdravstvenog osiguranja"
+msgid "Registration number for payments to health insurance"
 msgstr ""
 
 #. module: l10n_hr_base
 #: model:ir.model.fields,help:l10n_hr_base.field_res_company__l10n_hr_mirovinsko
-msgid "Broj obveznika uplaćivanja mirovinskog osiguranja"
+msgid "Regstration Number for payments in pension fund"
 msgstr ""
 
 #. module: l10n_hr_base
@@ -42,12 +42,12 @@ msgstr ""
 
 #. module: l10n_hr_base
 #: model:ir.model.fields,field_description:l10n_hr_base.field_res_company__l10n_hr_maticni_broj
-msgid "Matični broj"
+msgid "Registration number"
 msgstr ""
 
 #. module: l10n_hr_base
 #: model:ir.model.fields,field_description:l10n_hr_base.field_res_company__l10n_hr_mirovinsko
-msgid "Mirovinsko"
+msgid "Pension fund"
 msgstr ""
 
 #. module: l10n_hr_base
@@ -64,10 +64,10 @@ msgstr ""
 
 #. module: l10n_hr_base
 #: model:ir.model.fields,field_description:l10n_hr_base.field_res_company__l10n_hr_zdravstveno
-msgid "Zdravstveno"
+msgid "Health insurance"
 msgstr ""
 
 #. module: l10n_hr_base
 #: model:ir.model.fields,help:l10n_hr_base.field_res_company__l10n_hr_nkd
-msgid "Šifra glavne djelatnosti prema NKD-2007"
+msgid "Main company activity classified by NKD-2007"
 msgstr ""
