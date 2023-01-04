@@ -1,57 +1,62 @@
 # Copyright 2023 DAJ MI 5
 # License LGPL-3.0 or later (https://www.gnu.org/licenses/lgpl.html).
 
-import logging
 import json
+import logging
 import urllib.request as request
-from odoo import models, fields
+
+from odoo import fields, models
 
 _logger = logging.getLogger(__name__)
 
 
 class ResCurrencyRateProviderHrHNB(models.Model):
-    _inherit = 'res.currency.rate.provider'
+    _inherit = "res.currency.rate.provider"
 
     service = fields.Selection(
-        selection_add=[('HR-HNB', 'Croatia-HNB')],
+        selection_add=[("HR-HNB", "Croatia-HNB")],
         ondelete={"HR-HNB": "set default"},
     )
 
     def _get_supported_currencies(self):
         self.ensure_one()
-        if self.service != 'HR-HNB':
+        if self.service != "HR-HNB":
             return super()._get_supported_currencies()  # pragma: no cover
 
         data = self._l10n_hr_hnb_urlopen()
-        currencies = [c['valuta'] for c in data]
+        currencies = [c["valuta"] for c in data]
         # BOLE: ovo paziti jer moguce je da bas na taj dan nemam
         # sve valute.. ali very low impact pa se ne mucim oko ovog
         return currencies
 
-
     def _get_rate_type(self):
-        type = self.env["ir.config_parameter"].sudo().get_param(
-            "currency_rate_update_hr_hnb.rate_type")
+        rate_type = (
+            self.env["ir.config_parameter"]
+            .sudo()
+            .get_param("currency_rate_update_hr_hnb.rate_type")
+        )
         if not type:
-            type = 'srednji'
-        return type + "_tecaj"
+            rate_type = "srednji"
+        return rate_type + "_tecaj"
+
     def _obtain_rates(self, base_currency, currencies, date_from, date_to):
         self.ensure_one()
-        if self.service != 'HR-HNB':
-            return super()._obtain_rates(base_currency, currencies, date_from,
-                                         date_to)  # pragma: no cover
+        if self.service != "HR-HNB":
+            return super()._obtain_rates(
+                base_currency, currencies, date_from, date_to
+            )  # pragma: no cover
         rate_type = self._get_rate_type()
         result = {}
         currencies = [c.name for c in self.currency_ids]
         data = self._l10n_hr_hnb_urlopen(
-            currencies=currencies,
-            date_from=date_from, date_to=date_to)
+            currencies=currencies, date_from=date_from, date_to=date_to
+        )
         for cd in data:
-            currency = cd['valuta']
+            currency = cd["valuta"]
             if currency not in currencies:
                 continue
-            rate_date = cd['datum_primjene']
-            rate = cd.get(rate_type).replace(',', '.')
+            rate_date = cd["datum_primjene"]
+            rate = cd.get(rate_type).replace(",", ".")
             try:
                 rate = float(rate)
             except Exception as E:
@@ -69,10 +74,10 @@ class ResCurrencyRateProviderHrHNB(models.Model):
             if date_to is not None:
                 url += "?datum-primjene-od=%s&datum-primjene-do=%s" % (
                     fields.Date.to_string(date_from),
-                    fields.Date.to_string(date_to)
+                    fields.Date.to_string(date_to),
                 )
         if currencies is not None:
-            cur = '&'.join(['valuta=' + c for c in currencies])
+            cur = "&".join(["valuta=" + c for c in currencies])
             url += "?" + cur
 
         res = request.urlopen(url, timeout=15)
