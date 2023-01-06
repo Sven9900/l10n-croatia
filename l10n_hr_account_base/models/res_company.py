@@ -285,6 +285,8 @@ class FiskalUredjaj(models.Model):
 
     def _create_new_journal(self):
         self.ensure_one()
+        account = self.env['account.account'].search([('code', 'like', '750000')])
+        account = account and account[0]
         journal_vals = {
             'sequence': 1,
             'type': 'sale',
@@ -295,8 +297,8 @@ class FiskalUredjaj(models.Model):
             'l10n_hr_prostor_id': self.prostor_id.id,
             'l10n_hr_fiskal_uredjaj_ids': [(4, self.id)],
             'show_on_dashboard': False,
-            # TODO: correct account if possible!
-            #'default_account_id': self.prostor_id.company_id.property_account_income_categ_id.id,
+            # TODO: correct account if possible! hardcoded for now based on CoA
+            'default_account_id': account and account.id,
            # 'invoice_reference_model': 'hr',
         }
         self.env['account.journal'].create(journal_vals)
