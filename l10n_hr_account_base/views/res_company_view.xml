@@ -146,6 +146,11 @@
                             </page>
                         </notebook>
                     </sheet>
+                    <div class="oe_chatter">
+<!--                        <field name="message_follower_ids"/>-->
+                        <field name="activity_ids"/>
+                        <field name="message_ids"/>
+                    </div>
                 </form>
             </field>
         </record>
@@ -190,8 +195,9 @@
                         <button type="object" name="button_close_device"
                                 class="btn-danger" icon="fa-stop" string="Close device"
                                 attrs="{'invisible': [('state', 'not in', ('active','pause'))]}"/>
-                        <field name="state" widget="badge"/>
+                        <field name="state" widget="statusbar"/>
                     </header>
+                    <sheet>
                     <group>
                         <field name="prostor_id" attrs="{'readonly':[('lock','=',True)]}"/>
                         <field name="name" attrs="{'readonly':[('lock','=',True)]}"/>
@@ -202,6 +208,12 @@
                         <field name="sequence_id" attrs="{'readonly':[('lock','=',True)], 'invisible':[('sljed_racuna','=','P')]}"/>
                         <field name="journal_ids" widget="many2many_tags" attrs="{'readonly':[('lock','=',True)]}"/>
                     </group>
+                    </sheet>
+                    <div class="oe_chatter">
+<!--                        <field name="message_follower_ids"/>-->
+                        <field name="activity_ids"/>
+                        <field name="message_ids"/>
+                    </div>
                 </form>
             </field>
         </record>

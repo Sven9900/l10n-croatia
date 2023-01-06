@@ -55,31 +55,33 @@ class IrSequenceDateRange(models.Model):
 
 class FiskalProstor(models.Model):
     _name = 'l10n.hr.fiskal.prostor'
+    _inherit = ['mail.thread', 'mail.activity.mixin']
     _description = 'Croatia business premisses'
 
     lock = fields.Boolean(
+        tracking=1,
         help="Once the first invoice is confirmed, "
-             "business premise code and invocie sequence should not be changed"
-
+             "business premise code and invoice sequence should not be changed"
     )
-    name = fields.Char(required=True, size=128)
+    name = fields.Char(required=True, size=128, tracking=1)
     company_id = fields.Many2one(
         comodel_name='res.company', required="True",
         default=lambda self: self.env.company
     )
     oznaka_prostor = fields.Char(
         string='Fiscal Code',
-        required="True", size=20,
+        required="True", size=20, tracking=1,
         help="Will be used as second part of fiscal invoice number"
     )
     sljed_racuna = fields.Selection(
         selection=[
             ('N', 'On PoS device level'),
             ('P', 'On business premise level')],
-        string='Sequence by', required="True",default='P'
+        string='Sequence by', required="True",default='P', tracking=1
     )
     mjesto_izdavanja = fields.Char(
         string="Place of invoicing",  # required="True",
+        tracking=1,
         help="It will be used as place of invoicing for this premise, "
              " as a legaly required element"
     )
@@ -94,7 +96,7 @@ class FiskalProstor(models.Model):
             ('active', 'Active'),
             ('pause', 'Paused'),
             ('closed', 'Closed')],
-        default='draft'
+        default='draft', tracking=1
     )
     journal_ids = fields.One2many(
         comodel_name='account.journal',
@@ -178,7 +180,6 @@ class FiskalProstor(models.Model):
         waiting.journal_ids.show_on_dashboard = True
         waiting.state = 'active'
 
-
     def button_pause_premisse(self):
         self.ensure_one()
         self.uredjaj_ids.button_pause()
@@ -202,13 +203,14 @@ class FiskalProstor(models.Model):
 
 class FiskalUredjaj(models.Model):
     _name = 'l10n.hr.fiskal.uredjaj'
+    _inherit = ['mail.thread', 'mail.activity.mixin']
     _description = 'PoS device details'
 
 
-    lock = fields.Boolean(default=False,
+    lock = fields.Boolean(default=False, tracking=1,
         help="After first invoice is confirmed, no more changes!"
     )
-    name = fields.Char(string='PoS name')
+    name = fields.Char(string='PoS name', tracking=1)
     prostor_id = fields.Many2one(
         comodel_name='l10n.hr.fiskal.prostor',
         string="Business Premisse",
@@ -218,11 +220,11 @@ class FiskalUredjaj(models.Model):
         string='Sequence by', store=True,
         related='prostor_id.sljed_racuna')
     oznaka_uredjaj = fields.Integer(     # -> kad se šalje xml onda strict integer!
-        string='Device code', required="True",
+        string='Device code', required="True", tracking=1,
         help="Only integer number values allowed, without leading zeroes.",
     )
     mjesto_izdavanja = fields.Char(
-        string="Place of invoicing",
+        string="Place of invoicing", tracking=1,
         help="If not entered, Premisse invicing place will be used, "
              " as a legaly required element")
     possible_journal_ids = fields.Many2many(
@@ -248,8 +250,7 @@ class FiskalUredjaj(models.Model):
             ('wait', 'Waiting Premisse'),  # activated before the premisse
             ('pause', 'Paused'),
             ('close', 'Closed')
-        ], default="draft", required=True,
-        help=""
+        ], default="draft", required=True, tracking=1
     )
 
     _sql_constraints = [
