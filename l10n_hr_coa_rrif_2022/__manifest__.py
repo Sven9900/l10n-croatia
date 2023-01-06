@@ -27,7 +27,7 @@ https://www.rrif.hr/dok/preuzimanje/RRIF-RP2021-ENG.PDF
     'depends': [
         'account',
         'base_vat',
-        'l10n_multilang',
+        # 'l10n_multilang', actualy nope... not needed at all!
     ],
     'data': [
         'data/l10n_hr_chart_data.xml',

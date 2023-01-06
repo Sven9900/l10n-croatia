@@ -6,7 +6,7 @@
 	<record id="fiscal_position_r1" model="account.fiscal.position.template">
 		<field name="chart_template_id" ref="l10n_hr_coa_rrif_2022"/>
 		<field name="sequence">1</field>
-		<field name="name">Domestic Company (R1)</field>
+		<field name="name">Domaći partneri (R1)</field>
 		<field name="auto_apply" eval="True"/>
 		<field name="vat_required" eval="True"/>
 		<field name="country_id" ref="base.hr"/>
@@ -18,7 +18,7 @@
 	<record id="fiscal_position_eu" model="account.fiscal.position.template">
 		<field name="chart_template_id" ref="l10n_hr_coa_rrif_2022"/>
 		<field name="sequence">2</field>
-		<field name="name">EU Partners</field>
+		<field name="name">EU Partneri</field>
 		<field name="note">REVERSE CHARGE - Tax exception according to art.17.pt.1 i art.26.pt.3. Tax added value Law</field><!--- REVERSE CHARGE - Oslobođeno PDV-a temeljem čl.17. st.1 i čl.26.st.3. Zakona o PDV-u-->
 		<field name="vat_required" eval="True"/>
 		<field name="auto_apply" eval="True"/>
@@ -102,7 +102,7 @@
 	<record id="fiscal_position_import" model="account.fiscal.position.template">
 		<field name="chart_template_id" ref="l10n_hr_coa_rrif_2022"/>
 		<field name="sequence">3</field>
-		<field name="name">INO (nonEU) Partners</field>
+		<field name="name">INO (nonEU) Partneri</field>
 		<field name="note">REVERSE CHARGE - Tax exception based on art.17.pt.1 and art.5. Value added tax Law</field><!--Oslobođeno PDV-a temeljem čl.17. st.1 i st.5. Zakona o PDV-u-->
 		<field name="vat_required" eval="True"/>
 		<field name="auto_apply" eval="True"/>
@@ -174,7 +174,7 @@
 	<record id="fiscal_position_r2" model="account.fiscal.position.template">
 		<field name="chart_template_id" ref="l10n_hr_coa_rrif_2022"/>
 		<field name="sequence">5</field>
-		<field name="name">Domestic Company (R2)</field>
+		<field name="name">Tuzemni R2</field>
 		<field name="auto_apply" eval="True"/>
 		<field name="vat_required" eval="True"/>
 		<field name="country_id" ref="base.hr"/>
@@ -206,7 +206,7 @@
 	<record id="fiscal_position_person" model="account.fiscal.position.template">
 		<field name="chart_template_id" ref="l10n_hr_coa_rrif_2022"/>
 		<field name="sequence">4</field>
-		<field name="name">Domestic Private Person</field>
+		<field name="name">Kupac građanin</field>
 		<field name="auto_apply" eval="True"/>
 		<field name="vat_required" eval="False"/>
 		<field name="country_id" ref="base.hr"/>
@@ -230,7 +230,7 @@
 	<record id="fiscal_position_non_resident" model="account.fiscal.position.template">
 		<field name="chart_template_id" ref="l10n_hr_coa_rrif_2022"/>
 		<field name="sequence">5</field>
-		<field name="name">Non Resident</field>
+		<field name="name">Bez sjedišta</field>
 		<field name="note">REVERSE CHARGE - Tax eception based in art.17.pt.1 Value added tax Law</field><!--Oslobođeno PDV-a temeljem čl 17. stavka 1-->
 		<field name="vat_required" eval="True"/>
 		<field name="auto_apply" eval="False"/>
@@ -285,7 +285,7 @@
 	<record id="fiscal_position_advance" model="account.fiscal.position.template">
 		<field name="chart_template_id" ref="l10n_hr_coa_rrif_2022"/>
 		<field name="sequence">10</field>
-		<field name="name">Advance payment</field>
+		<field name="name">Avansno plaćanje</field>
 		<field name="vat_required" eval="True"/>
 		<field name="tax_ids">
 			<!-- SALE -->
@@ -348,7 +348,7 @@
 	<record id="fiscal_position_reverse_charge" model="account.fiscal.position.template">
 		<field name="chart_template_id" ref="l10n_hr_coa_rrif_2022"/>
 		<field name="sequence">10</field>
-		<field name="name">Reverse Charge</field>
+		<field name="name">Tuzemni PPO</field>
 		<field name="note">REVERSE CHARGE - Tax exception based on art.75.pt.2. art.3. Value added tax Law</field><!--REVERSE CHARGE - Oslobođeno PDV-a temeljem čl.75. st.2. st.3. Zakona o PDV-u-->
 		<field name="vat_required" eval="True"/>
 		<field name="country_id" ref="base.hr"/>
@@ -379,7 +379,7 @@
 	<record id="fiscal_position_domestic_no_vat" model="account.fiscal.position.template">
 		<field name="chart_template_id" ref="l10n_hr_coa_rrif_2022"/>
 		<field name="sequence">120</field>
-		<field name="name">Domestic not VAT subject</field>
+		<field name="name">Nije u PDV</field>
 		<field name="note">NIJE U SUSTAVU PDV</field><!--REVERSE CHARGE - Oslobođeno PDV-a temeljem čl.75. st.2. st.3. Zakona o PDV-u-->
 		<field name="vat_required" eval="True"/>
 		<field name="country_id" ref="base.hr"/>
