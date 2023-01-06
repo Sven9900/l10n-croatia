@@ -21,13 +21,13 @@ https://www.rrif.hr/dok/preuzimanje/RRIF-RP2021-ENG.PDF
 
 """,
     "version": "16.0",
-    "author": "Odoo SA, DAJ MI 5, Odoo Community Association (OCA)",
+    "author": "DAJ MI 5, Odoo Community Association (OCA)",
     'category': 'Accounting/Localizations/Account Charts',
 
     'depends': [
         'account',
         'base_vat',
-        # 'l10n_multilang', actualy nope... not needed at all!
+        # 'l10n_multilang', actualy nope... not working good! reverted back to single lang!
     ],
     'data': [
         'data/l10n_hr_chart_data.xml',
