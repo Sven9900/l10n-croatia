@@ -11,7 +11,7 @@ class ResPartner(models.Model):
         # is it"s VAT Number (without country code).
         # borrowed from l10n_be
         res = super()._compute_company_registry()
-        for partner in self.filtered(lambda p: p.country_id.code == "HR" and p.vat):
+        for partner in self.filtered(lambda p: p.country_id.code in ("HR", False) and p.vat):
             vat_country, vat_number = self._split_vat(partner.vat)
             if vat_country == "hr" and self.simple_vat_check(vat_country, vat_number):
                 partner.company_registry = vat_number
