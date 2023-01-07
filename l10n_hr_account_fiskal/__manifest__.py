@@ -1,29 +1,30 @@
 
 {
-    "name": "Croatia - Fiscalisation",
-    "summary": "Croatia Fiscalisation",
+    "name": "Croatia - Fiskalizacija",
+    "summary": "Croatia Fiscalizacija računa",
     "category": "Croatia",
     "images": [],
-    "version": "16.0.0.0.1",
+    "version": "16.0.0.0.2",
     "application": False,
-    'author': "Daj mi 5",
-    'website': "",
+    "author": "Daj mi 5, Odoo Community Association (OCA)",
+    "website": "https://github.com/OCA/l10n-croatia",
     "support": "",
-    "license": "LGPL-3",
+    "license": "AGPL-3",
     "depends": [
-        "crypto_store",
+        #"crypto_store", depreciated!
         "l10n_hr_account_base",
     ],
     "external_dependencies": {
-        "python": ['zeep'],
+        "python": ["zeep", "xmlsec"],
         "bin": []
     },
     "data": [
-        'views/account_tax.xml',
-        'views/account_journal_views.xml',
-        'views/res_company.xml',
-        'views/account_move_views.xml',
-        'security/ir.model.access.csv',
+        "views/fiskal_certificate_views.xml",
+        "views/account_tax.xml",
+        "views/account_journal_views.xml",
+        "views/res_company.xml",
+        "views/account_move_views.xml",
+        "security/ir.model.access.csv",
 
 
     ],

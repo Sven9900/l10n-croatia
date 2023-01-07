@@ -1,4 +1,5 @@
-from . import crypto_certificate
+#from . import crypto_certificate
+from . import fiskal_certificate
 from . import account_journal
 from . import account_tax
 from . import fiskal_log

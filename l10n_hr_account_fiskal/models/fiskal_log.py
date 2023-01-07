@@ -10,24 +10,28 @@ class FiskalLog(models.Model):
         help="Unique communication mark")
     type = fields.Selection(
         selection=[
-            ('racun', 'Fiskalizacija racuna'),
+            ('racuni', 'Fiskalizacija racuna'),
             ('rac_pon', 'Ponovljeno slanje racuna'),
-            ('rac_prov', 'Provjera fiskalizacije računa'),  # NOVO!
+            ('provjera', 'Provjera fiskalizacije računa'),  # NOVO!
             ('pd', 'Fiskalizacija prateceg dokumenta'),
             ('pd_rac', 'Fiskalizacija računa za prateći dokument'),
             ('echo', 'Test poruka '),
             ('other', 'Other types')],
         string='Message type',
-        readonly=True)
+        readonly=True
+    )
     invoice_id = fields.Many2one(
         comodel_name='account.move',
-        string='Invoice', readonly=True)
+        string='Invoice', readonly=True
+    )
     fiskal_prostor_id = fields.Many2one(
         comodel_name='l10n.hr.fiskal.prostor',
-        string='Premisse', readonly=True)
+        string='Premisse', readonly=True
+    )
     fiskal_uredjaj_id = fields.Many2one(
         comodel_name='l10n.hr.fiskal.uredjaj',
-        string='POS Device', readonly=True)
+        string='POS Device', readonly=True
+    )
     sadrzaj = fields.Text(string='Sent message', readonly=True)
     odgovor = fields.Text(string='Reply', readonly=True)
     greska = fields.Text(string='Error', readonly=True)
