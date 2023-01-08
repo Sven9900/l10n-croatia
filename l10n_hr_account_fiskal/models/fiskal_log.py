@@ -10,15 +10,15 @@ class FiskalLog(models.Model):
         help="Unique communication mark")
     type = fields.Selection(
         selection=[
-            ('racuni', 'Fiskalizacija racuna'),
-            ('rac_pon', 'Ponovljeno slanje racuna'),
-            ('provjera', 'Provjera fiskalizacije računa'),  # NOVO!
-            ('pd', 'Fiskalizacija prateceg dokumenta'),
-            ('pd_rac', 'Fiskalizacija računa za prateći dokument'),
-            ('echo', 'Test poruka '),
-            ('other', 'Other types')],
-        string='Message type',
-        readonly=True
+            ('racuni', 'Invoice fiscalisation'),
+            ('rac_pon', 'Late delivery for fiscalisation'),
+            ('provjera', 'Check/Verify fiscalisation data'),  # NOVO!
+            ('pd', 'Fiscalisation of attached document'),
+            ('pd_rac', 'Fiscalisation of invoice for attached doc'),
+            ('echo', 'Test service message'),
+            ('other', 'Other / Not recognized')
+        ],
+        string='Message type', readonly=True
     )
     invoice_id = fields.Many2one(
         comodel_name='account.move',
@@ -35,15 +35,15 @@ class FiskalLog(models.Model):
     sadrzaj = fields.Text(string='Sent message', readonly=True)
     odgovor = fields.Text(string='Reply', readonly=True)
     greska = fields.Text(string='Error', readonly=True)
-    time_stamp = fields.Char(string='TimeStamp odgovora', readonly=True)
-    time_obr = fields.Char(string='Vrijeme obrade', readonly=True)
+    time_stamp = fields.Char(string='Reply TimeStamp', readonly=True)
+    time_obr = fields.Char(string='Process time', readonly=True)
     user_id = fields.Many2one(
-        comodel_name='res.users',
-        string='Person',
-        readonly=True,
-        on_delete='restrict')
+        comodel_name='res.users', readonly=True,
+        string='Person', on_delete='restrict',
+        help="Person which sent fiscalisation message",
+    )
     company_id = fields.Many2one(
         comodel_name='res.company',
-        string='Company',
-        required=True)
+        string='Company', required=True,
+    )
 

@@ -7,30 +7,31 @@ from odoo.exceptions import ValidationError
 class AccountMove(models.Model):
     _inherit = "account.move"
 
-
-
     l10n_hr_date_document = fields.Date(
-        string='Document Date',
+        string='Document Date', copy=False,
         readonly=True, states={'draft': [('readonly', False)]},
         help="Date when the document was actually created. "
              "Leave blank for current date",
-        copy=False)
+    )
     l10n_hr_date_delivery = fields.Date(  # to avoid possible name conflict in delivery module!
-        string='Delivery Date',
+        string='Delivery Date', copy=False,
         readonly=True, states={'draft': [('readonly', False)]},
-        copy=False,
         help="Date of delivery of goods or service. "
-             "Leave blank for current date")
-
+             "Leave blank for current date",
+    )
     l10n_hr_vrijeme_izdavanja = fields.Char(
         # DB: namjerno kao char da izbjegnem timezone problem!
-        string="Time of confirming",
-        help="Croatia Fiskal datetime value", copy=False,
-        readonly=True, states={'draft': [('readonly', False)]})
+        string="Time of invoicing", copy=False,
+        readonly=True, states={'draft': [('readonly', False)]},
+        help="Croatia Fiskal datetime value as string."
+             " shoud respect format: ",
+    )
     l10n_hr_fiskalni_broj = fields.Char(
         string="Fiskal number", copy=False,
-        help="Required fiscal number, generated according to regulations regardless of journal number",
-        readonly=True, states={'draft': [('readonly', False)]})
+        readonly=True, states={'draft': [('readonly', False)]},
+        help="Required fiscal number, generated according to "
+             "regulations regardless of journal number",
+    )
     # i za ulazne račune se ovdje moze upisati
     l10n_hr_nacin_placanja = fields.Selection(
         selection=[('T', 'Bank transfer')],
@@ -39,28 +40,28 @@ class AccountMove(models.Model):
         help="According to Fiscalization Law and regulative "
         "there is 5 possible options:\n"
         "T - Transaction bank account, \n"
-        " and for other options need is fiscalisation extension module:\n"
+        " and for other options needed is fiscalisation extension module:\n"
         "G - Cash (coins or bills), \n"
         "K - Bank cards, \n"
         "C - Cheque payment, \n"
-        "O - Other payment,\n"
-
+        "O - Other payment,\n",
     )
 
     l10n_hr_fiskal_uredjaj_id = fields.Many2one(
         comodel_name='l10n.hr.fiskal.uredjaj',
         string="Fiskal device",
-        help="Device on which is fiscal payment registred",
         readonly=True, states={'draft': [('readonly', False)]},
-        )
+        help="Device on which is fiscal payment registred",
+    )
     l10n_hr_allowed_fiskal_uredjaj_ids = fields.Many2many(
         comodel_name='l10n.hr.fiskal.uredjaj',
         compute="_compute_allowed_fiskal_device",
         string="Alowed Fiskal device",
     )
     l10n_hr_fiskal_uredjaj_visible = fields.Boolean(
-        help="Technical field to show device selection only if there is something to select "
-             "like 2 or more devices for this journal"
+        help="Technical field to show device selection"
+             " only if there is something to select"
+             " like 2 or more devices for this journal",
     )
 
     @api.depends('journal_id')
@@ -91,17 +92,16 @@ class AccountMove(models.Model):
         """
         Inherit for all other controlls needed adding a line for each
         missing or wrong entry data for out invoices / refunds needed
-        Better that raising error for each controll point
+        Better that raising error for each error
         :return:
         """
         self.ensure_one()
         res = []
         if not self.l10n_hr_fiskal_uredjaj_id:
-            res.append(_("No active PoS devices found for this jurnal"))
+            res.append(_("No active PoS devices found for this journal"))
         if self.l10n_hr_fiskal_uredjaj_id.state != 'active':
             res.append(_("PoS device selected is not active"))
         return res
-
 
     def _l10n_hr_post_out_invoice(self):
         self.ensure_one()

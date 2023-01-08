@@ -11,7 +11,6 @@
     "support": "",
     "license": "AGPL-3",
     "depends": [
-        #"crypto_store", depreciated!
         "l10n_hr_account_base",
     ],
     "external_dependencies": {
@@ -25,12 +24,9 @@
         "views/res_company.xml",
         "views/account_move_views.xml",
         "security/ir.model.access.csv",
-
-
     ],
     "qweb": [],
     "demo": [],
-
     "auto_install": False,
     "installable": True,
 }

@@ -5,34 +5,25 @@ from datetime import datetime
 from uuid import uuid4
 from requests import Session
 from zeep import Client
-from zeep.exceptions import Fault
 from zeep.transports import Transport
 from zeep.plugins import HistoryPlugin
-from zeep.wsdl.bindings.soap import SoapOperation
-from hashlib import md5
-from cryptography.hazmat.primitives import hashes, serialization
-from cryptography.hazmat.primitives.asymmetric import padding
-
 from .zeep_signer import EnvelopedSignaturePlugin, Signer, Verifier
 
 
 def generate_zki(zki_datalist, signer=None):
-    '''
+    """
     as function so it can be called to ckeck generated ZKI without
     instanciating Fiskalizacija class
     parameteras are all strings with actual document data
     zki_datalist:
-      invoice: oib, datum_vrijeme, br_racuna, oznaka_pp,
-                 oznaka_nu, ukupno_iznos
-      TODO: PrateciDokumenti!!! broj dokumenta nije fiskalni broj!!!
-    :return:
-    '''
-
-    zki = signer.sign_zki_payload(''.join(zki_datalist))
-    return zki
+      invoice data in this order: ž
+      oib, datum_vrijeme, br_racuna, oznaka_pp, oznaka_nu, ukupno_iznos
+    :return: signed and hashed ZKI
+    """
+    return signer.sign_zki_payload(''.join(zki_datalist))
 
 def format_decimal(decimal):
-    '''Formats float for Fiskal communication'''
+    """Formats float for Fiskal communication"""
     return '%.2f' % decimal
 
 def get_uuid():
@@ -43,7 +34,7 @@ def get_uuid():
 class Fiskalizacija():
     """
     Helper class for fiscalization requirement in Croatia
-    - generates suds object
+    - generates suds object, send message and handles response
     """
 
     def _find_all_types(self):
@@ -58,11 +49,9 @@ class Fiskalizacija():
         """
         :param fiskal_data: dict containing basic fiscalization data
                 keys: key, cert, wsdl, ca_path, ca_list, url, test...
-
-        :param odoo_object: instance of odoo object for further processing
+                geneerated on res.company object
         :param other: optional variables
         """
-
         session = Session()
         session.verify = fiskal_data['fina']
         transport = Transport(session=session)
@@ -96,10 +85,10 @@ class Fiskalizacija():
         """
         message_id = uuid4()
         dt = datetime.now()
-        res = self.type_factory.ZaglavljeType(
-            IdPoruke=message_id, DatumVrijeme=dt.strftime("%d.%m.%YT%H:%M:%S")
+        return self.type_factory.ZaglavljeType(
+            IdPoruke=message_id,
+            DatumVrijeme=dt.strftime("%d.%m.%YT%H:%M:%S")
         )
-        return res
 
     def requires_signature(self, operation):
         """
@@ -112,28 +101,6 @@ class Fiskalizacija():
         """
         return operation.name != "echo"
 
-        # self.default_ns = 'fis'
-        # self.key_path = fiskal_data['key']
-        # self.cert_path = fiskal_data['cert']
-        # self.odoo_object = odoo_object
-
-        # xmldsig_plugin = soap.XmlDSigMessagePlugin(fiskal_data)
-        # xml_message_log_plugin = soap.XmlMessageLogPlugin()
-        # suds_options = {
-        #     'cache': None,
-        #     'prettyxml': True,
-        #     'timeout': 90,
-        #     'plugins': [xmldsig_plugin, xml_message_log_plugin],
-        # }
-
-        # if fiskal_data.get('test', False) == True:
-        #     suds_options['location'] = 'https://cistest.apis-it.hr:8449/FiskalizacijaServiceTest'
-
-        # self.client = Client(fiskal_data['wsdl'], **suds_options)
-        # self.client.options.transport = soap.CustomHttpTransport(
-        #                                 ca_certs=fiskal_data['ca_path'])
-        # self.log = xml_message_log_plugin
-
     def _call_service(self, service_proxy, req_kw):
         try:
             res = service_proxy(**req_kw)
@@ -141,14 +108,14 @@ class Fiskalizacija():
             try:
                 doc = etree.fromstring(E.detail)
             except etree.XMLSyntaxError:
-                raise ResponseError([])
-
+                # should not happen!!
+                raise
             root = doc.find("{*}Body/*")
             if root is None:
-                res = doc  #raise ResponseError([])
+                res = doc
             else:
                 fault_response = self.client.wsdl.types.deserialize(root)
-                res = fault_response  # raise ResponseError.from_fault_response(fault_response)
+                res = fault_response
         return res
 
     def test_service(self, test_message="ping"):
@@ -159,72 +126,22 @@ class Fiskalizacija():
         """
         return self.client.service.echo(test_message)
 
-    # def create(self, name):
-    #     '''
-    #     Create instances of suds objects and types defined in WSDL
-    #     '''
-    #
-    #     if ':' in name:
-    #         wtype = self.client.factory.create(name)
+    # def send(self, method_name, data, nosend=False, raw_response=False):
+    #     '''Send request'''
+    #     method = getattr(self.client.service, method_name)
+    #     if not method:
+    #         raise ValueError('Unknown method: %s' % method_name)
+    #     if method_name == 'echo':
+    #         response = method(data)
     #     else:
-    #         wtype = self.client.factory.create(
-    #                                 "%s:%s" % (self.default_ns, name))
-    #     return wtype
-
-
-
-    def send(self, method_name, data, nosend=False, raw_response=False):
-        '''Send request'''
-        method = getattr(self.client.service, method_name)
-        if not method:
-            raise ValueError('Unknown method: %s' % method_name)
-        if method_name == 'echo':
-            response = method(data)
-        else:
-            header = self.generate_header()
-            if nosend:
-                pre_nosend = self.client.options.nosend
-                self.client.options.nosend = True
-            response = method(header, data)
-            if nosend:
-                self.client.options.nosend = pre_nosend
-                response = response.envelope
-            if not raw_response:
-                response = self.process_response(header, response)
-        return response
-
-    # def echo(self, msg='ping'):
-    #     '''Send and verify Fiskal CIS echo request'''
-    #
-    #     reply = self.client.service.echo(msg)
-    #     if reply == msg:
-    #         res = "Echo test successful with reply: %s" % (reply,)
-    #     else:
-    #         res = "Echo test failed with reply: %s" % (reply,)
-    #     return res
-
-    def process_response(self, request_hdr, response):
-        '''Process response and return response data in dictionary'''
-
-        response = dict(response)
-
-        # if 'Zaglavlje' not in response:
-        #     raise Exception('No header in response')
-        # if 'IdPoruke' not in response['Zaglavlje']:
-        #     raise Exception('No header id in response')
-        # if str(request_hdr.IdPoruke) != str(response['Zaglavlje']['IdPoruke']):
-        #     raise Exception('Request and response header id do not match')
-        # del response['Zaglavlje']
-        response['Success'] = True
-        if 'Greske' in response:
-            errors = []
-            for err in response['Greske']:
-                errors.append(dict(err[1][0]))
-            raise Exception(errors)
-
-        if 'Signature' in response:
-            del response['Signature']
-
-
-
-        return response
+    #         header = self.generate_header()
+    #         if nosend:
+    #             pre_nosend = self.client.options.nosend
+    #             self.client.options.nosend = True
+    #         response = method(header, data)
+    #         if nosend:
+    #             self.client.options.nosend = pre_nosend
+    #             response = response.envelope
+    #         if not raw_response:
+    #             response = self.process_response(header, response)
+    #     return response

@@ -30,7 +30,7 @@ class FiskalCertificate(models.Model):
     cert_file = fields.Binary(string="Received cert file")
     cert_file_name = fields.Char()
     cert_password = fields.Char(string='Password for certificate')
-    # the rest of fields filled on conversion
+    # the rest of fields filled on cert conversion
     name = fields.Char(readonly=True)
     cert_type = fields.Selection(
         selection=[

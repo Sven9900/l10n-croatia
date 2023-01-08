@@ -8,7 +8,7 @@
         <field name="arch" type="xml">
 
             <widget name="web_ribbon" position="before">
-                <!-- friendly warning to setup if not ready -->
+                <!-- friendly warning to visaulise if journal is not ready -->
                 <widget name="web_ribbon" title="PoS not ready!"
                         bg_color="bg-danger"
                         attrs="{'invisible': ['|', '|', ('country_code','!=', 'HR'),
@@ -36,6 +36,8 @@
                 <page string="Croatia Fiskal data" name="croatia"
                       attrs="{'invisible':['|', ('country_code','!=', 'HR'),
                               ('move_type','not in',['out_invoice','out_refund'])]}">
+                    <!-- invisible fields -->
+
                     <group>
                         <field name="l10n_hr_date_document" />
                         <field name="l10n_hr_vrijeme_izdavanja" readonly="1"/>

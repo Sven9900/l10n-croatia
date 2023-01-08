@@ -1,6 +1,5 @@
 
-from odoo import api, fields, models, _
-from odoo.exceptions import ValidationError
+from odoo import fields, models
 
 
 class AccountJournal(models.Model):

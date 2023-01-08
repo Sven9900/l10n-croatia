@@ -1,12 +1,10 @@
-# Copyright 2020 Decodio Applications Ltd (https://decod.io)
 # License LGPL-3.0 or later (https://www.gnu.org/licenses/lgpl.html).
 
-from odoo import api, fields, models, _
+from odoo import fields, models
 
 
 class AccountTax(models.Model):
     _inherit = 'account.tax'
-
 
     l10n_hr_fiskal_type = fields.Selection(
         selection=[

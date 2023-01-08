@@ -19,20 +19,21 @@ class FiscalFiscalMixin(models.AbstractModel):
         readonly=True, copy=False)
     l10n_hr_fiskal_user_id = fields.Many2one(
         comodel_name='res.users', string="Fiscal user",
-        help="User who sent the fiscalisation message to FINA. Can be different from responsible person on invoice."
+        help="User who sent the fiscalisation message to FINA."
+             " Can be different from responsible person on invoice."
     )
 
     l10n_hr_vrijeme_xml = fields.Char(  # probably not needed but heck...
         string="XML time",
-        help="Value from fiscalization msg stored as string",
+        help="Value for fiscalization msg stored as string",
         size=19, readonly=True, copy=False)
     l10n_hr_paragon_br = fields.Char(
         'Paragon nr.',
         readonly=True, copy=False,
         states={'draft': [('readonly', False)]},
         # TODO translateME!
-        help="Paragon broj racuna, ako je racun izdan na paragon. "
-             "Potrebno upisati prije potvrđivanja računa")
+        help="If system was down, and invoice is records on 'paragon blok',"
+             ". This needs to be entered BEFORE confirming the invoice.")
     l10n_hr_late_delivery = fields.Boolean(
         string="Late delivery",
         readonly=True, copy=False,

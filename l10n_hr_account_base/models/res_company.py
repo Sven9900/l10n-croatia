@@ -9,21 +9,20 @@ class Company(models.Model):
     l10n_hr_fiskal_prostor_ids = fields.One2many(
         comodel_name='l10n.hr.fiskal.prostor',
         inverse_name='company_id',
-        string='Business premises'
+        string='Business premises',
     )
     l10n_hr_fiskal_separator = fields.Selection(
         selection=[
             ('/', '/'),
             ('-', '-'),
-        ], string="Invoice parts separator",
-        default='/',
-        help="Only '/' or '-' are legaly defined as allowed"
+        ], string="Invoice parts separator", default='/',
+        help="Only '/' or '-' are legaly defined as allowed",
     )
     l10n_hr_fiskal_invoice_sequences = fields.Many2many(
         comodel_name='ir.sequence',
         string="Invoice fiskal sequences for company",
         compute="_compute_l10n_hr_sequences",
-        context={'active_test': False}
+        context={'active_test': False},  # want to see inactive also!
     )
 
     def _compute_l10n_hr_sequences(self):
@@ -40,16 +39,17 @@ class Company(models.Model):
                 year = last_date.year + 1
             else:
                 year = fields.Date.today().year
-            vals = {
-
-            }
+            vals = {}
 
 
 class IrSequenceDateRange(models.Model):
     _inherit = 'ir.sequence.date_range'
 
     def name_get(self):
-        res = [(d.id, "%s-%s" % (d.date_from.year, d.number_next_actual)) for d in self]
+        res = [(d.id, "%s-%s" % (
+                d.date_from.year,
+                d.number_next_actual))
+               for d in self]
         return res
 
 
@@ -120,7 +120,6 @@ class FiskalProstor(models.Model):
              'unique (oznaka_prostor,company_id)',
              'The code of the business premise must be unique per company !')
         ]
-
 
     def _get_sequence_fiskal_code(self, pos=None):
         self.ensure_one()

@@ -4,11 +4,6 @@ import uuid
 import os
 from hashlib import md5
 from lxml import etree
-from requests import Session
-from zeep import Client
-from zeep.exceptions import Fault
-from zeep.transports import Transport
-from zeep.wsdl.bindings.soap import SoapOperation
 from cryptography.hazmat.primitives import hashes, serialization
 from cryptography.hazmat.primitives.asymmetric import padding
 
@@ -76,16 +71,10 @@ class Signer:
             )
 
     def sign_document(self, root):
-        # add soap-env ns
-        # nsmap = deepcopy(namespace_map)
-        # nsmap.update(root.nsmap)
-
         req_node = root.find("{http://schemas.xmlsoap.org/soap/envelope/}Body/*")
-
         # Find the XML node with the request itself (eg. RacunZahtjev)
         if req_node is None:
             raise ValueError("Unable to find request tag element")
-
         request_id = str(uuid.uuid4())
 
         # The request node needs an Id so it can be referenced from the Reference node
@@ -117,7 +106,6 @@ class Signer:
     def sign_zki_payload(self, data) -> str:
         """
         Sign raw ZKI payload using the private key
-
         Payload is signed using SHA1+RSA algorithm. The signature is
         hashed using MD5 digest algorithm. The resulting digest is
         returned as hexadecimal string.
@@ -127,11 +115,9 @@ class Signer:
 
         Args:
             * data - raw ZKI data to be signed
-
         Returns:
             * ZKI digest calculated the standard algorithm
         """
-        # typing: ignore
         signature = self.hazmat_key.sign(
             data.encode("utf-8"),
             padding.PKCS1v15(),
@@ -173,7 +159,8 @@ class Verifier:
         try:
             ctx.verify(sig_node)
         except Exception as E:
-            print(repr(E))
+            # print(repr(E))
+            pass
 
 
 class EnvelopedSignaturePlugin:
@@ -189,7 +176,7 @@ class EnvelopedSignaturePlugin:
         return envelope, http_headers
 
     def ingress(self, envelope, http_headers, operation):
-        # TODO validate response!
+        # TODO properly validate response!
         # if self.fiskal_client.requires_signature(operation):
         #     try:
         #         self.verifier.verify_document(envelope)
