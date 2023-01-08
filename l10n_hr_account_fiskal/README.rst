@@ -1,3 +1,11 @@
+===================================
+Croatia - Fiscalisation of invoices
+===================================
+
+This module provides feture of legaly required fiscalisation process for invoicess
+Additional modules will be required for other types of documents.
+Available official documentation is available here:
+[Fiskalizacija](https://www.porezna-uprava.hr/HR_Fiskalizacija/Stranice/FiskalizacijaNovo.aspx)
 
 
 Fina Server demo certifikati: https://www.fina.hr/fina-demo-ca-certifikati

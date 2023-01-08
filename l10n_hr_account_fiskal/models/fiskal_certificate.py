@@ -18,6 +18,7 @@ DEMO = {
     'FISKAL 1': 'fina_cert/demo/demo2014_sub_ca.pem',
 }
 
+
 class FiskalCertificate(models.Model):
     _name = "l10n.hr.fiskal.certificate"
     _description = "Fiskal certificate store"
