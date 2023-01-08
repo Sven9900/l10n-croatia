@@ -1,6 +1,5 @@
 import os
 import base64
-import requests
 from datetime import datetime
 from OpenSSL import crypto as SSLCrypto
 from odoo import api, fields, models, _
@@ -19,8 +18,6 @@ DEMO = {
     'FISKAL 1': 'fina_cert/demo/demo2014_sub_ca.pem',
 }
 
-
-
 class FiskalCertificate(models.Model):
     _name = "l10n.hr.fiskal.certificate"
     _description = "Fiskal certificate store"
@@ -29,6 +26,11 @@ class FiskalCertificate(models.Model):
         comodel_name="res.company",
         default=lambda s: s.env.user.company_id
     )
+    # 1. load cert file fields
+    cert_file = fields.Binary(string="Received cert file")
+    cert_file_name = fields.Char()
+    cert_password = fields.Char(string='Password for certificate')
+    # the rest of fields filled on conversion
     name = fields.Char(readonly=True)
     cert_type = fields.Selection(
         selection=[
@@ -42,24 +44,20 @@ class FiskalCertificate(models.Model):
     cert_oib = fields.Char(readonly=True,)
     pem_key = fields.Text(
         string='Private key', readonly=True,
-        help='Private key from P12/PFX cert file',
+        help='Private key from user P12/PFX cert file',
     )
     pem_crt = fields.Text(
         string='Certificate', readonly=True,
-        help='Fiskal certificate from P12/PFX cert file',
+        help='Fiskal certificate from user P12/PFX cert file',
     )
-    fina_certs_data = fields.Text(
-
-    )
+    fina_certs_data = fields.Text(readonly=True,)
     fina_cert_bundle = fields.Text(
-        string="Fina certificates",
-        help="Certificate bundle from FINA matching certificate"
+        string="Fina certificates", readonly=True,
+        help="Certificate bundle from FINA matching certificate",
     )
     not_before = fields.Datetime(readonly=True)
     not_after = fields.Datetime(readonly=True)
-    cert_file = fields.Binary(string="Received cert file")
-    cert_file_name = fields.Char()
-    cert_password = fields.Char(string='Password for certificate')
+
     state = fields.Selection(
         selection=[
             ('draft', 'Draft'),
@@ -105,7 +103,7 @@ class FiskalCertificate(models.Model):
         self.cert_oib = subject[b'O'].decode('utf-8').split(" ")[-1]
         self.pem_key = SSLCrypto.dump_privatekey(SSLCrypto.FILETYPE_PEM, p12.get_privatekey())
         self.pem_crt = SSLCrypto.dump_certificate(SSLCrypto.FILETYPE_PEM, p12.get_certificate())
-        #self.date_expire = datetime.strptime(cert_not_after, "%Y%m%d%H%M%SZ").strftime("%Y-%m-%d")
+
         self.state = 'convert'
         self.cert_type = 'demo' if "demo" in self.cert_issuer.lower() else 'prod'
         fiskal_path = self.company_id._get_fiskal_path()
@@ -131,14 +129,7 @@ class FiskalCertificate(models.Model):
     def action_cancel(self):
         for cert in self:
             cert.state = 'cancel'
-        #     if 'Fiskal' in self.usage:
-        #         path = cert._get_fiskal_cert_path()
-        #         key, crt = cert._get_key_cert_file_name()
-        #         for f in (key, crt):
-        #             file = os.path.join(path, f)
-        #             if os.path.exists(file):
-        #                 os.remove(file)
-        # return res
+
 
     def unlink(self):
         for cert in self:

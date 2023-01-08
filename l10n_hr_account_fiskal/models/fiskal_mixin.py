@@ -35,6 +35,8 @@ class FiscalFiscalMixin(models.AbstractModel):
              "Potrebno upisati prije potvrđivanja računa")
     l10n_hr_late_delivery = fields.Boolean(
         string="Late delivery",
+        readonly=True, copy=False,
+        states={'draft': [('readonly', False)]},
         help="Checked if message could not be sent at time of invoicing"
     )
 
@@ -210,11 +212,15 @@ class FiscalFiscalMixin(models.AbstractModel):
             # existing in shema 1.4 not in 1.5!
             if msg_type != 'provjera':
                 msg_type = 'provjera'
+        if self.l10n_hr_zki and not self.l10n_hr_jir and not self.l10n_hr_late_delivery:
+            # imam ZKI, nemam jir = naknadna dostava
+            self.l10n_hr_late_delivery = True
         time_start = self.company_id.get_l10n_hr_time_formatted()
         if not self.l10n_hr_fiskal_user_id:
             # MUST USE CURRENT user for fiscalization!
             # Except in case of paragon račun? or naknadna dostava?
             self.l10n_hr_fiskal_user_id = self._uid
+
         errors = self._l10n_hr_post_fiskal_check()
         if errors:
             msg = _("Fiscalisation not possible: \n")

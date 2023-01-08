@@ -17,5 +17,6 @@ class AccountTax(models.Model):
             ('marza', 'Oporezivanje marze'),
             ('ne_podlijeze', 'Ne podlijeze oporezivanju'),
             ('Naknade', 'Naknade (npr. ambalaza)')],
-        string="Fiskalni tax type",
-        domain="[('type_tax_use', '!=', 'purchase')]")
+        string="Fiskal tax type",
+        domain="[('type_tax_use', '!=', 'purchase')]",
+    )

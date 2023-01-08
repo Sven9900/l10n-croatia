@@ -18,25 +18,20 @@ class AccountMove(models.Model):
         comodel_name="l10n.hr.fiskal.log",
         inverse_name="invoice_id",
         string="Fiskal message logs",
-        help="Log of all messages sent and received for FINA"
+        help="Log of all messages sent and received for FINA",
     )
-
-
 
     def button_fiskaliziraj(self):
         self.ensure_one()
-        if not self.l10n_hr_jir:
-            self.fiskaliziraj()  # from 10n.hr.fixcal.mixin
-        # TODO: nova shema ima metodu provjere da li je racun fiskaliziran!
-        elif len(self.jir) >= 32:  # BOLE: JIR je 32+ znaka !
-            #res = self.fiskaliziraj("provjera") # samo WSDL 1.4 ovog nema u 1.5 ?!
-            raise UserError(_("No need to repeat fiscalisation process!"))
+        # ako imam JIR pokreće provjeru ili ako nema fiskalizaciju.
+        self.fiskaliziraj()  # from 10n.hr.fixcal.mixin
 
     def _l10n_hr_post_out_invoice(self):
         # singleton record! checked in super()
-        super()._l10n_hr_post_out_invoice()
+        res = super()._l10n_hr_post_out_invoice()
         # TODO selection or decision which to send ?
         # - possible not fiscalisation of invoices paid on transaction acc?
         # need to put smart options what and when not to send...
         if self.journal_id.l10n_hr_fiscalisation_active:
             self.fiskaliziraj()
+        return res

@@ -167,12 +167,9 @@ class Verifier:
     def verify_document(self, root):
         ctx = xmlsec.SignatureContext(manager=self.manager)
         ctx.key = self.key
-
         req_node = root.find("{http://schemas.xmlsoap.org/soap/envelope/}Body/*")
         ctx.register_id(req_node, "Id")
-
         sig_node = xmlsec.tree.find_node(root, xmlsec.constants.NodeSignature)
-
         try:
             ctx.verify(sig_node)
         except Exception as E:

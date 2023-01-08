@@ -70,21 +70,6 @@ class Company(models.Model):
         string="In taxation system", default=True, tracking=1
     )
 
-    # @api.onchange('fiskal_cert_id')
-    # def onchange_fiskal_cert(self):
-    #     """
-    #     Maybe put this in field domain later...
-    #     """
-    #     # DB: maybe also:
-    #     # if 'Fiskal' not in self.fiskal_cert_id.usage:
-    #     # but, strict for now...
-    #     if self.fiskal_cert_id.usage not in [
-    #             'Fiskal_DEMO_V1', 'Fiskal_PROD_V1',
-    #             'Fiskal_DEMO_V2', 'Fiskal_PROD_V2',
-    #             'Fiskal_DEMO_V3', 'Fiskal_PROD_V3']:
-    #         self.fiskal_cert_id = False  # DB: just empty value, no raise...
-    #         # raise ValidationError(_('Selected certificate is not intended for fiscalization purposes!'))
-
     def _get_log_vals(self, msg_type, msg_obj, response, time_start, origin):
         """
         Inherit in other modules with proper super to add values
@@ -117,10 +102,10 @@ class Company(models.Model):
             'odgovor': etree.tostring(msg_obj.history.last_sent['envelope']).decode('utf-8'),
             'greska': error_log != "" and error_log  or 'OK',
             'fiskal_prostor_id': origin._name == 'account.move'
-                     and origin.l10n_hr_fiskal_uredjaj_id.prostor_id.id or
-                     False,
-            'invoice_id': origin._name == 'account.move' and
-                          origin.id or False,
+                     and origin.l10n_hr_fiskal_uredjaj_id.prostor_id.id or False,
+            'fiskal_uredjaj_id': origin._name == 'account.move'
+                     and origin.l10n_hr_fiskal_uredjaj_id.id or False,
+            'invoice_id': origin._name == 'account.move' and origin.id or False,
             'company_id': self.id
         }
         return values
@@ -139,18 +124,11 @@ class Company(models.Model):
         msg = 'TEST message'
         echo = fisk.test_service(msg)
         self.create_fiskal_log('echo', fisk, echo, time_start)
-        if echo != msg:
-            # i commit created log! then raise!
-            self.env.cr.commit()
-            raise ValidationError(
-                _("ECHO failed with : ") + fisk.log.received_log
-            )
-
 
     def get_fiskal_data(self):
         fina_cert = self.l10n_hr_fiskal_cert_id
         if not fina_cert:
-            raise MissingError(_('Cerificate not found! Check company setup!'))
+            raise MissingError(_('Fiskal Cerificate not found! Check company setup!'))
         fina_pem, key_file, cert_file, production = fina_cert.get_fiskal_ssl_data()
 
         fiskal_path = self._get_fiskal_path()
@@ -162,21 +140,13 @@ class Company(models.Model):
         for fcert in os.listdir(cert_path):
             fpath = os.path.join(cert_path, fcert)
             cis_ca_list.append(fpath)
-
-            # if not production and 'Demo' in fcert or \
-            #     production and 'Demo' not in fcert:
-            #     fpath = os.path.join(cert_path, fcert)
-            #     if 'Chain' in fcert:
-            #         ca_path = fpath
-            #     else:
-            #         cis_ca_list.append(fpath)
-        fiskalcis_pem_combined = []
-        for file in fina_cert.fina_certs_data.split('\n'):
-            ppath = fiskal_path + file
-            fiskalcis_pem_combined.append(ppath)
-            # with open(ppath, 'r') as f:
-            #     pem = f.read()
-            #     fiskalcis_pem_combined += pem + '\n'
+        # fiskalcis_pem_combined = []
+        # for file in fina_cert.fina_certs_data.split('\n'):
+        #     ppath = fiskal_path + file
+        #     fiskalcis_pem_combined.append(ppath)
+        #     # with open(ppath, 'r') as f:
+        #     #     pem = f.read()
+        #     #     fiskalcis_pem_combined += pem + '\n'
         res = {
             'company_oib': self.vat,
             'cert_oib': self.l10n_hr_fiskal_cert_id.cert_oib,
@@ -188,10 +158,9 @@ class Company(models.Model):
             'ca_path': ca_path,
             'url': 'fiskalcis' if production else 'fiskalcistest',
             'demo': not production,
-            'fina_cert_bundle': fiskalcis_pem_combined
+            #'fina_cert_bundle': fiskalcis_pem_combined
         }
         return res
-        # return wsdl_file, key_file, cert_file, cis_ca_list, ca_path, production
 
 
 class FiskalProstor(models.Model):

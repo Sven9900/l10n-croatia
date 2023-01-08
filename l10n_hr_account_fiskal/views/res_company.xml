@@ -25,27 +25,10 @@
         <field name="inherit_id" ref="l10n_hr_account_base.view_fiskal_prostor_form"/>
         <field name="arch" type="xml">
             <notebook position="inside">
-<!--						<page string="Adresa">-->
-<!--							<notebook>-->
-<!--								<page string="Fizička adresa prostora" >-->
-<!--									<group colspan="4" col="4">-->
-<!--										<field name="ulica" />-->
-<!--										<field name="kbr" />-->
-<!--										<field name="kbr_dodatak"/>-->
-<!--										<field name="posta" />-->
-<!--										<field name="naselje" />-->
-<!--										<field name="opcina"/>-->
-<!--									</group>-->
-<!--								</page>-->
-<!--								<page string="Ostali tipovi adresa" >-->
-<!--									<field name="prostor_ostalo" />-->
-<!--								</page>-->
-<!--							</notebook>-->
-<!--						</page>-->
-                    <page string="Fiskalizacija - Komunikacija">
-                        <field name="fiskal_log_ids" nolabel="1" colspan="4" />
-                    </page>
-        </notebook>
+                <page string="Fiskalizacija - Komunikacija">
+                    <field name="fiskal_log_ids" nolabel="1" colspan="4" />
+                </page>
+            </notebook>
         </field>
     </record>
 
@@ -61,6 +44,7 @@
                 <field name="time_obr" />
                 <field name="fiskal_prostor_id"/>
                 <field name="fiskal_uredjaj_id"/>
+
             </tree>
         </field>
     </record>
@@ -75,7 +59,6 @@
                         <field name="fiskal_prostor_id" readonly="1"/>
                         <field name="fiskal_uredjaj_id" readonly="1"/>
                         <field name="time_stamp" readonly="1"/>
-
                         <field name="time_obr" readonly="1"/>
                         <field name="user_id" readonly="1"/>
                         <field name="company_id" readonly="1"/>
