@@ -1,26 +1,7 @@
-# -*- coding: utf-8 -*-
-# Part of Odoo. See LICENSE file for full copyright and licensing details.
-
 
 {
     "name": "Croatia - Accounting (RRIF 2021)",
-    "description": """
-Croatian localisation.
-======================
-
-This is the base module to manage the accounting chart for Croatia in Odoo
-
-Description:
-Croatian Chart of Accounts updated (RRIF ver.2021)
-Set of taxes and fiskal positions
-
-File used for this localisation:
-https://www.rrif.hr/dok/preuzimanje/Bilanca-2016.pdf
-https://www.rrif.hr/dok/preuzimanje/RRIF-RP2021.PDF
-https://www.rrif.hr/dok/preuzimanje/RRIF-RP2021-ENG.PDF
-
-""",
-    "version": "16.0",
+    "version": "16.0.1.0.0",
     "author": "DAJ MI 5, Odoo Community Association (OCA)",
     'category': 'Accounting/Localizations/Account Charts',
 
@@ -44,5 +25,5 @@ https://www.rrif.hr/dok/preuzimanje/RRIF-RP2021-ENG.PDF
     'demo': [
         'demo/demo_company.xml',
     ],
-    'license': 'LGPL-3',
+    'license': 'AGPL-3',
 }
