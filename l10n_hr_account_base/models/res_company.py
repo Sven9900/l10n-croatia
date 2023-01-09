@@ -283,8 +283,7 @@ class FiskalUredjaj(models.Model):
                     _('Not allowed to delete PoS device with invoices related, please deactivate it instead!'))
         return super(FiskalUredjaj, self).unlink()
 
-    def _create_new_journal(self):
-        self.ensure_one()
+    def _get_new_journal_vals(self):
         account = self.env['account.account'].search([('code', 'like', '750000')])
         account = account and account[0]
         journal_vals = {
@@ -297,10 +296,15 @@ class FiskalUredjaj(models.Model):
             'l10n_hr_prostor_id': self.prostor_id.id,
             'l10n_hr_fiskal_uredjaj_ids': [(4, self.id)],
             'show_on_dashboard': False,
-            # TODO: correct account if possible! hardcoded for now based on CoA
+            # TODO: correct account setup if possible!
+            #  hardcoded for now based on RRIF CoA
             'default_account_id': account and account.id,
-           # 'invoice_reference_model': 'hr',
+            # 'invoice_reference_model': 'hr', -> inheritable but not set here
         }
+        return journal_vals
+    def _create_new_journal(self):
+        self.ensure_one()
+        journal_vals = self._get_new_journal_vals()
         self.env['account.journal'].create(journal_vals)
     def button_activate_device(self):
         for pos in self:
@@ -311,13 +315,18 @@ class FiskalUredjaj(models.Model):
                 if not jrnl.l10n_hr_prostor_id:
                     jrnl.l10n_hr_prostor_id = pos.prostor_id
 
-                if jrnl.l10n_hr_prostor_id and jrnl.l10n_hr_prostor_id != pos.prostor_id:
+                if (
+                    jrnl.l10n_hr_prostor_id and
+                    jrnl.l10n_hr_prostor_id != pos.prostor_id
+                ):
                     no_good.append(("Journal shared with other premisse",
-                                    jrnl.display_name, jrnl.l10n_hr_prostor_id.display_name))
+                                    jrnl.display_name,
+                                    jrnl.l10n_hr_prostor_id.display_name))
                 if pos.sljed_racuna == 'N':
                     if jrnl.l10n_hr_fiskal_uredjaj_ids.ids != [pos.id]:
                         no_good.append(("Journal shared with other PoS",
-                                        jrnl.display_name, jrnl.l10n_hr_prostor_id.display_name))
+                                        jrnl.display_name,
+                                        jrnl.l10n_hr_prostor_id.display_name))
 
             if no_good:
                 msg = '\n'.join(["%s - %s (%s) !"
