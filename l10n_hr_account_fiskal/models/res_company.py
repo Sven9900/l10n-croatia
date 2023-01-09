@@ -53,7 +53,7 @@ class Company(models.Model):
     l10n_hr_fiskal_cert_id = fields.Many2one(
         comodel_name="l10n.hr.fiskal.certificate",
         string="Fiscal certificate", tracking=1,
-        domain="[("state", "=", "active")]",
+        domain="[('tate', '=', 'active')]',
         help="Officialy issued by Croatian FINA Agency, imported and activated"
     )
     l10n_hr_fiskal_spec = fields.Char(
@@ -162,7 +162,3 @@ class FiskalProstor(models.Model):
         string="Logovi poruka",
         help="Logovi poslanih poruka prema poreznoj upravi",
     )
-
-
-
-
