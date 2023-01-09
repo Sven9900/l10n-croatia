@@ -4,7 +4,7 @@ import uuid
 import os
 from hashlib import md5
 from lxml import etree
-from cryptography.hazmat.primitives import hashes
+from cryptography.hazmat.primitives import hashes, serialization
 from cryptography.hazmat.primitives.asymmetric import padding
 
 
@@ -183,5 +183,3 @@ class EnvelopedSignaturePlugin:
         #     except Exception as E:
         #         print(E)
         return envelope, http_headers
-
-

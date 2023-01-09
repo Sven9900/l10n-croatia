@@ -1,5 +1,5 @@
 from odoo import api, fields, models, _
-# from odoo.exceptions import UserError, ValidationError
+from odoo.exceptions import ValidationError
 
 
 class AccountMove(models.Model):
@@ -32,6 +32,14 @@ class AccountMove(models.Model):
         # TODO selection or decision which to send ?
         # - possible not fiscalisation of invoices paid on transaction acc?
         # need to put smart options what and when not to send...
+        if (
+            not self.journal_id.l10n_hr_fiscalisation_active
+            and self.l10n_hr_nacin_placanja != 'T'
+        ):
+            raise ValidationError(
+                _("Fiscalization is not active for %s!! "
+                  "Only Transaction account payment is allowed!")
+                % self.journal_id.display_name)
         if self.journal_id.l10n_hr_fiscalisation_active:
             self.fiskaliziraj()
         return res
