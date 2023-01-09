@@ -19,7 +19,7 @@
                 (0,0, {
                     'factor_percent': 100,
                     'repartition_type': 'base',
-                    'plus_report_expression_ids': [ref('tax_report_line_I_1_base')],
+                    'plus_report_expression_ids': [ref('tax_report_line_101_base')],
                 }),
                 (0,0, {
                     'factor_percent': 100,
@@ -33,7 +33,7 @@
                 (0,0, {
                     'factor_percent': 100,
                     'repartition_type': 'base',
-                    'plus_report_expression_ids': [ref('tax_report_line_I_1_base')],
+                    'plus_report_expression_ids': [ref('tax_report_line_101_base')],
                 }),
                     (0,0, {
                         'factor_percent': 100,
@@ -59,7 +59,7 @@
                 (0,0, {
                     'factor_percent': 100,
                     'repartition_type': 'base',
-                    'plus_report_expression_ids': [ref('tax_report_line_I_2_base')],
+                    'plus_report_expression_ids': [ref('tax_report_line_102_base')],
                 }),
                 (0,0, {
                     'factor_percent': 100,
@@ -73,7 +73,7 @@
                 (0,0, {
                     'factor_percent': 100,
                     'repartition_type': 'base',
-                    'plus_report_expression_ids': [ref('tax_report_line_I_2_base')],
+                    'plus_report_expression_ids': [ref('tax_report_line_102_base')],
                 }),
                 (0,0, {
                     'factor_percent': 100,
@@ -100,7 +100,7 @@
                 (0,0, {
                     'factor_percent': 100,
                     'repartition_type': 'base',
-                    'plus_report_expression_ids': [ref('tax_report_line_I_3_base')],
+                    'plus_report_expression_ids': [ref('tax_report_line_103_base')],
                 }),
                 (0,0, {
                     'factor_percent': 100,
@@ -114,7 +114,7 @@
                 (0,0, {
                     'factor_percent': 100,
                     'repartition_type': 'base',
-                    'plus_report_expression_ids': [ref('tax_report_line_I_3_base')],
+                    'plus_report_expression_ids': [ref('tax_report_line_103_base')],
                 }),
                 (0,0, {
                     'factor_percent': 100,
@@ -141,7 +141,7 @@
                 (0,0, {
                     'factor_percent': 100,
                     'repartition_type': 'base',
-                    'plus_report_expression_ids': [ref('tax_report_line_I_4_base')],
+                    'plus_report_expression_ids': [ref('tax_report_line_104_base')],
                 }),
                 (0,0, {
                     'factor_percent': 100,
@@ -155,7 +155,7 @@
                 (0,0, {
                     'factor_percent': 100,
                     'repartition_type': 'base',
-                    'plus_report_expression_ids': [ref('tax_report_line_I_4_base')],
+                    'plus_report_expression_ids': [ref('tax_report_line_104_base')],
                 }),
                 (0,0, {
                     'factor_percent': 100,
@@ -181,7 +181,7 @@
                 (0,0, {
                     'factor_percent': 100,
                     'repartition_type': 'base',
-                    'plus_report_expression_ids': [ref('tax_report_line_I_5_base')],
+                    'plus_report_expression_ids': [ref('tax_report_line_105_base')],
                 }),
                 (0,0, {
                     'factor_percent': 100,
@@ -195,7 +195,7 @@
                 (0,0, {
                     'factor_percent': 100,
                     'repartition_type': 'base',
-                    'plus_report_expression_ids': [ref('tax_report_line_I_5_base')],
+                    'plus_report_expression_ids': [ref('tax_report_line_105_base')],
                 }),
                 (0,0, {
                     'factor_percent': 100,
@@ -221,7 +221,7 @@
                 (0,0, {
                     'factor_percent': 100,
                     'repartition_type': 'base',
-                    'plus_report_expression_ids': [ref('tax_report_line_I_6_base')],
+                    'plus_report_expression_ids': [ref('tax_report_line_106_base')],
                 }),
                 (0,0, {
                     'factor_percent': 100,
@@ -235,7 +235,7 @@
                 (0,0, {
                     'factor_percent': 100,
                     'repartition_type': 'base',
-                    'plus_report_expression_ids': [ref('tax_report_line_I_6_base')],
+                    'plus_report_expression_ids': [ref('tax_report_line_106_base')],
                 }),
                 (0,0, {
                     'factor_percent': 100,
@@ -261,7 +261,7 @@
                     (0,0, {
                         'factor_percent': 100,
                         'repartition_type': 'base',
-                        'plus_report_expression_ids': [ref('tax_report_line_I_7_base')],
+                        'plus_report_expression_ids': [ref('tax_report_line_107_base')],
                     }),
                     (0,0, {
                         'factor_percent': 100,
@@ -275,7 +275,7 @@
                     (0,0, {
                         'factor_percent': 100,
                         'repartition_type': 'base',
-                        'plus_report_expression_ids': [ref('tax_report_line_I_7_base')],
+                        'plus_report_expression_ids': [ref('tax_report_line_107_base')],
                     }),
                     (0,0, {
                         'factor_percent': 100,
@@ -301,7 +301,7 @@
                     (0,0, {
                         'factor_percent': 100,
                         'repartition_type': 'base',
-                        'plus_report_expression_ids': [ref('tax_report_line_I_8_base')],
+                        'plus_report_expression_ids': [ref('tax_report_line_108_base')],
                     }),
                     (0,0, {
                         'factor_percent': 100,
@@ -315,7 +315,7 @@
                     (0,0, {
                         'factor_percent': 100,
                         'repartition_type': 'base',
-                        'plus_report_expression_ids': [ref('tax_report_line_I_8_base')],
+                        'plus_report_expression_ids': [ref('tax_report_line_108_base')],
                     }),
                     (0,0, {
                         'factor_percent': 100,
@@ -341,7 +341,7 @@
                     (0,0, {
                         'factor_percent': 100,
                         'repartition_type': 'base',
-                        'plus_report_expression_ids': [ref('tax_report_line_I_9_base')],
+                        'plus_report_expression_ids': [ref('tax_report_line_109_base')],
                     }),
                     (0,0, {
                         'factor_percent': 100,
@@ -355,7 +355,7 @@
                     (0,0, {
                         'factor_percent': 100,
                         'repartition_type': 'base',
-                        'plus_report_expression_ids': [ref('tax_report_line_I_9_base')],
+                        'plus_report_expression_ids': [ref('tax_report_line_109_base')],
                     }),
                     (0,0, {
                         'factor_percent': 100,
@@ -381,7 +381,7 @@
                     (0,0, {
                         'factor_percent': 100,
                         'repartition_type': 'base',
-                        'plus_report_expression_ids': [ref('tax_report_line_I_10_base')],
+                        'plus_report_expression_ids': [ref('tax_report_line_110_base')],
                     }),
                     (0,0, {
                         'factor_percent': 100,
@@ -395,7 +395,46 @@
                     (0,0, {
                         'factor_percent': 100,
                         'repartition_type': 'base',
-                        'plus_report_expression_ids': [ref('tax_report_line_I_10_base')],
+                        'plus_report_expression_ids': [ref('tax_report_line_110_base')],
+                    }),
+                    (0,0, {
+                        'factor_percent': 100,
+                        'repartition_type': 'tax',
+                    }),
+                ]"
+        />
+    </record>
+    <record id="VAT_S_zero_rate_O" model="account.tax.template">
+        <field name="sequence">25</field>
+        <field name="description">0% PDV</field>
+        <field name="name">PDV stopa 0%</field>
+        <field name="price_include" eval="0" />
+        <field name="amount">0</field>
+        <field name="amount_type">percent</field>
+        <field name="type_tax_use">sale</field>
+        <field name="chart_template_id" ref="l10n_hr_coa_rrif_2022" />
+        <field name="tax_group_id" ref="tax_group_0" />
+        <field
+            name="invoice_repartition_line_ids"
+            eval="[(5, 0, 0),
+                    (0,0, {
+                        'factor_percent': 100,
+                        'repartition_type': 'base',
+                        'plus_report_expression_ids': [ref('tax_report_line_111_base')],
+                    }),
+                    (0,0, {
+                        'factor_percent': 100,
+                        'repartition_type': 'tax',
+                    }),
+                ]"
+        />
+        <field
+            name="refund_repartition_line_ids"
+            eval="[(5, 0, 0),
+                    (0,0, {
+                        'factor_percent': 100,
+                        'repartition_type': 'base',
+                        'plus_report_expression_ids': [ref('tax_report_line_111_base')],
                     }),
                     (0,0, {
                         'factor_percent': 100,
@@ -415,7 +454,7 @@
         <field name="amount_type">percent</field>
         <field name="type_tax_use">sale</field>
         <field name="tax_scope">consu</field>
-        <field name="sequence" eval="3" />
+        <field name="sequence" eval="5" />
         <field name="tax_group_id" ref="tax_group_5" />
         <field
             name="invoice_repartition_line_ids"
@@ -423,13 +462,13 @@
                     (0,0, {
                         'factor_percent': 100,
                         'repartition_type': 'base',
-                        'plus_report_expression_ids': [ref('tax_report_line_II_1_base')],
+                        'plus_report_expression_ids': [ref('tax_report_line_201_base')],
                     }),
                     (0,0, {
                         'factor_percent': 100,
                         'repartition_type': 'tax',
                         'account_id': ref('hr_240010'),
-                        'plus_report_expression_ids': [ref('tax_report_line_II_1_tax')],
+                        'plus_report_expression_ids': [ref('tax_report_line_201_tax')],
                     }),
                     ]"
         />
@@ -439,13 +478,13 @@
                     (0,0, {
                         'factor_percent': 100,
                         'repartition_type': 'base',
-                        'plus_report_expression_ids': [ref('tax_report_line_II_1_base')],
+                        'plus_report_expression_ids': [ref('tax_report_line_201_base')],
                     }),
                     (0,0, {
                         'factor_percent': 100,
                         'repartition_type': 'tax',
                         'account_id': ref('hr_240010'),
-                        'minus_report_expression_ids': [ref('tax_report_line_II_1_tax')],
+                        'minus_report_expression_ids': [ref('tax_report_line_201_tax')],
                     }),
                 ]"
         />
@@ -467,13 +506,13 @@
             (0,0, {
                 'factor_percent': 100,
                 'repartition_type': 'base',
-                'plus_report_expression_ids': [ref('tax_report_line_II_1_base')],
+                'plus_report_expression_ids': [ref('tax_report_line_201_base')],
             }),
             (0,0, {
                 'factor_percent': 100,
                 'repartition_type': 'tax',
                 'account_id': ref('hr_240010'),
-                'plus_report_expression_ids': [ref('tax_report_line_II_1_tax')],
+                'plus_report_expression_ids': [ref('tax_report_line_201_tax')],
             }),
             ]"
         />
@@ -483,13 +522,13 @@
             (0,0, {
                 'factor_percent': 100,
                 'repartition_type': 'base',
-                'plus_report_expression_ids': [ref('tax_report_line_II_1_base')],
+                'plus_report_expression_ids': [ref('tax_report_line_201_base')],
             }),
             (0,0, {
                 'factor_percent': 100,
                 'repartition_type': 'tax',
                 'account_id': ref('hr_240010'),
-                'minus_report_expression_ids': [ref('tax_report_line_II_1_tax')],
+                'minus_report_expression_ids': [ref('tax_report_line_201_tax')],
             }),
             ]"
         />
@@ -509,13 +548,13 @@
             (0,0, {
                 'factor_percent': 100,
                 'repartition_type': 'base',
-                'plus_report_expression_ids': [ref('tax_report_line_II_1_base')],
+                'plus_report_expression_ids': [ref('tax_report_line_201_base')],
             }),
             (0,0, {
                 'factor_percent': 100,
                 'repartition_type': 'tax',
                 'account_id': ref('hr_240020'),
-                'plus_report_expression_ids': [ref('tax_report_line_II_1_tax')],
+                'plus_report_expression_ids': [ref('tax_report_line_201_tax')],
             }),
             ]"
         />
@@ -524,12 +563,12 @@
             eval="[(5, 0, 0),
             (0,0, {
                 'repartition_type': 'base',
-                'minus_report_expression_ids': [ref('tax_report_line_II_1_base')],
+                'minus_report_expression_ids': [ref('tax_report_line_201_base')],
             }),
             (0,0, {
                 'repartition_type': 'tax',
                 'account_id': ref('hr_240020'),
-                'minus_report_expression_ids': [ref('tax_report_line_II_1_tax')],
+                'minus_report_expression_ids': [ref('tax_report_line_201_tax')],
             }),
             ]"
         />
@@ -537,7 +576,7 @@
     <record id="VAT_S_5_on_payment" model="account.tax.template">
         <field name="description">5% PDV</field>
         <field name="chart_template_id" ref="l10n_hr_coa_rrif_2022" />
-        <field name="name">5% PDV-R2</field><!--5% PDV na Predujam-->
+        <field name="name">5% PDV-R2</field><!--5% PDV po naplacenom-->
         <field name="amount">5</field>
         <field name="amount_type">percent</field>
         <field name="type_tax_use">sale</field>
@@ -549,13 +588,13 @@
             (0,0, {
                 'factor_percent': 100,
                 'repartition_type': 'base',
-                'plus_report_expression_ids': [ref('tax_report_line_II_1_base')],
+                'plus_report_expression_ids': [ref('tax_report_line_201_base')],
             }),
             (0,0, {
                 'factor_percent': 100,
                 'repartition_type': 'tax',
                 'account_id': ref('hr_240020'),
-                'plus_report_expression_ids': [ref('tax_report_line_II_1_tax')],
+                'plus_report_expression_ids': [ref('tax_report_line_201_tax')],
             }),
             ]"
         />
@@ -564,12 +603,12 @@
             eval="[(5, 0, 0),
             (0,0, {
                 'repartition_type': 'base',
-                'minus_report_expression_ids': [ref('tax_report_line_II_1_base')],
+                'minus_report_expression_ids': [ref('tax_report_line_201_base')],
             }),
             (0,0, {
                 'repartition_type': 'tax',
                 'account_id': ref('hr_240020'),
-                'minus_report_expression_ids': [ref('tax_report_line_II_1_tax')],
+                'minus_report_expression_ids': [ref('tax_report_line_201_tax')],
             }),
             ]"
         />
@@ -584,7 +623,7 @@
         <field name="amount_type">percent</field>
         <field name="type_tax_use">sale</field>
         <field name="tax_scope">consu</field>
-        <field name="sequence" eval="2" />
+        <field name="sequence" eval="3" />
         <field name="tax_group_id" ref="tax_group_13" />
         <field
             name="invoice_repartition_line_ids"
@@ -592,13 +631,13 @@
                     (0,0, {
                         'factor_percent': 100,
                         'repartition_type': 'base',
-                        'plus_report_expression_ids': [ref('tax_report_line_II_2_base')],
+                        'plus_report_expression_ids': [ref('tax_report_line_202_base')],
                     }),
                     (0,0, {
                         'factor_percent': 100,
                         'repartition_type': 'tax',
                         'account_id': ref('hr_240011'),
-                        'plus_report_expression_ids': [ref('tax_report_line_II_2_tax')],
+                        'plus_report_expression_ids': [ref('tax_report_line_202_tax')],
                     }),
                     ]"
         />
@@ -608,13 +647,13 @@
                     (0,0, {
                         'factor_percent': 100,
                         'repartition_type': 'base',
-                        'plus_report_expression_ids': [ref('tax_report_line_II_2_base')],
+                        'plus_report_expression_ids': [ref('tax_report_line_202_base')],
                     }),
                     (0,0, {
                         'factor_percent': 100,
                         'repartition_type': 'tax',
                         'account_id': ref('hr_240011'),
-                        'plus_report_expression_ids': [ref('tax_report_line_II_2_tax')],
+                        'plus_report_expression_ids': [ref('tax_report_line_202_tax')],
                     }),
                 ]"
         />
@@ -627,7 +666,7 @@
         <field name="amount_type">percent</field>
         <field name="type_tax_use">sale</field>
         <field name="tax_scope">service</field>
-        <field name="sequence" eval="2" />
+        <field name="sequence" eval="4" />
         <field name="tax_group_id" ref="tax_group_13" />
         <field
             name="invoice_repartition_line_ids"
@@ -635,13 +674,13 @@
             (0,0, {
                 'factor_percent': 100,
                 'repartition_type': 'base',
-                'plus_report_expression_ids': [ref('tax_report_line_II_2_base')],
+                'plus_report_expression_ids': [ref('tax_report_line_202_base')],
             }),
             (0,0, {
                 'factor_percent': 100,
                 'repartition_type': 'tax',
                 'account_id': ref('hr_240011'),
-                'plus_report_expression_ids': [ref('tax_report_line_II_2_tax')],
+                'plus_report_expression_ids': [ref('tax_report_line_202_tax')],
             }),
             ]"
         />
@@ -651,13 +690,13 @@
             (0,0, {
                 'factor_percent': 100,
                 'repartition_type': 'base',
-                'minus_report_expression_ids': [ref('tax_report_line_II_2_base')],
+                'minus_report_expression_ids': [ref('tax_report_line_202_base')],
             }),
             (0,0, {
                 'factor_percent': 100,
                 'repartition_type': 'tax',
                 'account_id': ref('hr_240011'),
-                'minus_report_expression_ids': [ref('tax_report_line_II_2_tax')],
+                'minus_report_expression_ids': [ref('tax_report_line_202_tax')],
             }),
             ]"
         />
@@ -677,13 +716,13 @@
             (0,0, {
                 'factor_percent': 100,
                 'repartition_type': 'base',
-                'plus_report_expression_ids': [ref('tax_report_line_II_2_base')],
+                'plus_report_expression_ids': [ref('tax_report_line_202_base')],
             }),
             (0,0, {
                 'factor_percent': 100,
                 'repartition_type': 'tax',
                 'account_id': ref('hr_240021'),
-                'plus_report_expression_ids': [ref('tax_report_line_II_2_tax')],
+                'plus_report_expression_ids': [ref('tax_report_line_202_tax')],
             }),
             ]"
         />
@@ -693,13 +732,13 @@
             (0,0, {
                 'factor_percent': 100,
                 'repartition_type': 'base',
-                'plus_report_expression_ids': [ref('tax_report_line_II_2_base')],
+                'plus_report_expression_ids': [ref('tax_report_line_202_base')],
             }),
             (0,0, {
                 'factor_percent': 100,
                 'repartition_type': 'tax',
                 'account_id': ref('hr_240021'),
-                'plus_report_expression_ids': [ref('tax_report_line_II_2_tax')],
+                'plus_report_expression_ids': [ref('tax_report_line_202_tax')],
             }),
             ]"
         />
@@ -722,13 +761,13 @@
                 (0,0, {
                     'factor_percent': 100,
                     'repartition_type': 'base',
-                    'plus_report_expression_ids': [ref('tax_report_line_II_3_base')],
+                    'plus_report_expression_ids': [ref('tax_report_line_203_base')],
                 }),
                 (0,0, {
                     'factor_percent': 100,
                     'repartition_type': 'tax',
                     'account_id': ref('hr_240012'),
-                    'plus_report_expression_ids': [ref('tax_report_line_II_3_tax')],
+                    'plus_report_expression_ids': [ref('tax_report_line_203_tax')],
                 }),
             ]"
         />
@@ -738,13 +777,13 @@
                 (0,0, {
                     'factor_percent': 100,
                     'repartition_type': 'base',
-                    'plus_report_expression_ids': [ref('tax_report_line_II_3_base')],
+                    'plus_report_expression_ids': [ref('tax_report_line_203_base')],
                 }),
                 (0,0, {
                     'factor_percent': 100,
                     'repartition_type': 'tax',
                     'account_id': ref('hr_240012'),
-                    'plus_report_expression_ids': [ref('tax_report_line_II_3_tax')],
+                    'plus_report_expression_ids': [ref('tax_report_line_203_tax')],
                 }),
             ]"
         />
@@ -757,7 +796,7 @@
         <field name="amount_type">percent</field>
         <field name="type_tax_use">sale</field>
         <field name="tax_scope">service</field>
-        <field name="sequence" eval="1" />
+        <field name="sequence" eval="2" />
         <field name="tax_group_id" ref="tax_group_25" />
         <field
             name="invoice_repartition_line_ids"
@@ -765,13 +804,13 @@
                     (0,0, {
                         'factor_percent': 100,
                         'repartition_type': 'base',
-                        'plus_report_expression_ids': [ref('tax_report_line_II_3_base')],
+                        'plus_report_expression_ids': [ref('tax_report_line_203_base')],
                     }),
                     (0,0, {
                         'factor_percent': 100,
                         'repartition_type': 'tax',
                         'account_id': ref('hr_240012'),
-                        'plus_report_expression_ids': [ref('tax_report_line_II_3_tax')],
+                        'plus_report_expression_ids': [ref('tax_report_line_203_tax')],
                     }),
                 ]"
         />
@@ -781,13 +820,13 @@
                     (0,0, {
                         'factor_percent': 100,
                         'repartition_type': 'base',
-                        'plus_report_expression_ids': [ref('tax_report_line_II_3_base')],
+                        'plus_report_expression_ids': [ref('tax_report_line_203_base')],
                     }),
                     (0,0, {
                         'factor_percent': 100,
                         'repartition_type': 'tax',
                         'account_id': ref('hr_240012'),
-                        'plus_report_expression_ids': [ref('tax_report_line_II_3_base')],
+                        'plus_report_expression_ids': [ref('tax_report_line_203_base')],
                     }),
                 ]"
         />
@@ -807,13 +846,13 @@
                     (0,0, {
                         'factor_percent': 100,
                         'repartition_type': 'base',
-                        'plus_report_expression_ids': [ref('tax_report_line_II_3_base')],
+                        'plus_report_expression_ids': [ref('tax_report_line_203_base')],
                     }),
                     (0,0, {
                         'factor_percent': 100,
                         'repartition_type': 'tax',
                         'account_id': ref('hr_240022'),
-                        'plus_report_expression_ids': [ref('tax_report_line_II_3_tax')],
+                        'plus_report_expression_ids': [ref('tax_report_line_203_tax')],
                     }),
                 ]"
         />
@@ -823,13 +862,13 @@
                     (0,0, {
                         'factor_percent': 100,
                         'repartition_type': 'base',
-                        'plus_report_expression_ids': [ref('tax_report_line_II_3_base')],
+                        'plus_report_expression_ids': [ref('tax_report_line_203_base')],
                     }),
                     (0,0, {
                         'factor_percent': 100,
                         'repartition_type': 'tax',
                         'account_id': ref('hr_240022'),
-                        'plus_report_expression_ids': [ref('tax_report_line_II_3_tax')],
+                        'plus_report_expression_ids': [ref('tax_report_line_203_tax')],
                     }),
                 ]"
         />
@@ -852,13 +891,13 @@
             (0,0, {
                 'factor_percent': 100,
                 'repartition_type': 'base',
-                'plus_report_expression_ids': [ref('tax_report_line_III_1_base')],
+                'plus_report_expression_ids': [ref('tax_report_line_301_base')],
             }),
             (0,0, {
                 'factor_percent': 100,
                 'repartition_type': 'tax',
                 'account_id': ref('hr_140010'),
-                'plus_report_expression_ids': [ref('tax_report_line_III_1_tax')],
+                'plus_report_expression_ids': [ref('tax_report_line_301_tax')],
             }),
             ]"
         />
@@ -868,13 +907,13 @@
             (0,0, {
                 'factor_percent': 100,
                 'repartition_type': 'base',
-                'plus_report_expression_ids': [ref('tax_report_line_III_1_base')],
+                'plus_report_expression_ids': [ref('tax_report_line_301_base')],
             }),
             (0,0, {
                 'factor_percent': 100,
                 'repartition_type': 'tax',
                 'account_id': ref('hr_140010'),
-                'plus_report_expression_ids': [ref('tax_report_line_III_1_tax')],
+                'plus_report_expression_ids': [ref('tax_report_line_301_tax')],
             }),
             ]"
         />
@@ -894,13 +933,13 @@
             (0,0, {
                 'factor_percent': 100,
                 'repartition_type': 'base',
-                'plus_report_expression_ids': [ref('tax_report_line_III_1_base')],
+                'plus_report_expression_ids': [ref('tax_report_line_301_base')],
             }),
             (0,0, {
                 'factor_percent': 100,
                 'repartition_type': 'tax',
                 'account_id': ref('hr_140020'),
-                'plus_report_expression_ids': [ref('tax_report_line_III_1_tax')],
+                'plus_report_expression_ids': [ref('tax_report_line_301_tax')],
             }),
             ]"
         />
@@ -909,12 +948,12 @@
             eval="[(5, 0, 0),
             (0,0, {
                 'repartition_type': 'base',
-                'plus_report_expression_ids': [ref('tax_report_line_III_1_base')],
+                'plus_report_expression_ids': [ref('tax_report_line_301_base')],
             }),
             (0,0, {
                 'repartition_type': 'tax',
                 'account_id': ref('hr_140020'),
-                'plus_report_expression_ids': [ref('tax_report_line_III_1_tax')],
+                'plus_report_expression_ids': [ref('tax_report_line_301_tax')],
             }),
             ]"
         />
@@ -936,13 +975,13 @@
             (0,0, {
                 'factor_percent': 100,
                 'repartition_type': 'base',
-                'plus_report_expression_ids': [ref('tax_report_line_III_1_base')],
+                'plus_report_expression_ids': [ref('tax_report_line_301_base')],
             }),
             (0,0, {
                 'factor_percent': 100,
                 'repartition_type': 'tax',
                 'account_id': ref('hr_140020'),
-                'plus_report_expression_ids': [ref('tax_report_line_III_1_tax')],
+                'plus_report_expression_ids': [ref('tax_report_line_301_tax')],
             }),
             ]"
         />
@@ -951,12 +990,12 @@
             eval="[(5, 0, 0),
             (0,0, {
                 'repartition_type': 'base',
-                'plus_report_expression_ids': [ref('tax_report_line_III_1_base')],
+                'plus_report_expression_ids': [ref('tax_report_line_301_base')],
             }),
             (0,0, {
                 'repartition_type': 'tax',
                 'account_id': ref('hr_140020'),
-                'plus_report_expression_ids': [ref('tax_report_line_III_1_tax')],
+                'plus_report_expression_ids': [ref('tax_report_line_301_tax')],
             }),
             ]"
         />
@@ -978,13 +1017,13 @@
             (0,0, {
                 'factor_percent': 100,
                 'repartition_type': 'base',
-                'plus_report_expression_ids': [ref('tax_report_line_III_2_base')],
+                'plus_report_expression_ids': [ref('tax_report_line_302_base')],
             }),
             (0,0, {
                 'factor_percent': 100,
                 'repartition_type': 'tax',
                 'account_id': ref('hr_140011'),
-                'plus_report_expression_ids': [ref('tax_report_line_III_2_base')],
+                'plus_report_expression_ids': [ref('tax_report_line_302_base')],
             }),
             ]"
         />
@@ -994,13 +1033,13 @@
             (0,0, {
                 'factor_percent': 100,
                 'repartition_type': 'base',
-                'plus_report_expression_ids': [ref('tax_report_line_III_2_base')],
+                'plus_report_expression_ids': [ref('tax_report_line_302_base')],
             }),
             (0,0, {
                 'factor_percent': 100,
                 'repartition_type': 'tax',
                 'account_id': ref('hr_140011'),
-                'plus_report_expression_ids': [ref('tax_report_line_III_2_tax')],
+                'plus_report_expression_ids': [ref('tax_report_line_302_tax')],
             }),
             ]"
         />
@@ -1021,13 +1060,13 @@
             (0,0, {
                 'factor_percent': 100,
                 'repartition_type': 'base',
-                'plus_report_expression_ids': [ref('tax_report_line_III_2_base')],
+                'plus_report_expression_ids': [ref('tax_report_line_302_base')],
             }),
             (0,0, {
                 'factor_percent': 100,
                 'repartition_type': 'tax',
                 'account_id': ref('hr_140011'),
-                'plus_report_expression_ids': [ref('tax_report_line_III_2_tax')],
+                'plus_report_expression_ids': [ref('tax_report_line_302_tax')],
             }),
             ]"
         />
@@ -1037,13 +1076,13 @@
             (0,0, {
                 'factor_percent': 100,
                 'repartition_type': 'base',
-                'plus_report_expression_ids': [ref('tax_report_line_III_2_base')],
+                'plus_report_expression_ids': [ref('tax_report_line_302_base')],
             }),
             (0,0, {
                 'factor_percent': 100,
                 'repartition_type': 'tax',
                 'account_id': ref('hr_140011'),
-                'plus_report_expression_ids': [ref('tax_report_line_III_2_tax')],
+                'plus_report_expression_ids': [ref('tax_report_line_302_tax')],
             }),
             ]"
         />
@@ -1063,13 +1102,13 @@
             (0,0, {
                 'factor_percent': 100,
                 'repartition_type': 'base',
-                'plus_report_expression_ids': [ref('tax_report_line_III_2_base')],
+                'plus_report_expression_ids': [ref('tax_report_line_302_base')],
             }),
             (0,0, {
                 'factor_percent': 100,
                 'repartition_type': 'tax',
                 'account_id': ref('hr_140021'),
-                'plus_report_expression_ids': [ref('tax_report_line_III_2_tax')],
+                'plus_report_expression_ids': [ref('tax_report_line_302_tax')],
             }),
             ]"
         />
@@ -1079,13 +1118,13 @@
             (0,0, {
                 'factor_percent': 100,
                 'repartition_type': 'base',
-                'minus_report_expression_ids': [ref('tax_report_line_III_2_base')],
+                'minus_report_expression_ids': [ref('tax_report_line_302_base')],
             }),
             (0,0, {
                 'factor_percent': 100,
                 'repartition_type': 'tax',
                 'account_id': ref('hr_140021'),
-                'minus_report_expression_ids': [ref('tax_report_line_III_2_tax')],
+                'minus_report_expression_ids': [ref('tax_report_line_302_tax')],
             }),
             ]"
         />
@@ -1107,13 +1146,13 @@
             (0,0, {
                 'factor_percent': 100,
                 'repartition_type': 'base',
-                'plus_report_expression_ids': [ref('tax_report_line_III_2_base')],
+                'plus_report_expression_ids': [ref('tax_report_line_302_base')],
             }),
             (0,0, {
                 'factor_percent': 100,
                 'repartition_type': 'tax',
                 'account_id': ref('hr_140021'),
-                'plus_report_expression_ids': [ref('tax_report_line_III_2_tax')],
+                'plus_report_expression_ids': [ref('tax_report_line_302_tax')],
             }),
             ]"
         />
@@ -1123,13 +1162,13 @@
             (0,0, {
                 'factor_percent': 100,
                 'repartition_type': 'base',
-                'minus_report_expression_ids': [ref('tax_report_line_III_2_base')],
+                'minus_report_expression_ids': [ref('tax_report_line_302_base')],
             }),
             (0,0, {
                 'factor_percent': 100,
                 'repartition_type': 'tax',
                 'account_id': ref('hr_140021'),
-                'minus_report_expression_ids': [ref('tax_report_line_III_2_tax')],
+                'minus_report_expression_ids': [ref('tax_report_line_302_tax')],
             }),
             ]"
         />
@@ -1151,13 +1190,13 @@
             (0,0, {
                 'factor_percent': 100,
                 'repartition_type': 'base',
-                'plus_report_expression_ids': [ref('tax_report_line_III_3_base')],
+                'plus_report_expression_ids': [ref('tax_report_line_303_base')],
             }),
             (0,0, {
                 'factor_percent': 100,
                 'repartition_type': 'tax',
                 'account_id': ref('hr_140012'),
-                'plus_report_expression_ids': [ref('tax_report_line_III_3_tax')],
+                'plus_report_expression_ids': [ref('tax_report_line_303_tax')],
             }),
             ]"
         />
@@ -1167,13 +1206,13 @@
             (0,0, {
                 'factor_percent': 100,
                 'repartition_type': 'base',
-                'plus_report_expression_ids': [ref('tax_report_line_III_3_base')],
+                'plus_report_expression_ids': [ref('tax_report_line_303_base')],
             }),
             (0,0, {
                 'factor_percent': 100,
                 'repartition_type': 'tax',
                 'account_id': ref('hr_140012'),
-                'plus_report_expression_ids': [ref('tax_report_line_III_3_tax')],
+                'plus_report_expression_ids': [ref('tax_report_line_303_tax')],
             }),
             ]"
         />
@@ -1194,13 +1233,13 @@
             (0,0, {
                 'factor_percent': 100,
                 'repartition_type': 'base',
-                'plus_report_expression_ids': [ref('tax_report_line_III_3_base')],
+                'plus_report_expression_ids': [ref('tax_report_line_303_base')],
             }),
             (0,0, {
                 'factor_percent': 100,
                 'repartition_type': 'tax',
                 'account_id': ref('hr_140012'),
-                'plus_report_expression_ids': [ref('tax_report_line_III_3_tax')],
+                'plus_report_expression_ids': [ref('tax_report_line_303_tax')],
             }),
             ]"
         />
@@ -1210,13 +1249,13 @@
             (0,0, {
                 'factor_percent': 100,
                 'repartition_type': 'base',
-                'plus_report_expression_ids': [ref('tax_report_line_III_3_base')],
+                'plus_report_expression_ids': [ref('tax_report_line_303_base')],
             }),
             (0,0, {
                 'factor_percent': 100,
                 'repartition_type': 'tax',
                 'account_id': ref('hr_140012'),
-                'plus_report_expression_ids': [ref('tax_report_line_III_3_tax')],
+                'plus_report_expression_ids': [ref('tax_report_line_303_tax')],
             }),
             ]"
         />
@@ -1236,13 +1275,13 @@
             (0,0, {
                 'factor_percent': 100,
                 'repartition_type': 'base',
-                'plus_report_expression_ids': [ref('tax_report_line_III_3_base')],
+                'plus_report_expression_ids': [ref('tax_report_line_303_base')],
             }),
             (0,0, {
                 'factor_percent': 100,
                 'repartition_type': 'tax',
                 'account_id': ref('hr_140022'),
-                'plus_report_expression_ids': [ref('tax_report_line_III_3_tax')],
+                'plus_report_expression_ids': [ref('tax_report_line_303_tax')],
             }),
             ]"
         />
@@ -1252,13 +1291,13 @@
             (0,0, {
                 'factor_percent': 100,
                 'repartition_type': 'base',
-                'plus_report_expression_ids': [ref('tax_report_line_III_3_base')],
+                'plus_report_expression_ids': [ref('tax_report_line_303_base')],
             }),
             (0,0, {
                 'factor_percent': 100,
                 'repartition_type': 'tax',
                 'account_id': ref('hr_140022'),
-                'plus_report_expression_ids': [ref('tax_report_line_III_3_tax')],
+                'plus_report_expression_ids': [ref('tax_report_line_303_tax')],
             }),
             ]"
         />
@@ -1280,13 +1319,13 @@
             (0,0, {
                 'factor_percent': 100,
                 'repartition_type': 'base',
-                'plus_report_expression_ids': [ref('tax_report_line_III_3_base')],
+                'plus_report_expression_ids': [ref('tax_report_line_303_base')],
             }),
             (0,0, {
                 'factor_percent': 100,
                 'repartition_type': 'tax',
                 'account_id': ref('hr_140022'),
-                'plus_report_expression_ids': [ref('tax_report_line_III_3_tax')],
+                'plus_report_expression_ids': [ref('tax_report_line_303_tax')],
             }),
             ]"
         />
@@ -1296,13 +1335,13 @@
             (0,0, {
                 'factor_percent': 100,
                 'repartition_type': 'base',
-                'plus_report_expression_ids': [ref('tax_report_line_III_3_base')],
+                'plus_report_expression_ids': [ref('tax_report_line_303_base')],
             }),
             (0,0, {
                 'factor_percent': 100,
                 'repartition_type': 'tax',
                 'account_id': ref('hr_140022'),
-                'plus_report_expression_ids': [ref('tax_report_line_III_3_tax')],
+                'plus_report_expression_ids': [ref('tax_report_line_303_tax')],
             }),
             ]"
         />
@@ -1324,19 +1363,19 @@
             (0,0, {
                 'factor_percent': 100,
                 'repartition_type': 'base',
-                'plus_report_expression_ids': [ref('tax_report_line_III_4_base'),ref('tax_report_line_II_4_base')],
+                'plus_report_expression_ids': [ref('tax_report_line_304_base'),ref('tax_report_line_204_base')],
             }),
             (0,0, {
                 'factor_percent': 100,
                 'repartition_type': 'tax',
                 'account_id': ref('hr_140100'),
-                'plus_report_expression_ids': [ref('tax_report_line_III_4_tax')],
+                'plus_report_expression_ids': [ref('tax_report_line_304_tax')],
             }),
             (0,0, {
                 'factor_percent': -100,
                 'repartition_type': 'tax',
                 'account_id': ref('hr_240100'),
-                'minus_report_expression_ids': [ref('tax_report_line_II_4_tax')],
+                'minus_report_expression_ids': [ref('tax_report_line_204_tax')],
             }),
             ]"
         />
@@ -1346,19 +1385,19 @@
             (0,0, {
                 'factor_percent': 100,
                 'repartition_type': 'base',
-                'plus_report_expression_ids': [ref('tax_report_line_III_4_base'), ref('tax_report_line_II_4_base')],
+                'plus_report_expression_ids': [ref('tax_report_line_304_base'), ref('tax_report_line_204_base')],
             }),
             (0,0, {
                 'factor_percent': 100,
                 'repartition_type': 'tax',
                 'account_id': ref('hr_240100'),
-                'plus_report_expression_ids': [ref('tax_report_line_II_4_tax')],
+                'plus_report_expression_ids': [ref('tax_report_line_204_tax')],
             }),
             (0,0, {
                 'factor_percent': -100,
                 'repartition_type': 'tax',
                 'account_id': ref('hr_140100'),
-                'minus_report_expression_ids': [ref('tax_report_line_III_4_tax')],
+                'minus_report_expression_ids': [ref('tax_report_line_304_tax')],
             }),
             ]"
         />
@@ -1381,19 +1420,19 @@
             (0,0, {
                 'factor_percent': 100,
                 'repartition_type': 'base',
-                'plus_report_expression_ids': [ref('tax_report_line_III_5_base'), ref('tax_report_line_II_5_base')],
+                'plus_report_expression_ids': [ref('tax_report_line_305_base'), ref('tax_report_line_205_base')],
             }),
             (0,0, {
                 'factor_percent': 100,
                 'repartition_type': 'tax',
                 'account_id': ref('hr_140200'),
-                'plus_report_expression_ids': [ref('tax_report_line_III_5_tax')],
+                'plus_report_expression_ids': [ref('tax_report_line_305_tax')],
             }),
             (0,0, {
                 'factor_percent': -100,
                 'repartition_type': 'tax',
                 'account_id': ref('hr_240200'),
-                'minus_report_expression_ids': [ref('tax_report_line_II_5_tax')],
+                'minus_report_expression_ids': [ref('tax_report_line_205_tax')],
             }),
             ]"
         />
@@ -1403,19 +1442,19 @@
             (0,0, {
                 'factor_percent': 100,
                 'repartition_type': 'base',
-                'plus_report_expression_ids': [ref('tax_report_line_III_5_base'), ref('tax_report_line_III_5_tax')],
+                'plus_report_expression_ids': [ref('tax_report_line_305_base'), ref('tax_report_line_205_base')],
             }),
             (0,0, {
                 'factor_percent': 100,
                 'repartition_type': 'tax',
                 'account_id': ref('hr_240200'),
-                'plus_report_expression_ids': [ref('tax_report_line_II_5_tax')],
+                'plus_report_expression_ids': [ref('tax_report_line_205_tax')],
             }),
             (0,0, {
                 'factor_percent': -100,
                 'repartition_type': 'tax',
                 'account_id': ref('hr_140200'),
-                'minus_report_expression_ids': [],
+                'minus_report_expression_ids': [ref('tax_report_line_305_tax')],
             }),
             ]"
         />
@@ -1438,19 +1477,19 @@
             (0,0, {
                 'factor_percent': 100,
                 'repartition_type': 'base',
-                'plus_report_expression_ids': [ref('tax_report_line_III_6_base'), ref('tax_report_line_II_6_base')],
+                'plus_report_expression_ids': [ref('tax_report_line_306_base'), ref('tax_report_line_206_base')],
             }),
             (0,0, {
                 'factor_percent': 100,
                 'repartition_type': 'tax',
                 'account_id': ref('hr_140210'),
-                'plus_report_expression_ids': [ref('tax_report_line_III_6_tax')],
+                'plus_report_expression_ids': [ref('tax_report_line_306_tax')],
             }),
             (0,0, {
                 'factor_percent': -100,
                 'repartition_type': 'tax',
                 'account_id': ref('hr_240210'),
-                'minus_report_expression_ids': [ref('tax_report_line_II_6_tax')],
+                'minus_report_expression_ids': [ref('tax_report_line_206_tax')],
             }),
             ]"
         />
@@ -1460,19 +1499,19 @@
             (0,0, {
                 'factor_percent': 100,
                 'repartition_type': 'base',
-                'plus_report_expression_ids': [ref('tax_report_line_III_6_base'), ref('tax_report_line_II_6_base')],
+                'plus_report_expression_ids': [ref('tax_report_line_306_base'), ref('tax_report_line_206_base')],
             }),
             (0,0, {
                 'factor_percent': 100,
                 'repartition_type': 'tax',
                 'account_id': ref('hr_240210'),
-                'plus_report_expression_ids': [ref('tax_report_line_II_6_tax')],
+                'plus_report_expression_ids': [ref('tax_report_line_206_tax')],
             }),
             (0,0, {
                 'factor_percent': -100,
                 'repartition_type': 'tax',
                 'account_id': ref('hr_140210'),
-                'minus_report_expression_ids': [ref('tax_report_line_III_6_tax')],
+                'minus_report_expression_ids': [ref('tax_report_line_306_tax')],
             }),
             ]"
         />
@@ -1495,19 +1534,19 @@
             (0,0, {
                 'factor_percent': 100,
                 'repartition_type': 'base',
-                'plus_report_expression_ids': [ref('tax_report_line_III_7_base'), ref('tax_report_line_II_7_base')],
+                'plus_report_expression_ids': [ref('tax_report_line_307_base'), ref('tax_report_line_207_base')],
             }),
             (0,0, {
                 'factor_percent': 100,
                 'repartition_type': 'tax',
                 'account_id': ref('hr_140220'),
-                'plus_report_expression_ids': [ref('tax_report_line_III_7_tax')],
+                'plus_report_expression_ids': [ref('tax_report_line_307_tax')],
             }),
             (0,0, {
                 'factor_percent': -100,
                 'repartition_type': 'tax',
                 'account_id': ref('hr_240220'),
-                'minus_report_expression_ids': [ref('tax_report_line_II_7_tax')],
+                'minus_report_expression_ids': [ref('tax_report_line_207_tax')],
             }),
             ]"
         />
@@ -1517,19 +1556,19 @@
             (0,0, {
                 'factor_percent': 100,
                 'repartition_type': 'base',
-                'plus_report_expression_ids': [ref('tax_report_line_III_7_base'), ref('tax_report_line_II_7_base')],
+                'plus_report_expression_ids': [ref('tax_report_line_307_base'), ref('tax_report_line_207_base')],
             }),
             (0,0, {
                 'factor_percent': 100,
                 'repartition_type': 'tax',
                 'account_id': ref('hr_240220'),
-                'plus_report_expression_ids': [ref('tax_report_line_II_7_tax')],
+                'plus_report_expression_ids': [ref('tax_report_line_207_tax')],
             }),
             (0,0, {
                 'factor_percent': -100,
                 'repartition_type': 'tax',
                 'account_id': ref('hr_140220'),
-                'minus_report_expression_ids': [ref('tax_report_line_III_7_tax')],
+                'minus_report_expression_ids': [ref('tax_report_line_307_tax')],
             }),
             ]"
         />
@@ -1552,19 +1591,19 @@
         (0,0, {
             'factor_percent': 100,
             'repartition_type': 'base',
-            'plus_report_expression_ids': [ref('tax_report_line_III_8_base'), ref('tax_report_line_II_8_base')],
+            'plus_report_expression_ids': [ref('tax_report_line_308_base'), ref('tax_report_line_208_base')],
         }),
         (0,0, {
             'factor_percent': 100,
             'repartition_type': 'tax',
             'account_id': ref('hr_140300'),
-            'plus_report_expression_ids': [ref('tax_report_line_III_8_tax')],
+            'plus_report_expression_ids': [ref('tax_report_line_308_tax')],
         }),
         (0,0, {
             'factor_percent': -100,
             'repartition_type': 'tax',
             'account_id': ref('hr_240300'),
-            'minus_report_expression_ids': [ref('tax_report_line_II_8_tax')],
+            'minus_report_expression_ids': [ref('tax_report_line_208_tax')],
         }),
         ]"
         />
@@ -1574,24 +1613,24 @@
         (0,0, {
             'factor_percent': 100,
             'repartition_type': 'base',
-            'plus_report_expression_ids': [ref('tax_report_line_III_8_base')],
+            'plus_report_expression_ids': [ref('tax_report_line_308_base')],
         }),
         (0,0, {
             'factor_percent': 100,
             'repartition_type': 'tax',
             'account_id': ref('hr_240300'),
-            'plus_report_expression_ids': [ref('tax_report_line_II_8_tax')],
+            'plus_report_expression_ids': [ref('tax_report_line_208_tax')],
         }),
         (0,0, {
             'factor_percent': -100,
             'repartition_type': 'tax',
             'account_id': ref('hr_140300'),
-            'minus_report_expression_ids': [ref('tax_report_line_III_8_tax'), ref('tax_report_line_II_8_base')],
+            'minus_report_expression_ids': [ref('tax_report_line_308_tax'), ref('tax_report_line_208_base')],
         }),
         ]"
         />
     </record>
-    <!-- 13% services in EU II.9 + III.9 -->
+    <!-- 13% services in EU III.9 - II.9 -->
     <record id="VAT_P_13_EU_service" model="account.tax.template">
         <field name="sequence">41</field>
         <field name="description">13% EU S</field>
@@ -1609,19 +1648,19 @@
             (0,0, {
                 'factor_percent': 100,
                 'repartition_type': 'base',
-                'plus_report_expression_ids': [ref('tax_report_line_III_9_base'),ref('tax_report_line_II_9_base')],
+                'plus_report_expression_ids': [ref('tax_report_line_309_base'),ref('tax_report_line_209_base')],
             }),
             (0,0, {
                 'factor_percent': 100,
                 'repartition_type': 'tax',
                 'account_id': ref('hr_140310'),
-                'plus_report_expression_ids': [ref('tax_report_line_III_9_tax')],
+                'plus_report_expression_ids': [ref('tax_report_line_309_tax')],
             }),
             (0,0, {
                 'factor_percent': -100,
                 'repartition_type': 'tax',
                 'account_id': ref('hr_240310'),
-                'minus_report_expression_ids': [ref('tax_report_line_II_9_tax')],
+                'minus_report_expression_ids': [ref('tax_report_line_209_tax')],
             }),
             ]"
         />
@@ -1631,19 +1670,19 @@
             (0,0, {
                 'factor_percent': 100,
                 'repartition_type': 'base',
-                'plus_report_expression_ids': [ref('tax_report_line_III_9_base'), ref('tax_report_line_II_9_base')],
+                'plus_report_expression_ids': [ref('tax_report_line_309_base'), ref('tax_report_line_209_base')],
             }),
             (0,0, {
                 'factor_percent': 100,
                 'repartition_type': 'tax',
                 'account_id': ref('hr_240310'),
-                'plus_report_expression_ids': [ref('tax_report_line_II_9_tax')],
+                'plus_report_expression_ids': [ref('tax_report_line_209_tax')],
             }),
             (0,0, {
                 'factor_percent': -100,
                 'repartition_type': 'tax',
                 'account_id': ref('hr_140310'),
-                'minus_report_expression_ids': [ref('tax_report_line_III_9_tax')],
+                'minus_report_expression_ids': [ref('tax_report_line_309_tax')],
             }),
             ]"
         />
@@ -1666,19 +1705,19 @@
             (0,0, {
                 'factor_percent': 100,
                 'repartition_type': 'base',
-                'plus_report_expression_ids': [ref('tax_report_line_III_10_base'), ref('tax_report_line_II_10_base')],
+                'plus_report_expression_ids': [ref('tax_report_line_310_base'), ref('tax_report_line_210_base')],
             }),
             (0,0, {
                 'factor_percent': 100,
                 'repartition_type': 'tax',
                 'account_id': ref('hr_140320'),
-                'plus_report_expression_ids': [ref('tax_report_line_III_10_tax')],
+                'plus_report_expression_ids': [ref('tax_report_line_310_tax')],
             }),
             (0,0, {
                 'factor_percent': -100,
                 'repartition_type': 'tax',
                 'account_id': ref('hr_240320'),
-                'minus_report_expression_ids': [ref('tax_report_line_II_10_tax')],
+                'minus_report_expression_ids': [ref('tax_report_line_210_tax')],
             }),
             ]"
         />
@@ -1688,19 +1727,19 @@
             (0,0, {
                 'factor_percent': 100,
                 'repartition_type': 'base',
-                'plus_report_expression_ids': [ref('tax_report_line_III_10_base'), ref('tax_report_line_II_10_base')],
+                'plus_report_expression_ids': [ref('tax_report_line_310_base'), ref('tax_report_line_210_base')],
             }),
             (0,0, {
                 'factor_percent': 100,
                 'repartition_type': 'tax',
                 'account_id': ref('hr_240320'),
-                'plus_report_expression_ids': [ref('tax_report_line_II_10_tax')],
+                'plus_report_expression_ids': [ref('tax_report_line_210_tax')],
             }),
             (0,0, {
                 'factor_percent': -100,
                 'repartition_type': 'tax',
                 'account_id': ref('hr_140320'),
-                'minus_report_expression_ids': [ref('tax_report_line_III_10_tax')],
+                'minus_report_expression_ids': [ref('tax_report_line_310_tax')],
             }),
             ]"
         />
@@ -1722,19 +1761,19 @@
             (0,0, {
                 'factor_percent': 100,
                 'repartition_type': 'base',
-                'plus_report_expression_ids': [ref('tax_report_line_III_11_base'), ref('tax_report_line_II_11_base')],
+                'plus_report_expression_ids': [ref('tax_report_line_311_base'), ref('tax_report_line_211_base')],
             }),
             (0,0, {
                 'factor_percent': 100,
                 'repartition_type': 'tax',
                 'account_id': ref('hr_140400'),
-                'plus_report_expression_ids': [ref('tax_report_line_III_11_tax')],
+                'plus_report_expression_ids': [ref('tax_report_line_311_tax')],
             }),
             (0,0, {
                 'factor_percent': -100,
                 'repartition_type': 'tax',
                 'account_id': ref('hr_240400'),
-                'minus_report_expression_ids': [ref('tax_report_line_II_11_tax')],
+                'minus_report_expression_ids': [ref('tax_report_line_211_tax')],
             }),
             ]"
         />
@@ -1744,19 +1783,19 @@
             (0,0, {
                 'factor_percent': 100,
                 'repartition_type': 'base',
-                'plus_report_expression_ids': [ref('tax_report_line_III_11_base'), ref('tax_report_line_II_11_base')],
+                'plus_report_expression_ids': [ref('tax_report_line_311_base'), ref('tax_report_line_211_base')],
             }),
             (0,0, {
                 'factor_percent': 100,
                 'repartition_type': 'tax',
                 'account_id': ref('hr_240400'),
-                'plus_report_expression_ids': [ref('tax_report_line_II_11_tax')],
+                'plus_report_expression_ids': [ref('tax_report_line_211_tax')],
             }),
             (0,0, {
                 'factor_percent': -100,
                 'repartition_type': 'tax',
                 'account_id': ref('hr_140400'),
-                'minus_report_expression_ids': [ref('tax_report_line_III_11_tax')],
+                'minus_report_expression_ids': [ref('tax_report_line_311_tax')],
             }),
             ]"
         />
@@ -1778,19 +1817,19 @@
             (0,0, {
                 'factor_percent': 100,
                 'repartition_type': 'base',
-                'plus_report_expression_ids': [ref('tax_report_line_III_12_base'), ref('tax_report_line_III_12_base')],
+                'plus_report_expression_ids': [ref('tax_report_line_312_base'), ref('tax_report_line_212_base')],
             }),
             (0,0, {
                 'factor_percent': 100,
                 'repartition_type': 'tax',
                 'account_id': ref('hr_140410'),
-                'plus_report_expression_ids': [ref('tax_report_line_III_12_tax')],
+                'plus_report_expression_ids': [ref('tax_report_line_312_tax')],
             }),
             (0,0, {
                 'factor_percent': -100,
                 'repartition_type': 'tax',
                 'account_id': ref('hr_240410'),
-                'minus_report_expression_ids': [ref('tax_report_line_II_12_tax')],
+                'minus_report_expression_ids': [ref('tax_report_line_212_tax')],
             }),
             ]"
         />
@@ -1800,19 +1839,19 @@
             (0,0, {
                 'factor_percent': 100,
                 'repartition_type': 'base',
-                'plus_report_expression_ids': [ref('tax_report_line_III_12_base'), ref('tax_report_line_III_12_base')],
+                'plus_report_expression_ids': [ref('tax_report_line_312_base'), ref('tax_report_line_212_base')],
             }),
             (0,0, {
                 'factor_percent': 100,
                 'repartition_type': 'tax',
                 'account_id': ref('hr_240410'),
-                'plus_report_expression_ids': [ref('tax_report_line_II_12_tax')],
+                'plus_report_expression_ids': [ref('tax_report_line_212_tax')],
             }),
             (0,0, {
                 'factor_percent': -100,
                 'repartition_type': 'tax',
                 'account_id': ref('hr_140410'),
-                'minus_report_expression_ids': [ref('tax_report_line_III_12_tax')],
+                'minus_report_expression_ids': [ref('tax_report_line_312_tax')],
             }),
             ]"
         />
@@ -1834,19 +1873,19 @@
             (0,0, {
                 'factor_percent': 100,
                 'repartition_type': 'base',
-                'plus_report_expression_ids': [ref('tax_report_line_III_13_base'), ref('tax_report_line_II_13_base')],
+                'plus_report_expression_ids': [ref('tax_report_line_313_base'), ref('tax_report_line_213_base')],
             }),
             (0,0, {
                 'factor_percent': 100,
                 'repartition_type': 'tax',
                 'account_id': ref('hr_140420'),
-                'plus_report_expression_ids': [ref('tax_report_line_III_13_tax')],
+                'plus_report_expression_ids': [ref('tax_report_line_313_tax')],
             }),
             (0,0, {
                 'factor_percent': -100,
                 'repartition_type': 'tax',
                 'account_id': ref('hr_240420'),
-                'minus_report_expression_ids': [ref('tax_report_line_II_13_tax')],
+                'minus_report_expression_ids': [ref('tax_report_line_213_tax')],
             }),
             ]"
         />
@@ -1856,19 +1895,19 @@
             (0,0, {
                 'factor_percent': 100,
                 'repartition_type': 'base',
-                'plus_report_expression_ids': [ref('tax_report_line_III_13_base'), ref('tax_report_line_II_13_base')],
+                'plus_report_expression_ids': [ref('tax_report_line_313_base'), ref('tax_report_line_213_base')],
             }),
             (0,0, {
                 'factor_percent': 100,
                 'repartition_type': 'tax',
                 'account_id': ref('hr_240420'),
-                'plus_report_expression_ids': [ref('tax_report_line_II_13_tax')],
+                'plus_report_expression_ids': [ref('tax_report_line_213_tax')],
             }),
             (0,0, {
                 'factor_percent': -100,
                 'repartition_type': 'tax',
                 'account_id': ref('hr_140420'),
-                'minus_report_expression_ids': [ref('tax_report_line_III_13_tax')],
+                'minus_report_expression_ids': [ref('tax_report_line_313_tax')],
             }),
             ]"
         />
@@ -1890,19 +1929,19 @@
             (0,0, {
                 'factor_percent': 100,
                 'repartition_type': 'base',
-                'plus_report_expression_ids': [ref('tax_report_line_III_14_base'), ref('tax_report_line_II_15_base')],
+                'plus_report_expression_ids': [ref('tax_report_line_314_base'), ref('tax_report_line_215_base')],
             }),
             (0,0, {
                 'factor_percent': 100,
                 'repartition_type': 'tax',
                 'account_id': ref('hr_140500'),
-                'plus_report_expression_ids': [ref('tax_report_line_III_14_tax')],
+                'plus_report_expression_ids': [ref('tax_report_line_314_tax')],
             }),
             (0,0, {
                 'factor_percent': -100,
                 'repartition_type': 'tax',
                 'account_id': ref('hr_240500'),
-                'minus_report_expression_ids': [ref('tax_report_line_II_15_tax')],
+                'minus_report_expression_ids': [ref('tax_report_line_215_tax')],
             }),
             ]"
         />
@@ -1912,19 +1951,19 @@
             (0,0, {
                 'factor_percent': 100,
                 'repartition_type': 'base',
-                'plus_report_expression_ids': [ref('tax_report_line_III_14_base'), ref('tax_report_line_II_15_base')],
+                'plus_report_expression_ids': [ref('tax_report_line_314_base'), ref('tax_report_line_215_base')],
             }),
             (0,0, {
                 'factor_percent': 100,
                 'repartition_type': 'tax',
                 'account_id': ref('hr_240500'),
-                'plus_report_expression_ids': [ref('tax_report_line_II_15_tax')],
+                'plus_report_expression_ids': [ref('tax_report_line_215_tax')],
             }),
             (0,0, {
                 'factor_percent': -100,
                 'repartition_type': 'tax',
                 'account_id': ref('hr_140500'),
-                'minus_report_expression_ids': [ref('tax_report_line_III_14_tax')],
+                'minus_report_expression_ids': [ref('tax_report_line_314_tax')],
             }),
             ]"
         />
@@ -1946,19 +1985,19 @@
             (0,0, {
                 'factor_percent': 100,
                 'repartition_type': 'base',
-                'plus_report_expression_ids': [ref('tax_report_line_III_14_base'), ref('tax_report_line_II_15_base')],
+                'plus_report_expression_ids': [ref('tax_report_line_314_base'), ref('tax_report_line_215_base')],
             }),
             (0,0, {
                 'factor_percent': 100,
                 'repartition_type': 'tax',
                 'account_id': ref('hr_140500'),
-                'plus_report_expression_ids': [ref('tax_report_line_III_14_tax')],
+                'plus_report_expression_ids': [ref('tax_report_line_314_tax')],
             }),
             (0,0, {
                 'factor_percent': -100,
                 'repartition_type': 'tax',
                 'account_id': ref('hr_240500'),
-                'minus_report_expression_ids': [ref('tax_report_line_II_15_tax')],
+                'minus_report_expression_ids': [ref('tax_report_line_215_tax')],
             }),
             ]"
         />
@@ -1968,19 +2007,19 @@
             (0,0, {
                 'factor_percent': 100,
                 'repartition_type': 'base',
-                'plus_report_expression_ids': [ref('tax_report_line_III_14_base'), ref('tax_report_line_II_15_base')],
+                'plus_report_expression_ids': [ref('tax_report_line_314_base'), ref('tax_report_line_215_base')],
             }),
             (0,0, {
                 'factor_percent': 100,
                 'repartition_type': 'tax',
                 'account_id': ref('hr_240500'),
-                'plus_report_expression_ids': [ref('tax_report_line_II_15_tax')],
+                'plus_report_expression_ids': [ref('tax_report_line_215_tax')],
             }),
             (0,0, {
                 'factor_percent': -100,
                 'repartition_type': 'tax',
                 'account_id': ref('hr_140500'),
-                'minus_report_expression_ids': [ref('tax_report_line_III_14_tax')],
+                'minus_report_expression_ids': [ref('tax_report_line_314_tax')],
             }),
             ]"
         />
@@ -2002,19 +2041,19 @@
             (0,0, {
                 'factor_percent': 100,
                 'repartition_type': 'base',
-                'plus_report_expression_ids': [ref('tax_report_line_III_14_base'), ref('tax_report_line_II_15_base')],
+                'plus_report_expression_ids': [ref('tax_report_line_314_base'), ref('tax_report_line_215_base')],
             }),
             (0,0, {
                 'factor_percent': 100,
                 'repartition_type': 'tax',
                 'account_id': ref('hr_140500'),
-                'plus_report_expression_ids': [ref('tax_report_line_III_14_tax')],
+                'plus_report_expression_ids': [ref('tax_report_line_314_tax')],
             }),
             (0,0, {
                 'factor_percent': -100,
                 'repartition_type': 'tax',
                 'account_id': ref('hr_240500'),
-                'minus_report_expression_ids': [ref('tax_report_line_II_15_tax')],
+                'minus_report_expression_ids': [ref('tax_report_line_215_tax')],
             }),
             ]"
         />
@@ -2024,19 +2063,19 @@
             (0,0, {
                 'factor_percent': 100,
                 'repartition_type': 'base',
-                'plus_report_expression_ids': [ref('tax_report_line_III_14_base'), ref('tax_report_line_II_15_base')],
+                'plus_report_expression_ids': [ref('tax_report_line_314_base'), ref('tax_report_line_215_base')],
             }),
             (0,0, {
                 'factor_percent': 100,
                 'repartition_type': 'tax',
                 'account_id': ref('hr_240500'),
-                'plus_report_expression_ids': [ref('tax_report_line_II_15_tax')],
+                'plus_report_expression_ids': [ref('tax_report_line_215_tax')],
             }),
             (0,0, {
                 'factor_percent': -100,
                 'repartition_type': 'tax',
                 'account_id': ref('hr_140500'),
-                'minus_report_expression_ids': [ref('tax_report_line_III_14_tax')],
+                'minus_report_expression_ids': [ref('tax_report_line_314_tax')],
             }),
             ]"
         />

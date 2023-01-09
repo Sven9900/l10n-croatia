@@ -8,7 +8,7 @@
     "depends": [
         "account",
         "base_vat",
-        # "l10n_multilang",  # not working good! r
+        # "l10n_multilang",  # not working good!
     ],
     "data": [
         "data/l10n_hr_chart_data.xml",
