@@ -1,0 +1,436 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* l10n_hr_coa_rrif_2022
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 16.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-01-09 09:58+0000\n"
+"PO-Revision-Date: 2023-01-09 09:58+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: l10n_hr_coa_rrif_2022
+#: model:account.report.line,name:l10n_hr_coa_rrif_2022.tax_report_line_V_1
+msgid ""
+"1. Claims for the difference of higher input tax than liabilities in the "
+"taxation period"
+msgstr ""
+
+#. module: l10n_hr_coa_rrif_2022
+#: model:account.report.line,name:l10n_hr_coa_rrif_2022.tax_report_line_III_1
+msgid "1. Input vat related to supplies received in the country at a rate 5%"
+msgstr "1. PRETPOREZ OD PRIMLJENIH ISPORUKA U TUZEMSTVU po stopi od 5%"
+
+#. module: l10n_hr_coa_rrif_2022
+#: model:account.report.line,name:l10n_hr_coa_rrif_2022.tax_report_line_I_1
+msgid ""
+"1. Supplies in the republic of croatia in respect of which the receiver "
+"calculates vat (domestic reverse charge)"
+msgstr "1. ISPORUKE U RH ZA KOJE PDV OBRAČUNAVA PRIMATELJ (tuzemni prijenos"
+" porezne obveze)"
+
+#. module: l10n_hr_coa_rrif_2022
+#: model:account.report.line,name:l10n_hr_coa_rrif_2022.tax_report_line_II_1
+msgid ""
+"1. Supplies of goods and services in the republic of croatia at a rate 5%"
+msgstr "1. ISPORUKE DOBARA I USLUGA U RH po stopi 5%"
+
+#. module: l10n_hr_coa_rrif_2022
+#: model:account.report.line,name:l10n_hr_coa_rrif_2022.tax_report_line_IV_1
+msgid "1. To pay"
+msgstr "1. Za platiti"
+
+#. module: l10n_hr_coa_rrif_2022
+#: model:account.report.line,name:l10n_hr_coa_rrif_2022.tax_report_line_VI_1
+msgid "1. Total to pay"
+msgstr "1. Ukupno za platiti"
+
+#. module: l10n_hr_coa_rrif_2022
+#: model:account.report.line,name:l10n_hr_coa_rrif_2022.tax_report_line_III_10
+msgid "10. Input vat related to services received from eu at a rate 25%"
+msgstr "10. PRETPOREZ OD PRIMLJENIH USLUGA IZ EU po stopi 25%"
+
+#. module: l10n_hr_coa_rrif_2022
+#: model:account.report.line,name:l10n_hr_coa_rrif_2022.tax_report_line_I_10
+msgid "10. Other exemptions"
+msgstr "10. OSTALA OSLOBOĐENJA"
+
+#. module: l10n_hr_coa_rrif_2022
+#: model:account.report.line,name:l10n_hr_coa_rrif_2022.tax_report_line_II_10
+msgid "10. Services received from eu at a rate 25%"
+msgstr "10. PRIMLJENE USLUGE IZ EU po stopi 25%"
+
+#. module: l10n_hr_coa_rrif_2022
+#: model:account.report.line,name:l10n_hr_coa_rrif_2022.tax_report_line_III_11
+msgid ""
+"11. Input vat related to supplies of goods and services received from non-"
+"established taxable persons at a rate 5%"
+msgstr "11. PRETPOREZ OD PRIMLJENIH ISPORUKA DOBARA I USLUGA OD POREZNIH "
+"OBVEZNIKA BEZ SJEDIŠTA U RH po stopi 5%"
+
+#. module: l10n_hr_coa_rrif_2022
+#: model:account.report.line,name:l10n_hr_coa_rrif_2022.tax_report_line_II_11
+msgid ""
+"11. Supplies of goods and services received from taxable persons not "
+"established in the republic of croatia at a rate 5%"
+msgstr ""
+"11. PRIMLJENE ISPORUKE DOBARA I USLUGA OD POREZNIH"
+"OBVEZNIKA BEZ SJEDIŠTA U RH po stopi 5%"
+
+#. module: l10n_hr_coa_rrif_2022
+#: model:account.report.line,name:l10n_hr_coa_rrif_2022.tax_report_line_III_12
+msgid ""
+"12. Input vat related to supplies of goods and services received from non-"
+"established taxable persons at a rate 13%"
+msgstr ""
+"PRETPOREZ OD PRIMLJENIH ISPORUKA DOBARA I USLUGA OD POREZNIH OBVEZNIKA BEZ "
+"SJEDIŠTA U RH po stopi 13%"
+
+#. module: l10n_hr_coa_rrif_2022
+#: model:account.report.line,name:l10n_hr_coa_rrif_2022.tax_report_line_II_12
+msgid ""
+"12. Supplies of goods and services received from taxable persons not "
+"established in the republic of croatia at a rate 13%"
+msgstr ""
+"12. PRIMLJENE ISPORUKE DOBARA I USLUGA OD POREZNIH OBVEZNIKA BEZ SJEDIŠTA U "
+"RH po stopi 13%"
+
+#. module: l10n_hr_coa_rrif_2022
+#: model:account.report.line,name:l10n_hr_coa_rrif_2022.tax_report_line_III_13
+msgid ""
+"13. Input vat related to supplies of goods and services received from non-"
+"established taxable persons at a rate 25%"
+msgstr ""
+"13. PRETPOREZ OD PRIMLJENIH ISPORUKA DOBARA I USLUGA OD POREZNIH OBVEZNIKA "
+"BEZ SJEDIŠTA U RH po stopi 25%"
+
+#. module: l10n_hr_coa_rrif_2022
+#: model:account.report.line,name:l10n_hr_coa_rrif_2022.tax_report_line_II_13
+msgid ""
+"13. Supplies of goods and services received from taxable persons not "
+"established in the republic of croatia at a rate 25%"
+msgstr ""
+"13. PRIMLJENE ISPORUKE DOBARA I USLUGA OD POREZNIH OBVEZNIKA BEZ SJEDIŠTA U "
+"RH po stopi 25%"
+
+#. module: l10n_hr_coa_rrif_2022
+#: model:account.report.line,name:l10n_hr_coa_rrif_2022.tax_report_line_III_14
+msgid "14. Input vat related to importation"
+msgstr "14. PRETPOREZ PRI UVOZU"
+
+#. module: l10n_hr_coa_rrif_2022
+#: model:account.report.line,name:l10n_hr_coa_rrif_2022.tax_report_line_II_14
+msgid ""
+"14. Subsequent exemption on exportation related to personal  passenger "
+"transportation"
+msgstr ""
+"14. NAKNADNO OSLOBOĐENJE IZVOZA U OKVIRU OSOBNOG PUTNIČKOG PROMETA"
+
+#. module: l10n_hr_coa_rrif_2022
+#: model:account.report.line,name:l10n_hr_coa_rrif_2022.tax_report_line_III_15
+msgid "15. Adjustments of deductions"
+msgstr "15. ISPRAVCI PRETPOREZA"
+
+#. module: l10n_hr_coa_rrif_2022
+#: model:account.report.line,name:l10n_hr_coa_rrif_2022.tax_report_line_II_15
+msgid "15. Vat calculated on importation"
+msgstr "15. OBRAČUNANI PDV PRI UVOZU"
+
+#. module: l10n_hr_coa_rrif_2022
+#: model:account.report.line,name:l10n_hr_coa_rrif_2022.tax_report_line_III_2
+msgid "2. Input vat related to supplies received in the country at a rate 13%"
+msgstr "2. PRETPOREZ OD PRIMLJENIH ISPORUKA U TUZEMSTVU po stopi 13%"
+
+#. module: l10n_hr_coa_rrif_2022
+#: model:account.report.line,name:l10n_hr_coa_rrif_2022.tax_report_line_V_2
+msgid ""
+"2. Liability for the difference between tax and input tax in the taxation "
+"period"
+msgstr ""
+
+#. module: l10n_hr_coa_rrif_2022
+#: model:account.report.line,name:l10n_hr_coa_rrif_2022.tax_report_line_I_2
+msgid "2. Supplies carried out in another member state"
+msgstr "2. ISPORUKE DOBARA OBAVLJENE U DRUGIM DRŽAVAMA ČLANICAMA"
+
+#. module: l10n_hr_coa_rrif_2022
+#: model:account.report.line,name:l10n_hr_coa_rrif_2022.tax_report_line_II_2
+msgid ""
+"2. Supplies of goods and services in the republic of croatia at a rate 13%"
+msgstr ""
+"2. ISPORUKE DOBARA I USLUGA U RH po stopi 13%"
+
+#. module: l10n_hr_coa_rrif_2022
+#: model:account.report.line,name:l10n_hr_coa_rrif_2022.tax_report_line_IV_2
+msgid "2. To refund"
+msgstr "2. Za povrat"
+
+#. module: l10n_hr_coa_rrif_2022
+#: model:account.report.line,name:l10n_hr_coa_rrif_2022.tax_report_line_VI_2
+msgid "2. Total to refund"
+msgstr "2. Ukupno za povrat"
+
+#. module: l10n_hr_coa_rrif_2022
+#: model:account.report.line,name:l10n_hr_coa_rrif_2022.tax_report_line_III_3
+msgid "3. Input vat related to supplies received in the country at a rate 25%"
+msgstr ""
+
+#. module: l10n_hr_coa_rrif_2022
+#: model:account.report.line,name:l10n_hr_coa_rrif_2022.tax_report_line_II_3
+msgid ""
+"3. Supplies of goods and services in the republic of croatia at a rate 25%"
+msgstr ""
+"3. PRETPOREZ OD PRIMLJENIH ISPORUKA U TUZEMSTVU po stopi 25%"
+
+#. module: l10n_hr_coa_rrif_2022
+#: model:account.report.line,name:l10n_hr_coa_rrif_2022.tax_report_line_I_3
+msgid "3. Supplies of goods within the eu"
+msgstr "3. ISPORUKE DOBARA UNUTAR EU"
+
+#. module: l10n_hr_coa_rrif_2022
+#: model:account.report.line,name:l10n_hr_coa_rrif_2022.tax_report_line_III_4
+msgid ""
+"4. Input vat related to supplies received in the country in respect of which"
+" the receiver calculates vat (domestic reverse charge)"
+msgstr ""
+"PRETPOREZ OD PRIMLJENIH ISPORUKA U RH ZA KOJE PDV OBRAČUNAVA PRIMATELJ "
+"(tuzemni prijenos porezne obveze)"
+
+#. module: l10n_hr_coa_rrif_2022
+#: model:account.report.line,name:l10n_hr_coa_rrif_2022.tax_report_line_I_4
+msgid "4. Supplies of services within the eu"
+msgstr "4. OBAVLJENE USLUGE UNUTAR EU"
+
+#. module: l10n_hr_coa_rrif_2022
+#: model:account.report.line,name:l10n_hr_coa_rrif_2022.tax_report_line_II_4
+msgid ""
+"4. Supplies received in the republic of croatia in respect of which the "
+"receiver calculates vat (domestic reverse charge)"
+msgstr ""
+"4. PRIMLJENE ISPORUKE U RH ZA KOJE PDV OBRAČUNAVA PRIMATELJ (tuzemni "
+"prijenos porezne obveze)"
+
+#. module: l10n_hr_coa_rrif_2022
+#: model:account.report.line,name:l10n_hr_coa_rrif_2022.tax_report_line_II_5
+msgid "5. Acquisition of goods within the eu at a rate 5%"
+msgstr "5. STJECANJE DOBARA UNUTAR EU po stopi 5%"
+
+#. module: l10n_hr_coa_rrif_2022
+#: model:account.report.line,name:l10n_hr_coa_rrif_2022.tax_report_line_III_5
+msgid ""
+"5. Input vat related to acquisition of goods within the eu at a rate 5%"
+msgstr "PRETPOREZ OD STJECANJA DOBARA UNUTAR EU po stopi 5%"
+
+#. module: l10n_hr_coa_rrif_2022
+#: model:account.report.line,name:l10n_hr_coa_rrif_2022.tax_report_line_I_5
+msgid "5. Supplies to persons not established in the republic of croatia"
+msgstr "5. OBAVLJENE ISPORUKE OSOBAMA BEZ SJEDIŠTA U RH"
+
+#. module: l10n_hr_coa_rrif_2022
+#: model:account.report.line,name:l10n_hr_coa_rrif_2022.tax_report_line_II_6
+msgid "6. Acquisition of goods within the eu at a rate 13%"
+msgstr "6. STJECANJE DOBARA UNUTAR EU po stopi 13%"
+
+#. module: l10n_hr_coa_rrif_2022
+#: model:account.report.line,name:l10n_hr_coa_rrif_2022.tax_report_line_III_6
+msgid ""
+"6. Input vat related to acquisition of goods within the eu at a rate 13%"
+msgstr "6. PRETPOREZ OD STJECANJA DOBARA UNUTAR EU po stopi 13%"
+
+#. module: l10n_hr_coa_rrif_2022
+#: model:account.report.line,name:l10n_hr_coa_rrif_2022.tax_report_line_I_6
+msgid "6. Installed and assembled goods in another member state"
+msgstr "SASTAVLJANJE I POSTAVLJANJE DOBARA U DRUGOJ DRŽAVI ČLANICI EU"
+
+#. module: l10n_hr_coa_rrif_2022
+#: model:account.report.line,name:l10n_hr_coa_rrif_2022.tax_report_line_II_7
+msgid "7. Acquisition of goods within the eu at a rate 25%"
+msgstr "7. STJECANJE DOBARA UNUTAR EU po stopi 25%"
+
+#. module: l10n_hr_coa_rrif_2022
+#: model:account.report.line,name:l10n_hr_coa_rrif_2022.tax_report_line_III_7
+msgid ""
+"7. Input vat related to acquisition of goods within the eu at a rate 25%"
+msgstr "7. PRETPOREZ OD STJECANJA DOBARA UNUTAR EU po stopi 25%"
+
+#. module: l10n_hr_coa_rrif_2022
+#: model:account.report.line,name:l10n_hr_coa_rrif_2022.tax_report_line_I_7
+msgid "7. Supplies of new means of transport to another member state"
+msgstr "7. ISPORUKE NOVIH PRIJEVOZNIH SREDSTAVA U EU"
+
+#. module: l10n_hr_coa_rrif_2022
+#: model:account.report.line,name:l10n_hr_coa_rrif_2022.tax_report_line_I_8
+msgid "8. Domestic supplies"
+msgstr "8. TUZEMNE ISPORUKE"
+
+#. module: l10n_hr_coa_rrif_2022
+#: model:account.report.line,name:l10n_hr_coa_rrif_2022.tax_report_line_III_8
+msgid "8. Input vat related to services received from eu at a rate 5%"
+msgstr "8. PRETPOREZ OD PRIMLJENIH USLUGA IZ EU po stopi 5%"
+
+#. module: l10n_hr_coa_rrif_2022
+#: model:account.report.line,name:l10n_hr_coa_rrif_2022.tax_report_line_II_8
+msgid "8. Services received from eu at a rate 5%"
+msgstr "8. PRIMLJENE USLUGE IZ EU po stopi 5%"
+
+#. module: l10n_hr_coa_rrif_2022
+#: model:account.report.line,name:l10n_hr_coa_rrif_2022.tax_report_line_I_9
+msgid "9. Exportation"
+msgstr "9. IZVOZNE ISPORUKE"
+
+#. module: l10n_hr_coa_rrif_2022
+#: model:account.report.line,name:l10n_hr_coa_rrif_2022.tax_report_line_III_9
+msgid "9. Input vat related to services received from eu at a rate 13%"
+msgstr "9. PRETPOREZ OD PRIMLJENIH USLUGA IZ EU po stopi 13%"
+
+#. module: l10n_hr_coa_rrif_2022
+#: model:account.report.line,name:l10n_hr_coa_rrif_2022.tax_report_line_II_9
+msgid "9. Services received from eu at a rate 13%"
+msgstr "9. PRIMLJENE USLUGE IZ EU po stopi 13%"
+
+#. module: l10n_hr_coa_rrif_2022
+#: model:ir.model,name:l10n_hr_coa_rrif_2022.model_account_chart_template
+msgid "Account Chart Template"
+msgstr "Kontni plan"
+
+#. module: l10n_hr_coa_rrif_2022
+#: model:ir.ui.menu,name:l10n_hr_coa_rrif_2022.account_reports_hr_statements_menu
+msgid "Croatia"
+msgstr "Hrvatska"
+
+#. module: l10n_hr_coa_rrif_2022
+#: model:account.report.line,name:l10n_hr_coa_rrif_2022.tax_report_title_I_total
+msgid ""
+"I. Transactions not subject to vat and exempt - total value "
+"(1.+2.+3.+4.+5.+6.+7.+8.+9.+10.+11.)"
+msgstr ""
+"I. TRANSAKCIJE KOJE NE PODLIJEŽU OPOREZIVANJU, OSLOBOĐENE I OPOREZIVE PO "
+"STOPI 0% - UKUPNO (1.+2.+3.+4.+5.+6.+7.+8.+9.+10.+11.)"
+
+#. module: l10n_hr_coa_rrif_2022
+#: model:account.report.line,name:l10n_hr_coa_rrif_2022.tax_report_title_transactions1
+msgid ""
+"II. Taxable transactions – total amount "
+"(1.+2.+3.+4.+5.+6.+7.+8.+9.+10.+11.+12.+13.+14.+15.)"
+msgstr ""
+"II. OPOREZIVE TRANSAKCIJE – UKUPNO "
+"(1.+2.+3.+4.+5.+6.+7.+8.+9.+10.+11.+12.+13.+14.+15.)"
+
+#. module: l10n_hr_coa_rrif_2022
+#: model:account.report.line,name:l10n_hr_coa_rrif_2022.tax_report_title_calculed_vat
+msgid ""
+"III. Calculated input vat – total amount "
+"(1.+2.+3.+4.+5.+6.+7.+8.+9.+10.+11.+12.+13. +14.+15.)"
+msgstr ""
+"III. OBRAČUNANI PRETPOREZ - UKUPNO "
+"(1.+2.+3.+4.+5.+6.+7.+8.+9.+10.+11.+12.+13.+14.+15.)"
+
+#. module: l10n_hr_coa_rrif_2022
+#: model:account.report.line,name:l10n_hr_coa_rrif_2022.tax_report_title_vat_liab
+msgid ""
+"IV. Vat liability in the calculation period: to pay (ii. - iii.) or to "
+"refund (iii. - ii.)"
+msgstr ""
+"IV. OBVEZA PDV-a U OBRAČUNSKOM RAZDOBLJU: "
+"ZA UPLATU (II. - III.) ILI ZA POVRAT (III. - II.)"
+
+#. module: l10n_hr_coa_rrif_2022
+#: model_terms:account.fiscal.position,note:l10n_hr_coa_rrif_2022.1_fiscal_position_domestic_no_vat
+msgid "NIJE U SUSTAVU PDV"
+msgstr ""
+
+#. module: l10n_hr_coa_rrif_2022
+#: model:account.tax.group,name:l10n_hr_coa_rrif_2022.tax_group_0
+msgid "PDV 0%"
+msgstr ""
+
+#. module: l10n_hr_coa_rrif_2022
+#: model:account.tax.group,name:l10n_hr_coa_rrif_2022.tax_group_13
+msgid "PDV 13%"
+msgstr ""
+
+#. module: l10n_hr_coa_rrif_2022
+#: model:account.tax.group,name:l10n_hr_coa_rrif_2022.tax_group_25
+msgid "PDV 25%"
+msgstr ""
+
+#. module: l10n_hr_coa_rrif_2022
+#: model:account.tax.group,name:l10n_hr_coa_rrif_2022.tax_group_5
+msgid "PDV 5%"
+msgstr ""
+
+#. module: l10n_hr_coa_rrif_2022
+#: model_terms:account.fiscal.position,note:l10n_hr_coa_rrif_2022.1_fiscal_position_non_resident
+msgid "REVERSE CHARGE - Tax eception based in art.17.pt.1 Value added tax Law"
+msgstr "REVERSE CHARGE - Oslobođeno PDV-a temeljem čl 17. stavka 1 Zakona o "
+"PDV-u"
+
+#. module: l10n_hr_coa_rrif_2022
+#: model_terms:account.fiscal.position,note:l10n_hr_coa_rrif_2022.1_fiscal_position_eu
+msgid ""
+"REVERSE CHARGE - Tax exception according to art.17.pt.1 i art.26.pt.3. Tax "
+"added value Law"
+msgstr ""
+"REVERSE CHARGE - Oslobođeno PDV-a temeljem čl 17. stavka 1 i cl.26.st.3 "
+"Zakona o PDV-u"
+
+#. module: l10n_hr_coa_rrif_2022
+#: model_terms:account.fiscal.position,note:l10n_hr_coa_rrif_2022.1_fiscal_position_import
+msgid ""
+"REVERSE CHARGE - Tax exception based on art.17.pt.1 and art.5. Value added "
+"tax Law"
+msgstr ""
+"REVERSE CHARGE - Oslobođeno PDV-a temeljem čl.17.st.1 i st.5 Zakona o PDV-u"
+
+#. module: l10n_hr_coa_rrif_2022
+#: model_terms:account.fiscal.position,note:l10n_hr_coa_rrif_2022.1_fiscal_position_reverse_charge
+msgid ""
+"REVERSE CHARGE - Tax exception based on art.75.pt.2. art.3. Value added tax "
+"Law"
+msgstr ""
+"REVERSE CHARGE - Oslobođeno PDV-a temeljem čl.75.st.2 i st.3 Zakona o PDV-u"
+
+#. module: l10n_hr_coa_rrif_2022
+#: model:account.report,name:l10n_hr_coa_rrif_2022.tax_report
+msgid "Tax Report"
+msgstr "Porezni izvještaj"
+
+#. module: l10n_hr_coa_rrif_2022
+#: model:account.report.column,name:l10n_hr_coa_rrif_2022.tax_report_tax_amount
+msgid "Tax amount"
+msgstr "Iznos poreza"
+
+#. module: l10n_hr_coa_rrif_2022
+#: model:account.report.column,name:l10n_hr_coa_rrif_2022.tax_report_tax_base
+msgid "Tax base"
+msgstr "Osnovica poreza"
+
+#. module: l10n_hr_coa_rrif_2022
+#: model:account.report.line,name:l10n_hr_coa_rrif_2022.tax_report_title_prev_calculation
+msgid ""
+"V. According to the previous calculation: unpaid vat to the day of "
+"submitting of this return-overpaid-tax credit"
+msgstr ""
+""
+
+#. module: l10n_hr_coa_rrif_2022
+#: model:account.report.line,name:l10n_hr_coa_rrif_2022.tax_report_title_total_dif
+msgid "VI. Total difference: to pay/to refund"
+msgstr "Ukupna razlika za uplatu/povrat"
+
+#. module: l10n_hr_coa_rrif_2022
+#: model:account.report.line,name:l10n_hr_coa_rrif_2022.tax_report_title_annual_deductible
+msgid "VII. Annual deductible proportion(%)"
+msgstr ""
+
+#. module: l10n_hr_coa_rrif_2022
+#: model:account.report.line,name:l10n_hr_coa_rrif_2022.tax_report_title_vat_calculation
+msgid "Vat calculation of supplied goods and services - total value(I. + II.)"
+msgstr "OBRAČUN PDV-a U OBAVLJENIM TRANSAKCIJAMA DOBARA I USLUGA – UKUPNO "
+"(I. + II.)"
