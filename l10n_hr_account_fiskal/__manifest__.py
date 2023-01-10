@@ -1,4 +1,3 @@
-
 {
     "name": "Croatia - Fiskalizacija",
     "summary": "Croatia Fiscalizacija računa",
@@ -13,10 +12,7 @@
     "depends": [
         "l10n_hr_account_base",
     ],
-    "external_dependencies": {
-        "python": ["zeep", "xmlsec"],
-        "bin": []
-    },
+    "external_dependencies": {"python": ["zeep", "xmlsec"], "bin": []},
     "data": [
         "views/fiskal_certificate_views.xml",
         "views/account_tax.xml",

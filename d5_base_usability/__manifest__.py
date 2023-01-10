@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 {
     "name": """D5 Base usability""",
     "summary": """
@@ -11,29 +10,22 @@
     "images": [],
     "version": "16.0.1.0.0",
     "application": False,
-
-    'author': "Davor Bojkić (DAJ MI 5)",
-    'website': "",
+    "author": "Davor Bojkić (DAJ MI 5)",
+    "website": "https://github.com/OCA/l10n-croatia",
     "support": "",
     "license": "LGPL-3",
-    #"price" : 20.00,   #-> only if module if sold!
-    #"currency": "EUR",
-
+    # "price" : 20.00,   #-> only if module if sold!
+    # "currency": "EUR",
     "depends": [
         "account",
     ],
-    "external_dependencies": {
-        "python": [],
-        "bin": []
-    },
+    "external_dependencies": {"python": [], "bin": []},
     "data": [
-        'views/account_views.xml',
-        'security/d5_security_mods.xml',
+        "views/account_views.xml",
+        "security/d5_security_mods.xml",
     ],
     "qweb": [],
     "demo": [],
-
     "auto_install": False,
     "installable": True,
 }
-

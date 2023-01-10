@@ -1,4 +1,3 @@
-
 {
     "name": "Croatia - Accounting base",
     "summary": "Croatia accounting localisation",
@@ -6,9 +5,8 @@
     "images": [],
     "version": "16.0.0.0.1",
     "application": False,
-
-    'author': "Daj Mi 5, Odoo Community Association (OCA)",
-    'website': "",
+    "author": "Daj Mi 5, Odoo Community Association (OCA)",
+    "website": "https://github.com/OCA/l10n-croatia",
     "support": "",
     "license": "LGPL-3",
     "depends": [
@@ -18,10 +16,7 @@
         "l10n_hr_base",
     ],
     "excludes": [],
-    "external_dependencies": {
-        "python": [],
-        "bin": []
-    },
+    "external_dependencies": {"python": [], "bin": []},
     "data": [
         "security/ir.model.access.csv",
         "views/res_company_view.xml",
@@ -31,7 +26,6 @@
     ],
     "qweb": [],
     "demo": [],
-
     "auto_install": False,
     "installable": True,
 }
