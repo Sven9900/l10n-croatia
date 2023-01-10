@@ -45,7 +45,7 @@ class FiscalFiscalMixin(models.AbstractModel):
         res = []
 
         if self.journal_id.l10n_hr_fiscalisation_active and \
-            not self.comapny_id.partner_id.vat:
+            not self.company_id.partner_id.vat:
             res.append(_("Comapny OIB is not not entered! It is required for fiscalisation"))
         if self.journal_id.l10n_hr_fiscalisation_active and \
             not self.l10n_hr_fiskal_user_id.partner_id.vat:
@@ -57,7 +57,7 @@ class FiscalFiscalMixin(models.AbstractModel):
                   "activate and select it on company setup!"))
         return res
 
-    def _prepare_fisk_racun_taxes(self, factory):
+    def _get_fisk_tax_values(self):
         tax_data = {
             "Pdv": {},
             "Pnp": {},
@@ -66,8 +66,10 @@ class FiscalFiscalMixin(models.AbstractModel):
         }
         iznos_oslob_pdv, iznos_ne_podl_opor, iznos_marza = 0.00, 0.00, 0.00
 
-        base_lines = self.invoice_line_ids.filtered(lambda line: line.display_type == "product")
-        base_line_values_list = [line._convert_to_tax_base_line_dict() for line in base_lines]
+        base_lines = self.invoice_line_ids.filtered(
+            lambda line: line.display_type == "product")
+        base_line_values_list = [line._convert_to_tax_base_line_dict()
+                                 for line in base_lines]
 
         for line in base_line_values_list:
             for tax in line["taxes"]:
@@ -79,7 +81,9 @@ class FiscalFiscalMixin(models.AbstractModel):
                 naziv = tax.name
                 stopa = tax.amount  # if amount type == percent??
                 osnovica = line["price_subtotal"]
-                iznos = osnovica * 100 / stopa
+                if stopa != 0.0:
+                    iznos = osnovica * 100 / stopa
+
                 if fiskal_type == "Pdv":
                     if tax_data["Pdv"].get(stopa):
                         tax_data["Pdv"][stopa]["Osnovica"] += osnovica
@@ -112,6 +116,15 @@ class FiscalFiscalMixin(models.AbstractModel):
                 elif fiskal_type == "marza":
                     iznos_marza += osnovica
 
+        if iznos_oslob_pdv:
+            tax_data['IznosOslobPdv'] = fiskal.format_decimal(iznos_oslob_pdv)
+        if iznos_ne_podl_opor:
+            tax_data["IznosNePodlOpor"] = fiskal.format_decimal(iznos_ne_podl_opor)
+        if iznos_marza:
+            tax_data["IznosMarza"] = fiskal.format_decimal(iznos_marza)
+        return tax_data
+    def _prepare_fisk_racun_taxes(self, factory):
+        tax_data = self._get_fisk_tax_values()
         res = {}
         for pdv in tax_data["Pdv"]:
             if not res.get("Pdv"):
@@ -123,7 +136,6 @@ class FiscalFiscalMixin(models.AbstractModel):
                 Iznos=fiskal.format_decimal(_pdv["Iznos"])
             )
             res["Pdv"].append(porez)
-
         for pnp in tax_data["Pnp"]:
             if not res.get("Pnp"):
                 res["Pnp"] = []
@@ -134,7 +146,8 @@ class FiscalFiscalMixin(models.AbstractModel):
                 Iznos=fiskal.format_decimal(_pnp["Iznos"])
             )
             res["Pnp"].append(porez)
-        #
+
+        # - currenty no such
         # for ost in tax_data['OstaliPor']:
         #     _ost = tax_data['OstaliPor'][ost]
         #     porez = factory.type_factory.Porez
@@ -143,20 +156,16 @@ class FiscalFiscalMixin(models.AbstractModel):
         #     porez.Osnovica = fiskal.format_decimal(_ost['Osnovica'])
         #     porez.Iznos = fiskal.format_decimal(_pnp['Iznos'])
         #     racun.OstaliPor.Porez.append(porez)
-        #
-        # if iznos_oslob_pdv:
-        #     racun.IznosOslobPdv = fiskal.format_decimal(iznos_oslob_pdv)
-        # if iznos_ne_podl_opor:
-        #     racun.IznosNePodlOpor = fiskal.format_decimal(iznos_ne_podl_opor)
-        # if iznos_marza:
-        #     racun.IznosMarza = fiskal.format_decimal(iznos_marza)
 
-        # for nak in tax_data['Naknade']:
-        #     naziv, iznos = nak
-        #     naknada = factory.type_factory.naknada
-        #     naknada.NazivN = naziv
-        #     naknada.IznosN = fiskal.format_decimal(iznos)
-        #     racun.Naknade.append(naknada)
+        for nak in tax_data['Naknade']:
+            if not res.get("Naknade"):
+                res["Naknade"] = []
+            naziv, iznos = nak
+            naknada = factory.type_factory.Naknada(
+                NazivN=naziv,
+                IznosN=fiskal.format_decimal(iznos)
+            )
+            res["Naknade"].append(naknada)
         return res
 
     def _prepare_fisk_racun(self, factory, fiskal_data):
@@ -166,9 +175,11 @@ class FiscalFiscalMixin(models.AbstractModel):
             OznPosPr=fiskal_data['racun'][1],
             OznNapUr=fiskal_data['racun'][2]
         )
-        pdv = None
+        pdv, pnp = None, None
         if porezi.get('Pdv', None):
             pdv = factory.type_factory.PdvType(Porez=porezi['Pdv'])
+        if porezi.get('Pnp', None):
+            pnp = factory.type_factory.PnpType(Porez=porezi['Pnp'])
         oib_company = self.company_id.partner_id.vat[2:]
         if self.company_id.l10n_hr_fiskal_cert_id.cert_type == 'demo':
             # demo cert na tudjoj bazi... onda ide oib iz certa
@@ -179,11 +190,11 @@ class FiscalFiscalMixin(models.AbstractModel):
             DatVrijeme=fiskal_data['time']['datum_vrijeme'],
             OznSlijed=self.l10n_hr_fiskal_uredjaj_id.prostor_id.sljed_racuna,
             BrRac=BrRac,
-            Pdv=pdv,  # porezi.get('Pdv', None),
-            #Pnp=porezi.get('Pnp', None),
-            #IznosOslobPdv=self.vat_exempt,
-            #IznosMarza=self.special_margin_taxation,
-            #IznosNePodlOpor=self.tax_exempt_total,
+            Pdv=pdv,
+            Pnp=pnp,
+            IznosOslobPdv=porezi.get('PdvIznosOslobPdv', None),
+            IznosMarza=porezi.get('IznosMarza', None),
+            IznosNePodlOpor=porezi.get('IznosNePodlOpor', None),
             #Naknade=ws_naknade,
             IznosUkupno=fiskal.format_decimal(self.amount_total),
             NacinPlac=self.l10n_hr_nacin_placanja,
@@ -203,7 +214,6 @@ class FiscalFiscalMixin(models.AbstractModel):
         """
         Fiskalizira jedan izlazni racun ili point of sale račun
         msg_type : Racun,
-
         """
         if self.l10n_hr_jir and len(self.l10n_hr_jir) > 30:
             # existing in shema 1.4 not in 1.5!
@@ -216,6 +226,7 @@ class FiscalFiscalMixin(models.AbstractModel):
         if not self.l10n_hr_fiskal_user_id:
             # MUST USE CURRENT user for fiscalization!
             # Except in case of paragon račun? or naknadna dostava?
+            # but then it should be manualy entered already!
             self.l10n_hr_fiskal_user_id = self._uid
 
         errors = self._l10n_hr_post_fiskal_check()
