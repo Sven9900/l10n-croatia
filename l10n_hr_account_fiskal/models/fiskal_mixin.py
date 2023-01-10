@@ -1,5 +1,6 @@
-from odoo import api, fields, models, _
-from odoo.exceptions import UserError, ValidationError
+from odoo import _, fields, models
+from odoo.exceptions import ValidationError
+
 from ..fiskal import fiskal
 
 
@@ -8,53 +9,70 @@ class FiscalFiscalMixin(models.AbstractModel):
     Basic fields and methods for all fiscal classes
     - inherit for invoice, sale, procurment etc...
     """
+
     _name = "l10n.hr.fiskal.mixin"
     _description = "Croatia Fiscalisation base mixin"
 
-    l10n_hr_zki = fields.Char(
-        string="ZKI",
-        readonly=True, copy=False)
-    l10n_hr_jir = fields.Char(
-        string="JIR",
-        readonly=True, copy=False)
+    l10n_hr_zki = fields.Char(string="ZKI", readonly=True, copy=False)
+    l10n_hr_jir = fields.Char(string="JIR", readonly=True, copy=False)
     l10n_hr_fiskal_user_id = fields.Many2one(
-        comodel_name="res.users", string="Fiscal user",
+        comodel_name="res.users",
+        string="Fiscal user",
         help="User who sent the fiscalisation message to FINA."
-             " Can be different from responsible person on invoice."
+        " Can be different from responsible person on invoice.",
     )
 
     l10n_hr_vrijeme_xml = fields.Char(  # probably not needed but heck...
         string="XML time",
         help="Value for fiscalization msg stored as string",
-        size=19, readonly=True, copy=False)
+        size=19,
+        readonly=True,
+        copy=False,
+    )
     l10n_hr_paragon_br = fields.Char(
         "Paragon nr.",
-        readonly=True, copy=False,
+        readonly=True,
+        copy=False,
         states={"draft": [("readonly", False)]},
         # TODO translateME!
         help="If system was down, and invoice is records on 'paragon blok',"
-             ". This needs to be entered BEFORE confirming the invoice.")
+        ". This needs to be entered BEFORE confirming the invoice.",
+    )
     l10n_hr_late_delivery = fields.Boolean(
         string="Late delivery",
-        readonly=True, copy=False,
+        readonly=True,
+        copy=False,
         states={"draft": [("readonly", False)]},
-        help="Checked if message could not be sent at time of invoicing"
+        help="Checked if message could not be sent at time of invoicing",
     )
 
     def _l10n_hr_post_fiskal_check(self):
         res = []
 
-        if self.journal_id.l10n_hr_fiscalisation_active and \
-            not self.company_id.partner_id.vat:
-            res.append(_("Comapny OIB is not not entered! It is required for fiscalisation"))
-        if self.journal_id.l10n_hr_fiscalisation_active and \
-            not self.l10n_hr_fiskal_user_id.partner_id.vat:
-            res.append(_("User OIB is not not entered! It is required for fiscalisation"))
-        if self.l10n_hr_nacin_placanja != "T" and \
-            not self.company_id.l10n_hr_fiskal_cert_id:
+        if (
+            self.journal_id.l10n_hr_fiscalisation_active
+            and not self.company_id.partner_id.vat
+        ):
             res.append(
-                _("No fiscal certificate found, please install one "
-                  "activate and select it on company setup!"))
+                _("Comapny OIB is not not entered! It is required for fiscalisation")
+            )
+        if (
+            self.journal_id.l10n_hr_fiscalisation_active
+            and not self.l10n_hr_fiskal_user_id.partner_id.vat
+        ):
+            res.append(
+                _("User OIB is not not entered! It is required for fiscalisation")
+            )
+        if (
+            self.l10n_hr_nacin_placanja != "T"
+            and not self.company_id.l10n_hr_fiskal_cert_id
+        ):
+            res.append(
+                _(
+                    "No fiscal certificate found, please install one "
+                    "activate and select it on company setup!"
+                )
+            )
         return res
 
     def _get_fisk_tax_values(self):
@@ -67,9 +85,11 @@ class FiscalFiscalMixin(models.AbstractModel):
         iznos_oslob_pdv, iznos_ne_podl_opor, iznos_marza = 0.00, 0.00, 0.00
 
         base_lines = self.invoice_line_ids.filtered(
-            lambda line: line.display_type == "product")
-        base_line_values_list = [line._convert_to_tax_base_line_dict()
-                                 for line in base_lines]
+            lambda line: line.display_type == "product"
+        )
+        base_line_values_list = [
+            line._convert_to_tax_base_line_dict() for line in base_lines
+        ]
 
         for line in base_line_values_list:
             for tax in line["taxes"]:
@@ -89,26 +109,24 @@ class FiscalFiscalMixin(models.AbstractModel):
                         tax_data["Pdv"][stopa]["Osnovica"] += osnovica
                         tax_data["Pdv"][stopa]["Iznos"] += iznos
                     else:
-                        tax_data["Pdv"][stopa] = {
-                            "Osnovica": osnovica,
-                            "Iznos": iznos
-                        }
+                        tax_data["Pdv"][stopa] = {"Osnovica": osnovica, "Iznos": iznos}
                 elif fiskal_type == "Pnp":
                     if tax_data["Pnp"].get(stopa):
                         tax_data["Pnp"][stopa]["Osnovica"] += osnovica
                         tax_data["Pnp"][stopa]["Iznos"] += iznos
                     else:
-                        tax_data["Pnp"][stopa] = {
-                            "Osnovica": osnovica,
-                            "Iznos": iznos
-                        }
+                        tax_data["Pnp"][stopa] = {"Osnovica": osnovica, "Iznos": iznos}
                 elif fiskal_type == "OstaliPor":
-                    tax_data["OstaliPor"].append({
-                        "Naziv": naziv, "Stopa": stopa,
-                        "Osnovica": osnovica, "Iznos": iznos})
+                    tax_data["OstaliPor"].append(
+                        {
+                            "Naziv": naziv,
+                            "Stopa": stopa,
+                            "Osnovica": osnovica,
+                            "Iznos": iznos,
+                        }
+                    )
                 elif fiskal_type == "Naknade":
-                    tax_data["Naknade"].append({
-                        "NazivN": naziv, "IznosN": iznos})
+                    tax_data["Naknade"].append({"NazivN": naziv, "IznosN": iznos})
                 elif fiskal_type == "oslobodenje":
                     iznos_oslob_pdv += osnovica
                 elif fiskal_type == "ne_podlijeze":
@@ -117,12 +135,13 @@ class FiscalFiscalMixin(models.AbstractModel):
                     iznos_marza += osnovica
 
         if iznos_oslob_pdv:
-            tax_data['IznosOslobPdv'] = fiskal.format_decimal(iznos_oslob_pdv)
+            tax_data["IznosOslobPdv"] = fiskal.format_decimal(iznos_oslob_pdv)
         if iznos_ne_podl_opor:
             tax_data["IznosNePodlOpor"] = fiskal.format_decimal(iznos_ne_podl_opor)
         if iznos_marza:
             tax_data["IznosMarza"] = fiskal.format_decimal(iznos_marza)
         return tax_data
+
     def _prepare_fisk_racun_taxes(self, factory):
         tax_data = self._get_fisk_tax_values()
         res = {}
@@ -133,7 +152,7 @@ class FiscalFiscalMixin(models.AbstractModel):
             porez = factory.type_factory.PorezType(
                 Stopa=fiskal.format_decimal(pdv),
                 Osnovica=fiskal.format_decimal(_pdv["Osnovica"]),
-                Iznos=fiskal.format_decimal(_pdv["Iznos"])
+                Iznos=fiskal.format_decimal(_pdv["Iznos"]),
             )
             res["Pdv"].append(porez)
         for pnp in tax_data["Pnp"]:
@@ -143,7 +162,7 @@ class FiscalFiscalMixin(models.AbstractModel):
             porez = factory.type_factory.PorezType(
                 Stopa=fiskal.format_decimal(pnp),
                 Osnovice=fiskal.format_decimal(_pnp["Osnovica"]),
-                Iznos=fiskal.format_decimal(_pnp["Iznos"])
+                Iznos=fiskal.format_decimal(_pnp["Iznos"]),
             )
             res["Pnp"].append(porez)
 
@@ -157,13 +176,12 @@ class FiscalFiscalMixin(models.AbstractModel):
         #     porez.Iznos = fiskal.format_decimal(_pnp['Iznos'])
         #     racun.OstaliPor.Porez.append(porez)
 
-        for nak in tax_data['Naknade']:
+        for nak in tax_data["Naknade"]:
             if not res.get("Naknade"):
                 res["Naknade"] = []
             naziv, iznos = nak
             naknada = factory.type_factory.Naknada(
-                NazivN=naziv,
-                IznosN=fiskal.format_decimal(iznos)
+                NazivN=naziv, IznosN=fiskal.format_decimal(iznos)
             )
             res["Naknade"].append(naknada)
         return res
@@ -171,31 +189,31 @@ class FiscalFiscalMixin(models.AbstractModel):
     def _prepare_fisk_racun(self, factory, fiskal_data):
         porezi = self._prepare_fisk_racun_taxes(factory)
         BrRac = factory.type_factory.BrojRacunaType(
-            BrOznRac=fiskal_data['racun'][0],
-            OznPosPr=fiskal_data['racun'][1],
-            OznNapUr=fiskal_data['racun'][2]
+            BrOznRac=fiskal_data["racun"][0],
+            OznPosPr=fiskal_data["racun"][1],
+            OznNapUr=fiskal_data["racun"][2],
         )
         pdv, pnp = None, None
-        if porezi.get('Pdv', None):
-            pdv = factory.type_factory.PdvType(Porez=porezi['Pdv'])
-        if porezi.get('Pnp', None):
-            pnp = factory.type_factory.PnpType(Porez=porezi['Pnp'])
+        if porezi.get("Pdv", None):
+            pdv = factory.type_factory.PdvType(Porez=porezi["Pdv"])
+        if porezi.get("Pnp", None):
+            pnp = factory.type_factory.PnpType(Porez=porezi["Pnp"])
         oib_company = self.company_id.partner_id.vat[2:]
-        if self.company_id.l10n_hr_fiskal_cert_id.cert_type == 'demo':
+        if self.company_id.l10n_hr_fiskal_cert_id.cert_type == "demo":
             # demo cert na tudjoj bazi... onda ide oib iz certa
             oib_company = self.company_id.l10n_hr_fiskal_cert_id.cert_oib[2:]
         racun = factory.type_factory.RacunType(
             Oib=oib_company,
             USustPdv=self.company_id.l10n_hr_fiskal_taxative,
-            DatVrijeme=fiskal_data['time']['datum_vrijeme'],
+            DatVrijeme=fiskal_data["time"]["datum_vrijeme"],
             OznSlijed=self.l10n_hr_fiskal_uredjaj_id.prostor_id.sljed_racuna,
             BrRac=BrRac,
             Pdv=pdv,
             Pnp=pnp,
-            IznosOslobPdv=porezi.get('PdvIznosOslobPdv', None),
-            IznosMarza=porezi.get('IznosMarza', None),
-            IznosNePodlOpor=porezi.get('IznosNePodlOpor', None),
-            #Naknade=ws_naknade,
+            IznosOslobPdv=porezi.get("PdvIznosOslobPdv", None),
+            IznosMarza=porezi.get("IznosMarza", None),
+            IznosNePodlOpor=porezi.get("IznosNePodlOpor", None),
+            # Naknade=ws_naknade,
             IznosUkupno=fiskal.format_decimal(self.amount_total),
             NacinPlac=self.l10n_hr_nacin_placanja,
             OibOper=self.l10n_hr_fiskal_user_id.partner_id.vat[2:],
@@ -210,15 +228,15 @@ class FiscalFiscalMixin(models.AbstractModel):
         )
         return racun
 
-    def fiskaliziraj(self, msg_type='racuni'):
+    def fiskaliziraj(self, msg_type="racuni"):
         """
         Fiskalizira jedan izlazni racun ili point of sale račun
         msg_type : Racun,
         """
         if self.l10n_hr_jir and len(self.l10n_hr_jir) > 30:
             # existing in shema 1.4 not in 1.5!
-            if msg_type != 'provjera':
-                msg_type = 'provjera'
+            if msg_type != "provjera":
+                msg_type = "provjera"
         if self.l10n_hr_zki and not self.l10n_hr_jir and not self.l10n_hr_late_delivery:
             # imam ZKI, nemam jir = naknadna dostava
             self.l10n_hr_late_delivery = True
@@ -232,41 +250,43 @@ class FiscalFiscalMixin(models.AbstractModel):
         errors = self._l10n_hr_post_fiskal_check()
         if errors:
             msg = _("Fiscalisation not possible: \n")
-            msg += '\n'.join(errors)
+            msg += "\n".join(errors)
             raise ValidationError(msg)
 
         fiskal_data = self.company_id.get_fiskal_data()
-        fiskal_data['time'] = time_start
+        fiskal_data["time"] = time_start
         fis_racun = self.l10n_hr_fiskalni_broj.split(
-            self.company_id.l10n_hr_fiskal_separator)
+            self.company_id.l10n_hr_fiskal_separator
+        )
         assert len(fis_racun) == 3, "Invoice must be assembled using 3 values!"
-        fiskal_data['racun'] = fis_racun
+        fiskal_data["racun"] = fis_racun
         fisk = fiskal.Fiskalizacija(fiskal_data=fiskal_data)
         if not self.l10n_hr_zki:
-            if fiskal_data['demo']:
+            if fiskal_data["demo"]:
                 # uzimam oib iz certifikata, bez obzira na company oib
-                oib = fiskal_data['cert_oib']
+                oib = fiskal_data["cert_oib"]
             else:
-                oib = fiskal_data['company_oib']
+                oib = fiskal_data["company_oib"]
 
             zki_datalist = [
                 oib[2:],
-                self.l10n_hr_vrijeme_izdavanja or time_start['datum_racun'],
-                fis_racun[0], fis_racun[1], fis_racun[2],
-                fiskal.format_decimal(self.amount_total)
-                ]
+                self.l10n_hr_vrijeme_izdavanja or time_start["datum_racun"],
+                fis_racun[0],
+                fis_racun[1],
+                fis_racun[2],
+                fiskal.format_decimal(self.amount_total),
+            ]
             self.l10n_hr_zki = fiskal.generate_zki(
-                zki_datalist=zki_datalist,
-                signer=fisk.signer
+                zki_datalist=zki_datalist, signer=fisk.signer
             )
         fisk = fiskal.Fiskalizacija(fiskal_data=fiskal_data)
-        if msg_type in ['racuni', 'provjera']:
+        if msg_type in ["racuni", "provjera"]:
             racun = self._prepare_fisk_racun(factory=fisk, fiskal_data=fiskal_data)
             zaglavlje = fisk.create_request_header()  # self._create_fiskal_header(fisk)
             req_kw = dict(Zaglavlje=zaglavlje, Racun=racun)
             service_proxy = fisk.client.service.racuni
             response = fisk._call_service(service_proxy, req_kw)
         self.company_id.create_fiskal_log(msg_type, fisk, response, time_start, self)
-        if hasattr(response, 'Jir'):
+        if hasattr(response, "Jir"):
             if not self.l10n_hr_jir:
                 self.l10n_hr_jir = response.Jir

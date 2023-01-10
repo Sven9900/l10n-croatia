@@ -1,4 +1,4 @@
-from odoo import api, fields, models, _
+from odoo import _, fields, models
 from odoo.exceptions import ValidationError
 
 
@@ -11,7 +11,7 @@ class AccountMove(models.Model):
             ("G", "Cash (bills and coins)"),
             ("K", "Credit or debit cards"),
             ("C", "Bank Cheque"),
-            ("O", "Other payment means")
+            ("O", "Other payment means"),
         ],
     )
     l10n_hr_fiskal_log_ids = fields.One2many(
@@ -34,12 +34,15 @@ class AccountMove(models.Model):
         # need to put smart options what and when not to send...
         if (
             not self.journal_id.l10n_hr_fiscalisation_active
-            and self.l10n_hr_nacin_placanja != 'T'
+            and self.l10n_hr_nacin_placanja != "T"
         ):
             raise ValidationError(
-                _("Fiscalization is not active for %s!! "
-                  "Only Transaction account payment is allowed!")
-                % self.journal_id.display_name)
+                _(
+                    "Fiscalization is not active for %s!! "
+                    "Only Transaction account payment is allowed!"
+                )
+                % self.journal_id.display_name
+            )
         if self.journal_id.l10n_hr_fiscalisation_active:
             self.fiskaliziraj()
         return res

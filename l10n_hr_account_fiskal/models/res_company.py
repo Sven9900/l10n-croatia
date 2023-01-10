@@ -2,11 +2,13 @@
 # License LGPL-3.0 or later (https://www.gnu.org/licenses/lgpl.html).
 
 import os
-from lxml import etree
-from ..fiskal import fiskal
-from odoo import api, fields, models, _
-from odoo.exceptions import MissingError, ValidationError
 
+from lxml import etree
+
+from odoo import _, api, fields, models
+from odoo.exceptions import MissingError
+
+from ..fiskal import fiskal
 
 SCHEMA_HELP = """
 verzija: 1.3 Datum verzije: 04.07.2016.
@@ -49,22 +51,23 @@ class Company(models.Model):
         res = [(s, s) for s in os.listdir(fiskal_path)]
         return res
 
-
     l10n_hr_fiskal_cert_id = fields.Many2one(
         comodel_name="l10n.hr.fiskal.certificate",
-        string="Fiscal certificate", tracking=1,
+        string="Fiscal certificate",
+        tracking=1,
         domain="[('state', '=', 'active')]",
-        help="Officialy issued by Croatian FINA Agency, imported and activated"
+        help="Officialy issued by Croatian FINA Agency, imported and activated",
     )
     l10n_hr_fiskal_spec = fields.Char(
-        string="Special", size=1000,
+        string="Special",
+        size=1000,
         help="OIB informatičke tvrtke koja održava software, "
-             "za demo cert mora odgovarati OIBu sa demo certifikata",
-        )
+        "za demo cert mora odgovarati OIBu sa demo certifikata",
+    )
     l10n_hr_fiskal_schema = fields.Selection(
         selection=_get_schema_selection,
         string="Fiskalizaction schema",
-        help=SCHEMA_HELP
+        help=SCHEMA_HELP,
     )
     l10n_hr_fiskal_taxative = fields.Boolean(
         string="In taxation system", default=True, tracking=1
@@ -80,31 +83,42 @@ class Company(models.Model):
         error_log = ""
         if hasattr(response, "Greske") and response.Greske is not None:
             error_log = "\n".join(
-                [" - ".join(
-                    [item.SifraGreske,item.PorukaGreske.replace("\t", "").replace("\n", "")]
-                    ) for item in response.Greske.Greska]
+                [
+                    " - ".join(
+                        [
+                            item.SifraGreske,
+                            item.PorukaGreske.replace("\t", "").replace("\n", ""),
+                        ]
+                    )
+                    for item in response.Greske.Greska
+                ]
             )
-        if msg_type == "racuni"and origin.l10n_hr_late_delivery:
+        if msg_type == "racuni" and origin.l10n_hr_late_delivery:
             msg_type = "rac_pon"
 
         values = {
             "user_id": self.env.user.id,
-            "name": msg_type != "echo" and
-                    response.Zaglavlje.IdPoruke or "ECHO",
+            "name": msg_type != "echo" and response.Zaglavlje.IdPoruke or "ECHO",
             "type": msg_type,
-            "time_stamp": msg_type != "echo" and
-                          response.Zaglavlje.DatumVrijeme or
-                          time_stop["datum_vrijeme"],
+            "time_stamp": msg_type != "echo"
+            and response.Zaglavlje.DatumVrijeme
+            or time_stop["datum_vrijeme"],
             "time_obr": time_obr,
-            "sadrzaj": etree.tostring(msg_obj.history.last_sent["envelope"]).decode("utf-8"),
-            "odgovor": etree.tostring(msg_obj.history.last_sent["envelope"]).decode("utf-8"),
-            "greska": error_log != "" and error_log  or "OK",
+            "sadrzaj": etree.tostring(msg_obj.history.last_sent["envelope"]).decode(
+                "utf-8"
+            ),
+            "odgovor": etree.tostring(msg_obj.history.last_sent["envelope"]).decode(
+                "utf-8"
+            ),
+            "greska": error_log != "" and error_log or "OK",
             "fiskal_prostor_id": origin._name == "account.move"
-                     and origin.l10n_hr_fiskal_uredjaj_id.prostor_id.id or False,
+            and origin.l10n_hr_fiskal_uredjaj_id.prostor_id.id
+            or False,
             "fiskal_uredjaj_id": origin._name == "account.move"
-                     and origin.l10n_hr_fiskal_uredjaj_id.id or False,
+            and origin.l10n_hr_fiskal_uredjaj_id.id
+            or False,
             "invoice_id": origin._name == "account.move" and origin.id or False,
-            "company_id": self.id
+            "company_id": self.id,
         }
         return values
 

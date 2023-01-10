@@ -1,12 +1,12 @@
-import xmlsec
-from copy import deepcopy
-import uuid
 import os
+import uuid
+from copy import deepcopy
 from hashlib import md5
-from lxml import etree
+
+import xmlsec
 from cryptography.hazmat.primitives import hashes, serialization
 from cryptography.hazmat.primitives.asymmetric import padding
-
+from lxml import etree
 
 SIGNATURE_FRAGMENT = """
  <Signature xmlns="http://www.w3.org/2000/09/xmldsig#">
@@ -158,13 +158,12 @@ class Verifier:
         sig_node = xmlsec.tree.find_node(root, xmlsec.constants.NodeSignature)
         try:
             ctx.verify(sig_node)
-        except Exception as E:
+        except Exception:
             # print(repr(E))
             pass
 
 
 class EnvelopedSignaturePlugin:
-
     def __init__(self, client, signer, verifier):
         self.fiskal_client = client
         self.signer = signer

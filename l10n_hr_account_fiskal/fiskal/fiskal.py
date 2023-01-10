@@ -1,12 +1,13 @@
-
 # License LGPL-3.0 or later (https://www.gnu.org/licenses/lgpl.html).
-from lxml import etree
 from datetime import datetime
 from uuid import uuid4
+
+from lxml import etree
 from requests import Session
 from zeep import Client
-from zeep.transports import Transport
 from zeep.plugins import HistoryPlugin
+from zeep.transports import Transport
+
 from .zeep_signer import EnvelopedSignaturePlugin, Signer, Verifier
 
 
@@ -20,18 +21,20 @@ def generate_zki(zki_datalist, signer=None):
       oib, datum_vrijeme, br_racuna, oznaka_pp, oznaka_nu, ukupno_iznos
     :return: signed and hashed ZKI
     """
-    return signer.sign_zki_payload(''.join(zki_datalist))
+    return signer.sign_zki_payload("".join(zki_datalist))
+
 
 def format_decimal(decimal):
     """Formats float for Fiskal communication"""
-    return '%.2f' % decimal
+    return "%.2f" % decimal
+
 
 def get_uuid():
-    '''recomended for fiscalization is UUID4'''
+    """recomended for fiscalization is UUID4"""
     return uuid4().hex
 
 
-class Fiskalizacija():
+class Fiskalizacija:
     """
     Helper class for fiscalization requirement in Croatia
     - generates suds object, send message and handles response
@@ -53,13 +56,17 @@ class Fiskalizacija():
         :param other: optional variables
         """
         session = Session()
-        session.verify = fiskal_data['fina']
+        session.verify = fiskal_data["fina"]
         transport = Transport(session=session)
-        signer = Signer(cert_path=fiskal_data['cert'], key_path=fiskal_data['key'])
-        verifier = Verifier(cert_path=fiskal_data['cert'], ca_cert_paths=[fiskal_data['fina']])
+        signer = Signer(cert_path=fiskal_data["cert"], key_path=fiskal_data["key"])
+        verifier = Verifier(
+            cert_path=fiskal_data["cert"], ca_cert_paths=[fiskal_data["fina"]]
+        )
         history = HistoryPlugin()
         fiskal_plugin = EnvelopedSignaturePlugin(self, signer, verifier)
-        self.client = Client(fiskal_data['wsdl'], transport=transport, plugins=[fiskal_plugin, history])
+        self.client = Client(
+            fiskal_data["wsdl"], transport=transport, plugins=[fiskal_plugin, history]
+        )
         self.signer = signer
         self.verifier = verifier
         self.history = history
@@ -86,8 +93,7 @@ class Fiskalizacija():
         message_id = uuid4()
         dt = datetime.now()
         return self.type_factory.ZaglavljeType(
-            IdPoruke=message_id,
-            DatumVrijeme=dt.strftime("%d.%m.%YT%H:%M:%S")
+            IdPoruke=message_id, DatumVrijeme=dt.strftime("%d.%m.%YT%H:%M:%S")
         )
 
     def requires_signature(self, operation):

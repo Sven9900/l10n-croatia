@@ -1,19 +1,24 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8" ?>
 <odoo>
     <!-- cert-->
     <record id="view_company_form_l10n_hr_account_fiskal" model="ir.ui.view">
         <field name="name">view_company_form_l10n_hr_account_fiskal</field>
         <field name="model">res.company</field>
-        <field name="inherit_id" ref="l10n_hr_account_base.view_l10n_hr_account_company_form"/>
+        <field
+            name="inherit_id"
+            ref="l10n_hr_account_base.view_l10n_hr_account_company_form"
+        />
         <field name="arch" type="xml">
             <field name="l10n_hr_fiskal_separator" position="after">
                 <field name="l10n_hr_fiskal_cert_id" />
-                <field name="l10n_hr_fiskal_spec"/>
-                <field name="l10n_hr_fiskal_schema"/>
-                <field name="l10n_hr_fiskal_taxative"/>
-                <button string="Test Fiscalisation connection"
-                        type="object" name="button_test_echo"
-                        attrs="{'invisible':[('l10n_hr_fiskal_cert_id','=',False)]}"
+                <field name="l10n_hr_fiskal_spec" />
+                <field name="l10n_hr_fiskal_schema" />
+                <field name="l10n_hr_fiskal_taxative" />
+                <button
+                    string="Test Fiscalisation connection"
+                    type="object"
+                    name="button_test_echo"
+                    attrs="{'invisible':[('l10n_hr_fiskal_cert_id','=',False)]}"
                 />
             </field>
         </field>
@@ -22,7 +27,7 @@
     <record id="view_fiskal_prostor_form_inherit" model="ir.ui.view">
         <field name="name">view_fiskal_prostor_form_inherit</field>
         <field name="model">l10n.hr.fiskal.prostor</field>
-        <field name="inherit_id" ref="l10n_hr_account_base.view_fiskal_prostor_form"/>
+        <field name="inherit_id" ref="l10n_hr_account_base.view_fiskal_prostor_form" />
         <field name="arch" type="xml">
             <notebook position="inside">
                 <page string="Fiskalizacija - Komunikacija">
@@ -32,52 +37,52 @@
         </field>
     </record>
 
-    <record id="fiskal_log_tree_view" model="ir.ui.view" >
+    <record id="fiskal_log_tree_view" model="ir.ui.view">
         <field name="name">fiskal_log_tree_view</field>
         <field name="model">l10n.hr.fiskal.log</field>
         <field name="arch" type="xml">
             <tree><!--string="Poslane poruke"-->
                 <field name="name" select="1" />
                 <field name="type" />
-                <field name="greska"/>
+                <field name="greska" />
                 <field name="time_stamp" />
                 <field name="time_obr" />
-                <field name="fiskal_prostor_id"/>
-                <field name="fiskal_uredjaj_id"/>
+                <field name="fiskal_prostor_id" />
+                <field name="fiskal_uredjaj_id" />
 
             </tree>
         </field>
     </record>
-    <record id="view_fiskal_log_form" model="ir.ui.view" >
+    <record id="view_fiskal_log_form" model="ir.ui.view">
             <field name="name">view_fiskal_log_form</field>
             <field name="model">l10n.hr.fiskal.log</field>
             <field name="arch" type="xml">
-                <form ><!--string="Evidencija prometa"-->
+                <form><!--string="Evidencija prometa"-->
                     <group>
-                        <field name="name" string="UUID poruke" readonly="1"/>
-                        <field name="type" readonly="1"/>
-                        <field name="fiskal_prostor_id" readonly="1"/>
-                        <field name="fiskal_uredjaj_id" readonly="1"/>
-                        <field name="time_stamp" readonly="1"/>
-                        <field name="time_obr" readonly="1"/>
-                        <field name="user_id" readonly="1"/>
-                        <field name="company_id" readonly="1"/>
+                        <field name="name" string="UUID poruke" readonly="1" />
+                        <field name="type" readonly="1" />
+                        <field name="fiskal_prostor_id" readonly="1" />
+                        <field name="fiskal_uredjaj_id" readonly="1" />
+                        <field name="time_stamp" readonly="1" />
+                        <field name="time_obr" readonly="1" />
+                        <field name="user_id" readonly="1" />
+                        <field name="company_id" readonly="1" />
                     </group>
-                    <newline/>
+                    <newline />
                     <notebook colspan="4">
                         <page string="Poruka">
                             <group>
-                                <field name="invoice_id" readonly="1"/>
-                                <field name="fiskal_prostor_id" readonly="1"/>
-                                <newline/>
-                                <field name="greska" colspan="4"/>
+                                <field name="invoice_id" readonly="1" />
+                                <field name="fiskal_prostor_id" readonly="1" />
+                                <newline />
+                                <field name="greska" colspan="4" />
                             </group>
                         </page>
                         <page string="Poslana poruka">
-                            <field name="sadrzaj" nolabel="1"/>
+                            <field name="sadrzaj" nolabel="1" />
                         </page>
                         <page string="Odgovor na poruku">
-                            <field name="odgovor"  nolabel="1"/>
+                            <field name="odgovor" nolabel="1" />
                         </page>
                     </notebook>
                 </form>
