@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="windows-1250"?>
+<racunski-plan xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="RRIF-RP2021.XSD">
+  <racun>
+    <kljuc>5</kljuc>
+    <naziv>MJESTA I NOSITELJI TROŠKOVA - U DJELATNOSTI TRGOVINE</naziv>
+  </racun>
+  <racun>
+    <kljuc>50</kljuc>
+    <naziv>TROŠKOVI UPRAVE I ADMINISTRACIJA</naziv>
+  </racun>
+  <racun>
+    <kljuc>500</kljuc>
+    <naziv>Materijal u troškovima uprave i administracije</naziv>
+  </racun>
+  <racun>
+    <kljuc>501</kljuc>
+    <naziv>Plaće u troškovima uprave i prodaje</naziv>
+  </racun>
+  <racun>
+    <kljuc>502</kljuc>
+    <naziv>Amortizacija u troškovima uprave i administracije</naziv>
+  </racun>
+  <racun>
+    <kljuc>505</kljuc>
+    <naziv>Drugi troškovi uprave i prodaje (razrada npr. dnevnica, osiguranje, bankovni troškovi, reprezentacija itd.)</naziv>
+  </racun>
+  <racun>
+    <kljuc>51</kljuc>
+    <naziv>TROŠKOVI PRODAJE</naziv>
+  </racun>
+  <racun>
+    <kljuc>510</kljuc>
+    <naziv>Materijal u troškovima prodaje</naziv>
+  </racun>
+  <racun>
+    <kljuc>511</kljuc>
+    <naziv>Plaće u troškovima prodaje</naziv>
+  </racun>
+  <racun>
+    <kljuc>512</kljuc>
+    <naziv>Amortizacija u troškovima prodaje</naziv>
+  </racun>
+  <racun>
+    <kljuc>513</kljuc>
+    <naziv>Zakupnine u troškovima prodaje</naziv>
+  </racun>
+  <racun>
+    <kljuc>515</kljuc>
+    <naziv>Drugi troškovi prodaje (razrada npr. otpreme pošiljaka, fakturiranje, propaganda, naplata ambalaža, omotni papir, troškovi izvoza, troškovi posredništva itd.) Praćenje troškova radionica i transporta u trgovini provodi se analogno prikazanome u proizvodnji</naziv>
+  </racun>
+  <racun>
+    <kljuc>59</kljuc>
+    <naziv>RASPORED TROŠKOVA</naziv>
+  </racun>
+  <racun>
+    <kljuc>590</kljuc>
+    <naziv>Raspored troškova na zalihe proizvodnje i usluga</naziv>
+  </racun>
+  <racun>
+    <kljuc>591</kljuc>
+    <naziv>Raspored troškova u rashode na teret prihoda</naziv>
+  </racun>
+  <racun>
+    <kljuc>5910</kljuc>
+    <naziv>Raspored troškova uprave i administracije</naziv>
+  </racun>
+  <racun>
+    <kljuc>5911</kljuc>
+    <naziv>Raspored troškova uprave</naziv>
+  </racun>
+</racunski-plan>
