@@ -2,8 +2,8 @@
 
 Update 9.1.2023:
 
-Tax report lines adjusted to lates TAX report schema valid from 3.1.2023
-Items in section VI are not fully tested and are subject to implementation.
+Tax report lines adjusted to lates TAX report schema valid from 3.1.2023 items in
+section VI are not fully tested and are subject to implementation.
 
 Update 26.12.2022:
 

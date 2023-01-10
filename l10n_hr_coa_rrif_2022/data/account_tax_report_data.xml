@@ -235,10 +235,7 @@
             (1.+2.+3.+4.+5.+6.+7.+8.+9.+10.+11.+12.+13.+14.+15.)</field>
             <field name="code">200</field>
             <field name="expression_ids">
-                <record
-                        id="tax_report_line_200_base"
-                        model="account.report.expression"
-                    >
+                <record id="tax_report_line_200_base" model="account.report.expression">
                     <field name="label">osn</field>
                     <field name="engine">aggregation</field>
                     <field
@@ -634,20 +631,14 @@
                 >III. Calculated input vat – total amount (1.+2.+3.+4.+5.+6.+7.+8.+9.+10.+11.+12.+13. +14.+15.)</field>
             <field name="code">300</field>
             <field name="expression_ids">
-                <record
-                        id="tax_report_line_300_base"
-                        model="account.report.expression"
-                    >
+                <record id="tax_report_line_300_base" model="account.report.expression">
                     <field name="label">osn</field>
                     <field name="engine">aggregation</field>
                     <field
                             name="formula"
                         >301.osn + 302.osn + 303.osn + 304.osn + 305.osn + 306.osn + 307.osn + 308.osn + 309.osn + 310.osn + 311.osn + 312.osn + 313.osn + 314.osn + 315.osn</field>
                 </record>
-                <record
-                        id="tax_report_line_300_tax"
-                        model="account.report.expression"
-                    >
+                <record id="tax_report_line_300_tax" model="account.report.expression">
                     <field name="label">por</field>
                     <field name="engine">aggregation</field>
                     <field
@@ -1080,15 +1071,10 @@
         </record>
         <!-- Section VI -->
         <record id="tax_report_title_610" model="account.report.line">
-            <field
-                    name="name"
-                >1. FOR PUCHASE TAX ADJUSTMETS</field>
+            <field name="name">1. FOR PUCHASE TAX ADJUSTMETS</field>
             <field name="code">610</field>
             <field name="expression_ids">
-                <record
-                        id="tax_report_line_610_base"
-                        model="account.report.expression"
-                    >
+                <record id="tax_report_line_610_base" model="account.report.expression">
                     <field name="label">osn</field>
                     <field name="engine">aggregation</field>
                     <field
@@ -1099,15 +1085,13 @@
             <field name="children_ids">
                 <!-- Sub Section 6.1 -->
                 <record id="tax_report_line_611" model="account.report.line">
-                        <field
-                                name="name"
-                            >1.1 Aquisition of realestate</field>
+                        <field name="name">1.1 Aquisition of realestate</field>
                         <field name="code">611</field>
                         <field name="expression_ids">
                             <record
-                                    id="tax_report_line_611_base"
-                                    model="account.report.expression"
-                                >
+                                id="tax_report_line_611_base"
+                                model="account.report.expression"
+                            >
                                 <field name="label">osn</field>
                                 <field name="engine">tax_tags</field>
                                 <field name="formula">VI.11_base</field>
@@ -1163,9 +1147,7 @@
                     </field>
                 </record>
                 <record id="tax_report_line_615" model="account.report.line">
-                    <field
-                            name="name"
-                        >1.5 Sales of other long period assets</field>
+                    <field name="name">1.5 Sales of other long period assets</field>
                     <field name="code">615</field>
                     <field name="expression_ids">
                         <record
@@ -1187,10 +1169,7 @@
                 >2. Dsiposal/Aquisition of business units or power plants</field>
             <field name="code">620</field>
             <field name="expression_ids">
-                <record
-                        id="tax_report_line_620_base"
-                        model="account.report.expression"
-                    >
+                <record id="tax_report_line_620_base" model="account.report.expression">
                     <field name="label">osn</field>
                     <field name="engine">tax_tags</field>
                     <field name="formula">VI.2_base</field>
@@ -1203,10 +1182,7 @@
                 >3. Total received services from non resident tax payers (EU + third countries)</field>
             <field name="code">630</field>
             <field name="expression_ids">
-                <record
-                        id="tax_report_line_630_base"
-                        model="account.report.expression"
-                    >
+                <record id="tax_report_line_630_base" model="account.report.expression">
                     <field name="label">usl_in</field>
                     <field name="engine">tax_tags</field>
                     <field name="formula">VI.3_base</field>
@@ -1219,10 +1195,7 @@
                 >4. Total services provided to taxpayesr without residece in Croatia (EU + third countries)</field>
             <field name="code">640</field>
             <field name="expression_ids">
-                <record
-                        id="tax_report_line_640_base"
-                        model="account.report.expression"
-                    >
+                <record id="tax_report_line_640_base" model="account.report.expression">
                     <field name="label">usl_out</field>
                     <field name="engine">tax_tags</field>
                     <field name="formula">III.4_base</field>
@@ -1230,21 +1203,18 @@
             </field>
          </record>
         <record id="tax_report_line_650" model="account.report.line">
-                    <field
-                            name="name"
-                        >5. received goods from EU within three-way business</field>
-                    <field name="code">650</field>
-                    <field name="expression_ids">
-                        <record
-                                id="tax_report_line_650_base"
-                                model="account.report.expression"
-                            >
-                            <field name="label">osn</field>
-                            <field name="engine">tax_tags</field>
-                            <field name="formula">VI.5_base</field>
-                        </record>
-                    </field>
-                 </record>
+            <field
+                    name="name"
+                >5. received goods from EU within three-way business</field>
+            <field name="code">650</field>
+            <field name="expression_ids">
+                <record id="tax_report_line_650_base" model="account.report.expression">
+                    <field name="label">osn</field>
+                    <field name="engine">tax_tags</field>
+                    <field name="formula">VI.5_base</field>
+                </record>
+            </field>
+         </record>
     </field>
 </record>
 </odoo>
