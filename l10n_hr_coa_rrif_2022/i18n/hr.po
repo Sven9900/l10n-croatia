@@ -411,13 +411,6 @@ msgstr "Iznos poreza"
 msgid "Tax base"
 msgstr "Osnovica poreza"
 
-#. module: l10n_hr_coa_rrif_2022
-#: model:account.report.line,name:l10n_hr_coa_rrif_2022.tax_report_title_prev_calculation
-msgid ""
-"V. According to the previous calculation: unpaid vat to the day of "
-"submitting of this return-overpaid-tax credit"
-msgstr ""
-""
 
 #. module: l10n_hr_coa_rrif_2022
 #: model:account.report.line,name:l10n_hr_coa_rrif_2022.tax_report_title_total_dif
