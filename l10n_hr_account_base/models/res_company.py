@@ -303,6 +303,8 @@ class FiskalUredjaj(models.Model):
         for pos in self:
             domain = [("l10n_hr_prostor_id", "=", pos.prostor_id.id)]
             # if pos.sljed_racuna == 'N':
+            # TODO: fetch journals possible for this premise
+
 
     @api.onchange("prostor_id")
     def on_change_prostor_id(self):
@@ -334,7 +336,7 @@ class FiskalUredjaj(models.Model):
             % (self.prostor_id.name, self.name or str(self.oznaka_uredjaj)),
             "refund_sequence": False,
             "code": "INV-%s-%s" % (self.prostor_id.oznaka_prostor, self.oznaka_uredjaj),
-            "restrict_mode_hash_table": True,
+            "restrict_mode_hash_table": False,  # HEADS UP! should be true but...
             "l10n_hr_prostor_id": self.prostor_id.id,
             "l10n_hr_fiskal_uredjaj_ids": [(4, self.id)],
             "show_on_dashboard": False,
