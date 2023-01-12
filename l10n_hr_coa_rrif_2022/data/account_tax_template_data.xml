@@ -2080,11 +2080,11 @@
             ]"
         />
     </record>
-<!-- ZERO TAX or not in VAT -->
-    <record id="VAT_P_zero_rate" model="account.tax.template">
-        <field name="description">0% OSL</field>
+    <!-- not in VAT -->
+    <record id="VAT_P_not_in_VAT" model="account.tax.template">
+        <field name="description">NO</field>
         <field name="chart_template_id" ref="l10n_hr_coa_rrif_2022" />
-        <field name="name">0% Oslobođenje</field>
+        <field name="name">NOT TAXed</field>
         <field name="amount">0</field>
         <field name="amount_type">percent</field>
         <field name="type_tax_use">purchase</field>
@@ -2093,37 +2093,37 @@
         <field
             name="invoice_repartition_line_ids"
             eval="[(5, 0, 0),
-            (0,0, {
-                'factor_percent': 100,
-                'repartition_type': 'base',
-            }),
-            (0,0, {
-                'factor_percent': 100,
-                'repartition_type': 'tax',
-            }),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                }),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                }),
             ]"
         />
         <field
             name="refund_repartition_line_ids"
             eval="[(5, 0, 0),
-            (0,0, {
-                'factor_percent': 100,
-                'repartition_type': 'base',
-            }),
-            (0,0, {
-                'factor_percent': 100,
-                'repartition_type': 'tax',
-            }),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'base',
+                }),
+                (0,0, {
+                    'factor_percent': 100,
+                    'repartition_type': 'tax',
+                }),
             ]"
         />
     </record>
-    <record id="VAT_P_not_in_VAT" model="account.tax.template">
+    <record id="VAT_S_not_in_VAT" model="account.tax.template">
         <field name="description">NO</field>
         <field name="chart_template_id" ref="l10n_hr_coa_rrif_2022" />
-        <field name="name">Nije u PDV</field>
+        <field name="name">NOT Taxed</field>
         <field name="amount">0</field>
         <field name="amount_type">percent</field>
-        <field name="type_tax_use">purchase</field>
+        <field name="type_tax_use">sale</field>
         <field name="sequence" eval="10" />
         <field name="tax_group_id" ref="tax_group_0" />
         <field
