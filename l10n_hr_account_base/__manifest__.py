@@ -20,6 +20,7 @@
     "data": [
         "security/ir.model.access.csv",
         "views/res_company_view.xml",
+        "views/fiskal_data_views.xml",
         "views/account_move_view.xml",
         "views/account_journal_view.xml",
         "views/menuitems.xml",
