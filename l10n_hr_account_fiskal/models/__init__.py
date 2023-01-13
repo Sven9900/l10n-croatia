@@ -5,3 +5,4 @@ from . import fiskal_log
 from . import res_company
 from . import fiskal_mixin
 from . import account_move
+from . import fiskal_data

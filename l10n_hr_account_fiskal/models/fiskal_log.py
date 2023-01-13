@@ -37,7 +37,6 @@ class FiskalLog(models.Model):
         comodel_name="res.users",
         readonly=True,
         string="Person",
-        on_delete="restrict",
         help="Person which sent fiscalisation message",
     )
     company_id = fields.Many2one(

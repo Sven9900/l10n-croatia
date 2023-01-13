@@ -45,6 +45,7 @@
                     </group>
                     <group attrs="{'invisible': [('cert_type','=',False)]}">
 						<field name="cert_type" />
+                        <field name="fiskal_schema" />
                         <field name="cert_issuer" />
                         <field name="cert_subject" />
                         <field name="cert_oib" />

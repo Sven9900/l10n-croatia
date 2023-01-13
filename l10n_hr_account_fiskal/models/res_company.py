@@ -10,23 +10,7 @@ from odoo.exceptions import MissingError
 
 from ..fiskal import fiskal
 
-SCHEMA_HELP = """
-verzija: 1.3 Datum verzije: 04.07.2016.
-- u WSDL-u dodana nova metoda "provjera"
-- u schemi dodani novi elementi "ProvjeraZahtjev" i "ProvjeraOdgovor"
 
-verzija: 1.4 Datum verzije: 27.04.2017.
-- u WSDL-u izbačena metoda "poslovniProstor"
--u schemi izbačeni elementi "PoslovniProstorZahtjev",
-   "PoslovniProstorOdgovor"i ostalo vezano za prijavu poslovnih prostora
-
-verzija: 1.5 Datum verzije: 20.12.2019.
-- u WSDL-u dodane dvije metode "prateciDokumenti" i "racuniPD"
-- u schemi dodani elementi "PrateciDokumentiZahtjev",
-   "PrateciDokumentiOdgovor", "RacunPDZahtjev",
-   "RacunPDOdgovor" i ostalo vezano za nove elemente.
-
-"""
 
 
 class Company(models.Model):
@@ -44,12 +28,12 @@ class Company(models.Model):
         fiskal_path = file_path.replace("models", "fiskal/")
         return fiskal_path
 
-    @api.model
-    def _get_schema_selection(self):
-        fiskal_path = self._get_fiskal_path()
-        fiskal_path += "schema"
-        res = [(s, s) for s in os.listdir(fiskal_path)]
-        return res
+    # @api.model
+    # def _get_schema_selection(self):
+    #     fiskal_path = self._get_fiskal_path()
+    #     fiskal_path += "schema"
+    #     res = [(s, s) for s in os.listdir(fiskal_path)]
+    #     return res
 
     l10n_hr_fiskal_cert_id = fields.Many2one(
         comodel_name="l10n.hr.fiskal.certificate",
@@ -64,11 +48,11 @@ class Company(models.Model):
         help="OIB informatičke tvrtke koja održava software, "
         "za demo cert mora odgovarati OIBu sa demo certifikata",
     )
-    l10n_hr_fiskal_schema = fields.Selection(
-        selection=_get_schema_selection,
-        string="Fiskalizaction schema",
-        help=SCHEMA_HELP,
-    )
+    # l10n_hr_fiskal_schema = fields.Selection(
+    #     selection=_get_schema_selection,
+    #     string="Fiskalizaction schema",
+    #     help=SCHEMA_HELP,
+    # )
     l10n_hr_fiskal_taxative = fields.Boolean(
         string="In taxation system", default=True, tracking=1
     )
@@ -111,15 +95,20 @@ class Company(models.Model):
                 "utf-8"
             ),
             "greska": error_log != "" and error_log or "OK",
-            "fiskal_prostor_id": origin._name == "account.move"
-            and origin.l10n_hr_fiskal_uredjaj_id.prostor_id.id
-            or False,
-            "fiskal_uredjaj_id": origin._name == "account.move"
-            and origin.l10n_hr_fiskal_uredjaj_id.id
-            or False,
-            "invoice_id": origin._name == "account.move" and origin.id or False,
+
             "company_id": self.id,
         }
+        if origin is not None:
+            values.update({
+                "fiskal_prostor_id": origin._name == "account.move"
+                                     and origin.l10n_hr_fiskal_uredjaj_id.prostor_id.id
+                                     or False,
+                "fiskal_uredjaj_id": origin._name == "account.move" and
+                                     origin.l10n_hr_fiskal_uredjaj_id.id
+                                     or False,
+                "invoice_id": origin._name == "account.move" and
+                              origin.id or False,
+            })
         return values
 
     def create_fiskal_log(self, msg_type, msg_obj, response, time_start, origin):
@@ -135,7 +124,7 @@ class Company(models.Model):
         time_start = self.get_l10n_hr_time_formatted()
         msg = "TEST message"
         echo = fisk.test_service(msg)
-        self.create_fiskal_log("echo", fisk, echo, time_start)
+        self.create_fiskal_log("echo", fisk, echo, time_start, None)
 
     def get_fiskal_data(self):
         fina_cert = self.l10n_hr_fiskal_cert_id
@@ -144,7 +133,9 @@ class Company(models.Model):
         fina_pem, key_file, cert_file, production = fina_cert.get_fiskal_ssl_data()
 
         fiskal_path = self._get_fiskal_path()
-        schema = "file://" + fiskal_path + "schema/" + self.l10n_hr_fiskal_schema
+        schema = "".join([
+            "file://", fiskal_path, "schema/Fiskalizacija-WSDL-",
+            self.l10n_hr_fiskal_cert_id.fiskal_schema])
         wsdl_file = schema + "/wsdl/FiskalizacijaService.wsdl"
 
         ca_path, cis_ca_list = None, []

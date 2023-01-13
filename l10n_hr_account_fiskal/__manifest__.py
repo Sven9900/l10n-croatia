@@ -3,7 +3,7 @@
     "summary": "Croatia Fiscalizacija računa",
     "category": "Croatia",
     "images": [],
-    "version": "16.0.0.0.2",
+    "version": "16.0.0.1.2",
     "application": False,
     "author": "Daj mi 5, Odoo Community Association (OCA)",
     "website": "https://github.com/OCA/l10n-croatia",
@@ -16,7 +16,9 @@
     "data": [
         "views/fiskal_certificate_views.xml",
         "views/account_tax.xml",
-        "views/account_journal_views.xml",
+        # "views/account_journal_views.xml", moved to pos device
+        "views/fiskal_data_view.xml",
+        "views/fiskal_log_views.xml",
         "views/res_company.xml",
         "views/account_move_views.xml",
         "security/ir.model.access.csv",

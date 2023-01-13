@@ -50,14 +50,14 @@ class FiscalFiscalMixin(models.AbstractModel):
         res = []
 
         if (
-            self.journal_id.l10n_hr_fiscalisation_active
+            self.l10n_hr_fiskal_uredjaj_id.fiskalisation_active
             and not self.company_id.partner_id.vat
         ):
             res.append(
                 _("Comapny OIB is not not entered! It is required for fiscalisation")
             )
         if (
-            self.journal_id.l10n_hr_fiscalisation_active
+            self.l10n_hr_fiskal_uredjaj_id.fiskalisation_active
             and not self.l10n_hr_fiskal_user_id.partner_id.vat
         ):
             res.append(

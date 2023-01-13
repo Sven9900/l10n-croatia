@@ -19,13 +19,31 @@ DEMO = {
     "FISKAL 1": "fina_cert/demo/demo2014_sub_ca.pem",
 }
 
+SCHEMA_HELP = """
+verzija: 1.3 Datum verzije: 04.07.2016.
+- u WSDL-u dodana nova metoda "provjera"
+- u schemi dodani novi elementi "ProvjeraZahtjev" i "ProvjeraOdgovor"
+
+verzija: 1.4 Datum verzije: 27.04.2017.
+- u WSDL-u izbačena metoda "poslovniProstor"
+-u schemi izbačeni elementi "PoslovniProstorZahtjev",
+   "PoslovniProstorOdgovor"i ostalo vezano za prijavu poslovnih prostora
+
+verzija: 1.5 Datum verzije: 20.12.2019.
+- u WSDL-u dodane dvije metode "prateciDokumenti" i "racuniPD"
+- u schemi dodani elementi "PrateciDokumentiZahtjev",
+   "PrateciDokumentiOdgovor", "RacunPDZahtjev",
+   "RacunPDOdgovor" i ostalo vezano za nove elemente.
+
+"""
 
 class FiskalCertificate(models.Model):
     _name = "l10n.hr.fiskal.certificate"
     _description = "Fiskal certificate store"
 
     company_id = fields.Many2one(
-        comodel_name="res.company", default=lambda s: s.env.user.company_id
+        comodel_name="res.company", required=True,
+        default=lambda s: s.env.user.company_id
     )
     # 1. load cert file fields
     cert_file = fields.Binary(string="Received cert file")
@@ -40,6 +58,14 @@ class FiskalCertificate(models.Model):
             ("other", "Other/Unknown"),
         ],
         readonly=True,
+    )
+    fiskal_schema = fields.Selection(
+        selection=[
+            ("EDUC_v1.6", "DEMO schema v1.6"),
+            ("PROD_V1.6", "PROD Schema v1.6")
+        ],
+        string="Fiskalizaction schema",
+        help=SCHEMA_HELP,
     )
     cert_issuer = fields.Char(
         readonly=True,
@@ -130,6 +156,7 @@ class FiskalCertificate(models.Model):
 
         self.state = "convert"
         self.cert_type = "demo" if "demo" in self.cert_issuer.lower() else "prod"
+        self.fiskal_schema = self.cert_type == "demo" and "EDUC_v1.6" or "PROD_V1.6"
         fiskal_path = self.company_id._get_fiskal_path()
         cert_paths = self.cert_type == "demo" and DEMO or PROD
         sub_cert = subject.get(b"CN", False)
@@ -149,6 +176,8 @@ class FiskalCertificate(models.Model):
                 cert.state = "expired"
             else:
                 cert.state = "active"
+            if not cert.company_id.l10n_hr_fiskal_cert_id:
+                cert.company_id.l10n_hr_fiskal_cert_id = cert
 
     def action_cancel(self):
         for cert in self:

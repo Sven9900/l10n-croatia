@@ -33,7 +33,7 @@ class AccountMove(models.Model):
         # - possible not fiscalisation of invoices paid on transaction acc?
         # need to put smart options what and when not to send...
         if (
-            not self.journal_id.l10n_hr_fiscalisation_active
+            not self.l10n_hr_fiskal_uredjaj_id.fiskalisation_active
             and self.l10n_hr_nacin_placanja != "T"
         ):
             raise ValidationError(
@@ -43,6 +43,6 @@ class AccountMove(models.Model):
                 )
                 % self.journal_id.display_name
             )
-        if self.journal_id.l10n_hr_fiscalisation_active:
+        if self.l10n_hr_fiskal_uredjaj_id.fiskalisation_active:
             self.fiskaliziraj()
         return res
