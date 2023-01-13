@@ -3,29 +3,24 @@
     "summary": """Add reference type: Poziv na broj""",
     "category": "Accounting",
     "images": [],
-    "version": "14.0.1.0.0",
+    "version": "16.0.1.0.0",
     "application": False,
-
-    "author": "DAJ MI 5, Decodio Applications ltd",
-    "licence": "LGPL-3",
+    "author": "Ecodica ltd, Daj Mi 5",
+    "licence": "AGPL-3",
 
     "depends": [
-        'account'
+        'l10n_hr_account_base'
     ],
-    "external_dependencies": {
-        "python": [],
-        "bin": []
-    },
     "data": [
         "views/account_journal_view.xml",
+        "data/pnbr_default_property.xml",
         "views/report_invoice.xml"
     ],
-    "qweb": [],
     "demo": [],
 
-    "post_load": None,
-    "pre_init_hook": None,
-    "post_init_hook": None,
+    #"post_load": None,
+    #"pre_init_hook": None,
+    #"post_init_hook": None,
 
     "auto_install": False,
     "installable": True,

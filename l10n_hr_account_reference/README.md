@@ -11,10 +11,13 @@ http://narodne-novine.nn.hr/clanci/sluzbeni/dodatni/412248.pdf
 Dodaje novi tip poziva na broj na knjigovodstvene dnevnike:
     - Poziv na broj ( Upotreba u RH, moguće u drugim drzavama) - 00, 01, 99
       moguće dodati i ostale po potrebi
-Modificira originalni ispis payment reference , te dodaje nabk svift i iban na ispis
+Modificira originalni ispis payment reference , te dodaje bank svift i iban na
+standardni ispis računa
 
-TODO:
------
+Configuration
+=============
+
+After instaling the module, basic setting is done on each journal.
 
 Usage
 =====
@@ -50,7 +53,3 @@ Icon
 
 Maintainer
 ----------
-
-
-
-

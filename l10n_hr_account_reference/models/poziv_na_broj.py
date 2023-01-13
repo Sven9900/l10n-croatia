@@ -217,11 +217,10 @@ def get_only_numeric_chars(ref):
 #TODO
 def validate_lenghts(model, value):
     # 22 znaka , uključivo max 2 crtice, + 4 zanka za HR + model
-    # max 26 znakova !
+    # max 26 znakova ! regex?
     return True
 
 #TODO
 def reference_number_valid(model='', P=''):
+    # possibly validate references manualy entered on vendor bills?
     return True
-
-
