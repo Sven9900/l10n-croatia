@@ -29,9 +29,11 @@ class Company(models.Model):
         selection=[
             ('r1', 'R1 - tax based on invoice'),
             ('r2', 'R2 - tax based on payment'),
-            ('r0', 'NOT subject of taxation')
+            ('r0', 'R0 - NOT subject of taxation'),
+            ('not_rh', 'Not subject of taxation in Croatia')
         ], string="Tax model", required=True,
-        track=True, default="r1",
+        track=True,
+        default="r1",  # TODO: multicompany improove!
     )
 
     def _compute_l10n_hr_sequences(self):
