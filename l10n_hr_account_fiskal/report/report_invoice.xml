@@ -15,7 +15,7 @@
                         <span class="m-0" t-field="o.l10n_hr_jir"/>
                     </div>
                     <div t-if="o.l10n_hr_fiskal_qr">
-                        <strong >Scan me to validate -&gt;></strong>
+                        <strong >Scan me to validate -&gt;</strong>
                     </div>
                 </div>
                 <div id="l10n_fiskal_qr" class="col-auto col-4 mw-100 mb-2" t-if="o.l10n_hr_fiskal_qr">
