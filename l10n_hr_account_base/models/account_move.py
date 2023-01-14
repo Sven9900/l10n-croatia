@@ -47,13 +47,9 @@ class AccountMove(models.Model):
         readonly=True,
         states={"draft": [("readonly", False)]},
         help="According to Fiscalization Law and regulative "
-        "there is 5 possible options:\n"
-        "T - Transaction bank account, \n"
-        " and for other options needed is fiscalisation extension module:\n"
-        "G - Cash (coins or bills), \n"
-        "K - Bank cards, \n"
-        "C - Cheque payment, \n"
-        "O - Other payment,\n",
+        "there is 5 possible options: T, G, K, C, O\n"
+        "T - Transaction bank account, is applicable without fiskalisation\n"
+        " and for other options needed please install fiscalisation extension module"
     )
 
     l10n_hr_fiskal_uredjaj_id = fields.Many2one(

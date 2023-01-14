@@ -13,6 +13,13 @@ class AccountMove(models.Model):
             ("C", "Bank Cheque"),
             ("O", "Other payment means"),
         ],
+        help="According to Fiscalization Law and regulative "
+             "there is 5 possible options: \n"
+             "T - Transaction bank account\n"
+             "G - Cash (coins or bills), fiskalisation required\n"
+             "K - Bank cards, fiskalisation required\n"
+             "C - Cheque payment, fiskalisation required\n"
+             "O - Other payment, fiskalisation required\n",
     )
     l10n_hr_fiskal_log_ids = fields.One2many(
         comodel_name="l10n.hr.fiskal.log",
