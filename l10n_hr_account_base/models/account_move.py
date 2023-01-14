@@ -70,7 +70,12 @@ class AccountMove(models.Model):
         " like 2 or more devices for this journal",
     )
 
-    @api.depends("journal_id")
+    @api.depends("journal_id",
+                 "journal_id.l10n_hr_prostor_id",
+                 "journal_id.l10n_hr_prostor_id.state",
+                 "journal_id.l10n_hr_fiskal_uredjaj_ids",
+                 "journal_id.l10n_hr_fiskal_uredjaj_ids.state"
+                 )
     def _compute_allowed_fiskal_device(self):
         for move in self:
             vals = []

@@ -170,7 +170,7 @@ class FiskalProstor(models.Model):
                         "Try deactivating instead."
                     )
                 )
-        return super(FiskalProstor, self).unlink()
+        return super().unlink()
 
 
 class FiskalUredjaj(models.Model):
