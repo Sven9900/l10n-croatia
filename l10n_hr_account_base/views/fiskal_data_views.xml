@@ -34,14 +34,14 @@
                 <header>
                     <button
                         name="button_activate_premisse"
-                        title="Activate premisse"
+                        string="Activate premisse"
                         type="object"
                         attrs="{'invisible':[('state','in',['active', 'close'])]}"
                         groups="account.group_account_manager"
                     />
                     <button
                         name="button_pause_premisse"
-                        title="Pause premisse"
+                        string="Pause premisse"
                         type="object"
                         attrs="{'invisible':[('state','!=','active')]}"
                         help="Use for temporary closing of premisse, all related items will be modified according"
@@ -49,7 +49,7 @@
                     />
                     <button
                         name="button_close_premisse"
-                        title="Close premisse"
+                        string="Close premisse"
                         type="object"
                         attrs="{'invisible':[('state','!=','active')]}"
                         help="Use only is business premisse is permanently closed,

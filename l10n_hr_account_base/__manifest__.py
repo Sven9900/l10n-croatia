@@ -24,6 +24,7 @@
         "views/account_move_view.xml",
         "views/account_journal_view.xml",
         "views/menuitems.xml",
+        "report/report_invoice.xml",
     ],
     "qweb": [],
     "demo": [],
