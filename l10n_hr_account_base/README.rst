@@ -8,14 +8,6 @@ Croatia accounting localisation
 
 |badge1|
 
-DEVELOPMENT MODE
-================
-depending curently strictly on codebase:
-https://github.com/dajmi5/odoo/tree/16.0-croatia-new
-once it gets merged do odoo 16.0 branch wide usage possible
-https://github.com/odoo/odoo/pull/106485
-
-
 This module is base accounting localisation for Croatia
 Primary target is to adjust odoo journals to Croatia out invoice fiskal rules
 according to : https://www.zakon.hr/z/548/Zakon-o-fiskalizaciji-u-prometu-gotovinom
@@ -50,8 +42,3 @@ Steps to setup invoicing according to Croatia Laws and regulation
   Fiscal account invoice sequences will be created and assigned
 
   Fiskal sequences created and/or used are visible on Company - Croatia settings
-
-
-
-
-
