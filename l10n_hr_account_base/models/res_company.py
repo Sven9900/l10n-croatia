@@ -25,6 +25,14 @@ class Company(models.Model):
         compute="_compute_l10n_hr_sequences",
         context={"active_test": False},  # want to see inactive also!
     )
+    l10n_hr_tax_model = fields.Selection(
+        selection=[
+            ('r1', 'R1 - tax based on invoice'),
+            ('r2', 'R2 - tax based on payment'),
+            ('r0', 'NOT subject of taxation')
+        ], string="Tax model", required=True,
+        track=True, default="r1",
+    )
 
     def _compute_l10n_hr_sequences(self):
         for company in self:

@@ -16,6 +16,7 @@
                         colspan="4"
                         col="4"
                     >
+                        <field name="l10n_hr_tax_model"/>
                         <field name="l10n_hr_fiskal_separator" />
                     </group>
                     <notebook name="croatia_notebook">
