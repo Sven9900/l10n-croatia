@@ -12,7 +12,7 @@
                 <group colspan="4" col="4">
                     <field name="l10n_hr_zki" />
                     <field name="l10n_hr_jir" />
-                    <field name="l10n_hr_vrijeme_xml" />
+<!--                    <field name="l10n_hr_vrijeme_xml" />-->
                     <field name="l10n_hr_paragon_br" />
                     <field name="l10n_hr_fiskal_user_id" />
                     <field name="l10n_hr_late_delivery" />

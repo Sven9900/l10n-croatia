@@ -69,13 +69,13 @@ class FiscalFiscalMixin(models.AbstractModel):
         help="User who sent the fiscalisation message to FINA."
         " Can be different from responsible person on invoice.",
     )
-    l10n_hr_vrijeme_xml = fields.Char(  # probably not needed but heck...
-        string="XML time",
-        help="Value for fiscalization msg stored as string",
-        size=19,
-        readonly=True,
-        copy=False,
-    )
+    # l10n_hr_vrijeme_xml = fields.Char(  # probably not needed but heck...
+    #     string="XML time",
+    #     help="Value for fiscalization msg stored as string",
+    #     size=19,
+    #     readonly=True,
+    #     copy=False,
+    # )
     l10n_hr_paragon_br = fields.Char(
         "Paragon nr.",
         readonly=True,
