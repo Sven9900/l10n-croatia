@@ -21,6 +21,7 @@
         "views/fiskal_log_views.xml",
         "views/res_company.xml",
         "views/account_move_views.xml",
+        "report/report_invoice.xml",
         "security/ir.model.access.csv",
     ],
     "qweb": [],
