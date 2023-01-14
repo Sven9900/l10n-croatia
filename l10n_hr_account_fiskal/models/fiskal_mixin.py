@@ -1,8 +1,14 @@
-from odoo import _, fields, models
-from odoo.exceptions import ValidationError
+import base64
+import logging
+import qrcode
+import io
+from datetime import datetime
+from odoo import _, fields, models, api
+from odoo.exceptions import ValidationError, UserError
+from odoo.tools import DEFAULT_SERVER_DATETIME_FORMAT
 
 from ..fiskal import fiskal
-
+_logger = logging.getLogger(__name__)
 
 class FiscalFiscalMixin(models.AbstractModel):
     """
@@ -13,6 +19,48 @@ class FiscalFiscalMixin(models.AbstractModel):
     _name = "l10n.hr.fiskal.mixin"
     _description = "Croatia Fiscalisation base mixin"
 
+    @api.depends("l10n_hr_jir", "l10n_hr_zki")
+    def _compute_l10n_hr_fiskal_qr(self):
+        for inv in self:
+            if not inv.l10n_hr_jir and not inv.l10n_hr_zki:
+                inv.l10n_hr_fiskal_qr
+                continue
+            data = "https://porezna.gov.hr/rn?"
+            if inv.l10n_hr_jir:
+                data += "jir=" + inv.l10n_hr_jir  # fiskalizirani racun
+            else:
+                # ispis prije poslane fiskalne poruke ili je poslana poruka
+                # imala neku gresku pa JIR nije dodjeljen
+                data += "zki=" + self.l10n_hr_zki
+            # datum = self.l10n_hr_vrijeme_izdavanja.replace(
+            #     "-", "").replace(":", "").replace(" ", "_")[:13]
+            # if not datum:
+            #     # nema xml. datuma
+            datum = datetime.strptime(
+                inv.l10n_hr_vrijeme_izdavanja,
+                "%d.%m.%Y %H:%M").strftime("%Y%m%d_%H%M")
+            data += "&datv=" + datum
+            iznos = "&izn=%.2f" % self.amount_total
+            data += iznos.replace(".", ",")
+            #_logger.info("QR DATA:" + data)
+            qr = qrcode.QRCode(
+                version=1,
+                error_correction=qrcode.constants.ERROR_CORRECT_L,
+                box_size=10, border=1
+            )
+            qr.add_data(data)
+            qr.make(fit=True)
+            try:
+                img = qr.make_image(fill_color="black", back_color="white")
+                ret = io.BytesIO()
+                img.save(ret, img.kind)
+                ret.seek(0)
+                res = base64.b64encode(ret.getvalue())
+                inv.l10n_hr_fiskal_qr = res
+            except Exception as e:
+                _logger.error(repr(e))
+                inv.l10n_hr_fiskal_qr = False
+
     l10n_hr_zki = fields.Char(string="ZKI", readonly=True, copy=False)
     l10n_hr_jir = fields.Char(string="JIR", readonly=True, copy=False)
     l10n_hr_fiskal_user_id = fields.Many2one(
@@ -21,7 +69,6 @@ class FiscalFiscalMixin(models.AbstractModel):
         help="User who sent the fiscalisation message to FINA."
         " Can be different from responsible person on invoice.",
     )
-
     l10n_hr_vrijeme_xml = fields.Char(  # probably not needed but heck...
         string="XML time",
         help="Value for fiscalization msg stored as string",
@@ -44,6 +91,9 @@ class FiscalFiscalMixin(models.AbstractModel):
         copy=False,
         states={"draft": [("readonly", False)]},
         help="Checked if message could not be sent at time of invoicing",
+    )
+    l10n_hr_fiskal_qr = fields.Binary(
+        compute="_compute_l10n_hr_fiskal_qr"
     )
 
     def _l10n_hr_post_fiskal_check(self):
