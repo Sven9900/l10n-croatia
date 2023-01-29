@@ -1,3 +1,5 @@
+
+import logging
 import base64
 import os
 from datetime import datetime
@@ -7,6 +9,8 @@ from OpenSSL import crypto as SSLCrypto
 from odoo import _, fields, models
 from odoo.exceptions import UserError
 from odoo.tools import config as odoo_config
+
+_logger = logging.getLogger(__name__)
 
 PROD = {
     "root": "fina_cert/prod/FinaRootCA.pem",
@@ -119,7 +123,8 @@ class FiskalCertificate(models.Model):
         _password = self.cert_password or ""
         try:
             p12 = SSLCrypto.load_pkcs12(base64.decodestring(self.cert_file), _password)
-        except:
+        except Exception as E:
+            _logger.error(repr(E))
             raise UserError(
                 _("Certificate access error, check password or uploaded file type!")
             )
