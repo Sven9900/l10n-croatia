@@ -122,7 +122,7 @@ class FiskalCertificate(models.Model):
             return False
         _password = self.cert_password or ""
         try:
-            p12 = SSLCrypto.load_pkcs12(base64.decodestring(self.cert_file), _password)
+            p12 = SSLCrypto.load_pkcs12(base64.decodebytes(self.cert_file), _password)
         except Exception as E:
             _logger.error(repr(E))
             raise UserError(
