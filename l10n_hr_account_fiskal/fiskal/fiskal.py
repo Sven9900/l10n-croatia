@@ -4,6 +4,7 @@ from uuid import uuid4
 
 from lxml import etree
 from requests import Session
+from requests.exceptions import SSLError
 from zeep import Client
 from zeep.plugins import HistoryPlugin
 from zeep.transports import Transport
@@ -52,15 +53,16 @@ class Fiskalizacija:
         """
         :param fiskal_data: dict containing basic fiscalization data
                 keys: key, cert, wsdl, ca_path, ca_list, url, test...
-                geneerated on res.company object
+                generated on res.company object
         :param other: optional variables
         """
         session = Session()
-        session.verify = fiskal_data["fina"]
+        session.verify = fiskal_data["fina_bundle"]
+        session.cert = (fiskal_data["cert"], fiskal_data["key"])
         transport = Transport(session=session)
         signer = Signer(cert_path=fiskal_data["cert"], key_path=fiskal_data["key"])
         verifier = Verifier(
-            cert_path=fiskal_data["cert"], ca_cert_paths=[fiskal_data["fina"]]
+            cert_path=fiskal_data["app_cert"], ca_cert_paths=[fiskal_data["fina_bundle"]]
         )
         history = HistoryPlugin()
         fiskal_plugin = EnvelopedSignaturePlugin(self, signer, verifier)
@@ -111,6 +113,9 @@ class Fiskalizacija:
         try:
             res = service_proxy(**req_kw)
         except Exception as E:
+            if isinstance(E, SSLError):
+                raise E
+
             try:
                 doc = etree.fromstring(E.detail)
             except etree.XMLSyntaxError:
