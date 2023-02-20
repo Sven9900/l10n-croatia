@@ -16,7 +16,6 @@
     "data": [
         "views/fiskal_certificate_views.xml",
         "views/account_tax.xml",
-        # "views/account_journal_views.xml", moved to pos device
         "views/fiskal_data_view.xml",
         "views/fiskal_log_views.xml",
         "views/res_company.xml",
