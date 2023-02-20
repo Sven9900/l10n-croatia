@@ -175,7 +175,6 @@ class EnvelopedSignaturePlugin:
         return envelope, http_headers
 
     def ingress(self, envelope, http_headers, operation):
-        # TODO properly validate response!
         if self.fiskal_client.requires_signature(operation):
             try:
                 self.verifier.verify_document(envelope)
