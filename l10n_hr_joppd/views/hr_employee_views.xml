@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="view_partner_private_form_joppd" model="ir.ui.view">
+        <field name="name">view_partner_private_form_joppd</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.res_partner_view_form_private" />
+        <field name="arch" type="xml">
+            <field name="phone" position="before">
+                <field name="vat" required="1" />
+            </field>
+        </field>
+    </record>
+    <record id="view_employee_joppd_form" model="ir.ui.view">
+        <field name="name">view_employee_joppd_form</field>
+        <field name="model">hr.employee</field>
+        <field name="inherit_id" ref="hr.view_employee_form" />
+        <field name="arch" type="xml">
+            <field name="private_email" position="before">
+                <field name="l10n_hr_oib" readonly="True" />
+            </field>
+            <group name="payroll_group" position="after">
+                <group name="joppd_codes" string="JOPPD codes">
+                    <field name="l10n_hr_joppd_b2_id" options="{'no_create': True}" />
+                    <field name="l10n_hr_joppd_b3_id" options="{'no_create': True}" />
+                </group>
+            </group>
+        </field>
+    </record>
+</odoo>

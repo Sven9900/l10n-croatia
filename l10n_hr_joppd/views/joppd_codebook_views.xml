@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="view_joppd_codebook_tree" model="ir.ui.view">
+        <field name="name">view_joppd_codebook_tree</field>
+        <field name="model">l10n.hr.joppd.codebook</field>
+        <field name="arch" type="xml">
+            <tree string="JOPPD Codes" editable="bottom">
+                <field name="sequence" />
+                <field name="code" />
+                <field name="name" />
+                <field name="usage" />
+                <field name="period_year" />
+            </tree>
+        </field>
+    </record>
+    <record id="search_joppd_codebook" model="ir.ui.view">
+        <field name="name">search_joppd_codebook_short</field>
+        <field name="model">l10n.hr.joppd.codebook</field>
+        <field name="arch" type="xml">
+            <search string="Search JOPPD Codes">
+                <field
+                    name="name"
+                    filter_domain="['|',('name','ilike',self),('code','ilike',self)]"
+                    string="Name"
+                />
+                <group expand="1" string="Group by">
+                    <!--<filter name="by_version" string="By Version" context="{'group_by': 'version'}"/>-->
+                    <filter
+                        name="by_usage"
+                        string="By Usage"
+                        context="{'group_by': 'usage'}"
+                    />
+                </group>
+            </search>
+        </field>
+    </record>
+    <record id="action_joppd_codebook_menu" model="ir.actions.act_window">
+        <field name="name">JOPPD codes</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">l10n.hr.joppd.codebook</field>
+        <field name="view_mode">tree</field>
+        <field name="context">{'search_default_by_usage':1}</field>
+    </record>
+
+</odoo>

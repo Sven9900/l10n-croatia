@@ -1,0 +1,1130 @@
+id,sequence,date_start,date_end,period_year,usage,code,name
+p-2_0000,1,2014-01-07,,,P-2,0000,Neoporezivi primitak
+p-2_0001,2,2014-01-07,,,P-2,0001,Radnik/osiguranik po osnovi radnog odnosa
+p-2_0002,3,2014-01-07,,,P-2,0002,Radnik/osiguranik po osnovi radnog odnosa-osoba koja se prvi put zapošljava prema odredbama Zakona o doprinosima
+p-2_0003,4,2014-01-07,,,P-2,0003,Radnik/osiguranik po osnovi radnog odnosa-novozaposlena osoba prema odredbama Zakona o poticanju zapošljavanja
+p-2_0004,5,2014-01-07,,,P-2,0004,Fizička osoba izaslana na rad u Republiku Hrvatsku po nalogu inozemnog poslodavca ili poslodavca iz druge države članice Europske unije u tuzemna društva za rad u tim društvima
+p-2_0005,6,2014-01-07,,,P-2,0005,Radnik/osiguranik koji je temeljem radnog odnosa izaslan na rad u inozemstvo-novozaposlena osoba prema odredbama Zakona o poticanju zapošljavanja
+p-2_0006,7,2014-01-07,,,P-2,0006,Radnik/osiguranik koji je temeljem radnog odnosa izaslan na rad u inozemstvo-osoba koja se prvi put zapošljava prema odredbama Zakona o doprinosima
+p-2_0007,8,2014-01-07,,,P-2,0007,Radnik/osiguranik koji je temeljem radnog odnosa izaslan na rad u inozemstvo-novozaposlena osoba prema odredbama Zakona o poticanju zapošljavanja
+p-2_0008,9,2014-01-07,,,P-2,0008,Članovi predstavničkih i izvršnih tijela državne vlasti i jedinica lokalne i područne (regionalne) samouprave (izabrane i imenovane osobe) po osnovi primitaka (plaće) koji im se isplaćuju za rad u tim tijelima i jedinicama
+p-2_0009,10,2014-01-07,,,P-2,0009,Ostali stjecatelji/osiguranici po osnovi radnog odnosa/plaće
+p-2_0010,11,2015-02-28,,,P-2,0010,Radnik/osiguranik po osnovi radnog odnosa – mlada osoba prema odredbama Zakona o doprinosima
+p-2_0011,12,2015-02-28,,,P-2,0011,Radnik/osiguranik koji je temeljem radnog odnosa izaslan na rad u inozemstvo – mlada osoba prema odredbama Zakona o doprinosima
+p-2_0021,13,2014-01-07,,,P-2,0021,Radnik/osiguranik po osnovi radnog odnosa-rad u kućanstvu
+p-2_0022,14,2014-01-07,,,P-2,0022,Radnik/osiguranik po osnovi radnog odnosa-rad u kućanstvu koji se prvi put zapošljava prema odredbama Zakona o doprinosima
+p-2_0023,15,2014-01-07,,,P-2,0023,Radnik/osiguranik po osnovi radnog odnosa-rad u kućanstvu koji se prvi put zapošljava prema odredbama Zakona o poticanju zapošljavanja
+p-2_0024,16,2014-01-07,,,P-2,0024,Ostali stjecatelji/osiguranici po osnovi radnog odnosa-rad u kućanstvu
+p-2_0025,17,2015-02-28,,,P-2,0025,Radnik/osiguranik po osnovi radnog odnosa–rad u kućanstvu mlada osoba prema odredbama Zakona o doprinosima
+p-2_0031,18,2014-01-07,,,P-2,0031,Stjecatelj/osiguranik-trgovac pojedinac
+p-2_0032,19,2014-01-07,,,P-2,0032,Ostali stjecatelji/osiguranici koji obavljaju samostalnu djelatnost i po toj osnovi obveznici su poreza na dobit
+p-2_0033,20,2014-01-07,,,P-2,0033,Ostali stjecatelji/osiguranici po osnovi poduzetničke plaće
+p-2_0041,21,2015-02-28,,,P-2,0041,Stjecatelj primitka/osiguranik po osnovi obavljanja samostalne djelatnosti obrta
+p-2_0042,22,2015-02-28,,,P-2,0042,"Stjecatelj primitka/osiguranik po osnovi obavljanja samostalne djelatnosti slobodnog zanimanja (profesionalne djelatnosti) koji obavlja djelatnosti medicinske sestre, zubotehničara, fizioterapeuta, filmskog radnika, novinara i predstavnik obiteljskog doma "
+p-2_0043,23,2015-02-28,,,P-2,0043,Ostali nenavedeni stjecatelji primitka/osiguranici po osnovi obavljanja samostalne djelatnosti slobodnog zanimanja i sportaši (profesionalne djelatnosti)
+p-2_0044,24,2015-02-28,,,P-2,0044,Stjecatelj primitka/osiguranik po osnovi obavljanja samostalne djelatnosti poljoprivrede i šumarstva
+p-2_0045,25,2015-02-28,,,P-2,0045,"Stjecatelji/osiguranici koji ostvaruju primitke od imovine i imovinskih prava od kojih, prema propisima o porezu na dohodak, utvrđuju dohodak od imovine i imovinskih prava, ali su promijenili način utvrđivanja dohotka, pa prema tim primicima utvrđuju dohodak od samostalne djelatnosti (članak 7. točka 5.3. Zakona o doprinosima) "
+p-2_0046,26,2015-02-28,,,P-2,0046,"Ostali stjecatelj primitka/osiguranik po osnovi obavljanja ostalih samostalnih djelatnosti (članak 7. točka 5.1.,5.2. i 5.4. Zakona o doprinosima) "
+p-2_0101,27,2014-01-07,,,P-2,0101,Umirovljenik korisnik starosne mirovine
+p-2_0102,28,2014-01-07,,,P-2,0102,Stjecatelj obiteljske mirovine koja podliježe oporezivanju
+p-2_0103,29,2014-01-07,,,P-2,0103,"Stjecatelj obiteljske mirovine koja ne podliježe oporezivanju, ali po osnovi koje postoji obveza doprinosa"
+p-2_0104,30,2014-01-07,,,P-2,0104,Umirovljenik korisnik invalidske mirovine
+p-2_0105,31,2014-01-07,,,P-2,0105,Stjecatelj invalidske mirovine zbog profesionalne nesposobnosti za rad koja se isplaćuje umirovljenicima obvezno osiguranim po osnovi radnog odnosa ili obavljanja samostalne djelatnosti
+p-2_0106,32,2014-01-07,,,P-2,0106,Umirovljenik korisnik mirovine prema Zakonu o pravima hrvatskih branitelja iz Domovinskog rata i članova njihovih obitelji
+p-2_0107,33,2014-01-07,,,P-2,0107,Ostali stjecatelji mirovine prema posebnom propisu
+p-2_0108,34,2014-01-07,,,P-2,0108,Stjecatelji ostalih mirovina
+p-2_0121,35,2014-01-07,,,P-2,0121,Stjecatelji mirovine-ostali isplatitelji
+p-2_0201,36,2014-01-07,,,P-2,0201,"Stjecatelj primitka od nesamostalnog rada koji se prema propisima o porezu na dohodak oporezuje kao dohodak od nesamostalnog rada, a prema propisima o doprinosima kao drugi dohodak"
+p-2_1001,37,2014-01-07,,,P-2,1001,Stjecatelj primitka od kojega se utvrđuje dohodak od kapitala
+p-2_1002,38,2015-02-28,,,P-2,1002,"Stjecatelj primitka od kojega se utvrđuje dohodak od kapitala, a pri obračunu primjenjuje se poreza stopa propisana odredbama ugovora o izbjegavanju dvostrukog oporezivanja "
+p-2_1003,39,2015-02-28,,,P-2,1003,Stjecatelj primitka od kojega se utvrđuje dohodak od kapitala ostvaren iz inozemstva ili druge države članice Europske unije
+p-2_1004,40,2015-02-28,,,P-2,1004,"Stjecatelj primitka od kojega se utvrđuje dohodak od kapitala ostvaren izravno iz inozemstva ili druge države članice Europske unije, a pri obračunu primjenjuje se poreza stopa propisana odredbama ugovora o izbjegavanju dvostrukog oporezivanja "
+p-2_1101,41,2015-02-28,,,P-2,1101,Stjecatelj primitka od kojega se utvrđuje dohodak od kapitala po osnovi prihoda od kamata
+p-2_1102,42,2015-02-28,,,P-2,1102,"Stjecatelj primitka od kojega se utvrđuje dohodak od kapitala po osnovi prihoda od kamata, a pri obračunu primjenjuje se poreza stopa propisana odredbama ugovora o izbjegavanju dvostrukog oporezivanja "
+p-2_1103,43,2015-02-28,,,P-2,1103,Stjecatelj primitka od kojega se utvrđuje dohodak od kapitala po osnovi prihoda od kamata ostvaren iz inozemstva ili druge države članice Europske unije
+p-2_1104,44,2015-02-28,,,P-2,1104,"Stjecatelj primitka od kojega se utvrđuje dohodak od kapitala po osnovi prihoda od kamata ostvaren izravno iz inozemstva ili druge države članice Europske unije, a pri obračunu primjenjuje se poreza stopa propisana odredbama ugovora o izbjegavanju dvostrukog oporezivanja "
+p-2_2001,45,2014-01-07,,,P-2,2001,Stjecatelj primitka od kojega se utvrđuje dohodak od imovinskih prava
+p-2_2002,46,2015-02-28,,,P-2,2002,"Stjecatelj primitka od kojega se utvrđuje dohodak od imovinskih prava, a pri obračunu primjenjuje se poreza stopa propisana odredbama ugovora o izbjegavanju dvostrukog oporezivanja "
+p-2_2003,47,2015-02-28,,,P-2,2003,Stjecatelj primitka od kojega se utvrđuje dohodak od imovinskih prava ostvaren iz inozemstva ili druge države članice Europske unije
+p-2_2004,48,2015-02-28,,,P-2,2004,"Stjecatelj primitka od kojega se utvrđuje dohodak od imovinskih prava ostvaren izravno iz inozemstva ili druge države članice Europske unije, a pri obračunu primjenjuje se poreza stopa propisana odredbama ugovora o izbjegavanju dvostrukog oporezivanja "
+p-2_2005,49,2015-02-28,,,P-2,2005,Stjecatelj primitka od kojega se utvrđuje dohodak od posebnih vrsta imovine
+p-2_3001,50,2014-01-07,,,P-2,3001,Stjecatelj primitka od kojega se utvrđuje dohodak od osiguranja
+p-2_4001,51,2014-01-07,,,P-2,4001,"Osiguranik/stjecatelj primitka od kojega se utvrđuje drugi dohodak, a po osnovi kojeg ne postoji obveza doprinosa"
+p-2_4002,52,2014-01-07,,1,P-2,4002,"Osiguranik/stjecatelj primitka od kojega se utvrđuje drugi dohodak, a po osnovi kojeg postoji obveza doprinosa"
+p-2_5001,53,2014-01-07,,,P-2,5001,"Osiguranik na radu ili stručnom usavršavanju, odnosno obrazovanju u inozemstvu duže od 30 dana"
+p-2_5002,54,2014-01-07,,,P-2,5002,Osiguranik upućen na službeni put u inozemstvo u trajanju do 30 dana
+p-2_5101,55,2014-01-07,,,P-2,5101,"Osiguranik po osnovi korisnika invalidske mirovine zbog profesionalne nesposobnosti za rad (MO II, 0,35 - obveznik plaćanja mjerodavno ministarstvo)"
+p-2_5102,56,2014-01-07,,,P-2,5102,"Osiguranik po osnovi roditelja koji obavlja roditeljske dužnosti (MO II, 0,35)"
+p-2_5103,57,2014-01-07,,,P-2,5103,"Osiguranik koji naknadu plaće ostvaruje na teret sredstava mirovinskog osiguranja na temelju generacijske solidarnosti (NAKNADA PLAĆE, MO II)"
+p-2_5104,58,2014-01-07,,,P-2,5104,"Osiguranik-osoba s invaliditetom kojoj se staž mirovinskog osiguranja računa s povećanim trajanjem (prosječna plaća 2,01 MO II)"
+p-2_5201,59,2014-01-07,,,P-2,5201,"Osiguranik koji naknadu plaće za vrijeme bolovanja ostvaruje na teret sredstava nositelja obveznoga zdravstvenog osiguranja - općenito (NAKNADA PLAĆE, MO II)"
+p-2_5202,60,2014-01-07,,,P-2,5202,"Osiguranik koji naknadu plaće odnosno novčanu naknadu za vrijeme bolovanja ostvaruje na teret sredstava državnog proračuna - općenito (NAKNADA PLAĆE, MO II)"
+p-2_5203,61,2014-01-07,,,P-2,5203,"Osiguranik koji naknadu plaće ostvaruje za vrijeme korištenja rodiljnog dopusta i dopusta radi smrti djeteta tijekom rodiljnog dopusta, a kojem se naknada plaće isplaćuje na teret HZZO-a (NAKNADA PLAĆE, MO II)"
+p-2_5204,62,2014-01-07,,,P-2,5204,"Osiguranik koji naknadu plaće ostvaruje za vrijeme korištenja roditeljskog dopusta, posvojiteljskog dopusta, skraćenog radnog vremena radi pojačane njege djeteta, stanke za dojenje, a kojemu se naknada isplaćuje na teret državnog proračuna (NAKNADA PLAĆE, MO II)"
+p-2_5205,63,2014-01-07,,,P-2,5205,"Osiguranik koji naknadu plaće ostvaruje nakon prestanka radnog odnosa, a kojemu se naknada plaće isplaćuje na teret HZZO-a (NAKNADA PLAĆE, MO II)"
+p-2_5206,64,2014-01-07,,,P-2,5206,"Osiguranik koji ostvaruje naknadu plaće nakon prestanka radnog odnosa, a kojemu se naknada plaće isplaćuje na teret državnog proračuna (NAKNADA PLAĆE, MO II)"
+p-2_5207,65,2014-01-07,,,P-2,5207,"Osiguranik koji ostvaruje naknadu plaće za vrijeme komplikacija u trudnoći, a"
+p-2_5208,66,2014-01-07,,,P-2,5208,"Osiguranik koji ostvaruje naknadu plaće za vrijeme privremene nesposobnosti za rad zbog rane, ozljede ili bolesti koja je neposredna posljedica sudjelovanja u Domovinskom ratu, a kojemu se naknada isplaćuje na teret HZZO-a (NAKNADA PLAĆE, MO II)"
+p-2_5209,67,2014-01-07,,,P-2,5209,"Osiguranik koji ostvaruje naknadu plaće za vrijeme bolovanja, koje je posljedica ozljede na radu ili profesionalne bolesti, a kojemu se naknada isplaćuje na teret HZZO-a (NAKNADA PLAĆE, MO II)"
+p-2_5210,68,2014-01-07,,,P-2,5210,"Osiguranik koji ostvaruje naknadu plaće po osnovi roditelja djeteta s težim smetnjama u razvoju koji ima pravo na dopust za njegu djeteta do navršene sedme godine djetetova života, a kojemu se naknada plaće isplaćuje na teret državnog proračuna (NAKNADA PLAĆE, MO II)"
+p-2_5211,69,2014-01-07,,,P-2,5211,"Osiguranik koji ostvaruje naknadu plaće po osnovi roditelja djeteta s težim smetnjama u razvoju koji ima pravo na rad s polovicom radnog vremena zbog njege djeteta kojem se naknada plaće isplaćuje na teret državnog proračuna (NAKNADA PLAĆE, MO II)"
+p-2_5212,70,2014-01-07,,,P-2,5212,Ostali osiguranici prema kojima HZZO ima obvezu obračuna doprinosa za mirovinsko osiguranje na temelju individualne kapitalizirane štednje na minimalnu osnovicu za obračun doprinosa na teret državnog proračuna
+p-2_5213,71,2014-01-07,,,P-2,5213,Ostali osiguranici prema kojima HZZO ima obvezu obračuna doprinosa za mirovinsko osiguranje na temelju individualne kapitalizirane štednje po osnovi naknade plaće na teret državnog proračuna
+p-2_5301,72,2014-01-07,,,P-2,5301,"Osiguranik po osnovi nezaposlena osoba (za obvezu doprinosa za mirovinsko osiguranje na temelju individualne kapitalizirane štednje) (0,35, MO II)"
+p-2_5302,73,2014-01-07,,,P-2,5302,"Osiguranici po osnovi nezaposlene osobe za vrijeme stručnog osposobljavanja ili profesionalne rehabilitacije na koje ih je uputila nadležna služba zapošljavanja (POSEBAN DOPRINOS ZA MO OSIGURANE U ODREĐENIM OKOLNOSTIMA 5%; POSEBAN DOPRINOS ZA ZAŠTITU ZDRAVLJA NA RADU 0,5%, 0,35)"
+p-2_5401,74,2014-01-07,,,P-2,5401,"Osiguranik po osnovi roditelja-njegovatelja, ministarstvo mjerodavno za socijalnu skrb ili drugo tijelo sukladno posebnom propisu (SVI, 0,35)"
+p-2_5402,75,2014-01-07,,,P-2,5402,"Osiguranik po osnovi produženog mirovinskog osiguranja - bračnog druga profesionalnog odnosno ugovornog diplomata (POSLODAVAC PROFESIONALNOG, ODNOSNO UGOVORNOG DIPLOMATA-MJERODAVNO MINISTARSTVO, MO, MO II, 0,35)"
+p-2_5403,76,2014-01-07,,,P-2,5403,Osiguranik koji ostvaruje naknadu plaće po osnovi pružanja njege i pomoći hrvatskim ratnim vojnim invalidima iz Domovinskog rata I skupine
+p-2_5501,77,2014-01-07,,,P-2,5501,"Osiguranik/ stjecatelj primitka po osnovi učenika i redovitog studenta za vrijeme rada preko posrednika pri zapošljavanju (POJEDINAČNI PRIMITAK, POSEBAN DOPRINOS ZA MO OSIGURANE U ODREĐENIM OKOLNOSTIMA 5%; POSEBAN DOPRINOS ZA ZAŠTITU ZDRAVLJA NA RADU 0,5%)"
+p-2_5601,78,2014-01-07,,,P-2,5601,"Osiguranik po osnovi osobe koja je prekinula rad, a bivši ju je poslodavac uputio na obrazovanje ili stručno usavršavanje (ZO, 0,35)"
+p-2_5602,79,2014-01-07,,,P-2,5602,"Osiguranik po osnovi osobe koju je pravna ili fizička osoba, prije stupanja u radni odnos, uputila na praktični rad (ZO, 0,35)"
+p-2_5603,80,2014-01-07,,,P-2,5603,"Osiguranik po osnovi osobe upućene u inozemstvo u sklopu međunarodne tehničko-prosvjetne i kulturne suradnje (ZO, 0,35)"
+p-2_5604,81,2014-01-07,,,P-2,5604,Ostali osiguranici mirovinskog osiguranja u određenim okolnostima i zdravstvenog osiguranja zaštite zdravlja na radu za slučaj ozljede na radu i profesionalne bolesti
+p-2_5605,82,2014-01-07,,,P-2,5605,"Osiguranik po osnovi stranca za kojega troškove zdravstvene zaštite snosi davatelj stipendije (ZO, 0,35)"
+p-2_5606,83,2014-01-07,,,P-2,5606,"Osiguranici po osnovi učenika i studenata na dodiplomskom studiju za vrijeme praktične nastave i stručne prakse kod poslodavaca te za vrijeme stručnih putovanja (USTANOVA KOJA UČENIKA/STUDENTA UPUĆUJE NA PRAKTIČNU NASTAVU; POSEBAN DOPRINOS ZA MO OSIGURANE U ODREĐENIM OKOLNOSTIMA 5%; POSEBAN DOPRINOS ZA ZAŠTITU ZDRAVLJA NA RADU 0,5% , O,35, obveznik plaćanja ministarstvo nadležno za obrazovanje)"
+p-2_5607,84,2014-01-07,,,P-2,5607,"Osiguranici po osnovi djece i mladeži sa smetnjama u tjelesnom i duševnom razvoju na praktičnoj nastavi ili na obveznom praktičnom radu kod pravne osobe za osposobljavanje (USTANOVA KOJA UČENIKA/STUDENTA UPUĆUJE NA PRAKTIČNU NASTAVU; POSEBAN DOPRINOS ZA MO OSIGURANE U ODREĐENIM OKOLNOSTIMA 5%; POSEBAN DOPRINOS ZA ZAŠTITU ZDRAVLJA NA RADU 0,5%, 0,35 obveznik plaćanja ministarstvo)"
+p-2_5608,85,2014-01-07,,,P-2,5608,"Osiguranik po osnovi slobodnog zanimanja-samostalnog umjetnika kojemu se doprinosi plaćaju iz državnog proračuna (MINISTARSTVO MJERODAVNO ZA KULTURU ili drugo tijelo, ovlašteno od toga ministarstva 0,8, SVI OSIM ZAPOŠ plaćanja min, izvješćivanje zavodi)"
+p-2_5701,86,2014-01-07,,,P-2,5701,Osiguranik po osnovi stručnog osposobljavanja za rad bez zasnivanja radnog odnosa prema Zakonu o radu
+p-2_5702,87,2014-01-07,,,P-2,5702,Osiguranik po osnovi stručnog osposobljavanja za rad bez zasnivanja radnog odnosa prema odredbama Zakona o poticanju zapošljavanja
+,,,,,,,
+p-3_0000,1,2014-01-07,,1,P-3,0000,Neoporezivi primici
+p-3_0001,2,2014-01-07,,,P-3,0001,Primici po osnovi plaće
+p-3_0002,3,2014-01-07,,,P-3,0002,"Primici po osnovi plaće, a koja je viša od najviše mjesečne osnovice za obračun doprinosa"
+p-3_0003,4,2014-01-07,,,P-3,0003,"Primici po osnovi plaće, a koja je viša od najviše godišnje osnovice za obračun doprinosa"
+p-3_0004,5,2014-01-07,,,P-3,0004,Naknadni obračun i isplata plaće za razdoblje koje je ranije od 11 2003
+p-3_0021,6,2014-01-07,,1,P-3,0021,Ostali primici koji se isplaćuju uz plaću
+p-3_0022,7,2014-01-07,,1,P-3,0022,Ostali primici koji se isplaćuju koji su viši od najviše godišnje osnovice za obračun doprinosa
+p-3_0023,8,2014-01-07,,1,P-3,0023,"Obveza doprinosa za ostale neoporezive primitke koji bi bili oporezivi porezom na dohodak da odredbama ugovora o izbjegavanju dvostrukog oporezivanja nije drukčije uređeno, a koji se isplaćuju uz plaću za rad u određenom mjesecu ili godini i koji se pripisuju tom mjesecu ili godini"
+p-3_0024,9,2014-01-07,,1,P-3,0024,"Obveza doprinosa za ostale neoporezive primitke koji bi bili oporezivi porezom na dohodak da odredbama ugovora o izbjegavanju dvostrukog oporezivanja nije drukčije uređeno, a koji se isplaćuju uz plaću za rad u određenom mjesecu ili godini i pripisuju se tom mjesecu ili godini, a koji su viši od najviše godišnje osnovice za obračun doprinosa"
+p-3_0025,10,2014-01-07,,1,P-3,0025,Ostali primici koji se isplaćuju uz plaću a koji se odnose se na otpremninu
+p-3_0026,11,2014-01-07,,1,P-3,0026,Ostali primici koji se isplaćuju uz plaću a koji se odnose se na otpremninu a koji su viši od najviše godišnje osnovice za obračun doprinosa
+p-3_0027,12,2014-01-07,,1,P-3,0027,"Ostali primici koji se isplaćuju uz plaću a koji se odnose se na bonuse i nagrade menadžmentu društva, članovima uprave i nadzornog odbora trgovačkog društva, te izvršnim i neizvršnim direktorima dioničkog društva"
+p-3_0028,13,2014-01-07,,1,P-3,0028,"Ostali primici koji se isplaćuju uz plaću a koji se odnose se na bonuse i nagrade menadžmentu društva, članovima uprave i nadzornog odbora trgovačkog društva, te izvršnim i neizvršnim direktorima dioničkog društva a koji su viši od najviše godišnje osnovice za obračun doprinosa"
+p-3_0041,14,2014-01-07,,,P-3,0041,Obračun doprinosa po osnovi plaće
+p-3_0042,15,2014-01-07,,,P-3,0042,"Obračun doprinosa po osnovi plaće, a koja je viša od najviše mjesečne osnovice za obračun doprinosa"
+p-3_0043,16,2014-01-07,,,P-3,0043,"Obračun doprinosa po osnovi plaće, a koja je viša od najviše godišnje osnovice za obračun doprinosa"
+p-3_0044,17,2014-01-07,,,P-3,0044,Naknadni obračun doprinosa po osnovi plaće za razdoblje do 31 prosinca 2002
+p-3_0045,18,2014-01-07,,,P-3,0045,Obračun doprinosa primjenom najniže osnovice ukoliko ne postoji obveza isplate plaće
+p-3_0046,19,2014-01-07,,,P-3,0046,Obračun ukoliko ne postoji obveza doprinosa za određene dane u mjesecu u osiguranju
+p-3_0051,20,2014-01-07,,,P-3,0051,Isplata zaostale plaće za koju je prethodno izvršen obračun i zaduženi su doprinosi na punu osnovicu
+p-3_0052,21,2014-01-07,,,P-3,0052,"Isplata zaostale plaće za razdoblje do 31 prosinca 2002, a za koju je prethodno izvršen obračun i zaduženi su doprinosi na minimalnu osnovicu"
+p-3_0061,22,2014-01-07,,,P-3,0061,Obračun obveze doprinosa izaslanog radnika
+p-3_0062,23,2014-01-07,,,P-3,0062,"Obračun obveze doprinosa izaslanog radnika, a koja je viša od najviše mjesečne osnovice za obračun doprinosa"
+p-3_0063,24,2014-01-07,,,P-3,0063,"Obračun obveze doprinosa izaslanog radnika, a koja je viša od najviše godišnje osnovice za obračun doprinosa"
+p-3_0064,25,2014-01-07,,,P-3,0064,Naknadni obračun obveze doprinosa izaslanog radnika za razdoblje do 31 prosinca 2002
+p-3_0071,26,2014-01-07,,,P-3,0071,Primici po osnovi plaće osobi koja je izaslana na rad u Republiku Hrvatsku po nalogu inozemnog poslodavca u tuzemna društva za rad u tim društvima
+p-3_0072,27,2015-02-28,,,P-3,0072,Obračun poreza na dohodak po osnovi ostalih primitaka osobi koja je izaslana na rad u Republiku Hrvatsku po nalogu inozemnog poslodavca u tuzemna društva za rad u tim društvima
+p-3_0081,28,2014-01-07,,,P-3,0081,Obračun poreza na dohodak osiguraniku po osnovi po osnovi plaće za mjesec dana rada u diplomatskoj misiji ili konzularnom uredu strane države ili međunarodnih organizacija koje u Republici Hrvatskoj uživaju diplomatski imunitet
+p-3_0082,29,2014-01-07,,,P-3,0082,Obračun doprinosa osiguraniku po osnovi rada u diplomatskoj misiji ili konzularnom uredu strane države ili međunarodnih organizacija koje u Republici Hrvatskoj uživaju diplomatski imunitet
+p-3_0083,30,2014-01-07,,,P-3,0083,Primitak po osnovi po osnovi plaće za mjesec dana rada  kod poslodavca u inozemstvu ili sa sjedištem u inozemstvu
+p-3_0084,31,2014-01-07,,,P-3,0084,Obračun doprinosa po osnovi plaće kod poslodavca u inozemstvu ili u drugoj državi članici Europske unije ili sa sjedištem u inozemstvu ili u drugoj državi članici Europske unije
+p-3_0086,32,2014-01-07,,,P-3,0086,Obračun poreza na dohodak i doprinosa osiguraniku po osnovi rada u diplomatskoj misiji ili konzularnom uredu strane države ili međunarodnih organizacija koje u Republici Hrvatskoj uživaju diplomatski imunitet i osiguranika po osnovi rada kod poslodavca s registriranim sjedištem ili mjestom poslovanja u drugoj državi članici Europske unije
+p-3_0087,33,2015-02-28,,,P-3,0087,"Obračun doprinosa osiguraniku po osnovi plaće za rad u diplomatskoj misiji ili konzularnom uredu strane države ili međunarodnih organizacija koje u Republici Hrvatskoj uživaju diplomatski imunitet, a koja je viša od najviše mjesečne osnovice "
+p-3_0088,34,2015-02-28,,,P-3,0088,"Obračun doprinosa osiguraniku po osnovi plaće za rad u diplomatskoj misiji ili konzularnom uredu strane države ili međunarodnih organizacija koje u Republici Hrvatskoj uživaju diplomatski imunitet, a koja je viša od najviše godišnje osnovice "
+p-3_0090,35,2015-02-28,,,P-3,0090,Obračun doprinosa po osnovi plaće za mjesec dana rada za poslodavca iz druge države članice Europske unije ili sa sjedištem u drugoj državi članici Europske unije koja je viša od najviše mjesečne osnovice
+p-3_0091,36,2014-01-07,,,P-3,0091,"Obračun obveze doprinosa (produženo mirovinsko osiguranje) za mjesec dana osiguranja ili kraće, stalnog sezonskog radnika"
+p-3_0092,37,2014-01-07,,,P-3,0092,"Obračun doprinosa po osnovi plaće za mjesec dana rada za poslodavca iz druge države članice Europske unije ili sa sjedištem u drugoj državi članici Europske unije, a koja je viša od najviše godišnje osnovice "
+p-3_0093,38,2014-01-07,,,P-3,0093,"Obračun poreza na dohodak po osnovi ostalih primitaka za rad za inozemnog poslodavca, rad za poslodavca iz druge države članice Europske unije odnos rad za tuzemnog poslodavca kada se doprinosi plaćaju u drugoj državi članici Europske unije "
+p-3_0094,39,2015-02-28,,,P-3,0094,Obračun doprinosa po osnovi ostalih primitaka za rad za poslodavca iz druge države članice Europske unije ili sa sjedištem u drugoj državi članici Europske unije
+p-3_0095,40,2015-02-28,,,P-3,0095,"Obračun doprinosa po osnovi ostalih primitaka za rad za poslodavca iz druge države članice Europske unije ili sa sjedištem u drugoj državi članici Europske unije, a koji su viši od najviše godišnje osnovice "
+p-3_0096,41,2015-02-28,,,P-3,0096,Obračun poreza na dohodak osiguraniku po osnovi ostalih primitaka za rad u diplomatskoj misiji ili konzularnom uredu strane države ili međunarodnih organizacija koje u Republici Hrvatskoj uživaju diplomatski imunitet
+p-3_0097,42,2015-02-28,,,P-3,0097,Obračun doprinosa osiguraniku po osnovi ostalih primitaka za rad u diplomatskoj misiji ili konzularnom uredu strane države ili međunarodnih organizacija koje u Republici Hrvatskoj uživaju diplomatski imunitet
+p-3_0098,43,2015-02-28,,,P-3,0098,Obračun doprinosa osiguraniku po osnovi ostalih primitaka za rad u diplomatskoj misiji ili konzularnom uredu strane države ili međunarodnih organizacija koje u Republici Hrvatskoj uživaju diplomatski imunitet koji su viši od najviše godišnje osnovice
+p-3_0101,44,2014-01-07,,,P-3,0101,Primici po osnovi poduzetničke plaće koja je viša od propisane osnovice za obračun doprinosa
+p-3_0102,45,2014-01-07,,,P-3,0102,Primici po osnovi poduzetničke plaće koja je niža od propisane osnovice za obračun doprinosa
+p-3_0103,46,2014-01-07,,,P-3,0103,Obveze poduzetnika za doprinose prema propisanoj osnovici ukoliko se ne isplaćuje poduzetnička plaća
+p-3_0201,47,2014-01-07,,,P-3,0201,Primici po osnovi isplate plaće prema sudskoj presudi ili nagodbi za prethodna porezna razdoblja po osnovi koje prethodno nije izvršen obračun i nisu zaduženi doprinosi
+p-3_0202,48,2014-01-07,,,P-3,0202,"Primici po osnovi isplate plaće prema sudskoj presudi ili nagodbi za prethodna porezna razdoblja po osnovi koje prethodno nije izvršen obračun i nisu zaduženi doprinosi, a koja je viša od najviše mjesečne osnovice za obračun doprinosa"
+p-3_0203,49,2014-01-07,,,P-3,0203,"Primici po osnovi isplate plaće prema sudskoj presudi ili nagodbi za prethodna porezna razdoblja po osnovi koje prethodno nije izvršen obračun i nisu zaduženi doprinosi, a koja je viša od najviše godišnje osnovice za obračun doprinosa"
+p-3_0204,50,2014-01-07,,,P-3,0204,"Obračun doprinosa po osnovi plaće za mjesec dana rada ili kraće, prema sudskoj presudi ili nagodbi za prethodna porezna razdoblja po osnovi koje prethodno nije izvršen obračun i nisu zaduženi doprinosi (neisplata plaće)"
+p-3_0205,51,2014-01-07,,,P-3,0205,"Obračun doprinosa po osnovi plaće za mjesec dana rada ili kraće, prema sudskoj presudi ili nagodbi za prethodna porezna razdoblja po osnovi koje prethodno nije izvršen obračun i nisu zaduženi doprinosi, a koja je viša od najviše mjesečne osnovice za obračun doprinosa (neisplata plaće)"
+p-3_0206,52,2014-01-07,,,P-3,0206,"Obračun doprinosa po osnovi plaće za mjesec dana rada ili kraće, prema sudskoj presudi ili nagodbi za prethodna porezna razdoblja po osnovi koje prethodno nije izvršen obračun i nisu zaduženi doprinosi, a koja je viša od najviše godišnje osnovice za obračun doprinosa (neisplata plaće)"
+p-3_0207,53,2014-01-07,,,P-3,0207,Obračun doprinosa na osnovicu u slučaju isplate plaće u bruto iznosu kada su doprinosi iz osnovice i porez na dohodak i prirez obračunani i uplaćeni od strane suda
+p-3_0208,54,2014-01-07,,,P-3,0208,Primici po osnovi isplate plaće prema sudskoj presudi ili nagodbi za prethodna porezna razdoblja za koju je prethodno izvršen obračun i zaduženi su doprinosi
+p-3_0209,55,2014-01-07,,,P-3,0209,Primici po osnovi isplate plaće prema sudskoj presudi ili nagodbi za prethodna porezna
+p-3_0210,56,2014-01-07,,,P-3,0210,Primici po osnovi isplate plaće prema sudskoj presudi ili nagodbi osobi koja je izaslana na rad u Republiku Hrvatsku
+p-3_0211,57,2014-01-07,,,P-3,0211,Obračun poreza na dohodak osiguraniku po osnovi rada u diplomatskoj misiji ili konzularnom uredu strane države ili međunarodnih organizacija koji u Republici Hrvatskoj uživaju diplomatski imunitet na primitak ostvaren temeljem sudske presude ili nagodbe
+p-3_0212,58,2014-01-07,,,P-3,0212,Obračun doprinosa osiguraniku po osnovi rada u diplomatskoj misiji ili konzularnom uredu strane država ili međunarodnih organizacija koji u Republici Hrvatskoj uživaju diplomatski imunitet na primitak ostvaren temeljem sudske presude ili nagodbe
+p-3_0213,59,2014-01-07,,,P-3,0213,Primici po osnovi isplate plaće prema sudskoj presudi ili nagodbi osobi koja je zaposlena kod poslodavca u inozemstvu ili sa sjedištem u inozemstvu
+p-3_0214,60,2014-01-07,,,P-3,0214,"Obračun obveze doprinosa za mjesec dana osiguranja ili kraće, stalnog sezonskog radnika prema sudskoj presudi ili nagodbi za prethodna porezna razdoblja po osnovi koje prethodno nije izvršen obračun i nisu zaduženi doprinosi"
+p-3_0215,61,2015-02-28,,,P-3,0215,"Obračun doprinosa po osnovi prethodno isplaćene plaće i obračunanog i uplaćenog poreza za mjesec dana rada ili kraće, prema sudskoj presudi ili nagodbi za prethodna porezna razdoblja po osnovi koje prethodno nisu zaduženi doprinosi "
+p-3_0216,62,2015-02-28,,,P-3,0216,"Obračun doprinosa po osnovi prethodno isplaćene plaće i obračunanog i uplaćenog poreza za mjesec dana rada ili kraće, prema sudskoj presudi ili nagodbi za prethodna porezna razdoblja po osnovi koje prethodno nisu zaduženi doprinosi, a koja je viša od najviše mjesečne osnovice za obračun doprinosa "
+p-3_0217,63,2015-02-28,,,P-3,0217,"Obračun doprinosa po osnovi prethodno isplaćene plaće i obračunanog i uplaćenog poreza za mjesec dana rada ili kraće, prema sudskoj presudi ili nagodbi za prethodna porezna razdoblja po osnovi koje prethodno nije izvršen obračun i nisu zaduženi doprinosi, a koja je viša od najviše godišnje osnovice za obračun doprinosa "
+p-3_0218,64,2015-02-28,,,P-3,0218,Primici po osnovi isplate ostalih primitaka uz plaću prema sudskoj presudi ili nagodbi
+p-3_0219,65,2015-02-28,,,P-3,0219,Primici po osnovi isplate ostalih primitaka uz plaću prema sudskoj presudi ili nagodbi koji su viši od najviše godišnje osnovice za obračun doprinosa
+p-3_0301,66,2014-01-07,,,P-3,0301,Mirovine koje ne podliježu obvezi posebnog doprinosa za zdravstveno osiguranje iz mirovina
+p-3_0302,67,2014-01-07,,,P-3,0302,"Mirovine ili razlike mirovina koje ne podliježu obvezi posebnog doprinosa za zdravstveno osiguranje iz mirovina, a koje se isplaćuju za više proteklih mjeseci istoga poreznog razdoblja (iste kalendarske godine)"
+p-3_0303,68,2014-01-07,,,P-3,0303,"Mirovine ili razlike mirovina koje ne podliježu obvezi posebnog doprinosa za zdravstveno osiguranje iz mirovina, a koje se isplaćuju za protekla porezna razdoblja (kalendarske godine)"
+p-3_0321,69,2014-01-07,,,P-3,0321,Mirovine koje podliježu obvezi posebnog doprinosa za zdravstveno osiguranje iz mirovina
+p-3_0322,70,2014-01-07,,,P-3,0322,"Mirovine koje podliježu obvezi posebnog doprinosa za zdravstveno osiguranje iz mirovina, a koja se isplaćuje za više proteklih mjeseci istoga poreznog razdoblja (iste kalendarske godine)"
+p-3_0323,71,2014-01-07,,,P-3,0323,"Mirovine koje podliježu obvezi posebnog doprinosa za zdravstveno osiguranje iz mirovina, a koje se isplaćuju za protekla porezna razdoblja (kalendarske godine)"
+p-3_0331,72,2014-01-07,,,P-3,0331,Mirovine ostvarene na temelju individualne kapitalizirane štednje koje isplaćuju mirovinska osiguravajuća društva
+p-3_0332,73,2014-01-07,,,P-3,0332,Mirovine ostvarene temeljem dokupa
+p-3_0333,74,2014-01-07,,,P-3,0333,Mirovinske rente
+p-3_0334,75,2014-01-07,,,P-3,0334,Mirovine ostvarene po ostaloj osnovi
+p-3_0335,76,2015-02-28,,,P-3,0335,Mirovine ostvarene iz inozemstva
+p-3_0401,77,2014-01-07,,1,P-3,0401,Primici po osnovi nesamostalnog rada iz članka 114 stavka 1 Zakona o doprinosima koji se isplaćuju bivšem radniku ili drugoj osobi umjesto bivšeg radnika
+p-3_0402,78,2014-01-07,,1,P-3,0402,"Primici iz članka 114 stavka 2 Zakona o doprinosima od kojih se prema propisima o porezu na dohodak utvrđuje dohodak od nesamostalnog rada, a prema propisima o doprinosima drugi dohodak"
+p-3_0403,79,2014-01-07,,,P-3,0403,Ostali primici po osnovi nesamostalnog rada
+p-3_0404,80,2014-01-07,,1,P-3,0404,Ostali primici po osnovi nesamostalnog rada koji ne podliježu obvezi doprinosa
+p-3_0405,81,2014-01-07,,,P-3,0405,Ostali primici po osnovi nesamostalnog rada prema kojima ne postoji obveza poreza na dohodak
+p-3_0406,82,2014-01-07,,1,P-3,0406,Obveze po konačnom godišnjem obračunu poreza na dohodak i prireza porezu na dohodak po osnovi dohotka od nesamostalnog rada
+p-3_0407,83,2015-02-28,,,P-3,0407,"Primici po osnovi nesamostalnog rada iz članka 114. stavka 1. Zakona o doprinosima koji se isplaćuju bivšem radniku ili drugoj osobi umjesto bivšeg radnika, a koja je viša od najviše godišnje osnovice "
+p-3_0408,84,2015-02-28,,,P-3,0408,"Primici iz članka 114. stavka 2. Zakona o doprinosima od kojih se prema propisima o porezu na dohodak utvrđuje dohodak od nesamostalnog rada, a prema propisima o doprinosima drugi dohodak, a koja je viša od najviše godišnje osnovice "
+p-3_0409,85,2015-02-28,,,P-3,0409,"Primici po osnovi nesamostalnog rada iz članka 114. stavka 1. Zakona o doprinosima koji se isplaćuju u obliku rente koju bivši poslodavac isplaćuje po sudskoj presudi članu obitelji bivšeg radnika,, te po osnovi tih primitaka ne postoji obveza doprinosa "
+p-3_0410,86,2015-02-28,,,P-3,0410,Primici po osnovi nesamostalnog rada iz članka 114. stavka 1. Zakona o doprinosima koji se isplaćuju umirovljenom bivšem radniku ili drugoj umirovljenoj osobi umjesto bivšeg radnika
+p-3_0411,87,2015-02-28,,,P-3,0411,"Ostali primici po osnovi nesamostalnog rada iz članka 114. stavka 1. Zakona o doprinosima koji se isplaćuju bivšem radniku ili drugoj osobi umjesto bivšeg radnika,a prema kojima ne postoji obveza doprinosa "
+p-3_0412,88,2015-02-28,,,P-3,0412,"Primici iz članka 114. stavka 2. Zakona o doprinosima od kojih se prema propisima o porezu na dohodak utvrđuje dohodak od nesamostalnog rada, a prema propisima o doprinosima drugi dohodak prema kojima ne postoji obveza doprinosa na osnovicu "
+p-3_0413,89,2015-02-28,,,P-3,0413,"Primici iz članka 114. stavka 2. Zakona o doprinosima od kojih se prema propisima o porezu na dohodak utvrđuje dohodak od nesamostalnog rada, a prema propisima o doprinosima drugi dohodak prema kojima ne postoji obveza doprinosa na osnovicu, a koji su viši od najviše  godišnje osnovice "
+p-3_0414,90,2015-02-28,,,P-3,0414,Primici po osnovi nesamostalnog rada iz članka 212. stavka 2. Zakona o doprinosima koji se isplaćuju nasljedniku
+p-3_0415,91,2015-02-28,,,P-3,0415,Obračun doprinosa po osnovi plaće u slučaju iz članka 212. stavak 2. Zakona o doprinosima
+p-3_0416,92,2015-02-28,,,P-3,0416,"Obračun doprinosa po osnovi plaće u slučaju iz članka 212. stavak 2. Zakona o doprinosima, a koja je viša od najviše mjesečne osnovice za obračun doprinosa "
+p-3_0417,93,2015-02-28,,,P-3,0417,"Obračun doprinosa po osnovi plaće u slučaju iz članka 212. stavak 2. Zakona o doprinosima, a koja je viša od najviše godišnje osnovice za obračun doprinosa "
+p-3_0418,94,2015-02-28,,,P-3,0418,Obračun doprinosa po osnovi ostalih primitaka koji se isplaćuju uz plaću u slučaju iz članka 212. stavak 2. Zakona o doprinosima
+p-3_0419,95,2015-02-28,,,P-3,0419,"Obračun doprinosa po osnovi ostalih primitaka koji se isplaćuju uz plaću u slučaju iz članka 212. stavak 2. Zakona o doprinosima, a koja je viša od najviše godišnje osnovice za obračun doprinosa "
+p-3_1001,96,2014-01-07,,1,P-3,1001,Primici od kojih se utvrđuje dohodak od kapitala po osnovi dividendi i udjela u dobiti na temelju udjela u kapitalu (12%)
+p-3_1002,97,2014-01-07,,1,P-3,1002,Primici od kojih se utvrđuje dohodak od kapitala po osnovi izuzimanja i korištenja usluga članova trgovačkih društava za privatne potrebe (skrivene isplate dobiti) te izuzimanja fizičkih osoba koje obavljaju samostalnu djelatnost od koje se plaća porez na dobit (40%)
+p-3_1003,98,2014-01-07,,1,P-3,1003,Primici u naravi od kojih se utvrđuje dohodak od kapitala po osnovi udjela u dobiti članova uprave i radnika trgovačkih društava koje ostvaruju putem dodjele ili opcijske kupnje vlastitih dionica (25%)
+p-3_1004,99,2014-01-07,,1,P-3,1004,Primici od kojih se utvrđuje dohodak od kapitala po osnovi kamata (12%)
+p-3_1005,100,2014-01-07,,1,P-3,1005,Ostali primici od kapitala
+p-3_1006,101,2015-02-28,,,P-3,1006,Primici od kojih se utvrđuje dohodak od kapitala po osnovi kapitalnih dobitaka (12%)
+p-3_2001,102,2014-01-07,,1,P-3,2001,Primici od kojih se utvrđuje dohodak od imovinskih prava (25%)
+p-3_2002,103,2015-02-28,,,P-3,2002,Primici od kojih se utvrđuje dohodak od posebnih vrsta imovine(12%)
+p-3_3001,104,2014-01-07,,1,P-3,3001,Primici od kojih se utvrđuje dohodak od osiguranja po osnovi dobrovoljnog mirovinskog osiguranja
+p-3_3002,105,2014-01-07,,1,P-3,3002,Primici od kojih se utvrđuje dohodak od osiguranja po osnovi životnog osiguranja s obilježjem štednje
+p-3_4001,106,2014-01-07,,1,P-3,4001,Primici od autorskih naknada isplaćenih prema posebnom zakonu kojim se uređuju autorska i srodna prava
+p-3_4002,107,2014-01-07,,1,P-3,4002,Primici po osnovi naknada za isporučeno umjetničko djelo osobama koje obavljaju umjetničku i kulturnu djelatnost
+p-3_4003,108,2014-01-07,,1,P-3,4003,"Primici po osnovi naknada profesionalnih djelatnosti novinara, umjetnika i sportaša koji su osigurani po toj osnovi i doprinose za obvezna osiguranja plaćaju prema rješenju"
+p-3_4004,109,2014-01-07,,1,P-3,4004,"Primici nerezidenata za obavljanje umjetničke, artističke, zabavne, sportske, književne i likovne djelatnosti te djelatnosti u svezi s tiskom, radijem i televizijom te zabavnim priredbama po osnovi kojih postoji obveza doprinosa"
+p-3_4005,110,2014-01-07,,1,P-3,4005,"Primici nerezidenata za obavljanje umjetničke, artističke, zabavne, sportske, književne i likovne djelatnosti te djelatnosti u svezi s tiskom, radijem i televizijom te zabavnim priredbama po osnovi kojih postoji obveza doprinosa, koji su viši od najviše godišnje osnovice za obračun doprinosa"
+p-3_4006,111,2014-01-07,,1,P-3,4006,"Primici nerezidenata za obavljanje umjetničke, artističke, zabavne, sportske, književne i likovne djelatnosti te djelatnosti u svezi s tiskom, radijem i televizijom te zabavnim priredbama po osnovi kojih ne postoji obveza doprinosa"
+p-3_4007,112,2014-01-07,,1,P-3,4007,Primici po osnovi djelatnosti sportaša (koji nisu osigurani po osnovi samostalne djelatnosti sportaša)
+p-3_4008,113,2014-01-07,,1,P-3,4008,Primici po osnovi djelatnosti sportaša (koji nisu osigurani po osnovi samostalne djelatnosti sportaša) koji su viši od najviše godišnje osnovice za obračun doprinosa
+p-3_4009,114,2014-01-07,,1,P-3,4009,Primici po osnovi djelatnosti sportaša koji se isplaćuju umirovljenicima
+p-3_4010,115,2014-01-07,,1,P-3,4010,"Primici po osnovi djelatnosti trgovačkih putnika, agenta, akvizitera, tumača, prevoditelja, turističkih djelatnika, konzultanata, sudskih vještaka te druge slične djelatnosti"
+p-3_4011,116,2014-01-07,,1,P-3,4011,"Primici po osnovi djelatnosti trgovačkih putnika, agenta, akvizitera, tumača, prevoditelja, turističkih djelatnika, konzultanata, sudskih vještaka te druge slične djelatnosti, koji su"
+p-3_4012,117,2014-01-07,,1,P-3,4012,"Primici po osnovi djelatnosti trgovačkih putnika, agenta, akvizitera, tumača, prevoditelja, turističkih djelatnika, konzultanata, sudskih vještaka te druge slične djelatnosti, koji se isplaćuju umirovljenicima"
+p-3_4013,118,2014-01-07,,1,P-3,4013,Primici po osnovi djelatnosti sportskih sudaca i delegata
+p-3_4014,119,2014-01-07,,1,P-3,4014,"Primici po osnovi djelatnosti članova skupština i nadzornih odbora trgovačkih društava, upravnih odbora, upravnih vijeća i drugih njima odgovarajućih tijela drugih pravnih osoba, članova povjerenstava i odbora koje imaju ta tijela i sudaca porotnika koji nemaju svojstvo djelatnika u sudu"
+p-3_4015,120,2014-01-07,,1,P-3,4015,"Primici po osnovi djelatnosti članova skupština i nadzornih odbora trgovačkih društava, upravnih odbora, upravnih vijeća i drugih njima odgovarajućih tijela drugih pravnih osoba, članova povjerenstava i odbora koje imaju ta tijela i sudaca porotnika koji nemaju svojstvo djelatnika u sudu, koji su viši od najviše godišnje osnovice za obračun doprinosa"
+p-3_4016,121,2014-01-07,,1,P-3,4016,"Primici po osnovi djelatnosti članova skupština i nadzornih odbora trgovačkih društava, upravnih odbora, upravnih vijeća i drugih njima odgovarajućih tijela drugih pravnih osoba, članova povjerenstava i odbora koje imaju ta tijela i sudaca porotnika koji nemaju svojstvo djelatnika u sudu, koji se isplaćuju umirovljenicima"
+p-3_4017,122,2014-01-07,,1,P-3,4017,"Primici u naravi - korištenje zgrada, prometnih sredstava, povoljnije kamate pri odobravanju kredita i druge pogodnosti prema članku 14 stavku 3 Zakona o porezu na dohodak, a koje davatelji tih primitaka daju fizičkim osobama koje nisu njihovi radnici i osobe koje ostvaruju primitke iz članka 14 toga Zakona"
+p-3_4018,123,2014-01-07,,1,P-3,4018,"Primici u naravi - korištenje zgrada, prometnih sredstava, povoljnije kamate pri odobravanju kredita i druge pogodnosti prema članku 14 stavku 3 Zakona o porezu na dohodak, a koje davatelji tih primitaka daju fizičkim osobama koje nisu njihovi radnici i osobe koje ostvaruju primitke iz članka 14 toga Zakona, koji su viši od najviše godišnje osnovice za obračun doprinosa"
+p-3_4019,124,2014-01-07,,1,P-3,4019,"Primici u naravi - korištenje zgrada, prometnih sredstava, povoljnije kamate pri odobravanju kredita i druge pogodnosti prema članku 14 stavku 3 Zakona o porezu na dohodak, a koje davatelji tih primitaka daju fizičkim osobama koje nisu njihovi radnici i osobe koje ostvaruju primitke iz članka 14 toga Zakona, koji se isplaćuju umirovljenicima"
+p-3_4020,125,2014-01-07,,1,P-3,4020,"Nagrade učenicima za vrijeme praktičnog rada i naukovanja, iznad propisanog iznosa"
+p-3_4021,126,2014-01-07,,1,P-3,4021,"Stipendije učenicima i studentima za redovno školovanje na srednjim, višim i visokim školama i fakultetima, iznad propisanog iznosa,"
+p-3_4022,127,2014-01-07,,1,P-3,4022,"Sportske stipendije koje se prema posebnim propisima isplaćuju sportašima amaterima za njihovo sportsko usavršavanje, iznad propisanog iznosa"
+p-3_4023,128,2014-01-07,,1,P-3,4023,"Nagrade za sportska ostvarenja i naknade sportašima amaterima prema posebnim propisima, iznad propisanih iznosa"
+p-3_4024,129,2014-01-07,,1,P-3,4024,"Nagrade za sportska ostvarenja i naknade sportašima amaterima prema posebnim propisima, iznad propisanih iznosa koje se isplaćuju umirovljenicima"
+p-3_4025,130,2014-01-07,,1,P-3,4025,"Primici od kojih se utvrđuje drugi dohodak, a primatelj ga ostvari neposredno iz inozemstva ili od fizičke osobe"
+p-3_4026,131,2014-01-07,,1,P-3,4026,"Primici od kojih se utvrđuje drugi dohodak, a primatelj ga ostvari neposredno iz inozemstva ili od fizičke osobe, a koji je viši od najviše godišnje osnovice"
+p-3_4027,132,2014-01-07,,1,P-3,4027,"Primici od kojih se utvrđuje drugi dohodak, a umirovljenik ga ostvari neposredno iz inozemstva ili od fizičke osobe"
+p-3_4028,133,2014-01-07,,1,P-3,4028,Primici od kojih se utvrđuje drugi dohodak i koji bi bili podložni obvezi doprinosa da ugovorom o socijalnom osiguranju nije drugačije uređeno
+p-3_4029,134,2014-01-07,,1,P-3,4029,"Primici od kojih se utvrđuje drugi dohodak i koji su podložni obvezi doprinosa za zdravstveno osiguranja, a nisu podložni obvezi doprinosa za mirovinsko osiguranje sukladno ugovoru o socijalnom osiguranju"
+p-3_4030,135,2014-01-07,,1,P-3,4030,"Ostali primici koje fizičkim osobama isplaćuju ili daju pravne i fizičke osobe (obveznici poreza na dobit i obveznici poreza na dohodak koji obavljaju samostalne djelatnosti) i drugi isplatitelji i davatelji, a po osnovi kojih postoji obveza doprinosa"
+p-3_4031,136,2014-01-07,,1,P-3,4031,"Ostali primici koje fizičkim osobama isplaćuju ili daju pravne i fizičke osobe (obveznici poreza na dobit i obveznici poreza na dohodak koji obavljaju samostalne djelatnosti) i drugi isplatitelji i davatelji, a po osnovi kojih postoji i obveza doprinosa, a koji su viši od najviše godišnje osnovice"
+p-3_4032,137,2014-01-07,,1,P-3,4032,Ostali primici koje fizičkim osobama isplaćuju ili daju pravne i fizičke osobe (obveznici
+p-3_4033,138,2014-01-07,,1,P-3,4033,"Primici od kojih se utvrđuje drugi dohodak, ostvareni temeljem sezonskog rada u poljoprivredi prema Zakonu o poticanju zapošljavanja"
+p-3_4034,139,2014-01-07,,1,P-3,4034,Primici nerezidenata od autorskih naknada isplaćenih prema posebnom zakonu kojim se uređuju autorska i srodna prava a koji nemaju pravo na paušalni izdatak
+p-3_4035,140,2014-01-07,,1,P-3,4035,Primici od kojih se utvrđuje drugi dohodak a koji se isplaćuju nerezidentima Republike Hrvatske - članovima uprave odnosno članovima drugih odgovarajućim upravljačkih tijela društva te izvršnim direktorima
+p-3_4036,141,2014-01-07,,1,P-3,4036,"Primici od kojih se utvrđuje drugi dohodak a koji se isplaćuju nerezidentima Republike Hrvatske - članovima uprave odnosno članovima drugih odgovarajućim upravljačkih tijela društva te izvršnim direktorima, koji su viši od najviše godišnje osnovice za obračun doprinosa"
+p-3_4037,142,2014-01-07,,1,P-3,4037,"Primici od kojih se utvrđuje drugi dohodak a koji se isplaćuju nerezidentima Republike Hrvatske - članovima uprave odnosno članovima drugih odgovarajućim upravljačkih tijela društva te izvršnim direktorima, a prema kojima ne postoji obveza doprinosa"
+p-3_4038,143,2015-02-28,,,P-3,4038,"Primici po osnovi drugog dohotka koji podliježu obvezi doprinosa, a na koje je, sukladno ugovoru o izbjegavanju dvostrukog oporezivanja predujam poreza na dohodak plaćen u inozemstvu, te se sukladno članku 2. stavku 4. Pravilnika o porezu na dohodak ne plaćaju predujmovi poreza na dohodak u tuzemstvu, te je porezni obveznik obvezan podnijeti godišnju poreznu prijavu "
+p-3_4039,144,2015-02-28,,,P-3,4039,"Primici po osnovi drugog dohotka koji podliježu obvezi doprinosa ali su viši od najviše godišnje osnovice za obračun doprinosa, a na koje je, sukladno ugovoru o izbjegavanju dvostrukog oporezivanja predujam poreza na dohodak plaćen u inozemstvu, te se sukladno članku 2.  stavku 4. Pravilnika o porezu na dohodak ne plaćaju predujmovi poreza na dohodak u tuzemstvu, te je porezni obveznik obvezan podnijeti godišnju poreznu prijavu "
+p-3_4040,145,2015-02-28,,,P-3,4040,"Primici po osnovi drugog dohotka koji podliježu obvezi doprinosa koji bi bili oporezivi porezom na dohodak da ugovorima o izbjegavanju dvostrukog oporezivanja nije uređeno drukčije, u slučaju kada Republika Hrvatska sukladno ugovoru izuzima te primitke od oporezivanja "
+p-3_4041,146,2015-02-28,,,P-3,4041,"Primici po osnovi drugog dohotka koji podliježu obvezi doprinosa, ali su viši od najviše godišnje osnovice za obračun doprinosa, a koji bi bili oporezivi porezom na dohodak da ugovorima o izbjegavanju dvostrukog oporezivanja nije uređeno drukčije u slučaju kada Republika   Hrvatska sukladno ugovoru izuzima te primitke od oporezivanja"
+p-3_4042,147,2015-02-28,,,P-3,4042,"Primici od kojih se utvrđuje drugi dohodak, a primatelj ga ostvari neposredno od fizičke osobe "
+p-3_4043,148,2015-02-28,,,P-3,4043,"Primici od kojih se utvrđuje drugi dohodak, a primatelj ga ostvari neposredno od fizičke osobe, a koji je viši od najviše godišnje osnovice "
+p-3_4044,149,2015-02-28,,,P-3,4044,"Primici od kojih se utvrđuje drugi dohodak, a umirovljenik ga ostvari neposredno od fizičke osobe "
+p-3_5001,150,2014-01-07,,,P-3,5001,Obveze posebnog doprinosa za korištenje zdravstvene zaštite u inozemstvu za osiguranike koji službeno borave u inozemstvu (plaća ili prosječna plaća ukoliko mu se ne isplaćuje plaća - 10% ZO INO)
+p-3_5002,151,2014-01-07,,,P-3,5002,"Obveze posebnog doprinosa za korištenje zdravstvene zaštite u inozemstvu za osiguranike koji borave na službenom putu u inozemstvu (0,35 - 20% ZO INO)"
+p-3_5003,152,2014-01-07,,,P-3,5003,"Obveze posebnog doprinosa za korištenje zdravstvene zaštite u inozemstvu za osiguranike po osnovi primitka od kojih se utvrđuje drugi dohodak koji borave na službenom putu u inozemstvu (0,35 - 20% ZO INO)"
+p-3_5004,153,2014-01-07,,,P-3,5004,"Obveze posebnog doprinosa za korištenje zdravstvene zaštite u inozemstvu za osiguranika po osnovi obavljanja samostalnih djelatnosti koji boravi na službenom putu u inozemstvu (0,35 - 20% ZO INO)"
+p-3_5005,154,2014-01-07,,,P-3,5005,"Obveze posebnog doprinosa za korištenje zdravstvene zaštite u inozemstvu za osiguranika po osnovi obavljanja samostalnih djelatnosti - izaslanog na rad u inozemstvo (0,35 - 20% ZO INO)"
+p-3_5101,155,2014-01-07,,,P-3,5101,Obveze poreza na dohodak i prireza porezu na dohodak te doprinosa za osiguranike po osnovi njegovatelja HRVI
+p-3_5102,156,2014-01-07,,,P-3,5102,Obveze doprinosa za osiguranike po osnovi roditelja - njegovatelja
+p-3_5103,157,2014-01-07,,,P-3,5103,Obveza doprinosa za osiguranike po osnovi slobodnog zanimanja - samostalnih umjetnika
+p-3_5104,158,2014-01-07,,,P-3,5104,"Primici učenika i redovitih studenata za vrijeme rada preko posrednika pri zapošljavanju iznad propisanih iznosa, odnosno obveza doprinosa učenika i redovitih studenata za vrijeme rada preko posrednika pri zapošljavanju"
+p-3_5105,159,2014-01-07,,,P-3,5105,Obveza doprinosa za osiguranike za koje se obveza doprinosa izračunava primjenom doprinosa za mirovinsko osiguranje na temelju generacijske solidarnosti i doprinosa za mirovinsko osiguranje na temelju individualne kapitalizirane štednje na minimalnu osnovicu za obračun doprinosa
+p-3_5106,160,2014-01-07,,,P-3,5106,Obveza doprinosa za osiguranike za koje se obveza doprinosa izračunava primjenom doprinosa za mirovinsko osiguranje na temelju individualne kapitalizirane štednje na minimalnu osnovicu za obračun doprinosa
+p-3_5107,161,2014-01-07,,,P-3,5107,Obveza doprinosa za osiguranike za koje se obveza doprinosa izračunava primjenom doprinosa za mirovinsko osiguranje na temelju individualne kapitalizirane štednje na naknadu plaće
+p-3_5108,162,2014-01-07,,,P-3,5108,Obveza doprinos za mirovinsko osiguranje u određenim okolnostima i posebnog doprinosa za zaštitu zdravlja na radu na minimalnu osnovicu za obračun
+p-3_5109,163,2014-01-07,,,P-3,5109,Obveza doprinosa za zdravstveno osiguranje na minimalnu osnovicu
+p-3_5110,164,2014-01-07,,,P-3,5110,Obveza mirovinskog osiguranja u određenim okolnostima i zdravstvenog osiguranja zaštite zdravlja na radu za slučaj ozljede na radu i profesionalne bolesti na minimalnu osnovicu za obračun doprinosa
+p-3_5111,165,2014-01-07,,,P-3,5111,Obveze doprinosa za mirovinsko osiguranje na temelju individualne kapitalizirane štednje za osiguranika - osobu s invaliditetom kojoj se staž mirovinskog osiguranja računa s povećanim trajanjem
+p-3_5112,166,2014-01-07,,,P-3,5112,Obveze doprinosa za osiguranike bračne drugove profesionalnog odnosno ugovornog diplomata i članove obitelji profesionalnog odnosno ugovornog diplomata
+p-3_5701,167,2014-01-07,,,P-3,5701,Obveze po osnovi stručnog osposobljavanja za rad bez zasnivanja radnog odnosa za mjesec dana rada
+p-3_5702,168,2014-01-07,,,P-3,5702,Obveze po osnovi stručnog osposobljavanja za rad bez zasnivanja radnog odnosa za mjesec dana rada - osobi koja se prvi put zapošljava - prema Zakonu o doprinosima
+p-3_5703,169,2014-01-07,,,P-3,5703,Obveze po osnovi stručnog osposobljavanja za rad bez zasnivanja radnog odnosa za mjesec dana rada - osobi koja se prvi put zapošljava - prema Zakonu o poticanju zapošljavanja
+p-3_5721,170,2014-01-07,,,P-3,5721,Naplaćena kamata za doprinose za mirovinsko osiguranje na temelju individualne kapitalizirane štednje zbog nepravovremene uplate dospjele obveze
+p-3_5801,171,2015-02-28,,,P-3,5801,Obveza doprinosa prema propisanoj osnovici za obračun doprinosa
+p-3_5802,172,2015-02-28,,,P-3,5802,Obveza doprinosa prema izabranoj višoj osnovici za obračun doprinosa (koeficijent 1)
+p-3_5803,173,2015-02-28,,,P-3,5803,Obveza doprinosa prema izabranoj višoj osnovici za obračun doprinosa (koeficijent 2)
+p-3_5804,174,2015-02-28,,,P-3,5804,Obveza doprinosa prema izabranoj višoj osnovici za obračun doprinosa (koeficijent 3)
+p-3_5805,175,2015-02-28,,,P-3,5805,Obveza doprinosa prema izabranoj višoj osnovici za obračun doprinosa (koeficijent 4)
+p-3_5806,176,2015-02-28,,,P-3,5806,Obveza doprinosa prema izabranoj višoj osnovici za obračun doprinosa (koeficijent 5)
+p-3_5807,177,2015-02-28,,,P-3,5807,Obveza doprinosa prema izabranoj višoj osnovici za obračun doprinosa (koeficijent 6)
+,,,,,,,
+p-4_00,1,2014-01-07,,,P-4,0,Nema neoporezivog primitka
+p-4_01,2,2014-01-07,,,P-4,01,"Primici od kamata na kunsku i deviznu štednju, na pologe (po viđenju i oročene) na žiroračunu, tekućem i deviznom računu, koji su ostvareni od banaka, štedionica i štednokreditnih zadruga i koji su obračunati do 31. prosinca 2014., primici od kamata po vrijednosnim papirima koji su obračunati do 31. prosinca 2014., primici od kamata po obveznicama koji su obračunati nakon 1. siječnja 2015. i primici po osnovi osiguranja stvari, odgovornosti, života i imovine (čl. 9. st. 3. Zakona o porezu na dohodak i čl. 30. st 15. t. 5. Zakona o porezu na dohodak) "
+p-4_02,3,2014-01-07,,,P-4,02,"Primici od otuđenja financijske imovine ako to nije djelatnost poreznog obveznika stečene prije 1. siječnja 2016. godine – čl. 30. Zakona o izmjenama i dopunama Zakona o porezu na dohodak (Narodne novine, broj 143/14) i primici po osnovi otkupa udjela u Fondu hrvatskih branitelja iz domovinskog rata i članova njihovih obitelji "
+p-4_03,4,2014-01-07,,,P-4,03,"Izravne uplate premije osiguranja za dokup dijela doživotne mirovine određene prema Zakonu o mirovinskom osiguranju kojeg bi osiguranik ostvario da je navršio određenu starosnu dob i/ili određeni mirovinski staž, te uplate sredstava u okviru programa mirovinske rente prema posebnim propisima, a koje uplaćuju poslodavci za svoje radnike u vrijeme njihovog umirovljenja (čl 9 st 1 t 4 Zakona o porezu na dohodak) i novčani dodaci uz mirovinu koje umirovljenicima isplaćuju jedinice lokalne i područne (regionalne) samouprave, na temelju svojih općih akata i za koje su sredstva planirana u proračunima tih jedinica (čl 9 st 2 t 27 Zakona o porezu na dohodak)"
+p-4_04,5,2014-01-07,,,P-4,04,Obiteljske mirovine koje djeca ostvaruju nakon smrti roditelja prema Zakonu o mirovinskom osiguranju i Zakonu o pravima hrvatskih branitelja iz Domovinskog rata i članova njihovih obitelji (čl 9 st 1 t 5 Zakona o porezu na dohodak)
+p-4_05,6,2014-01-07,,,P-4,05,Nagrade iz članka 9 stavka 1 točke 6 Zakona o porezu na dohodak
+p-4_06,7,2014-01-07,,,P-4,06,"Primici koje fizičke osobe ostvaruju po osnovi darovanja pravnih osoba, a za zdravstvene potrebe (čl 9 st 1 t 7 Zakona o porezu na dohodak)"
+p-4_07,8,2014-01-07,,,P-4,07,Socijalne potpore (čl 9 st 2 t 21 podt 212 Zakona o porezu na dohodak)
+p-4_08,9,2014-01-07,,,P-4,08,"Doplatak za djecu i novčani primici za opremu novorođenog djeteta i primici po osnovi potpora za novorođenče, odnosno potpora za opremu novorođenog djeteta koje isplaćuju ili daju jedinice lokalne i područne (regionalne) samouprave, na temelju svojih općih akata i za koje su sredstva planirana u proračunima tih jedinica (čl 9 st 2 t 21 podt 213 Zakona o porezu na dohodak)"
+p-4_09,10,2014-01-07,,,P-4,09,"Potpore zbog zbrinjavanja ratnih invalida i članova obitelji smrtno stradalih, zatočenih ili nestalih hrvatskih branitelja iz Domovinskog rata (čl 9 st 2 t 21 podt 211 Zakona o porezu na dohodak), te primici osoba s invaliditetom, osim plaća i mirovina (čl 9 st 2 t 21 podt 214 Zakona o porezu na dohodak)"
+p-4_10,11,2014-01-07,,,P-4,10,Potpore koje djeci u slučaju smrti roditelja isplaćuju ili daju jedinice lokalne i područne (regionalne) samouprave na temelju svojih općih akata te pravne i fizičke osobe (čl 9 st 2 t 28 Zakona o porezu na dohodak)
+p-4_11,12,2014-01-07,,,P-4,11,"Naknada razlike plaće za vrijeme vojne službe u Oružanim snagama Republike Hrvatske, naknada plaće pripadnicima civilne zaštite i drugim osobama za djelatnost u okviru civilne zaštite i zaštite od elementarnih nepogoda, te naknade i nagrade koje osuđene osobe primaju za rad u kazneno-popravnim ustanovama i domovima za preodgoj (čl 10 t 1, 2 i 8 Zakona o porezu na dohodak)"
+p-4_12,13,2014-01-07,,,P-4,12,Naknada plaće za vrijeme privremene nezaposlenosti i spriječenosti za rad isplaćena na teret sredstava obveznih osiguranja (čl 10 t 3 Zakona o porezu na dohodak)
+p-4_13,14,2014-01-07,,,P-4,13,"Nagrade učenicima za vrijeme praktičnog rada i naukovanja, do propisanog iznosa (čl 10 t 4 Zakona o porezu na dohodak)"
+p-4_14,15,2014-01-07,,,P-4,14,Nagrade učenicima i studentima osvojene na natjecanjima u okviru obrazovnog sustava i organiziranim školskim i sveučilišnim natjecanjima (čl 10 t 5 Zakona o porezu na dohodak)
+p-4_15,16,2014-01-07,,,P-4,15,"Primici učenika i studenata na redovnom školovanju za rad preko učeničkih i studentskih udruga, po posebnim propisima, do propisanog iznosa (čl 10 t 6 Zakona o porezu na dohodak)"
+p-4_16,17,2014-01-07,,,P-4,16,"Naknade štete zbog posljedica nesreće na radu prema odluci suda ili nagodbi u tijeku sudskog postupka, ako je naknada određena u jednokratnom iznosu (čl 10 t 7 Zakona"
+p-4_17,18,2014-01-07,,,P-4,17,Ukupan iznos isplaćenih dnevnica u izvještajnom razdoblju (čl. 10. t. 9. Zakona o porezu na dohodak i čl. 13. st. 2. t. 13. i 14. Pravilnika o porezu na dohodak)
+p-4_18,19,2014-01-07,,,P-4,18,"Naknade za korištenje privatnog automobila u službene svrhe, do propisanog iznosa (čl 10 t 9 Zakona o porezu na dohodak i čl 13 st 2 t 5 Pravilnika o porezu na dohodak)"
+p-4_19,20,2014-01-07,,,P-4,19,"Naknade troškova prijevoza na posao i s posla mjesnim i međumjesnim javnim prijevozom (čl 10 t 9 Zakona o porezu na dohodak i čl 13 st 2 t 3 i 4 Pravilnika o porezu na dohodak),"
+p-4_20,21,2014-01-07,,,P-4,20,"Potpore zbog invalidnosti radnika do propisanog iznosa, potpore za slučaj smrti radnika, potpore u slučaju smrti člana uže obitelji radnika, do propisanog iznosa, potpore zbog neprekidnog bolovanja radnika dužeg od 90 dana, do propisanog iznosa (čl 10 t 9 Zakona o porezu na dohodak i čl 13 st 2 t 6, 7, 8 i 9 Pravilnika o porezu na dohodak)"
+p-4_21,22,2014-01-07,,,P-4,21,"Dar djetetu do 15 godina starosti, do propisanog iznosa i potpore za novorođenče, do propisanog iznosa (čl 10 t 9 Zakona o porezu na dohodak i čl 13 st 2 t 10 i 22 Pravilnika o porezu na dohodak)"
+p-4_22,23,2014-01-07,,,P-4,22,"Prigodne nagrade, do propisanog iznosa (božićnica, naknada za godišnji odmor i sl) i nagrade radnicima za navršene godine staža, do propisanih iznosa (čl 10 t 9 Zakona o porezu na dohodak i čl 13 st 2 t 11 i 12 Pravilnika o porezu na dohodak)"
+p-4_23,24,2014-01-07,,,P-4,23,"Terenski dodatak, do propisanog iznosa (čl 10 t 9 Zakona o porezu na dohodak i čl 13 st 2 t 15 i 16 Pravilnika o porezu na dohodak)"
+p-4_24,25,2014-01-07,,,P-4,24,"Pomorski dodatak, do propisanog iznosa (čl 10 t 9 Zakona o porezu na dohodak i čl 13 st 2 t 17 Pravilnika o porezu na dohodak)"
+p-4_25,26,2014-01-07,,,P-4,25,"Naknade za odvojeni život od obitelji, do propisanog iznosa (čl 10 t 9 Zakona o porezu na dohodak i čl 13 st 2 t 19 Pravilnika o porezu na dohodak)"
+p-4_26,27,2014-01-07,,,P-4,26,"Otpremnine, do propisanog iznosa (čl 10 t 9 Zakona i čl 13 st 2 t 20 i 21 Pravilnika o porezu na dohodak)"
+p-4_27,28,2015-02-28,,,P-4,27,"Naknade za službena putovanja po osnovi prijevoza i noćenja iz članka 13. stavka 2. točke 1. i 2. Pravilnika o porezu na dohodak koje isplaćuju neprofitne organizacije, fizičkim osobama koje za te organizacije obavljaju poslove iz njihovog djelokruga odnosno za njihove potrebe  i uz naknadu, a pod uvjetom da računi o obavljenim uslugama glase na isplatitelja – neprofitnu organizaciju (čl. 10. t. 11. Zakona o porezu na dohodak i čl. 7. st. 6. Pravilnika o porezu na dohodak) "
+p-4_28,29,2014-01-07,,,P-4,28,"Stipendije, ukupno do propisanog iznosa (čl 10 t 12, 13, 14 i 18 Zakona o porezu na dohodak)"
+p-4_29,30,2014-01-07,,,P-4,29,"Nagrade za sportska ostvarenja i naknade sportašima amaterima prema posebnim propisima, do propisanih iznosa (čl 10 t 16 Zakona o porezu na dohodak)"
+p-4_30,31,2014-01-07,,,P-4,30,Sindikalne socijalne pomoći koje se isplaćuju iz sredstava sindikalne članarine članovima sindikata (čl 10 t 15 Zakona o porezu na dohodak)
+p-4_31,32,2014-01-07,,,P-4,31,"Primici koji se kao bespovratna sredstva isplaćuju iz fondova i programa Europske unije putem tijela akreditiranih u skladu s pravilima Europske komisije u Republici Hrvatskoj za provedbu aktivnosti mobilnosti u okviru programa i fondova Europske unije, a u svrhe obrazovanja i stručnog usavršavanja (čl 10 t 20 Zakona o porezu na dohodak)"
+p-4_32,33,2014-01-07,,,P-4,32,"Primici koje isplaćuje Hrvatski zavod za mirovinsko osiguranje, a koji se ne smatraju primicima od nesamostalnog rada (čl 15 st 2 Zakona o porezu na dohodak)"
+p-4_33,34,2014-01-07,,,P-4,33,Primici po osnovi dividendi i udjela u dobiti ostvareni u okviru ESOP programa (čl 30 st 12 Zakona o porezu na dohodak)
+p-4_34,35,2014-01-07,,,P-4,34,Primici po osnovi dividendi i udjela u dobiti iskorišteni za uvećanje temeljnog kapitala društva (čl 30 st 13 Zakona o porezu na dohodak)
+p-4_35,36,2014-01-07,,,P-4,35,Obiteljske mirovine odnosno novčane naknade u visini obiteljske mirovine ostvarene prema Zakonu o pravima hrvatskih branitelja iz Domovinskog rata i članova njihovih obitelji (čl 53 st 2 Zakona o porezu na dohodak)
+p-4_36,37,2014-01-07,,,P-4,36,"Primici na koje je sukladno ugovoru o izbjegavanju dvostrukog oporezivanja predujam poreza na dohodak plaćen u inozemstvu, a za koje se sukladno članku 2 stavku 4"
+p-4_37,38,2014-01-07,,,P-4,37,"Primici koji bi bili oporezivi porezom na dohodak da ugovorima o izbjegavanju dvostrukog oporezivanja nije uređeno drukčije, u slučaju kada Republika Hrvatska sukladno ugovoru nema pravo oporezivanja"
+p-4_38,39,2014-01-07,,,P-4,38,Primici fizičkih osoba po osnovi izravnih plaćanja u poljoprivredi sukladno posebnim propisima po osnovi kojih se ne utvrđuje dohodak sukladno članku 18 stavku 3 Zakona
+p-4_39,40,2014-01-07,,,P-4,39,"Troškovi prijevoza (trošak cestarine i prijevoznih karata) i troškovi noćenja na službenom putovanju u visini stvarnih izdataka, prema konačnom obračunu putnih naloga "
+p-4_40,41,2014-01-07,,,P-4,40,Povrat isplaćene naknade plaće za vrijeme spriječenosti za rad isplaćena na teret sredstava obveznih osiguranja kojega vrši nositelj osiguranja isplatitelju naknade
+p-4_41,42,2014-01-07,,,P-4,41,"Ostali neoporezivi primici iz članka 10. točke 3. Zakona o porezu na dohodak a vezano uz članak 7. Pravilnika o porezu na dohodak, osim novčane naknade za spriječenost za rad isplaćenu na teret sredstava obveznih osiguranja"
+p-4_42,43,2014-01-07,,,P-4,42,Primici po osnovi dividendi i udjela u dobiti koji ne podliježu oporezivanju
+p-4_43,44,2014-01-07,,,P-4,43,"Primici po osnovi drugog dohotka na koje je sukladno ugovoru o izbjegavanju dvostrukog oporezivanja predujam poreza na dohodak plaćen u inozemstvu, a za koje se sukladno članku 2. stavku 4. Pravilnika o porezu na dohodak ne plaćaju predujmovi poreza na dohodak u tuzemstvu, te je porezni obveznik obvezan podnijeti godišnju poreznu prijavu "
+p-4_44,45,2014-01-07,,,P-4,44,"Primici po osnovi drugog dohotka koji bi bili oporezivi porezom na dohodak da ugovorima o izbjegavanju dvostrukog oporezivanja nije uređeno drukčije, u slučaju kada Republika Hrvatska sukladno ugovoru izuzima te primitke od oporezivanja "
+p-4_45,46,2014-01-07,,,P-4,45,"Primici po osnovi drugog dohotka koji se isplaćuju nerezidentima Republike Hrvatske - članovima uprave odnosno članovima drugih odgovarajućim upravljačkih tijela društva te izvršnim direktorima a koji bi bili oporezivi porezom na dohodak da ugovorima o izbjegavanju dvostrukog oporezivanja nije uređeno drukčije, u slučaju kada Republika Hrvatska sukladno ugovoru izuzima te primitke od oporezivanja "
+p-4_46,47,2014-01-07,,,P-4,46,"Primici po osnovi dohotka od kapitala koji bi bili oporezivi porezom na dohodak da ugovorima o izbjegavanju dvostrukog oporezivanja nije uređeno drukčije, u slučaju kada Republika Hrvatska sukladno ugovoru izuzima te primitke od oporezivanja "
+p-4_47,48,2014-01-07,,,P-4,47,"Primici po osnovi dohotka od kapitala na koje je sukladno ugovoru o izbjegavanju dvostrukog oporezivanja predujam poreza na dohodak plaćen u inozemstvu, a za koje se sukladno članku 2. stavku 4. Pravilnika o porezu na dohodak ne plaćaju predujmovi poreza na dohodak u tuzemstvu, te je porezni obveznik obvezan  podnijeti godišnju poreznu prijavu "
+p-4_48,49,2014-01-07,,,P-4,48,"Primici po osnovi dohotka od osiguranja na koje je sukladno ugovoru o izbjegavanju dvostrukog oporezivanja predujam poreza na dohodak plaćen u inozemstvu, a za koje se sukladno članku 2. stavku 4. Pravilnika o porezu na dohodak ne plaćaju predujmovi poreza na dohodak u tuzemstvu, te je porezni obveznik obvezan podnijeti godišnju poreznu prijavu "
+p-4_49,50,2014-01-07,,,P-4,49,"Primici po osnovi dohotka od osiguranja koji bi bili oporezivi porezom na dohodak da ugovorima o izbjegavanju dvostrukog oporezivanja nije uređeno drukčije, u slučaju kada Republika Hrvatska sukladno ugovoru izuzima te primitke od oporezivanja "
+p-4_50,51,2014-01-07,,,P-4,50,"Primici po osnovi dohotka od imovinskih prava na koje je sukladno ugovoru o izbjegavanju dvostrukog oporezivanja predujam poreza na dohodak plaćen u inozemstvu, a za koje se sukladno članku 2. stavku 4. Pravilnika o porezu na dohodak ne plaćaju predujmovi poreza na dohodak u tuzemstvu, te je porezni obveznik obvezan podnijeti godišnju poreznu prijavu "
+p-4_51,52,2014-01-07,,,P-4,51,"Primici po osnovi dohotka od imovinskih prava koji bi bili oporezivi porezom na dohodak da ugovorima o izbjegavanju dvostrukog oporezivanja nije uređeno drukčije, u slučaju kada Republika Hrvatska sukladno ugovoru izuzima te primitke od oporezivanja "
+p-4_52,53,2015-02-28,,,P-4,52,Dnevnice isplaćene po osnovi službenih putovanja fizičkim osobama koje u neprofitnim organizacijama ne ostvaruju primitke po osnovi nesamostalnog rada iz članka 14. Zakona o porezu na dohodak odnosno primitke od kojih se utvrđuje drugi dohodak iz članka 32. Zakona o  porezu na dohodak (čl. 10. t. 11. Zakona o porezu na dohodak i čl. 7. st. 5. Pravilnika o porezu na dohodak)
+p-4_53,54,2015-02-28,,,P-4,53,Troškovi prijevoza (trošak cestarine i prijevoznih karata) i troškovi noćenja na službenom putovanju u visini stvarnih izdataka prema konačnom obračunu putnih naloga koje isplaćuju/podmiruju neprofitne organizacije osobama koje u tim organizacijama ne ostvaruju primitke po  osnovi nesamostalnog rada iz članka 14. Zakona o porezu na dohodak odnosno primitke od kojih se utvrđuje drugi dohodak iz članka 32. Zakona o porezu na dohodak
+p-4_54,55,2015-02-28,,,P-4,54,Novčana pomoć polaznicima stručnog osposobljavanja za rad bez zasnivanja radnog odnosa (čl. 10. t. 19. Zakona o porezu na dohodak)
+p-4_55,56,2015-02-28,,,P-4,55,"Primici u visini razlike između primljenih bespovratnih sredstava isplaćenih iz fondova Europske unije i državnog proračuna Republike Hrvatske za provedbu mjere trajne obustave ribolovne aktivnosti uz uništenje plovila i knjigovodstvene vrijednosti tog plovila (čl, 10. t. 21. Zakona o porezu na dohodak) "
+p-4_56,57,2015-02-28,,,P-4,56,"Sportske stipendije, do propisanog iznosa (čl. 10. t. 14. Zakona o porezu na dohodak) "
+,,,,,,,
+joppd_city_00019,,,,,city,00019,ANDRIJAŠEVCI
+joppd_city_00027,,,,,city,00027,ANTUNOVAC
+joppd_city_00035,,,,,city,00035,BABINA GREDA
+joppd_city_00043,,,,,city,00043,BAKAR
+joppd_city_00051,,,,,city,00051,BALE (VALLE)
+joppd_city_00060,,,,,city,00060,BARBAN
+joppd_city_00078,,,,,city,00078,BARILOVIĆ
+joppd_city_00086,,,,,city,00086,BAŠKA
+joppd_city_00094,,,,,city,00094,BAŠKA VODA
+joppd_city_00108,,,,,city,00108,BEBRINA
+joppd_city_00116,,,,,city,00116,BEDEKOVČINA
+joppd_city_00124,,,,,city,00124,BEDNJA
+joppd_city_00132,,,,,city,00132,BELI MANASTIR
+joppd_city_00159,,,,,city,00159,BELICA
+joppd_city_00167,,,,,city,00167,BELIŠĆE
+joppd_city_00175,,,,,city,00175,BENKOVAC
+joppd_city_00183,,,,,city,00183,BEREK
+joppd_city_00191,,,,,city,00191,BERETINEC
+joppd_city_00205,,,,,city,00205,BIBINJE
+joppd_city_00213,,,,,city,00213,BILJE
+joppd_city_00221,,,,,city,00221,BIOGRAD NA MORU
+joppd_city_00230,,,,,city,00230,BIZOVAC
+joppd_city_00248,,,,,city,00248,BJELOVAR
+joppd_city_00256,,,,,city,00256,BLATO
+joppd_city_00264,,,,,city,00264,BOGDANOVCI
+joppd_city_00272,,,,,city,00272,BOL
+joppd_city_00299,,,,,city,00299,BOROVO
+joppd_city_00302,,,,,city,00302,BOSILJEVO
+joppd_city_00329,,,,,city,00329,BOŠNJACI
+joppd_city_00337,,,,,city,00337,BRCKOVLJANI
+joppd_city_00345,,,,,city,00345,BRDOVEC
+joppd_city_00353,,,,,city,00353,BRESTOVAC
+joppd_city_00361,,,,,city,00361,BREZNICA
+joppd_city_00370,,,,,city,00370,BRINJE
+joppd_city_00388,,,,,city,00388,BROD MORAVICE
+joppd_city_00396,,,,,city,00396,BRODSKI STUPNIK
+joppd_city_00400,,,,,city,00400,BRTONIGLA-VERTENEGLIO
+joppd_city_00418,,,,,city,00418,BUDINŠČINA
+joppd_city_00426,,,,,city,00426,BUJE (BUIE)
+joppd_city_00434,,,,,city,00434,BUZET
+joppd_city_00442,,,,,city,00442,CERNA
+joppd_city_00469,,,,,city,00469,CERNIK
+joppd_city_00477,,,,,city,00477,CEROVLJE
+joppd_city_00485,,,,,city,00485,CESTICA
+joppd_city_00493,,,,,city,00493,CETINGRAD
+joppd_city_00507,,,,,city,00507,CISTA PROVO
+joppd_city_00515,,,,,city,00515,CIVLJANE
+joppd_city_00523,,,,,city,00523,CRES
+joppd_city_00531,,,,,city,00531,CRIKVENICA
+joppd_city_00540,,,,,city,00540,CRNAC
+joppd_city_00558,,,,,city,00558,ČABAR
+joppd_city_00566,,,,,city,00566,ČAČINCI
+joppd_city_00574,,,,,city,00574,ČAĐAVICA
+joppd_city_00582,,,,,city,00582,ČAGLIN
+joppd_city_00604,,,,,city,00604,ČAKOVEC
+joppd_city_00612,,,,,city,00612,ČAVLE
+joppd_city_00639,,,,,city,00639,ČAZMA
+joppd_city_00647,,,,,city,00647,ČEMINAC
+joppd_city_00655,,,,,city,00655,ČEPIN
+joppd_city_00663,,,,,city,00663,DARDA
+joppd_city_00671,,,,,city,00671,DARUVAR
+joppd_city_00680,,,,,city,00680,DAVOR
+joppd_city_00698,,,,,city,00698,DELNICE
+joppd_city_00701,,,,,city,00701,DESINIĆ
+joppd_city_00710,,,,,city,00710,DEŽANOVAC
+joppd_city_00728,,,,,city,00728,DICMO
+joppd_city_00744,,,,,city,00744,DOBRINJ
+joppd_city_00752,,,,,city,00752,DOMAŠINEC
+joppd_city_00779,,,,,city,00779,BRELA
+joppd_city_00787,,,,,city,00787,DONJA DUBRAVA
+joppd_city_00795,,,,,city,00795,DONJA STUBICA
+joppd_city_00809,,,,,city,00809,DONJA VOĆA
+joppd_city_00817,,,,,city,00817,DONJI ANDRIJEVCI
+joppd_city_00825,,,,,city,00825,DONJI KRALJEVEC
+joppd_city_00833,,,,,city,00833,DONJI KUKURUZARI
+joppd_city_00841,,,,,city,00841,DONJI LAPAC
+joppd_city_00850,,,,,city,00850,DONJI MARTIJANEC
+joppd_city_00868,,,,,city,00868,DONJI MIHOLJAC
+joppd_city_00876,,,,,city,00876,MUĆ
+joppd_city_00884,,,,,city,00884,PROLOŽAC
+joppd_city_00892,,,,,city,00892,DONJI VIDOVEC
+joppd_city_00906,,,,,city,00906,DRAGANIĆ
+joppd_city_00914,,,,,city,00914,DRAŽ
+joppd_city_00922,,,,,city,00922,DRENOVCI
+joppd_city_00949,,,,,city,00949,DRENJE
+joppd_city_00957,,,,,city,00957,DRNIŠ
+joppd_city_00965,,,,,city,00965,DRNJE
+joppd_city_00973,,,,,city,00973,DUBRAVA
+joppd_city_00981,,,,,city,00981,DUBROVNIK
+joppd_city_00990,,,,,city,00990,DUGA RESA
+joppd_city_01007,,,,,city,01007,DUGI RAT
+joppd_city_01015,,,,,city,01015,DUGO SELO
+joppd_city_01023,,,,,city,01023,DVOR
+joppd_city_01031,,,,,city,01031,ĐAKOVO
+joppd_city_01040,,,,,city,01040,ĐELEKOVEC
+joppd_city_01058,,,,,city,01058,ĐULOVAC
+joppd_city_01066,,,,,city,01066,ĐURĐENOVAC
+joppd_city_01074,,,,,city,01074,ĐURĐEVAC
+joppd_city_01082,,,,,city,01082,ĐURMANEC
+joppd_city_01104,,,,,city,01104,ERDUT
+joppd_city_01112,,,,,city,01112,ERNESTINOVO
+joppd_city_01139,,,,,city,01139,ERVENIK
+joppd_city_01147,,,,,city,01147,FARKAŠEVAC
+joppd_city_01155,,,,,city,01155,FERDINANDOVAC
+joppd_city_01163,,,,,city,01163,FERIČANCI
+joppd_city_01171,,,,,city,01171,FUŽINE
+joppd_city_01180,,,,,city,01180,GARČIN
+joppd_city_01198,,,,,city,01198,GAREŠNICA
+joppd_city_01201,,,,,city,01201,GENERALSKI STOL
+joppd_city_01210,,,,,city,01210,GLINA
+joppd_city_01228,,,,,city,01228,GOLA
+joppd_city_01236,,,,,city,01236,GORIČAN
+joppd_city_01244,,,,,city,01244,GORJANI
+joppd_city_01252,,,,,city,01252,GORNJA STUBICA
+joppd_city_01279,,,,,city,01279,GORNJI BOGIĆEVCI
+joppd_city_01295,,,,,city,01295,GORNJI KNEGINEC
+joppd_city_01309,,,,,city,01309,GOSPIĆ
+joppd_city_01317,,,,,city,01317,GRAČAC
+joppd_city_01325,,,,,city,01325,GRAČIŠĆE
+joppd_city_01333,,,,,city,01333,ZAGREB
+joppd_city_01341,,,,,city,01341,GRADAC
+joppd_city_01350,,,,,city,01350,GRADEC
+joppd_city_01368,,,,,city,01368,GRADINA
+joppd_city_01376,,,,,city,01376,GRADIŠTE
+joppd_city_01384,,,,,city,01384,GROŽNJAN (GRISIGNANA)
+joppd_city_01392,,,,,city,01392,GRUBIŠNO POLJE
+joppd_city_01406,,,,,city,01406,GUNDINCI
+joppd_city_01414,,,,,city,01414,GUNJA
+joppd_city_01449,,,,,city,01449,HERCEGOVAC
+joppd_city_01457,,,,,city,01457,HLEBINE
+joppd_city_01465,,,,,city,01465,HRAŠĆINA
+joppd_city_01481,,,,,city,01481,HRVACE
+joppd_city_01490,,,,,city,01490,HRVATSKA DUBICA
+joppd_city_01503,,,,,city,01503,HRVATSKA KOSTAJNICA
+joppd_city_01511,,,,,city,01511,BREZNIČKI HUM
+joppd_city_01520,,,,,city,01520,HUM NA SUTLI
+joppd_city_01538,,,,,city,01538,HVAR
+joppd_city_01546,,,,,city,01546,ILOK
+joppd_city_01554,,,,,city,01554,IMOTSKI
+joppd_city_01562,,,,,city,01562,IVANEC
+joppd_city_01589,,,,,city,01589,IVANIĆ-GRAD
+joppd_city_01597,,,,,city,01597,IVANKOVO
+joppd_city_01619,,,,,city,01619,IVANSKA
+joppd_city_01635,,,,,city,01635,JAKOVLJE
+joppd_city_01643,,,,,city,01643,JAKŠIĆ
+joppd_city_01651,,,,,city,01651,JALŽABET
+joppd_city_01660,,,,,city,01660,JARMINA
+joppd_city_01678,,,,,city,01678,JASENICE
+joppd_city_01686,,,,,city,01686,JASENOVAC
+joppd_city_01694,,,,,city,01694,JASTREBARSKO
+joppd_city_01708,,,,,city,01708,JELENJE
+joppd_city_01716,,,,,city,01716,JELSA
+joppd_city_01724,,,,,city,01724,JOSIPDOL
+joppd_city_01732,,,,,city,01732,KALI
+joppd_city_01759,,,,,city,01759,KANFANAR
+joppd_city_01767,,,,,city,01767,KAPELA
+joppd_city_01775,,,,,city,01775,KAPTOL
+joppd_city_01783,,,,,city,01783,KARLOBAG
+joppd_city_01791,,,,,city,01791,KARLOVAC
+joppd_city_01805,,,,,city,01805,KASTAV
+joppd_city_01813,,,,,city,01813,KAŠTELA
+joppd_city_01830,,,,,city,01830,KIJEVO
+joppd_city_01848,,,,,city,01848,KISTANJE
+joppd_city_01856,,,,,city,01856,KLAKAR
+joppd_city_01864,,,,,city,01864,KLANA
+joppd_city_01872,,,,,city,01872,KLANJEC
+joppd_city_01899,,,,,city,01899,KLENOVNIK
+joppd_city_01902,,,,,city,01902,KLINČA SELA
+joppd_city_01929,,,,,city,01929,KLIS
+joppd_city_01937,,,,,city,01937,KLOŠTAR IVANIĆ
+joppd_city_01945,,,,,city,01945,KLOŠTAR PODRAVSKI
+joppd_city_01953,,,,,city,01953,KNEŽEVI VINOGRADI
+joppd_city_01961,,,,,city,01961,KNIN
+joppd_city_01970,,,,,city,01970,KOMIŽA
+joppd_city_01988,,,,,city,01988,KONAVLE
+joppd_city_01996,,,,,city,01996,KONČANICA
+joppd_city_02003,,,,,city,02003,KONJŠČINA
+joppd_city_02011,,,,,city,02011,KOPRIVNICA
+joppd_city_02020,,,,,city,02020,KOPRIVNIČKI BREGI
+joppd_city_02038,,,,,city,02038,KOPRIVNIČKI IVANEC
+joppd_city_02046,,,,,city,02046,KORČULA
+joppd_city_02054,,,,,city,02054,KOŠKA
+joppd_city_02062,,,,,city,02062,KOTORIBA
+joppd_city_02089,,,,,city,02089,KRALJEVEC NA SUTLI
+joppd_city_02097,,,,,city,02097,KRALJEVICA
+joppd_city_02119,,,,,city,02119,KRAPINA
+joppd_city_02127,,,,,city,02127,KRAPINSKE TOPLICE
+joppd_city_02135,,,,,city,02135,KRIŽ
+joppd_city_02143,,,,,city,02143,KRIŽEVCI
+joppd_city_02151,,,,,city,02151,KRK
+joppd_city_02160,,,,,city,02160,KRNJAK
+joppd_city_02178,,,,,city,02178,KRŠAN
+joppd_city_02194,,,,,city,02194,KULA NORINSKA
+joppd_city_02208,,,,,city,02208,KUTINA
+joppd_city_02216,,,,,city,02216,KUTJEVO
+joppd_city_02224,,,,,city,02224,LABIN
+joppd_city_02232,,,,,city,02232,LANIŠĆE
+joppd_city_02259,,,,,city,02259,LASINJA
+joppd_city_02267,,,,,city,02267,LASTOVO
+joppd_city_02275,,,,,city,02275,LEGRAD
+joppd_city_02283,,,,,city,02283,LEKENIK
+joppd_city_02291,,,,,city,02291,LEPOGLAVA
+joppd_city_02305,,,,,city,02305,LEVANJSKA VAROŠ
+joppd_city_02313,,,,,city,02313,LIPIK
+joppd_city_02321,,,,,city,02321,LIPOVLJANI
+joppd_city_02348,,,,,city,02348,LIŠANE OSTROVIČKE
+joppd_city_02356,,,,,city,02356,LIŽNJAN (LISIGNANO)
+joppd_city_02364,,,,,city,02364,LOBOR
+joppd_city_02372,,,,,city,02372,LOKVE
+joppd_city_02399,,,,,city,02399,LOVAS
+joppd_city_02402,,,,,city,02402,LOVINAC
+joppd_city_02429,,,,,city,02429,LOVRAN
+joppd_city_02437,,,,,city,02437,LOVREĆ
+joppd_city_02445,,,,,city,02445,LUDBREG
+joppd_city_02453,,,,,city,02453,LUKAČ
+joppd_city_02461,,,,,city,02461,LUPOGLAV
+joppd_city_02470,,,,,city,02470,LJUBEŠĆICA
+joppd_city_02488,,,,,city,02488,MAČE
+joppd_city_02496,,,,,city,02496,MAKARSKA
+joppd_city_02500,,,,,city,02500,MALA SUBOTICA
+joppd_city_02518,,,,,city,02518,MALI BUKOVEC
+joppd_city_02526,,,,,city,02526,MALI LOŠINJ
+joppd_city_02534,,,,,city,02534,MALINSKA – DUBAŠNICA
+joppd_city_02542,,,,,city,02542,MARČANA
+joppd_city_02569,,,,,city,02569,MARIJA BISTRICA
+joppd_city_02577,,,,,city,02577,MARIJANCI
+joppd_city_02585,,,,,city,02585,MARINA
+joppd_city_02593,,,,,city,02593,MARTINSKA VES
+joppd_city_02607,,,,,city,02607,MARUŠEVEC
+joppd_city_02615,,,,,city,02615,MATULJI
+joppd_city_02631,,,,,city,02631,MEDULIN
+joppd_city_02640,,,,,city,02640,METKOVIĆ
+joppd_city_02658,,,,,city,02658,MIHOVLJAN
+joppd_city_02666,,,,,city,02666,MIKLEUŠ
+joppd_city_02674,,,,,city,02674,MILNA
+joppd_city_02682,,,,,city,02682,MLJET
+joppd_city_02704,,,,,city,02704,MOLVE
+joppd_city_02712,,,,,city,02712,PODRAVSKA MOSLAVINA
+joppd_city_02739,,,,,city,02739,MOŠĆENIČKA DRAGA
+joppd_city_02747,,,,,city,02747,MOTOVUN (MONTONA)
+joppd_city_02755,,,,,city,02755,MRKOPALJ
+joppd_city_02763,,,,,city,02763,MURSKO SREDIŠĆE
+joppd_city_02780,,,,,city,02780,NAŠICE
+joppd_city_02798,,,,,city,02798,NEDELIŠĆE
+joppd_city_02801,,,,,city,02801,NEREŽIŠĆA
+joppd_city_02810,,,,,city,02810,NETRETIĆ
+joppd_city_02828,,,,,city,02828,NIN
+joppd_city_02836,,,,,city,02836,NOVA BUKOVICA
+joppd_city_02844,,,,,city,02844,NOVA GRADIŠKA
+joppd_city_02852,,,,,city,02852,NOVA KAPELA
+joppd_city_02879,,,,,city,02879,NOVA RAČA
+joppd_city_02887,,,,,city,02887,NOVALJA
+joppd_city_02895,,,,,city,02895,NOVI MAROF
+joppd_city_02909,,,,,city,02909,NOVI VINODOLSKI
+joppd_city_02917,,,,,city,02917,NOVIGRAD (CITTANOVA)
+joppd_city_02925,,,,,city,02925,NOVIGRAD PODRAVSKI
+joppd_city_02933,,,,,city,02933,NOVSKA
+joppd_city_02941,,,,,city,02941,NUŠTAR
+joppd_city_02950,,,,,city,02950,NIJEMCI
+joppd_city_02968,,,,,city,02968,OBROVAC
+joppd_city_02976,,,,,city,02976,OGULIN
+joppd_city_02984,,,,,city,02984,PROMINA
+joppd_city_02992,,,,,city,02992,OKUČANI
+joppd_city_03000,,,,,city,03000,OMIŠ
+joppd_city_03018,,,,,city,03018,OMIŠALJ
+joppd_city_03026,,,,,city,03026,OPATIJA
+joppd_city_03034,,,,,city,03034,OPRISAVCI
+joppd_city_03042,,,,,city,03042,OPRTALJ (PORTOLE)
+joppd_city_03069,,,,,city,03069,OPUZEN
+joppd_city_03077,,,,,city,03077,ORAHOVICA
+joppd_city_03085,,,,,city,03085,OREBIĆ
+joppd_city_03093,,,,,city,03093,ORIOVAC
+joppd_city_03107,,,,,city,03107,BISKUPIJA
+joppd_city_03115,,,,,city,03115,OROSLAVJE
+joppd_city_03123,,,,,city,03123,OSIJEK
+joppd_city_03131,,,,,city,03131,OTOČAC
+joppd_city_03140,,,,,city,03140,OTOK (Sinj)
+joppd_city_03158,,,,,city,03158,OZALJ
+joppd_city_03166,,,,,city,03166,PAG
+joppd_city_03174,,,,,city,03174,PAKOŠTANE
+joppd_city_03182,,,,,city,03182,PAKRAC
+joppd_city_03204,,,,,city,03204,PAŠMAN
+joppd_city_03212,,,,,city,03212,PAZIN
+joppd_city_03239,,,,,city,03239,PERUŠIĆ
+joppd_city_03247,,,,,city,03247,PETERANEC
+joppd_city_03255,,,,,city,03255,PETLOVAC
+joppd_city_03263,,,,,city,03263,PETRIJANEC
+joppd_city_03271,,,,,city,03271,PETRIJEVCI
+joppd_city_03280,,,,,city,03280,PETRINJA
+joppd_city_03298,,,,,city,03298,PETROVSKO
+joppd_city_03301,,,,,city,03301,PIĆAN
+joppd_city_03310,,,,,city,03310,PISAROVINA
+joppd_city_03328,,,,,city,03328,PITOMAČA
+joppd_city_03336,,,,,city,03336,PLAŠKI
+joppd_city_03344,,,,,city,03344,PLETERNICA
+joppd_city_03352,,,,,city,03352,PLOČE
+joppd_city_03379,,,,,city,03379,PODBABLJE
+joppd_city_03387,,,,,city,03387,PODCRKAVLJE
+joppd_city_03395,,,,,city,03395,PODGORA
+joppd_city_03409,,,,,city,03409,PODGORAČ
+joppd_city_03417,,,,,city,03417,PODSTRANA
+joppd_city_03425,,,,,city,03425,PODTUREN
+joppd_city_03433,,,,,city,03433,POJEZERJE
+joppd_city_03441,,,,,city,03441,POLAČA
+joppd_city_03450,,,,,city,03450,POLIČNIK
+joppd_city_03468,,,,,city,03468,POPOVAC
+joppd_city_03476,,,,,city,03476,POPOVAČA
+joppd_city_03484,,,,,city,03484,POREČ (PARENZO)
+joppd_city_03492,,,,,city,03492,POSEDARJE
+joppd_city_03506,,,,,city,03506,POSTIRA
+joppd_city_03514,,,,,city,03514,POŽEGA
+joppd_city_03522,,,,,city,03522,PREGRADA
+joppd_city_03549,,,,,city,03549,PREKO
+joppd_city_03557,,,,,city,03557,PRELOG
+joppd_city_03565,,,,,city,03565,PRESEKA
+joppd_city_03573,,,,,city,03573,PRIMOŠTEN
+joppd_city_03581,,,,,city,03581,PUČIŠĆA
+joppd_city_03590,,,,,city,03590,PULA (POLA)
+joppd_city_03603,,,,,city,03603,PUNAT
+joppd_city_03611,,,,,city,03611,PUNITOVCI
+joppd_city_03620,,,,,city,03620,PUŠĆA
+joppd_city_03638,,,,,city,03638,RAB
+joppd_city_03646,,,,,city,03646,RADOBOJ
+joppd_city_03654,,,,,city,03654,RAKOVICA
+joppd_city_03662,,,,,city,03662,RASINJA
+joppd_city_03689,,,,,city,03689,RAŠA
+joppd_city_03697,,,,,city,03697,RAVNA GORA
+joppd_city_03719,,,,,city,03719,RAŽANAC
+joppd_city_03727,,,,,city,03727,REŠETARI
+joppd_city_03735,,,,,city,03735,RIJEKA
+joppd_city_03743,,,,,city,03743,ROVINJ (ROVIGNO)
+joppd_city_03751,,,,,city,03751,ROVIŠĆE
+joppd_city_03760,,,,,city,03760,RUGVICA
+joppd_city_03778,,,,,city,03778,RUŽIĆ
+joppd_city_03786,,,,,city,03786,SABORSKO
+joppd_city_03794,,,,,city,03794,SALI
+joppd_city_03808,,,,,city,03808,SAMOBOR
+joppd_city_03816,,,,,city,03816,SATNICA ĐAKOVAČKA
+joppd_city_03824,,,,,city,03824,SEGET
+joppd_city_03832,,,,,city,03832,SELCA
+joppd_city_03859,,,,,city,03859,SELNICA
+joppd_city_03867,,,,,city,03867,SEMELJCI
+joppd_city_03875,,,,,city,03875,SENJ
+joppd_city_03883,,,,,city,03883,SIBINJ
+joppd_city_03891,,,,,city,03891,SINJ
+joppd_city_03905,,,,,city,03905,SIRAČ
+joppd_city_03913,,,,,city,03913,SISAK
+joppd_city_03930,,,,,city,03930,SKRAD
+joppd_city_03948,,,,,city,03948,SKRADIN
+joppd_city_03956,,,,,city,03956,SLATINA
+joppd_city_03964,,,,,city,03964,SLAVONSKI BROD
+joppd_city_03972,,,,,city,03972,SLAVONSKI ŠAMAC
+joppd_city_03999,,,,,city,03999,SLIVNO
+joppd_city_04006,,,,,city,04006,SLUNJ
+joppd_city_04022,,,,,city,04022,SMOKVICA
+joppd_city_04057,,,,,city,04057,SOKOLOVAC
+joppd_city_04065,,,,,city,04065,SOLIN
+joppd_city_04073,,,,,city,04073,SOPJE
+joppd_city_04090,,,,,city,04090,SPLIT
+joppd_city_04103,,,,,city,04103,SRAČINEC
+joppd_city_04111,,,,,city,04111,STANKOVCI
+joppd_city_04120,,,,,city,04120,STARA GRADIŠKA
+joppd_city_04138,,,,,city,04138,STARI GRAD
+joppd_city_04146,,,,,city,04146,STARI JANKOVCI
+joppd_city_04154,,,,,city,04154,STARI MIKANOVCI
+joppd_city_04162,,,,,city,04162,STARIGRAD
+joppd_city_04189,,,,,city,04189,STARO PETROVO SELO
+joppd_city_04197,,,,,city,04197,STON
+joppd_city_04219,,,,,city,04219,STRIZIVOJNA
+joppd_city_04227,,,,,city,04227,STUBIČKE TOPLICE
+joppd_city_04235,,,,,city,04235,SUĆURAJ
+joppd_city_04243,,,,,city,04243,SUHOPOLJE
+joppd_city_04251,,,,,city,04251,SUKOŠAN
+joppd_city_04260,,,,,city,04260,SUNJA
+joppd_city_04278,,,,,city,04278,SUPETAR
+joppd_city_04286,,,,,city,04286,SVETI FILIP I JAKOV
+joppd_city_04294,,,,,city,04294,SVETI IVAN ZELINA
+joppd_city_04308,,,,,city,04308,SVETI KRIŽ ZAČRETJE
+joppd_city_04316,,,,,city,04316,SVETI LOVREČ
+joppd_city_04324,,,,,city,04324,SVETA NEDELJA (Labin)
+joppd_city_04332,,,,,city,04332,SVETI PETAR U ŠUMI
+joppd_city_04359,,,,,city,04359,SVETVINČENAT
+joppd_city_04367,,,,,city,04367,SVETA NEDELJA (Samobor)
+joppd_city_04375,,,,,city,04375,SVETI ĐURĐ
+joppd_city_04383,,,,,city,04383,SVETI ILIJA
+joppd_city_04391,,,,,city,04391,SVETI IVAN ŽABNO
+joppd_city_04405,,,,,city,04405,SVETI JURAJ NA BREGU
+joppd_city_04413,,,,,city,04413,SVETI MARTIN NA MURI
+joppd_city_04421,,,,,city,04421,SVETI PETAR OREHOVEC
+joppd_city_04430,,,,,city,04430,ŠESTANOVAC
+joppd_city_04448,,,,,city,04448,ŠIBENIK
+joppd_city_04456,,,,,city,04456,ŠKABRNJA
+joppd_city_04472,,,,,city,04472,ŠOLTA
+joppd_city_04499,,,,,city,04499,ŠPIŠIĆ BUKOVICA
+joppd_city_04502,,,,,city,04502,ŠTEFANJE
+joppd_city_04529,,,,,city,04529,ŠTRIGOVA
+joppd_city_04537,,,,,city,04537,TINJAN
+joppd_city_04545,,,,,city,04545,TISNO
+joppd_city_04553,,,,,city,04553,PLITVIČKA JEZERA
+joppd_city_04561,,,,,city,04561,TOMPOJEVCI
+joppd_city_04570,,,,,city,04570,TOPUSKO
+joppd_city_04588,,,,,city,04588,TORDINCI
+joppd_city_04596,,,,,city,04596,TOVARNIK
+joppd_city_04600,,,,,city,04600,TRILJ
+joppd_city_04618,,,,,city,04618,TRNAVA
+joppd_city_04626,,,,,city,04626,TRNOVEC BARTOLOVEČKI
+joppd_city_04634,,,,,city,04634,TROGIR
+joppd_city_04642,,,,,city,04642,TRPINJA
+joppd_city_04669,,,,,city,04669,TUHELJ
+joppd_city_04677,,,,,city,04677,UDBINA
+joppd_city_04685,,,,,city,04685,UMAG (UMAGO)
+joppd_city_04693,,,,,city,04693,UNEŠIĆ
+joppd_city_04715,,,,,city,04715,VALPOVO
+joppd_city_04723,,,,,city,04723,VARAŽDIN
+joppd_city_04731,,,,,city,04731,VARAŽDINSKE TOPLICE
+joppd_city_04740,,,,,city,04740,VELA LUKA
+joppd_city_04758,,,,,city,04758,VELIKA
+joppd_city_04766,,,,,city,04766,VELIKA KOPANICA
+joppd_city_04774,,,,,city,04774,VELIKA LUDINA
+joppd_city_04782,,,,,city,04782,VELIKA PISANICA
+joppd_city_04804,,,,,city,04804,VELIKI GRĐEVAC
+joppd_city_04812,,,,,city,04812,VELIKO TRGOVIŠĆE
+joppd_city_04839,,,,,city,04839,VELIKO TROJSTVO
+joppd_city_04847,,,,,city,04847,VIDOVEC
+joppd_city_04855,,,,,city,04855,VILJEVO
+joppd_city_04863,,,,,city,04863,VINICA
+joppd_city_04871,,,,,city,04871,VINKOVCI
+joppd_city_04880,,,,,city,04880,VINODOLSKA OPĆINA
+joppd_city_04898,,,,,city,04898,VIR
+joppd_city_04901,,,,,city,04901,VIRJE
+joppd_city_04910,,,,,city,04910,VIROVITICA
+joppd_city_04928,,,,,city,04928,VIS
+joppd_city_04936,,,,,city,04936,VISOKO
+joppd_city_04944,,,,,city,04944,VIŠKOVCI
+joppd_city_04952,,,,,city,04952,VIŠKOVO
+joppd_city_04979,,,,,city,04979,VIŠNJAN (VISIGNANO)
+joppd_city_04987,,,,,city,04987,VIŽINADA (VISINADA)
+joppd_city_04995,,,,,city,04995,VOĆIN
+joppd_city_05002,,,,,city,05002,VODICE
+joppd_city_05029,,,,,city,05029,VODNJAN (DIGNANO)
+joppd_city_05037,,,,,city,05037,VOJNIĆ
+joppd_city_05045,,,,,city,05045,VRATIŠINEC
+joppd_city_05053,,,,,city,05053,VRBANJA
+joppd_city_05061,,,,,city,05061,VRBJE
+joppd_city_05070,,,,,city,05070,VRBNIK
+joppd_city_05088,,,,,city,05088,VRBOVEC
+joppd_city_05096,,,,,city,05096,VRBOVSKO
+joppd_city_05100,,,,,city,05100,GVOZD
+joppd_city_05118,,,,,city,05118,VRGORAC
+joppd_city_05126,,,,,city,05126,VRHOVINE
+joppd_city_05134,,,,,city,05134,VRLIKA
+joppd_city_05142,,,,,city,05142,VRPOLJE
+joppd_city_05169,,,,,city,05169,VRSAR (ORSERA)
+joppd_city_05177,,,,,city,05177,VUKA
+joppd_city_05185,,,,,city,05185,VUKOVAR
+joppd_city_05193,,,,,city,05193,ZABOK
+joppd_city_05207,,,,,city,05207,ZADAR
+joppd_city_05215,,,,,city,05215,ZAGORSKA SELA
+joppd_city_05223,,,,,city,05223,ZAGVOZD
+joppd_city_05231,,,,,city,05231,ZAŽABLJE
+joppd_city_05240,,,,,city,05240,ZDENCI
+joppd_city_05258,,,,,city,05258,ZEMUNIK DONJI
+joppd_city_05266,,,,,city,05266,ZLATAR
+joppd_city_05274,,,,,city,05274,ZLATAR BISTRICA
+joppd_city_05282,,,,,city,05282,ZMIJAVCI
+joppd_city_05304,,,,,city,05304,ŽAKANJE
+joppd_city_05312,,,,,city,05312,ŽMINJ
+joppd_city_05339,,,,,city,05339,KRAŠIĆ
+joppd_city_05347,,,,,city,05347,ŽUPANJA
+joppd_city_05355,,,,,city,05355,OTOK (Vinkovci)
+joppd_city_05363,,,,,city,05363,RAKOVEC
+joppd_city_05371,,,,,city,05371,NOVIGRAD
+joppd_city_05380,,,,,city,05380,KOSTRENA
+joppd_city_05398,,,,,city,05398,MARIJA GORICA
+joppd_city_05401,,,,,city,05401,ŽUMBERAK
+joppd_city_05410,,,,,city,05410,VELIKA GORICA
+joppd_city_05428,,,,,city,05428,ORLE
+joppd_city_05436,,,,,city,05436,ZAPREŠIĆ
+joppd_city_05444,,,,,city,05444,POKUPSKO
+joppd_city_05452,,,,,city,05452,KRAVARSKO
+joppd_city_05479,,,,,city,05479,BISTRA
+joppd_city_05487,,,,,city,05487,LUKA
+joppd_city_05495,,,,,city,05495,DUBRAVICA
+joppd_city_05509,,,,,city,05509,BEDENICA
+joppd_city_05517,,,,,city,05517,STUPNIK
+joppd_city_05525,,,,,city,05525,JESENJE
+joppd_city_05533,,,,,city,05533,KUMROVEC
+joppd_city_05541,,,,,city,05541,NOVI GOLUBOVEC
+joppd_city_05550,,,,,city,05550,MAJUR
+joppd_city_05568,,,,,city,05568,RIBNIK
+joppd_city_05576,,,,,city,05576,TOUNJ
+joppd_city_05584,,,,,city,05584,VELIKI BUKOVEC
+joppd_city_05592,,,,,city,05592,KALINOVAC
+joppd_city_05606,,,,,city,05606,KALNIK
+joppd_city_05614,,,,,city,05614,NOVO VIRJE
+joppd_city_05622,,,,,city,05622,SEVERIN
+joppd_city_05649,,,,,city,05649,ŠANDROVAC
+joppd_city_05657,,,,,city,05657,VELIKA TRNOVITICA
+joppd_city_05665,,,,,city,05665,ZRINSKI TOPOLOVAC
+joppd_city_05673,,,,,city,05673,BUKOVLJE
+joppd_city_05681,,,,,city,05681,DRAGALIĆ
+joppd_city_05690,,,,,city,05690,GORNJA VRBA
+joppd_city_05703,,,,,city,05703,SIKIREVCI
+joppd_city_05711,,,,,city,05711,GALOVAC
+joppd_city_05720,,,,,city,05720,KUKLJICA
+joppd_city_05738,,,,,city,05738,POVLJANA
+joppd_city_05746,,,,,city,05746,PRIVLAKA (Zadar)
+joppd_city_05754,,,,,city,05754,TKON
+joppd_city_05762,,,,,city,05762,DONJA MOTIČINA
+joppd_city_05789,,,,,city,05789,MAGADENOVAC
+joppd_city_05797,,,,,city,05797,VLADISLAVCI
+joppd_city_05819,,,,,city,05819,PIROVAC
+joppd_city_05827,,,,,city,05827,ROGOZNICA
+joppd_city_05835,,,,,city,05835,PRIVLAKA (Vukovar)
+joppd_city_05843,,,,,city,05843,VOĐINCI
+joppd_city_05851,,,,,city,05851,DUGOPOLJE
+joppd_city_05860,,,,,city,05860,LEĆEVICA
+joppd_city_05878,,,,,city,05878,LOKVIČIĆI
+joppd_city_05886,,,,,city,05886,OKRUG
+joppd_city_05894,,,,,city,05894,PRGOMET
+joppd_city_05908,,,,,city,05908,PRIMORSKI DOLAC
+joppd_city_05916,,,,,city,05916,RUNOVIĆI
+joppd_city_05924,,,,,city,05924,SUTIVAN
+joppd_city_05932,,,,,city,05932,TUČEPI
+joppd_city_05959,,,,,city,05959,ZADVARJE
+joppd_city_05967,,,,,city,05967,KAROJBA
+joppd_city_05975,,,,,city,05975,KAŠTELIR - LABINCI (CASTELLIERE - S. DOMENICA)
+joppd_city_05983,,,,,city,05983,DUBROVAČKO PRIMORJE
+joppd_city_05991,,,,,city,05991,JANJINA
+joppd_city_06009,,,,,city,06009,LUMBARDA
+joppd_city_06017,,,,,city,06017,TRPANJ
+joppd_city_06025,,,,,city,06025,ŽUPA DUBROVAČKA
+joppd_city_06033,,,,,city,06033,DEKANOVEC
+joppd_city_06041,,,,,city,06041,GORNJI MIHALJEVEC
+joppd_city_06050,,,,,city,06050,OREHOVICA
+joppd_city_06068,,,,,city,06068,STRAHONINEC
+joppd_city_06076,,,,,city,06076,SVETA MARIJA
+joppd_city_06084,,,,,city,06084,ŠENKOVEC
+joppd_city_06092,,,,,city,06092,JAGODNJAK
+joppd_city_06106,,,,,city,06106,MARKUŠICA
+joppd_city_06122,,,,,city,06122,NEGOSLAVCI
+joppd_city_06149,,,,,city,06149,ŠODOLOVCI
+joppd_city_06165,,,,,city,06165,PODRAVSKE SESVETE
+joppd_city_06173,,,,,city,06173,MURTER - KORNATI
+joppd_city_06181,,,,,city,06181,GORNJA RIJEKA
+joppd_city_06190,,,,,city,06190,FAŽANA (FASANA)
+joppd_city_06203,,,,,city,06203,PRIBISLAVEC
+joppd_city_06211,,,,,city,06211,BILICE
+joppd_city_06220,,,,,city,06220,KOLAN
+joppd_city_06238,,,,,city,06238,KAMANJE
+joppd_city_06246,,,,,city,06246,LOPAR
+joppd_city_06254,,,,,city,06254,VRSI
+joppd_city_06262,,,,,city,06262,TRIBUNJ
+joppd_city_06289,,,,,city,06289,ŠTITAR
+joppd_city_06297,,,,,city,06297,FUNTANA (FONTANE)
+joppd_city_06319,,,,,city,06319,TAR - VABRIGA (TORRE – ABREGA)
+joppd_country_99004,,,,,country,99004,AFGANISTAN
+joppd_country_99008,,,,,country,99008,ALBANIJA
+joppd_country_99010,,,,,country,99010,ANTARKTIKA
+joppd_country_99012,,,,,country,99012,ALŽIR
+joppd_country_99016,,,,,country,99016,AMERIČKA SAMOA
+joppd_country_99020,,,,,country,99020,ANDORA
+joppd_country_99024,,,,,country,99024,ANGOLA
+joppd_country_99028,,,,,country,99028,ANTIGVA I BARBUDA
+joppd_country_99031,,,,,country,99031,AZERBAJDŽAN
+joppd_country_99032,,,,,country,99032,ARGENTINA
+joppd_country_99036,,,,,country,99036,AUSTRALIJA
+joppd_country_99040,,,,,country,99040,AUSTRIJA
+joppd_country_99044,,,,,country,99044,BAHAMI
+joppd_country_99048,,,,,country,99048,BAHREIN
+joppd_country_99050,,,,,country,99050,BANGLADEŠ
+joppd_country_99051,,,,,country,99051,ARMENIJA
+joppd_country_99052,,,,,country,99052,BARBADOS
+joppd_country_99056,,,,,country,99056,BELGIJA
+joppd_country_99060,,,,,country,99060,BERMUDI
+joppd_country_99064,,,,,country,99064,BUTAN
+joppd_country_99068,,,,,country,99068,BOLIVIJA
+joppd_country_99070,,,,,country,99070,BOSNA I HERCEGOVINA
+joppd_country_99072,,,,,country,99072,BOCVANA
+joppd_country_99074,,,,,country,99074,OTOK BOUVET
+joppd_country_99076,,,,,country,99076,BRAZIL
+joppd_country_99084,,,,,country,99084,BELIZE
+joppd_country_99086,,,,,country,99086,BRITANSKI INDIJSKOOCEANSKI TERITORIJ
+joppd_country_99090,,,,,country,99090,SOLOMONSKI OTOCI
+joppd_country_99092,,,,,country,99092,BRITANSKI DJEVIČANSKI OTOCI
+joppd_country_99095,,,,,country,99095,KOSOVO
+joppd_country_99096,,,,,country,99096,BRUNEJ
+joppd_country_99100,,,,,country,99100,BUGARSKA
+joppd_country_99104,,,,,country,99104,MIJANMAR
+joppd_country_99108,,,,,country,99108,BURUNDI
+joppd_country_99112,,,,,country,99112,BJELORUSIJA
+joppd_country_99116,,,,,country,99116,KAMBODŽA
+joppd_country_99120,,,,,country,99120,KAMERUN
+joppd_country_99124,,,,,country,99124,KANADA
+joppd_country_99132,,,,,country,99132,ZELENORTSKA REPUBLIKA
+joppd_country_99136,,,,,country,99136,KAJMANSKI OTOCI
+joppd_country_99140,,,,,country,99140,SREDNJOAFRIČKA REPUBLIKA SUDAN
+joppd_country_99144,,,,,country,99144,ŠRI LANKA
+joppd_country_99148,,,,,country,99148,ČAD
+joppd_country_99152,,,,,country,99152,ČILE
+joppd_country_99156,,,,,country,99156,KINA
+joppd_country_99158,,,,,country,99158,"TAJVAN, KINESKA PROVINCIJA"
+joppd_country_99162,,,,,country,99162,BOŽIĆNI OTOK
+joppd_country_99166,,,,,country,99166,KOKOSOVI OTOCI (KEELING)
+joppd_country_99170,,,,,country,99170,KOLUMBIJA
+joppd_country_99174,,,,,country,99174,KOMORI
+joppd_country_99175,,,,,country,99175,MAYOTTE
+joppd_country_99178,,,,,country,99178,KONGO
+joppd_country_99180,,,,,country,99180,"KONGO, DEMOKRATSKA REPUBLIKA"
+joppd_country_99184,,,,,country,99184,KUKOVI OTOCI
+joppd_country_99188,,,,,country,99188,KOSTARIKA
+joppd_country_99192,,,,,country,99192,KUBA
+joppd_country_99196,,,,,country,99196,CIPAR
+joppd_country_99200,,,,,country,99200,ČEHOSLOVAČKA
+joppd_country_99203,,,,,country,99203,ČEŠKA
+joppd_country_99204,,,,,country,99204,BENIN
+joppd_country_99208,,,,,country,99208,DANSKA
+joppd_country_99212,,,,,country,99212,DOMINIKA
+joppd_country_99214,,,,,country,99214,DOMINIKANSKA REPUBLIKA
+joppd_country_99218,,,,,country,99218,EKVADOR
+joppd_country_99222,,,,,country,99222,SALVADOR
+joppd_country_99226,,,,,country,99226,EKVATORSKA GVINEJA
+joppd_country_99231,,,,,country,99231,ETIOPIJA
+joppd_country_99232,,,,,country,99232,ERITREJA
+joppd_country_99233,,,,,country,99233,ESTONIJA
+joppd_country_99234,,,,,country,99234,FEROJSKI (OVČJI) OTOCI
+joppd_country_99238,,,,,country,99238,FALKLANDI (MALVINI)
+joppd_country_99239,,,,,country,99239,JUŽNA DŽORDŽIJA I OTOCI JUŽNI SENDVIČ
+joppd_country_99242,,,,,country,99242,FIDŽI
+joppd_country_99246,,,,,country,99246,FINSKA
+joppd_country_99248,,,,,country,99248,OTOCI ALAND
+joppd_country_99250,,,,,country,99250,FRANCUSKA
+joppd_country_99254,,,,,country,99254,FRANCUSKA GVAJANA
+joppd_country_99258,,,,,country,99258,FRANCUSKA POLINEZIJA
+joppd_country_99260,,,,,country,99260,FRANCUSKI JUŽNI TERITORIJI
+joppd_country_99262,,,,,country,99262,DŽIBUTI
+joppd_country_99266,,,,,country,99266,GABON
+joppd_country_99268,,,,,country,99268,GRUZIJA
+joppd_country_99270,,,,,country,99270,GAMBIJA
+joppd_country_99275,,,,,country,99275,PALESTINSKO PODRUČJE
+joppd_country_99276,,,,,country,99276,NJEMAČKA
+joppd_country_99288,,,,,country,99288,GANA
+joppd_country_99292,,,,,country,99292,GIBRALTAR
+joppd_country_99296,,,,,country,99296,KIRIBATI
+joppd_country_99300,,,,,country,99300,GRČKA
+joppd_country_99304,,,,,country,99304,GRENLAND
+joppd_country_99308,,,,,country,99308,GRENADA
+joppd_country_99312,,,,,country,99312,GUADELOUPE
+joppd_country_99316,,,,,country,99316,GUAM
+joppd_country_99320,,,,,country,99320,GVATEMALA
+joppd_country_99324,,,,,country,99324,GVINEJA
+joppd_country_99328,,,,,country,99328,GVAJANA
+joppd_country_99332,,,,,country,99332,HAITI
+joppd_country_99334,,,,,country,99334,OTOK HEARD I OTOCI MCDONALD
+joppd_country_99336,,,,,country,99336,SVETA STOLICA (DRŽAVA VATIKANSKOG
+joppd_country_99340,,,,,country,99340,HONDURAS
+joppd_country_99344,,,,,country,99344,HONG KONG
+joppd_country_99348,,,,,country,99348,MADŽARSKA
+joppd_country_99352,,,,,country,99352,ISLAND
+joppd_country_99356,,,,,country,99356,INDIJA
+joppd_country_99360,,,,,country,99360,INDONEZIJA
+joppd_country_99364,,,,,country,99364,"IRAN, ISLAMSKA REPUBLIKA"
+joppd_country_99368,,,,,country,99368,IRAK
+joppd_country_99372,,,,,country,99372,IRSKA
+joppd_country_99376,,,,,country,99376,IZRAEL
+joppd_country_99380,,,,,country,99380,ITALIJA
+joppd_country_99384,,,,,country,99384,BJELOKOSNA OBALA
+joppd_country_99388,,,,,country,99388,JAMAJKA
+joppd_country_99392,,,,,country,99392,JAPAN
+joppd_country_99398,,,,,country,99398,KAZAHSTAN
+joppd_country_99400,,,,,country,99400,JORDAN
+joppd_country_99404,,,,,country,99404,KENIJA
+joppd_country_99408,,,,,country,99408,"KOREJA, DEMOKRATSKA NARODNA REPUBLIKA"
+joppd_country_99410,,,,,country,99410,REPUBLIKA KOREJA
+joppd_country_99414,,,,,country,99414,KUVAJT
+joppd_country_99417,,,,,country,99417,KIRGISTAN
+joppd_country_99418,,,,,country,99418,"LAOS, NARODNA DEMOKRATSKA REPUBLIKA"
+joppd_country_99422,,,,,country,99422,LIBANON
+joppd_country_99426,,,,,country,99426,LESOTO
+joppd_country_99428,,,,,country,99428,LETONIJA
+joppd_country_99430,,,,,country,99430,LIBERIJA
+joppd_country_99434,,,,,country,99434,LIBIJA
+joppd_country_99438,,,,,country,99438,LIHTENŠTAJN
+joppd_country_99440,,,,,country,99440,LITVA
+joppd_country_99442,,,,,country,99442,LUKSEMBURG
+joppd_country_99446,,,,,country,99446,MAKAO
+joppd_country_99450,,,,,country,99450,MADAGASKAR
+joppd_country_99454,,,,,country,99454,MALAVI
+joppd_country_99458,,,,,country,99458,MALEZIJA
+joppd_country_99462,,,,,country,99462,MALDIVI
+joppd_country_99466,,,,,country,99466,MALI
+joppd_country_99470,,,,,country,99470,MALTA
+joppd_country_99474,,,,,country,99474,MARTINIQUE
+joppd_country_99478,,,,,country,99478,MAURITANIJA
+joppd_country_99480,,,,,country,99480,MAURICIJUS
+joppd_country_99484,,,,,country,99484,MEKSIKO
+joppd_country_99492,,,,,country,99492,MONAKO
+joppd_country_99496,,,,,country,99496,MONGOLIJA
+joppd_country_99498,,,,,country,99498,"MOLDAVIJA, REPUBLIKA"
+joppd_country_99499,,,,,country,99499,CRNA GORA
+joppd_country_99500,,,,,country,99500,MONTSERRAT
+joppd_country_99504,,,,,country,99504,MAROKO
+joppd_country_99508,,,,,country,99508,MOZAMBIK
+joppd_country_99512,,,,,country,99512,OMAN
+joppd_country_99516,,,,,country,99516,NAMIBIJA
+joppd_country_99520,,,,,country,99520,NAURU
+joppd_country_99524,,,,,country,99524,NEPAL
+joppd_country_99528,,,,,country,99528,NIZOZEMSKA
+joppd_country_99530,,,,,country,99530,NIZOZEMSKI ANTILI
+joppd_country_99533,,,,,country,99533,ARUBA
+joppd_country_99540,,,,,country,99540,NOVA KALEDONIJA
+joppd_country_99548,,,,,country,99548,VANUATU
+joppd_country_99554,,,,,country,99554,NOVI ZELAND
+joppd_country_99558,,,,,country,99558,NIKARAGVA
+joppd_country_99562,,,,,country,99562,NIGER
+joppd_country_99566,,,,,country,99566,NIGERIJA
+joppd_country_99570,,,,,country,99570,NIUE
+joppd_country_99574,,,,,country,99574,OTOK NORFOLK
+joppd_country_99578,,,,,country,99578,NORVEŠKA
+joppd_country_99580,,,,,country,99580,SJEVERNI MARIJANSKI OTOCI
+joppd_country_99581,,,,,country,99581,UJEDINJENE DRŽAVE MANJIH PACIFIČKIH OTOKA
+joppd_country_99583,,,,,country,99583,"MIKRONEZIJA, SAVEZNE DRŽAVE"
+joppd_country_99584,,,,,country,99584,MARŠALOVI OTOCI
+joppd_country_99585,,,,,country,99585,PALAU
+joppd_country_99586,,,,,country,99586,PAKISTAN
+joppd_country_99591,,,,,country,99591,PANAMA
+joppd_country_99598,,,,,country,99598,PAPUA NOVA GVINEJA
+joppd_country_99600,,,,,country,99600,PARAGVAJ
+joppd_country_99604,,,,,country,99604,PERU
+joppd_country_99608,,,,,country,99608,FILIPINI
+joppd_country_99612,,,,,country,99612,PITCAIRN
+joppd_country_99616,,,,,country,99616,POLJSKA
+joppd_country_99620,,,,,country,99620,PORTUGAL
+joppd_country_99624,,,,,country,99624,GVINEJA BISAU
+joppd_country_99626,,,,,country,99626,TIMOR LESTE
+joppd_country_99630,,,,,country,99630,PORTORIKO
+joppd_country_99634,,,,,country,99634,KATAR
+joppd_country_99638,,,,,country,99638,RÉUNION
+joppd_country_99642,,,,,country,99642,RUMUNJSKA
+joppd_country_99643,,,,,country,99643,RUSIJA
+joppd_country_99646,,,,,country,99646,RUANDA
+joppd_country_99654,,,,,country,99654,SVETA HELENA
+joppd_country_99659,,,,,country,99659,SVETI KRISTOFOR I NEVIS
+joppd_country_99660,,,,,country,99660,ANGUILLA
+joppd_country_99662,,,,,country,99662,SVETA LUCIJA
+joppd_country_99666,,,,,country,99666,SVETI PETAR I MIKELON
+joppd_country_99670,,,,,country,99670,SVETI VINCENT I GRENADINI
+joppd_country_99674,,,,,country,99674,SAN MARINO
+joppd_country_99678,,,,,country,99678,SVETI TOMA I PRINSIPE
+joppd_country_99682,,,,,country,99682,SAUDIJSKA ARABIJA
+joppd_country_99686,,,,,country,99686,SENEGAL
+joppd_country_99688,,,,,country,99688,SRBIJA
+joppd_country_99690,,,,,country,99690,SEJŠELI
+joppd_country_99694,,,,,country,99694,SIJERA LEONE
+joppd_country_99702,,,,,country,99702,SINGAPUR
+joppd_country_99703,,,,,country,99703,SLOVAČKA
+joppd_country_99704,,,,,country,99704,VIJETNAM
+joppd_country_99705,,,,,country,99705,SLOVENIJA
+joppd_country_99706,,,,,country,99706,SOMALIJA
+joppd_country_99710,,,,,country,99710,JUŽNOAFRIČKA REPUBLIKA
+joppd_country_99716,,,,,country,99716,ZIMBABVE
+joppd_country_99724,,,,,country,99724,ŠPANJOLSKA
+joppd_country_99732,,,,,country,99732,ZAPADNA SAHARA
+joppd_country_99736,,,,,country,99736,SUDAN
+joppd_country_99740,,,,,country,99740,SURINAM
+joppd_country_99744,,,,,country,99744,SVALBARD I JAN MAYEN
+joppd_country_99748,,,,,country,99748,SVAZI
+joppd_country_99752,,,,,country,99752,ŠVEDSKA
+joppd_country_99756,,,,,country,99756,ŠVICARSKA
+joppd_country_99760,,,,,country,99760,SIRIJA
+joppd_country_99762,,,,,country,99762,TADŽIKISTAN
+joppd_country_99764,,,,,country,99764,TAJLAND
+joppd_country_99768,,,,,country,99768,TOGO
+joppd_country_99772,,,,,country,99772,TOKELAU
+joppd_country_99776,,,,,country,99776,TONGA
+joppd_country_99780,,,,,country,99780,TRINIDAD I TOBAGO
+joppd_country_99784,,,,,country,99784,UJEDINJENI ARAPSKI EMIRATI
+joppd_country_99788,,,,,country,99788,TUNIS
+joppd_country_99792,,,,,country,99792,TURSKA
+joppd_country_99795,,,,,country,99795,TURKMENISTAN
+joppd_country_99796,,,,,country,99796,OTOCI TURKS I CAICOS
+joppd_country_99798,,,,,country,99798,TUVALU
+joppd_country_99800,,,,,country,99800,UGANDA
+joppd_country_99804,,,,,country,99804,UKRAJINA
+joppd_country_99807,,,,,country,99807,MAKEDONIJA
+joppd_country_99810,,,,,country,99810,SSSR
+joppd_country_99818,,,,,country,99818,EGIPAT
+joppd_country_99826,,,,,country,99826,VELIKA BRITANIJA
+joppd_country_99831,,,,,country,99831,GUERNSEY
+joppd_country_99832,,,,,country,99832,JERSEY
+joppd_country_99833,,,,,country,99833,OTOK MAN
+joppd_country_99834,,,,,country,99834,"TANZANIJA, UJEDINJENA REPUBLIKA"
+joppd_country_99840,,,,,country,99840,SAD
+joppd_country_99850,,,,,country,99850,AMERIČKI DJEVIČANSKI OTOCI
+joppd_country_99854,,,,,country,99854,BURKINA FASO
+joppd_country_99858,,,,,country,99858,URUGVAJ
+joppd_country_99860,,,,,country,99860,UZBEKISTAN
+joppd_country_99862,,,,,country,99862,VENEZUELA
+joppd_country_99876,,,,,country,99876,WALLIS I FUTUNA
+joppd_country_99882,,,,,country,99882,SAMOA
+joppd_country_99887,,,,,country,99887,JEMEN
+joppd_country_99891,,,,,country,99891,SRBIJA I CRNA GORA
+joppd_country_99894,,,,,country,99894,ZAMBIJA
+joppd_country_98001,,,,,country,98001,INSTITUCIJE (TIJELA) EUROPSKE UNIJE
+joppd_country_98002,,,,,country,98002,OSTALE MEĐUNARODNE INSTITUCIJE
