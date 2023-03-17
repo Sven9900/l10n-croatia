@@ -13,3 +13,7 @@ Punjenje podataka na strani B je moguće ručno ili uz pomoć dodatnih modula
 za obračun putnih troškova ili dohotka
 
 Nikakve matematičke ili logičke kontrole podataka nisu implementirane u sklopu ovog modula.
+
+
+Upute i dokumentacija:
+https://www.porezna-uprava.hr/obrazac_joppd/Stranice/Popunjavanje-obrasca.aspx

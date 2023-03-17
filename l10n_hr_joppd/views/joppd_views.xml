@@ -5,7 +5,7 @@
         <field name="name">view_l10n_hr_joppd_tree</field>
         <field name="model">l10n.hr.joppd</field>
         <field name="arch" type="xml">
-            <tree string="JOPPD">
+            <tree >
                 <field name="name" />
                 <field name="oznaka" />
                 <field name="vrsta" />
@@ -188,25 +188,7 @@
             </form>
         </field>
     </record>
-    <!--
-    <record id="view_l10n_hr_joppd_search" model="ir.ui.view">
-        <field name="name">view_l10n_hr_joppd_search</field>
-        <field name="model">l10n.hr.joppd</field>
-        <field name="type">search</field>
-        <field name="arch" type="xml">
-            <search string="JOPPD">
-                <field name="code"/>
-                <field name="name"/>
-                <field name="vrsta"/>
-                <newline/>
-                <group expand="0" string="Group By...">
-                    <filter string="Type(1)" icon="terp-stock_effects-object-colorize" domain="[]" context="{'group_by': 'type'}"/>
-                    <filter string="Type(2)" icon="terp-stock_effects-object-colorize" domain="[]" context="{'group_by': 'vrsta'}"/>
-                </group>
-            </search>
-        </field>
-    </record>
-    -->
+
     <record id="action_joppd" model="ir.actions.act_window">
         <field name="name">JOPPD</field>
         <field name="type">ir.actions.act_window</field>
@@ -220,7 +202,7 @@
         <field name="model">l10n.hr.joppd.b</field>
         <field name="type">tree</field>
         <field name="arch" type="xml">
-            <tree string="JOPPD StranaB">
+            <tree >
                 <field name="b1" readonly="1" />
                 <field name="b5" />
                 <field name="b61_id" optional="show" />

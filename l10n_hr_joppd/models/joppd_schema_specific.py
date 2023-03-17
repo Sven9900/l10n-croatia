@@ -410,85 +410,85 @@ class JoppdSchemaV10(JoppdSchema):
             EM.P17(b["p17"]),
         )
 
-    def xml_strana_A(self, EM, Adata):
-        xml = EM.StranaA(
-            EM.DatumIzvjesca(joppd["datum"]),
-            EM.OznakaIzvjesca(joppd["oznaka_izvjesca"]),
-            EM.VrstaIzvjesca(joppd["vrsta"]),
-            EM.PodnositeljIzvjesca(
-                EM.Naziv(joppd["pod_naziv"]),
-                EM.Adresa(
-                    EM.Mjesto(joppd["pod_mjesto"]),
-                    EM.Ulica(joppd["pod_ulica"]),
-                    EM.Broj(joppd["pod_kbr"]),
-                ),
-                EM.Email(joppd["email"]),
-                EM.OIB(joppd["oib"]),
-                EM.Oznaka(joppd["oznaka"]),
-            ),
-            EM.BrojOsoba(broj["persons"]),
-            EM.BrojRedaka(broj["rows"]),
-            EM.PredujamPoreza(
-                EM.P1(str_A[0][1]),
-                EM.P11(str_A[1][1]),
-                EM.P12(str_A[2][1]),
-                EM.P2(str_A[3][1]),
-                EM.P3(str_A[4][1]),
-                EM.P4(str_A[5][1]),
-                EM.P5(str_A[6][1]),
-                EM.P6(str_A[7][1]),  # new 2015
-            ),
-            EM.Doprinosi(
-                EM.GeneracijskaSolidarnost(
-                    EM.P1(str_A[8][1]),
-                    EM.P2(str_A[9][1]),
-                    EM.P3(str_A[10][1]),
-                    EM.P4(str_A[11][1]),
-                    EM.P5(str_A[12][1]),
-                    EM.P6(str_A[13][1]),
-                    EM.P7(str_A[14][1]),  # new 2015   ! NEMA U XSD SHEMI!
-                ),
-                EM.KapitaliziranaStednja(
-                    EM.P1(str_A[15][1]),
-                    EM.P2(str_A[16][1]),
-                    EM.P3(str_A[17][1]),
-                    EM.P4(str_A[18][1]),
-                    EM.P5(str_A[19][1]),
-                    EM.P6(str_A[20][1]),  # new 2015 ! NEMA U XSD SHEMI!
-                ),
-                EM.ZdravstvenoOsiguranje(
-                    EM.P1(str_A[21][1]),
-                    EM.P2(str_A[22][1]),
-                    EM.P3(str_A[23][1]),
-                    EM.P4(str_A[24][1]),
-                    EM.P5(str_A[25][1]),
-                    EM.P6(str_A[26][1]),
-                    EM.P7(str_A[27][1]),
-                    EM.P8(str_A[28][1]),
-                    EM.P9(str_A[29][1]),
-                    EM.P10(str_A[30][1]),
-                    EM.P11(str_A[31][1]),
-                    EM.P12(str_A[32][1]),  # new 2015 ! NEMA U XSD SHEMI!
-                ),
-                EM.Zaposljavanje(
-                    EM.P1(str_A[33][1]),
-                    EM.P2(str_A[34][1]),
-                    EM.P3(str_A[35][1]),
-                    EM.P4(str_A[36][1]),  # new 2015 ! NEMA U XSD SHEMI!
-                ),
-            ),
-            EM.IsplaceniNeoporeziviPrimici(str_A[37][1]),
-            EM.KamataMO2(str_A[38][1]),
-            EM.UkupniNeoporeziviPrimici(
-                str_A[39][1]
-            ),  # IX - Ukupan iznos neoporezivih primitaka nerezidenata
-            EM.NaknadaZaposljavanjeInvalida(
-                EM.P1(int(str_A[40][1])), EM.P2(str_A[41][1])
-            ),  # X.1 - broj osoba sa invaliditetom
-            EM.IzvjesceSastavio(
-                EM.Ime(joppd["sast_ime"]), EM.Prezime(joppd["sast_prezime"])
-            ),
-        )
+    # def xml_strana_A(self, EM, Adata):
+    #     xml = EM.StranaA(
+    #         EM.DatumIzvjesca(joppd["datum"]),
+    #         EM.OznakaIzvjesca(joppd["oznaka_izvjesca"]),
+    #         EM.VrstaIzvjesca(joppd["vrsta"]),
+    #         EM.PodnositeljIzvjesca(
+    #             EM.Naziv(joppd["pod_naziv"]),
+    #             EM.Adresa(
+    #                 EM.Mjesto(joppd["pod_mjesto"]),
+    #                 EM.Ulica(joppd["pod_ulica"]),
+    #                 EM.Broj(joppd["pod_kbr"]),
+    #             ),
+    #             EM.Email(joppd["email"]),
+    #             EM.OIB(joppd["oib"]),
+    #             EM.Oznaka(joppd["oznaka"]),
+    #         ),
+    #         EM.BrojOsoba(broj["persons"]),
+    #         EM.BrojRedaka(broj["rows"]),
+    #         EM.PredujamPoreza(
+    #             EM.P1(str_A[0][1]),
+    #             EM.P11(str_A[1][1]),
+    #             EM.P12(str_A[2][1]),
+    #             EM.P2(str_A[3][1]),
+    #             EM.P3(str_A[4][1]),
+    #             EM.P4(str_A[5][1]),
+    #             EM.P5(str_A[6][1]),
+    #             EM.P6(str_A[7][1]),  # new 2015
+    #         ),
+    #         EM.Doprinosi(
+    #             EM.GeneracijskaSolidarnost(
+    #                 EM.P1(str_A[8][1]),
+    #                 EM.P2(str_A[9][1]),
+    #                 EM.P3(str_A[10][1]),
+    #                 EM.P4(str_A[11][1]),
+    #                 EM.P5(str_A[12][1]),
+    #                 EM.P6(str_A[13][1]),
+    #                 EM.P7(str_A[14][1]),  # new 2015   ! NEMA U XSD SHEMI!
+    #             ),
+    #             EM.KapitaliziranaStednja(
+    #                 EM.P1(str_A[15][1]),
+    #                 EM.P2(str_A[16][1]),
+    #                 EM.P3(str_A[17][1]),
+    #                 EM.P4(str_A[18][1]),
+    #                 EM.P5(str_A[19][1]),
+    #                 EM.P6(str_A[20][1]),  # new 2015 ! NEMA U XSD SHEMI!
+    #             ),
+    #             EM.ZdravstvenoOsiguranje(
+    #                 EM.P1(str_A[21][1]),
+    #                 EM.P2(str_A[22][1]),
+    #                 EM.P3(str_A[23][1]),
+    #                 EM.P4(str_A[24][1]),
+    #                 EM.P5(str_A[25][1]),
+    #                 EM.P6(str_A[26][1]),
+    #                 EM.P7(str_A[27][1]),
+    #                 EM.P8(str_A[28][1]),
+    #                 EM.P9(str_A[29][1]),
+    #                 EM.P10(str_A[30][1]),
+    #                 EM.P11(str_A[31][1]),
+    #                 EM.P12(str_A[32][1]),  # new 2015 ! NEMA U XSD SHEMI!
+    #             ),
+    #             EM.Zaposljavanje(
+    #                 EM.P1(str_A[33][1]),
+    #                 EM.P2(str_A[34][1]),
+    #                 EM.P3(str_A[35][1]),
+    #                 EM.P4(str_A[36][1]),  # new 2015 ! NEMA U XSD SHEMI!
+    #             ),
+    #         ),
+    #         EM.IsplaceniNeoporeziviPrimici(str_A[37][1]),
+    #         EM.KamataMO2(str_A[38][1]),
+    #         EM.UkupniNeoporeziviPrimici(
+    #             str_A[39][1]
+    #         ),  # IX - Ukupan iznos neoporezivih primitaka nerezidenata
+    #         EM.NaknadaZaposljavanjeInvalida(
+    #             EM.P1(int(str_A[40][1])), EM.P2(str_A[41][1])
+    #         ),  # X.1 - broj osoba sa invaliditetom
+    #         EM.IzvjesceSastavio(
+    #             EM.Ime(joppd["sast_ime"]), EM.Prezime(joppd["sast_prezime"])
+    #         ),
+    #     )
 
     def xml_strana_A(self, EM, a):
         xml = EM.StranaA(
@@ -621,87 +621,119 @@ class JoppdSchemaV11(JoppdSchema):
         return [
             (
                 "V.1",
-                "Ukupan iznos predujma poreza na dohodak i prireza porezu na dohodak po osnovi nesamostalnog rada (1.1.+1.2.)",
+                "Ukupan iznos predujma poreza na dohodak i prireza porezu na "
+                " dohodak po osnovi nesamostalnog rada (1.1.+1.2.)",
             ),
             (
                 "V.1.1",
-                "Ukupan zbroj stupaca 14.1. i 14.2. sa stranice B pod oznakom stjecatelja primitka/osiguranika (plaća)",
+                "Ukupan zbroj stupaca 14.1. i 14.2. sa stranice B pod oznakom"
+                " stjecatelja primitka/osiguranika (plaća)",
             ),
             (
                 "V.1.2",
-                "Ukupan zbroj stupaca 14.1. i 14.2. sa stranice B pod oznakom stjecatelja primitka/osiguranika (mirovina)",
+                "Ukupan zbroj stupaca 14.1. i 14.2. sa stranice B pod oznakom"
+                " stjecatelja primitka/osiguranika (mirovina)",
             ),
             (
                 "V.2",
-                "Ukupan iznos predujma poreza na dohodak i prireza porezu na dohodak po osnovi dohotka od kapitala",
+                "Ukupan iznos predujma poreza na dohodak i prireza porezu"
+                " na dohodak po osnovi dohotka od kapitala",
             ),
             (
                 "V.3",
-                "Ukupan iznos predujma poreza na dohodak i prireza porezu na dohodak po osnovi dohotka od imovinskih prava i posebnih vrsta imovine",
+                "Ukupan iznos predujma poreza na dohodak i prireza porezu "
+                "na dohodak po osnovi dohotka od imovinskih prava i posebnih"
+                " vrsta imovine",
             ),
             (
                 "V.4",
-                "Ukupan iznos predujma poreza na dohodak i prireza porezu na dohodak po osnovi dohotka od osiguranja",
+                "Ukupan iznos predujma poreza na dohodak i prireza porezu "
+                "na dohodak po osnovi dohotka od osiguranja",
             ),
             (
                 "V.5",
-                "Ukupan iznos predujma poreza na dohodak i prireza porezu na dohodak po osnovi primitka od kojeg se utvrđuje drugi dohodak",
+                "Ukupan iznos predujma poreza na dohodak i prireza porezu "
+                "na dohodak po osnovi primitka od kojeg se utvrđuje drugi "
+                "dohodak",
             ),
             (
                 "V.6",
-                "Ukupan iznos predujma poreza na dohodak i prireza porezu na dohodak po osnovi dohotka od kamata",
+                "Ukupan iznos predujma poreza na dohodak i prireza porezu"
+                " na dohodak po osnovi dohotka od kamata",
             ),
             (
                 "VI.1.1",
-                "Ukupan iznos doprinosa za mirovinsko osiguranje na temelju generacijske solidarnosti po osnovi radnog odnosa",
+                "Ukupan iznos doprinosa za mirovinsko osiguranje na temelju"
+                " generacijske solidarnosti po osnovi radnog odnosa",
             ),
             (
                 "VI.1.2",
-                "Ukupan iznos doprinosa za mirovinsko osiguranje na temelju generacijske solidarnosti po osnovi drugog dohotka",
+                "Ukupan iznos doprinosa za mirovinsko osiguranje na temelju"
+                " generacijske solidarnosti po osnovi drugog dohotka",
             ),
             (
                 "VI.1.3",
-                "Ukupan iznos doprinosa za mirovinsko osiguranje na temelju generacijske solidarnosti po osnovi poduzetničke plaće",
+                "Ukupan iznos doprinosa za mirovinsko osiguranje na temelju"
+                "generacijske solidarnosti po osnovi poduzetničke plaće",
             ),
             (
                 "VI.1.4",
-                "Ukupan iznos doprinosa za mirovinsko osiguranje na temelju generacijske solidarnosti za osiguranike za koje se doprinos uplaćuje prema posebnim propisima",
+                "Ukupan iznos doprinosa za mirovinsko osiguranje na temelju"
+                " generacijske solidarnosti za osiguranike za koje se doprinos"
+                " uplaćuje prema posebnim propisima",
             ),
             (
                 "VI.1.5",
-                "Ukupan iznos posebnog doprinosa za mirovinsko osiguranje na temelju generacijske solidarnosti za osobe osigurane u određenim okolnostima",
+                "Ukupan iznos posebnog doprinosa za mirovinsko osiguranje"
+                " na temelju generacijske solidarnosti za osobe osigurane"
+                " u određenim okolnostima",
             ),
             (
                 "VI.1.6",
-                "Ukupan iznos dodatnog doprinosa za mirovinsko osiguranje na temelju generacijske solidarnosti za staž osiguranja koji se računa s povećanim trajanjem",
+                "Ukupan iznos dodatnog doprinosa za mirovinsko osiguranje"
+                " na temelju generacijske solidarnosti za staž osiguranja"
+                " koji se računa s povećanim trajanjem",
             ),
             (
                 "VI.1.7",
-                "Ukupan iznos doprinosa za mirovinsko osiguranje na temelju generacijske solidarnosti po osnovi obavljanja samostalne djelatnosti za osobe koje su same za sebe obvezne obračunati doprinose",
+                "Ukupan iznos doprinosa za mirovinsko osiguranje na temelju"
+                " generacijske solidarnosti po osnovi obavljanja samostalne"
+                " djelatnosti za osobe koje su same za sebe obvezne obračunati"
+                " doprinose",
             ),
             (
                 "VI.2.1",
-                "Ukupan iznos doprinosa za mirovinsko osiguranje na temelju individualne kapitalizirane štednje po osnovi radnog odnosa",
+                "Ukupan iznos doprinosa za mirovinsko osiguranje na temelju"
+                " individualne kapitalizirane štednje po osnovi radnog odnosa",
             ),
             (
                 "VI.2.2",
-                "Ukupan iznos doprinosa za mirovinsko osiguranje na temelju individualne kapitalizirane štednje po osnovi drugog dohotka",
+                "Ukupan iznos doprinosa za mirovinsko osiguranje na temelju"
+                " individualne kapitalizirane štednje po osnovi drugog dohotka",
             ),
             (
                 "VI.2.3",
-                "Ukupan iznos doprinosa za mirovinsko osiguranje na temelju individualne kapitalizirane štednje po osnovi poduzetničke plaće",
+                "Ukupan iznos doprinosa za mirovinsko osiguranje na temelju"
+                " individualne kapitalizirane štednje po osnovi poduzetničke plaće",
             ),
             (
                 "VI.2.4",
-                "Ukupan iznos doprinosa za mirovinsko osiguranje na temelju individualne kapitalizirane štednje za osiguranike za koje se doprinos uplaćuje prema posebnim propisima",
+                "Ukupan iznos doprinosa za mirovinsko osiguranje na temelju"
+                " individualne kapitalizirane štednje za osiguranike za koje"
+                " se doprinos uplaćuje prema posebnim propisima",
             ),
             (
                 "VI.2.5",
-                "Ukupan iznos dodatnog doprinosa za mirovinsko osiguranje na temelju individualne kapitalizirane štednje za staž osiguranja koji se računa s povećanim trajanjem",
+                "Ukupan iznos dodatnog doprinosa za mirovinsko osiguranje na"
+                " temelju individualne kapitalizirane štednje za staž osiguranja"
+                " koji se računa s povećanim trajanjem",
             ),
             (
                 "VI.2.6",
-                "Ukupan iznos doprinosa za mirovinsko osiguranje na temelju individualne kapitalizirane štednje po osnovi obavljanja samostalne djelatnosti za osobe koje su same za sebe obvezne obračunati doprinose",
+                "Ukupan iznos doprinosa za mirovinsko osiguranje na temelju"
+                " individualne kapitalizirane štednje po osnovi obavljanja"
+                " samostalne djelatnosti za osobe koje su same za sebe obvezne"
+                " obračunati doprinose",
             ),
             (
                 "VI.3.1",
@@ -729,27 +761,35 @@ class JoppdSchemaV11(JoppdSchema):
             ),
             (
                 "VI.3.7",
-                "Ukupan iznos dodatnog doprinosa za zdravstveno osiguranje – za obveznike po osnovi korisnika mirovina",
+                "Ukupan iznos dodatnog doprinosa za zdravstveno osiguranje –"
+                " za obveznike po osnovi korisnika mirovina",
             ),
             (
                 "VI.3.8",
-                "Ukupan iznos doprinosa za zdravstveno osiguranje - za osiguranike za koje se doprinos uplaćuje prema posebnim propisima",
+                "Ukupan iznos doprinosa za zdravstveno osiguranje - za"
+                " osiguranike za koje se doprinos uplaćuje prema posebnim propisima",
             ),
             (
                 "VI.3.9",
-                "Ukupan iznos doprinosa za zaštitu zdravlja na radu - za osiguranike za koje se doprinos uplaćuje prema posebnim propisima",
+                "Ukupan iznos doprinosa za zaštitu zdravlja na radu - za"
+                " osiguranike za koje se doprinos uplaćuje prema posebnim propisima",
             ),
             (
                 "VI.3.10",
-                "Ukupan iznos posebnog doprinosa za zaštitu zdravlja na radu - za osobe osigurane u određenim okolnostima",
+                "Ukupan iznos posebnog doprinosa za zaštitu zdravlja na radu -"
+                " za osobe osigurane u određenim okolnostima",
             ),
             (
                 "VI.3.11",
-                "Ukupan iznos doprinosa za zdravstveno osiguranje po osnovi obavljanja samostalne djelatnosti za osobe koje su same za sebe obvezne obračunati doprinose",
+                "Ukupan iznos doprinosa za zdravstveno osiguranje po osnovi"
+                " obavljanja samostalne djelatnosti za osobe koje su same za"
+                " sebe obvezne obračunati doprinose",
             ),
             (
                 "VI.3.12",
-                "Ukupan iznos doprinosa za zaštitu zdravlja na radu po osnovi obavljanja samostalne djelatnosti za osobe koje su same za sebe obvezne obračunati doprinose",
+                "Ukupan iznos doprinosa za zaštitu zdravlja na radu po osnovi"
+                " obavljanja samostalne djelatnosti za osobe koje su same za"
+                " sebe obvezne obračunati doprinose",
             ),
             ("VI.4.1", "Ukupan iznos doprinosa za zapošljavanje"),
             (
@@ -762,16 +802,20 @@ class JoppdSchemaV11(JoppdSchema):
             ),
             (
                 "VI.4.4",
-                "Ukupan iznos doprinosa za zapošljavanje po osnovi obavljanja samostalne djelatnosti za osobe koje su same za sebe obvezne obračunati doprinose",
+                "Ukupan iznos doprinosa za zapošljavanje po osnovi obavljanja"
+                " samostalne djelatnosti za osobe koje su same za sebe obvezne"
+                " obračunati doprinose",
             ),
             ("VII", "ISPLAĆENI NEOPOREZIVI PRIMICI"),
             (
                 "VIII",
-                "NAPLAĆENA KAMATA ZA DOPRINOSE ZA MIROVINSKO OSIGURANJE NA TEMELJU INDIVIDUALNE KAPITALIZIRANE ŠTEDNJE",
+                "NAPLAĆENA KAMATA ZA DOPRINOSE ZA MIROVINSKO OSIGURANJE NA"
+                " TEMELJU INDIVIDUALNE KAPITALIZIRANE ŠTEDNJE",
             ),
             (
                 "IX",
-                "UKUPAN IZNOS NEOPOREZIVIH PRIMITAKA NEREZIDENATA KOJE ISPLAĆUJU NEPROFITNE ORGANIZACIJE DO PROPISANOG IZNOSA",
+                "UKUPAN IZNOS NEOPOREZIVIH PRIMITAKA NEREZIDENATA KOJE ISPLAĆUJU"
+                " NEPROFITNE ORGANIZACIJE DO PROPISANOG IZNOSA",
             ),
             ("X.1", "Broj osoba s invaliditetom koje je obveznik bio dužan zaposliti"),
             ("X.1", "Iznos obračunane naknade (X.1)"),

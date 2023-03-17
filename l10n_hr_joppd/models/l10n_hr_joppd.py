@@ -430,7 +430,7 @@ class Joppd(models.Model):
 
         self.identifier = identifier
         self.xml_file_name = self.name + ".xml"
-        self.xml_file = base64.encodestring(xml_string.encode("utf-8"))
+        self.xml_file = base64.encodebytes(xml_string.encode("utf-8"))
         self.state = "sent"  # označi za slanje!
 
     def button_delete_sideB_rows(self):
@@ -661,6 +661,8 @@ class Joppd_B(models.Model):
 
     @api.onchange("employee_id")
     def onchange_employee_id(self):
+        # populate default values from employee,
+        # but allow to change for different types of B side rows!
         if not self.employee_id:
             self.b4 = False
             self.b5 = False
